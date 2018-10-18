@@ -30,7 +30,7 @@
 </h1>
 
 
-<!–– Form ––>
+<!–– Checkbox Form ––>
 
 <div class="govuk-form-group">
   <fieldset class="govuk-fieldset" aria-describedby="nationality-hint">
@@ -69,6 +69,7 @@
 </div>
 
 
+<!–– Progressive reveal radio button Form ––>
 
 <div class="govuk-form-group">
   <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
@@ -139,10 +140,20 @@
         <li>do something else</li>
       </ul>
 
+<!–– Inset text  ––>
+
+      <div class="govuk-inset-text">
+  It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes in the application.
+</div>
+
+
+<!–– Dave's vertical space css Form...  CSS is in assets / sass / applications.scss––>
             <div class="vertical-space"><p>vertical space class</p></div>
+
+<!–– 2 column table  ––>
       <div>
       <table class="govuk-table">
-  <caption class="govuk-table__caption">Here's a table</caption>
+  <caption class="govuk-table__caption">Here's a 2 column table</caption>
   <thead class="govuk-table__head">
     <tr class="govuk-table__row">
       <th class="govuk-table__header" scope="col">Date</th>
@@ -165,6 +176,40 @@
   </tbody>
 </table>
 </div>
+
+<!–– Dave's vertical space css Form...  CSS is in assets / sass / applications.scss––>
+<div class="vertical-space"><p></p></div>
+
+
+<!–– 3 column table  ––>
+
+<table class="govuk-table">
+  <caption class="govuk-table__caption">Here's a 3 column table</caption>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col">Month you apply</th>
+      <th class="govuk-table__header govuk-table__header--numeric" scope="col">Rate for bicycles</th>
+      <th class="govuk-table__header govuk-table__header--numeric" scope="col">Rate for vehicles</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">January</th>
+      <td class="govuk-table__cell govuk-table__cell--numeric">£85</td>
+      <td class="govuk-table__cell govuk-table__cell--numeric">£95</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">February</th>
+      <td class="govuk-table__cell govuk-table__cell--numeric">£75</td>
+      <td class="govuk-table__cell govuk-table__cell--numeric">£55</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">March</th>
+      <td class="govuk-table__cell govuk-table__cell--numeric">£165</td>
+      <td class="govuk-table__cell govuk-table__cell--numeric">£125</td>
+    </tr>
+  </tbody>
+</table>
 
       <p>Registering takes around 5 minutes.</p>
 
