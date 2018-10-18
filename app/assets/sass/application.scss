@@ -19,3 +19,10 @@ $govuk-global-styles: true;
 .vertical-space p {
 margin: 0 0 40px 0;
 }
+
+.topright{
+  width: 33%
+  position:absolute;
+  top:0;
+  right:0;
+ }
