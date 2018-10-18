@@ -24,12 +24,112 @@
 {% endblock %}
 
 {% block content %}
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
 
-      <h1 class="govuk-heading-xl">
-        Dave's test page
+<h1 class="govuk-heading-xl">
+  Dave's test page
+</h1>
+
+
+<!–– Form ––>
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="nationality-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+      <h1 class="govuk-fieldset__heading">
+        What is your nationality?
       </h1>
+    </legend>
+    <span id="nationality-hint" class="govuk-hint">
+      If you have dual nationality, select all options that are relevant to you.
+    </span>
+    <div class="govuk-checkboxes">
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="nationality-1" name="nationality" type="checkbox" value="british" aria-describedby="nationality-1-item-hint">
+        <label class="govuk-label govuk-checkboxes__label" for="nationality-1">
+          British
+        </label>
+        <span id="nationality-1-item-hint" class="govuk-hint govuk-checkboxes__hint">
+          including English, Scottish, Welsh and Northern Irish
+        </span>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="irish">
+        <label class="govuk-label govuk-checkboxes__label" for="nationality-2">
+          Irish
+        </label>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="other">
+        <label class="govuk-label govuk-checkboxes__label" for="nationality-3">
+          Citizen of another country
+        </label>
+      </div>
+    </div>
+  </fieldset>
+</div>
+
+
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+      <h1 class="govuk-fieldset__heading">
+        How would you prefer to be contacted?
+      </h1>
+    </legend>
+    <span id="how-contacted-conditional-hint" class="govuk-hint">
+      Select one option.
+    </span>
+    <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="how-contacted-conditional-1" name="how-contacted" type="radio" value="email" data-aria-controls="conditional-how-contacted-conditional-1">
+        <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-1">
+          Email
+        </label>
+      </div>
+      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-1">
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="contact-by-email">
+            Email address
+          </label>
+          <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email">
+        </div>
+
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="how-contacted-conditional-2" name="how-contacted" type="radio" value="phone" data-aria-controls="conditional-how-contacted-conditional-2">
+        <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+          Phone
+        </label>
+      </div>
+      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-2">
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="contact-by-phone">
+            Phone number
+          </label>
+          <input class="govuk-input govuk-!-width-one-third" id="contact-by-phone" name="contact-by-phone" type="tel">
+        </div>
+
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="how-contacted-conditional-3" name="how-contacted" type="radio" value="text" data-aria-controls="conditional-how-contacted-conditional-3">
+        <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-3">
+          Text message
+        </label>
+      </div>
+      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-3">
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="contact-by-text">
+            Mobile phone number
+          </label>
+          <input class="govuk-input govuk-!-width-one-third" id="contact-by-text" name="contact-by-text" type="tel">
+        </div>
+
+      </div>
+    </div>
+  </fieldset>
+</div>
+
 
       <p>Here's a list</p>
 
@@ -39,7 +139,7 @@
         <li>do something else</li>
       </ul>
 
-
+            <div class="vertical-space"><p>vertical space class</p></div>
       <div>
       <table class="govuk-table">
   <caption class="govuk-table__caption">Here's a table</caption>
@@ -68,6 +168,7 @@
 
       <p>Registering takes around 5 minutes.</p>
 
+
       <a href="#" role="button" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8">Start now</a>
 
       <h2 class="govuk-heading-m">Before you start</h2>
@@ -79,6 +180,9 @@
       <p>You can’t register for this service if you’re in the UK illegally.</p>
 
     </div>
+
+
+
 
     <div class="govuk-grid-column-one-third">
 
