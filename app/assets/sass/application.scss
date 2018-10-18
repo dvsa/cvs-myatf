@@ -13,3 +13,9 @@ $govuk-global-styles: true;
 @import "components/cookie-banner";
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
+
+// DY-Styles
+
+.vertical-space p {
+margin: 0 0 40px 0;
+}
