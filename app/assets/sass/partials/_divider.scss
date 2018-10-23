@@ -1,0 +1,24 @@
+@import './partials/colours';
+
+.atf-divider {
+	&.atf-divider-horizontal {
+		background: $white;
+		margin: 10px 0px;
+	}
+	&.atf-divider-horizontal-blue {
+		height: 10px;
+		background-color: $govuk-blue;
+	}
+	&.atf-divider-horizontal-red {
+		height: 10px;
+		background-color: $error-colour;
+	}
+	&.atf-divider-horizontal-yellow {
+		height: 10px;
+		background-color: $warning-colour;
+	}
+	&.atf-divider-horizontal-green {
+		height: 10px;
+		background-color: $turquoise;
+	}
+}

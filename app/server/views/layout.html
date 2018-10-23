@@ -1,0 +1,85 @@
+{% extends "govuk_template.html" %}
+
+{% block head %}
+  {% include "includes/head.html" %}
+{% endblock %}
+
+{% block cookie_message %}
+  <p>{{cookieText | safe }}</p>
+{% endblock %}
+
+{% block proposition_header %}
+
+  <div class="header-proposition">
+    <div class="content">
+      <a href="#proposition-links" class="js-header-toggle menu">Menu</a>
+      <nav id="proposition-menu">
+        <a href="{{urlRoot}}" id="proposition-name">
+          {# Set serviceName in config.js. Use a block to override on a page. #}
+          {% block service_name %}
+            {% if serviceName %} {{ serviceName }} {% endif %}
+          {% endblock %}
+        </a>
+        <!--
+        <ul id="proposition-links">
+          <li><a href="url-to-page-1" class="active">Navigation item #1</a></li>
+          <li><a href="url-to-page-2">Navigation item #2</a></li>
+        </ul>
+        -->
+      </nav>
+    </div>
+  </div>
+
+{% endblock %}
+
+{% block header_class %}
+  with-proposition
+{% endblock %}
+
+{% block content %}
+<main id="content" role="main">
+{% include "includes/phase_banner_alpha.html" %}
+{% include "includes/breadcrumbs.html" %}
+{% block page_content %}
+{% endblock %}
+</main>
+{% endblock %}
+
+{% block footer_support_links %}
+  {% if useAutoStoreData %}
+    <ul>
+      <li>
+        <a href="{{urlRoot}}prototype-admin/clear-data">Clear data</a>
+      </li><br />
+      <li>
+        <a href="{{urlRoot}}prototype/scenario/1">Scenario 1 (Normal balance)</a>
+      </li><br />
+      <li>
+        <a href="{{urlRoot}}prototype/scenario/2">Scenario 2 (Balance running low)</a>
+      </li><br />
+      <li>
+        <a href="{{urlRoot}}prototype/scenario/3">Scenario 3 (Balance critical!)</a>
+      </li><br />
+      <li>
+        <a href="{{urlRoot}}prototype/permissions/demo">Admin User</a>
+      </li><br />
+      <li>
+        <a href="{{urlRoot}}prototype/permissions/finance">Finance User</a>
+      </li><br />
+      <li>
+        <a href="{{urlRoot}}prototype/permissions/user">Standard User</a>
+      </li><br />
+      <li>
+        <a href="{{urlRoot}}prototype/permissions/multisiteAdmin">Multi-Site Admin User</a>
+      </li><br />
+    </ul>
+  {% endif %}
+{% endblock %}
+
+{% block body_end %}
+  {% block scripts %}
+    {% include "includes/scripts.html" %}
+    {% block page_scripts %}{% endblock %}
+  {% endblock %}
+  <!-- GOV.UK Prototype kit {{releaseVersion}} -->
+{% endblock %}

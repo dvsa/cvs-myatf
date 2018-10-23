@@ -1,0 +1,56 @@
+[
+	{
+		"activityId": "Wait time",
+		"activityDescription": "",
+		"startEndTime": "07:50 - 07:59",
+		"fees": ""
+	},
+	{
+		"activityId": "PO58LFN",
+		"activityDescription": "2 AXLE MOTOR\nVEHICLE ANNUAL\nTEST",
+		"startEndTime": "08:00 - 08:51",
+		"fees": "188.00"
+	},
+	{
+		"activityId": "KV63CYC",
+		"activityDescription": "2 AXLE MOTOR\nVEHICLE ANNUAL\nTEST",
+		"startEndTime": "08:52 - 09:27",
+		"fees": "91.00"
+	},
+	{
+		"activityId": "YV2TBM0A29B533322",
+		"activityDescription": "3 AXLE TRAILER\nANNUAL TEST",
+		"startEndTime": "09:27 - 10:05",
+		"fees": "64.00"
+	},
+	{
+		"activityId": "Wait time",
+		"activityDescription": "",
+		"startEndTime": "10:05 - 11:45",
+		"fees": ""
+	},
+	{
+		"activityId": "Wait time",
+		"activityDescription": "",
+		"startEndTime": "11:45 - 12:36",
+		"fees": ""
+	},
+	{
+		"activityId": "WDB9505072K979292",
+		"activityDescription": "1 AXLE TRAILER\nANNUAL TEST",
+		"startEndTime": "12:36 - 13:27",
+		"fees": "41.00"
+	},
+	{
+		"activityId": "CN54MKU",
+		"activityDescription": "3 AXLE MOTOR\nVEHICLE ANNUAL\nTEST",
+		"startEndTime": "12:36 - 13:26",
+		"fees": "188.00"
+	},
+	{
+		"activityId": "Today's running total",
+		"activityDescription": "",
+		"startEndTime": "",
+		"fees": "572.00"
+	}
+]

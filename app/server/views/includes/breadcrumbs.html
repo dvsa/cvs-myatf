@@ -1,0 +1,11 @@
+<nav role="navigation" aria-label="breadcrumbs" class="breadcrumbs">
+  <ol>
+  {% for breadcrumb in breadcrumbs %}
+    <li 
+      {% if loop.index0 != 0 %}
+        style="background-image: url({{assets}}public/images/separator.png)"
+      {% endif %}
+      ><a href="{{breadcrumb.url}}" aria-level="{{loop.index}}">{{breadcrumb.name}}</a></li>
+  {% endfor %}
+  </ol>
+</nav>

@@ -1,0 +1,128 @@
+[
+    {
+        "date": "10 June 2017",
+        "type": "testing",
+        "document_id": "1-3412345",
+        "amount": -756,
+        "vat": 34.8
+    },
+    {
+        "date": "10 June 2017",
+        "type": "top-up",
+        "document_id": "4-3412346",
+        "amount": 5000,
+        "vat": 0
+    },
+    {
+        "date": "11 June 2017",
+        "type": "testing",
+        "document_id": "1-3412347",
+        "amount": -756,
+        "vat": 34.8
+    },
+    {
+        "date": "12 June 2017",
+        "type": "testing",
+        "document_id": "1-3412348",
+        "amount": -756,
+        "vat": 34.8
+    },
+    {
+        "date": "13 June 2017",
+        "type": "testing",
+        "document_id": "1-3412349",
+        "amount": -756,
+        "vat": 34.8
+    },
+    {
+        "date": "14 June 2017",
+        "type": "testing",
+        "document_id": "1-3412350",
+        "amount": -756,
+        "vat": 34.8
+    },
+    {
+        "date": "14 June 2017",
+        "type": "top-up",
+        "document_id": "4-3412351",
+        "amount": 5000,
+        "vat": 0
+    },
+    {
+        "date": "15 June 2017",
+        "type": "testing",
+        "document_id": "1-3412352",
+        "amount": -756,
+        "vat": 34.8
+    },
+    {
+        "date": "16 June 2017",
+        "type": "top-up",
+        "document_id": "4-3412352",
+        "amount": -756,
+        "vat": 34.8
+    },
+    {
+        "date": "17 June 2017",
+        "type": "testing",
+        "document_id": "1-3412353",
+        "amount": -756,
+        "vat": 34.8
+    },
+    {
+        "date": "18 June 2017",
+        "type": "testing",
+        "document_id": "1-3412354",
+        "amount": -756,
+        "vat": 34.8
+    },
+    {
+        "date": "19 June 2017",
+        "type": "testing",
+        "document_id": "1-3412355",
+        "amount": -756,
+        "vat": 34.8
+    },
+    {
+        "date": "20 June 2017",
+        "type": "testing",
+        "document_id": "1-3412356",
+        "amount": -756,
+        "vat": 34.8
+    },
+    {
+        "date": "21 June 2017",
+        "type": "testing",
+        "document_id": "1-3412357",
+        "amount": -756,
+        "vat": 34.8
+    },
+    {
+        "date": "22 June 2017",
+        "type": "testing",
+        "document_id": "1-3412358",
+        "amount": -756,
+        "vat": 34.8
+    },
+    {
+        "date": "23 June 2017",
+        "type": "testing",
+        "document_id": "1-3412359",
+        "amount": -756,
+        "vat": 34.8
+    },
+    {
+        "date": "24 June 2017",
+        "type": "testing",
+        "document_id": "1-3412360",
+        "amount": -756,
+        "vat": 34.8
+    },
+    {
+        "date": "25 June 2017",
+        "type": "testing",
+        "document_id": "1-3412361",
+        "amount": -756,
+        "vat": 34.8
+    }
+]

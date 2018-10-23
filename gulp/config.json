@@ -3,8 +3,17 @@
     "public": "public/",
     "assets" : "app/assets/",
     "docsAssets" : "docs/assets/",
-    "v6Assets": "app/v6/assets/",
+    "govukModules": "govuk_modules/",
     "nodeModules": "node_modules/",
-    "lib": "lib/"
+    "lib": "lib/",
+    "dist": "dist/",
+    "build": "build/",
+    "app": "app/",
+    "temp": "temp/",
+    "docs": "docs/"        
+  },
+  "output": {
+    "lambdaDist": "lambda.zip",
+    "assetsDist": "assets.zip"
   }
 }

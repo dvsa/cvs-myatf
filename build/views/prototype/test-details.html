@@ -1,0 +1,67 @@
+{% import '../macros/download_file_link.html' as download %}
+{% import '../macros/data-table.html' as grid %}
+
+{% extends "layout.html" %}
+
+{% block page_title %} Manage your Authorised Testing Facility {% endblock %}
+
+{% block page_content %}
+<div>
+	<span class="atf-grey atf-m-t-30">{{ atfName }}</span>
+</div>
+<div>
+	<h4 class="heading-small">
+		Test period history
+	</h4>
+	<h1 class="heading-large heading-details">
+		10 June 2017
+	</h1>
+	<br />
+	<div class="atf-box atf-blue clearfix">
+		<div class="atf-box-content atf-white column-one-quarter">
+			<span class="data-item bold-xlarge">£790.80</span>
+			<span class="data-item font-xsmall">Total cost for the day</span>
+		</div>
+		<div class="atf-box-content atf-white column-one-quarter">
+			<span class="data-item bold-xlarge">6</span>
+			<span class="data-item font-xsmall">Tests performed</span>
+		</div>
+		<div class="atf-box-content atf-white column-one-quarter">
+			<span class="data-item bold-xlarge">6 hours</span>
+			<span class="data-item font-xsmall">Time spent performing tests</span>
+		</div>
+		<div class="atf-box-content atf-white column-one-quarter">
+			<span class="data-item bold-xlarge">2 hours</span>
+			<span class="data-item font-xsmall">Total wait time</span>
+		</div>
+	</div>
+	<br />
+	<br />
+
+	{{ download.downloadFileLink("Download CSV file") }}
+	<br />
+	<br />
+	<div id="atf-print-replace"></div>
+
+	<h2 class="heading-medium">
+		Below are the tests performed on the 10 June 2017
+	</h2>
+
+	<br />
+
+	{% if transactionData %}
+		{{ grid.searchGrid(transactionData) }}
+	{% endif %}
+
+	{% if healthAndSafetyData %}
+		<h2 class="heading-medium">
+			Below are the ATF issues raised
+		</h2>
+
+		<br />
+
+		{{ grid.searchGrid(healthAndSafetyData) }}
+	{% endif %}
+</div>
+
+{% endblock %}

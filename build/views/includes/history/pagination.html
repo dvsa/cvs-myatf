@@ -1,0 +1,38 @@
+<div class="grid-row atf-pagination">
+		<div class="column-one-half">
+			<p>Showing {{showingResultsStartIndex}} - {{showingResultsEndIndex}} of {{totalResults}}</p>
+		</div>
+		<div class="column-one-half atf-align-right">
+			<nav role="navigation" aria-label="Pagination Navigation">
+				{% if paginate.hasPreviousPages or paginate.hasNextPages(pageCount) %}
+				<ul>
+					{% if paginate.hasPreviousPages %}
+					<li>
+						<span class="atf-pagination-link">
+							<a aria-label="Goto Previous Page" href={{paginate.href(true)}}>Previous</a>
+						</span>
+					</li>
+					{% endif %}
+					{% for page in pages %}
+					{% set active = pageNum === page.number %}
+					<li>
+						<span class="atf-pagination-link">
+							<a aria-label="{{ "Goto Page " + page.number if not active else "Current Page, Page " + pageNum }}" href={{page.url}} class={{"atf-active" if active}}>
+								{{ page.number }}
+							</a>
+						</span>
+					</li>
+					{% endfor %}
+					{% if paginate.hasNextPages(pageCount) %}
+					<li>
+						<span class="atf-pagination-link">
+							<a aria-label="Goto Next Page" href={{paginate.href()}}>Next</a>
+						</span>
+					</li>	
+					{% endif %}
+				</ul>
+				{% endif %}
+			</nav>
+		</div>
+	</div>
+</nav>

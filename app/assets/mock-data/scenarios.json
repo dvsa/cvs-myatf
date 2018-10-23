@@ -1,0 +1,20 @@
+[
+	{"id":"1","currentBalance":"25000","dailySpent":"572","lastTopup":"0","atf":{
+		"atfAccountNumber": "P10318",
+		"atfAccountName": "ARRIVA BUS & COACH",
+		"atfAddress": "Heath Ln, Northwich CW8 4RH",
+		"atfBalance": "10000"
+	}},
+	{"id":"2","currentBalance":"950","dailySpent":"572","lastTopup":"0", "atf":{
+		"atfAccountNumber": "P50377",
+		"atfAccountName": "ARRIVA CANNOCK",
+		"atfAddress": "Heath Ln, Northwich CW8 4RH",
+		"atfBalance": "245"
+	}},
+	{"id":"3","currentBalance":"15","dailySpent":"572","lastTopup":"0", "atf":{
+		"atfAccountNumber": "P50378",
+		"atfAccountName": "ARRIVA DERBY",
+		"atfAddress": "Heath Ln, Northwich CW8 4RH",
+		"atfBalance": "5000"
+	}}
+]

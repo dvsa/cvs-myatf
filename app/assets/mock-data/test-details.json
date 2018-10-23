@@ -1,0 +1,98 @@
+[
+	{
+		"activity": "Wait time",
+		"startEndTime": "10:25 - 10:35",
+		"fee":"",
+		"vat":"",
+		"totalFees": "",
+		"details": "Training/Administration"
+	},
+	{
+		"activity": "PO58LFN\n2 AXLE MOTOR VEHICLE ANNUAL TEST",
+		"startEndTime": "08:00 - 08:51",
+		"fee":"91.00",
+		"vat":"0.00",
+		"totalFees": "91.00",
+		"details": "Download certificate"
+	},
+	{
+		"activity": "KV63CYC\n2 AXLE MOTOR VEHICLE ANNUAL TEST",
+		"startEndTime": "08:52 - 09:27",
+		"fee":"91.00",
+		"vat":"0.00",
+		"totalFees": "91.00",
+		"details": "Download certificate"
+	},
+	{
+		"activity": "YV2TBMOA29B533322\n3 AXLE TRAILER ANNUAL TEST",
+		"startEndTime": "09:27 - 10:05",
+		"fee":"64.00",
+		"vat":"0.00",
+		"totalFees": "64.00",
+		"details": "Download certificate"
+	},
+	{
+		"activity": "Wait time",
+		"startEndTime": "10:05 - 11:45",
+		"fee":"",
+		"vat":"",
+		"totalFees": "",
+		"details": "Waiting for Vehicle"
+	},
+	{
+		"activity": "Wait time",
+		"startEndTime": "11:45 - 12:36",
+		"fee":"",
+		"vat":"",
+		"totalFees": "",
+		"details": "Lunch"
+	},
+	{
+		"activity": "WDB9505072K979292\n1 AXLE TRAILER ANNUAL TEST",
+		"startEndTime": "12:36 - 13:27",
+		"fee":"41.00",
+		"vat":"0.00",
+		"totalFees": "41.00",
+		"details": "Download certificate"
+	},	
+	{
+		"activity": "CN54MKU\n3 AXLE MOTOR VEHICLE ANNUAL TEST",
+		"startEndTime": "12:36 - 13:26",
+		"fee":"188.00",
+		"vat":"0.00",
+		"totalFees": "188.00",
+		"details": "Download certificate"
+	},	
+	{
+		"activity": "Wait time",
+		"startEndTime": "13:27 - 13:50",
+		"fee":"",
+		"vat":"",
+		"totalFees": "",
+		"details": "Waiting for vehicle"
+	},	
+	{
+		"activity": "WV63VBN\n2 AXLE MOTOR VEHICLE ANNUAL TEST",
+		"startEndTime": "13:50 - 14:37",
+		"fee":"133.00",
+		"vat":"0.00",
+		"totalFees": "133.00",
+		"details": "Download certificate"
+	},
+	{
+		"activity": "Under Utilisation Fee",
+		"startEndTime": "",
+		"fee":"174.00",
+		"vat":"34.80",
+		"totalFees": "208.80",
+		"details": ""
+	},
+	{
+		"activity": "Total",
+		"startEndTime": "",
+		"fee":"756.00",
+		"vat":"34.80",
+		"totalFees": "790.80",
+		"details": ""
+	}
+]

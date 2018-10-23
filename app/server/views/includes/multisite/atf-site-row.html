@@ -1,0 +1,24 @@
+{% import '../../macros/balance-message.html' as balanceMessage %}
+
+<div class="atf-site-row atf-m-t-20">
+	<div class="clearfix">
+		<div class="atf-float-left">
+			<p class="atf-grey atf-m-b-5">
+				{{atfSite.atfAccountNumber}}
+			</p>
+			<h3 class="heading-medium atf-m-t-0 atf-m-b-5">
+				{{atfSite.atfAccountName}}
+			</h3>
+			<p class="atf-m-b-5">
+				{{atfSite.atfAddress}}
+			</p>
+		</div>
+		<div class="atf-float-right">
+			<a href="{{urlRoot}}prototype/set-account/{{atfSite.atfAccountNumber}}" aria-label="{{atfSite.atfAccountName}}">
+				See site breakdown
+			</a>
+		</div>
+	</div>
+	{{ balanceMessage.balanceMessage(atfSite.atfBalanceCategory, atfSite.atfBalanceString) }}
+	<hr />
+</div>

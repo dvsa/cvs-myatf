@@ -1,0 +1,17 @@
+.atf-box {
+	&.atf-blue {
+		background-color: $govuk-blue;
+		.atf-box-content {
+			padding: 25px;
+		}
+	}
+	&.atf-grey {
+		background-color: $grey-3;
+		.atf-box-content {
+			padding: 15px;
+		}
+	}
+	.atf-box-content {
+		padding: 15px;
+	}
+}

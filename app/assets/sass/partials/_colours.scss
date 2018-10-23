@@ -1,0 +1,39 @@
+
+$atf-bg-grey-1: #eeeeee;
+$atf-bg-green-1: #ebf7f7;
+$atf-bg-red-1: #fdeced;
+$atf-bg-yellow-1: #fef2d9;
+$warning-colour: #fdbd5d;
+
+.atf-grey {
+	color: $grey-1;
+}
+
+.atf-black {
+	color: $black;
+}
+
+.atf-white {
+	color: $white;
+}
+
+.atf-background-white {
+	background-color: $white;
+	padding: 10px;
+}
+
+.atf-background-grey {
+	background-color: $atf-bg-grey-1;
+}
+
+.atf-background-green {
+	background-color: $atf-bg-green-1;
+}
+
+.atf-background-red {
+	background-color: $atf-bg-red-1;
+}
+
+.atf-background-yellow {
+	background-color: $atf-bg-yellow-1;
+}

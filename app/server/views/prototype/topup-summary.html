@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+	Manage your Authorised Testing Facility
+{% endblock %}
+
+{% block page_content %}
+<div>
+	<span class="atf-grey atf-m-t-30">{{ atfName }}</span>
+</div>
+<div>
+    <h1 class="heading-large">
+            Review the amount you are about to top up
+    </h1>
+
+    <table>
+    <tr aria-hidden="true"><th></th><th></th><th></th></tr>
+    <tr>
+        <th>Top up amount</th>
+        <td class="numeric">&pound;{{ data['topup-amount'] }}</td>
+        <td class="atf-align-right"><a href="{{urlRoot}}prototype/topup">
+            Change<span class="visually-hidden"> top up amount</span>
+        </a></td>
+    </tr>
+    </table>
+
+    <div role="note" aria-label="information" class="panel panel-border-wide atf-summary-border atf-background-grey atf-m-t-50"> 
+        <p>
+            By selecting ‘Top up account’ you will be taken to the website of our chosen debit / credit card processor. The data you enter is secure and not shared.
+        </p>
+    </div>
+
+    <div class="form-group atf-m-t-60">
+        <a href="{{urlRoot}}prototype/cpms-step-1" class="button">Top up account</a>
+    </div>
+</div>
+
+{% endblock %}
+
+

@@ -4,27 +4,27 @@
   uses nodemon to run a server, watches for javascript and json changes
 */
 
-const fs = require('fs')
-const path = require('path')
+const fs = require('fs');
+const path = require('path');
 
-const gulp = require('gulp')
-const nodemon = require('gulp-nodemon')
+const gulp = require('gulp');
+const nodemon = require('gulp-nodemon');
 
-const config = require('./config.json')
+const config = require('./config.json');
 
-gulp.task('server', function () {
-  nodemon({
-    watch: ['.env', '**/*.js', '**/*.json'],
-    script: 'server.js',
-    ignore: [config.paths.public + '*',
-      config.paths.assets + '*',
-      config.paths.nodeModules + '*']
-  }).on('quit', function () {
-    // remove .port.tmp if it exists
-    try {
-      fs.unlinkSync(path.join(__dirname, '/../.port.tmp'))
-    } catch (e) {}
+gulp.task('server', () => {
+	nodemon({
+		script: 'server.js',
+		watch: 'app/server',
+		ext: 'js, json, html',
+		ignore: [`${config.paths.public}*`,
+			`${config.paths.assets}*`,
+			`${config.paths.nodeModules}*`],
+		tasks: ['babel-server', 'copy-views']
+	}).on('quit', () => {
+		// remove .port.tmp if it exists
+		fs.unlinkSync(path.join(__dirname, '/../.port.tmp'));
 
-    process.exit(0)
-  })
-})
+		process.exit(0);
+	});
+});

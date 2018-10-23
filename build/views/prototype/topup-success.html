@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+	Manage your Authorised Testing Facility
+{% endblock %}
+
+{% block page_content %}
+<div>
+	<span class="atf-grey atf-m-t-30">{{ atfName }}</span>
+</div>
+<div>
+    <h1 class="heading-large">
+            Top up confirmation
+    </h1>
+
+    <div role="note" aria-label="information" class="panel panel-border-wide atf-success-border atf-background-green">
+        <p>
+            Payment has been successful and your new account balance is &pound;{{ account.currentBalance }}
+        </p>
+    </div>
+
+    <h2 class="heading-medium">Top up summary</h2>
+
+    <table>
+        <tr aria-hidden="true"><th></th><th></th></tr>
+        <tr>
+            <th>Top up amount</th>
+            <td class="numeric">&pound;{{ data['topup-amount'] }}</td>
+        </tr>
+    </table>
+    <br />
+    <h2 class="heading-small">What happens next?</h2>
+    <p class="atf-m-t-30"><a href="{{urlRoot}}prototype/topup">Top up your account again</a></p>
+    <p><a href="{{urlRoot}}prototype/account-summary">Return to your account</a></p>
+</div>
+
+{% endblock %}
+
+
