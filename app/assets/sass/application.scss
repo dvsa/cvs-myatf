@@ -16,12 +16,10 @@ $govuk-global-styles: true;
 
 // DY-Styles
 
- .govuk-topnav a {
-   text-decoration: none;
-   color: inherit;
- }
- .govuk-topnav li {
-   float: right;
-   margin-left: 6%;
-   margin-top: 2%;
- }
+.atf-name-address-activity {
+  margin-top: 5%;
+}
+
+.atf-name-address-activity span{
+  margin-top: -2%;
+}
