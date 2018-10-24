@@ -16,13 +16,12 @@ $govuk-global-styles: true;
 
 // DY-Styles
 
-.vertical-space p {
-margin: 0 0 40px 0;
-}
-
-.topright{
-  width: 33%;
-  position: absolute;
-  top:0;
-  right:0;
+ .govuk-topnav a {
+   text-decoration: none;
+   color: inherit;
+ }
+ .govuk-topnav li {
+   float: right;
+   margin-left: 6%;
+   margin-top: 2%;
  }
