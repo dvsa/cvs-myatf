@@ -16,10 +16,14 @@ $govuk-global-styles: true;
 
 // DY-Styles
 
-.atf-name-address-activity {
-  margin-top: 5%;
+.govuk-grid-column-one-third hr {
+  border-color: #dee0e2;
 }
 
-.atf-name-address-activity span{
-  margin-top: -2%;
+.govuk-grid-row span {
+  margin-top: 10%;
 }
+.govuk-grid-column-one-third a {
+  color:#005ea5;
+}
+

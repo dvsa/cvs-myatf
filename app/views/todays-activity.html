@@ -9,41 +9,106 @@ Beta prototype
 {% block beforeContent %}
 
 <div class="govuk-phase-banner">
-        <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
-        beta
-      </strong>
-          <span class="govuk-phase-banner__text">
+    <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
+            beta
+        </strong>
+        <span class="govuk-phase-banner__text">
             This is a new service – your
             <a class="govuk-link" href="#">feedback</a> will help us to improve it.
-          </span>
-        </p>
-      </div>
+        </span>
+    </p>
+</div>
+{% endblock %}
+{% block content %}
 
+<a href="#" class="govuk-back-link">Home</a>
 
 <div class="govuk-breadcrumbs">
-        <ol class="govuk-breadcrumbs__list">
-          <li class="govuk-breadcrumbs__list-item" aria-current="page">Today's activity</li>
-        </ol>
-      </div>
-
-<div class ="govuk-grid-column-two-thirds">
-<div class="atf-name-address-activity">
-    <h2 class="govuk-heading-l">
-        P57832 Scania Lincoln
-    </h2>
-    <span id="with-hint-hint" class="govuk-hint">
-        Heath Ln, Northwich CW8 4RH
-    </span>
-
-    <br><br>
-
-    <h1 class="govuk-heading-xl">
-        Today's activity
-    </h1>
-    <span id="with-hint-hint" class="govuk-hint">
-        Monday October 15 2018
-    </span>
+    <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item" aria-current="page">Today's activity</li>
+    </ol>
 </div>
+
+<div class="govuk-width-container">
+    <main class="govuk-main-wrapper">
+
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+                <h1 class="govuk-heading-l">
+                    P57832 Scania Lincoln</h1>
+                <span id="with-hint-hint" class="govuk-hint">
+                    Heath Ln, Northwich CW8 4RH
+                </span>
+            </div>
+        </div>
+
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+                <h1 class="govuk-heading-xl">Today's activity</h1>
+                <span id="with-hint-hint" class="govuk-hint">Monday October 15 2018</span>
+            </div>
+
+            <div class="govuk-grid-column-one-third">
+                <aside class="app-related-items" role="complementary">
+                    <h2 class="govuk-heading-m" id="subsection-title">
+                        MyATF lane activity
+                    </h2>
+                    <nav role="navigation" aria-labelledby="subsection-title">
+                        <ul class="govuk-list govuk-!-font-size-16">
+                            <li>
+                                <a href="#">
+                                    Activity history
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Cancel a booked test period
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <br>
+                    <hr>
+                    <br>
+                    <p class ="govuk-body">Useful links</p>
+                    <nav role="navigation" aria-labelledby="subsection-title">
+                        <ul class="govuk-list govuk-!-font-size-16">
+                            <li>
+                                <a href="#">
+                                    Test fees
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Vehicle history
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </aside>
+            </div>
+        </div>
+    </main>
+</div>
+
+<!-- <div class="govuk-grid-column-two-thirds">
+    <div class="atf-name-address-activity">
+        <h2 class="govuk-heading-l">
+            P57832 Scania Lincoln
+        </h2>
+        <span id="with-hint-hint" class="govuk-hint">
+            Heath Ln, Northwich CW8 4RH
+        </span>
+
+        <br><br>
+
+        <h1 class="govuk-heading-xl">
+            Today's activity
+        </h1>
+        <span id="with-hint-hint" class="govuk-hint">
+            Monday October 15 2018
+        </span>
+    </div>
 </div>
 
 
@@ -76,13 +141,8 @@ Beta prototype
         </nav>
     </aside>
 
-</div>
+</div> -->
 
-
-
-
-
-</div>
 
 
 {% endblock %}
