@@ -1,0 +1,115 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Full width template
+{% endblock %}
+
+<!–– Beta header ––>
+
+{% block beforeContent %}
+
+{% from "phase-banner/macro.njk" import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "beta"
+},
+html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+
+<!–– Breadcrumbs ––>
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Section</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link">Subsection</a>
+    </li>
+  </ol>
+</div>
+{% endblock %}
+
+<div id="div1">The two divs are</div>
+<div id="div2">next to each other.</div>
+
+{% block content %}
+
+<h1 class="govuk-heading-xl">
+  Full width template
+</h1>
+
+<body class="govuk-template__body ">
+  <script>
+    document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+
+  </script>
+
+  <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+
+
+
+
+
+  <script src="/govuk-frontend/all.js"></script>
+  <script>
+    window.GOVUKFrontend.initAll()
+
+  </script>
+
+<!–– 5 column table  ––>
+
+<table class="govuk-table">
+  <caption class="govuk-table__caption">Here's a 5 column table</caption>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col">Month you apply</th>
+      <th class="govuk-table__header govuk-table__header--numeric" scope="col">Rate for bicycles</th>
+      <th class="govuk-table__header govuk-table__header--numeric" scope="col">Rate for vehicles</th>
+      <th class="govuk-table__header govuk-table__header--numeric" scope="col">Something else</th>
+      <th class="govuk-table__header govuk-table__header--numeric" scope="col">Another thing</th>
+      <th class="govuk-table__header govuk-table__header--numeric" scope="col">Yet Another thing</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell" scope="row">January</td>
+      <td class="govuk-table__cell govuk-table__cell--numeric">£85</td>
+      <td class="govuk-table__cell govuk-table__cell--numeric">£95</td>
+      <td class="govuk-table__cell govuk-table__cell--numeric">£95</td>
+      <td class="govuk-table__cell govuk-table__cell--numeric">£95</td>
+      <td class="govuk-table__cell govuk-table__cell--numeric">£95</td>
+    </tr>
+    
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell" scope="row">February</td>
+      <td class="govuk-table__cell govuk-table__cell--numeric">£75</td>
+      <td class="govuk-table__cell govuk-table__cell--numeric">£55</td>
+      <td class="govuk-table__cell govuk-table__cell--numeric">£95</td>
+      <td class="govuk-table__cell govuk-table__cell--numeric">£95</td>
+      <td class="govuk-table__cell govuk-table__cell--numeric">£95</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <td class="govuk-table__cell" scope="row">March</td>
+      <td class="govuk-table__cell govuk-table__cell--numeric">£165</td>
+      <td class="govuk-table__cell govuk-table__cell--numeric">£125</td>
+      <td class="govuk-table__cell govuk-table__cell--numeric">£95</td>      
+      <td class="govuk-table__cell govuk-table__cell--numeric">£95</td>
+      <td class="govuk-table__cell govuk-table__cell--numeric">£95</td>
+    </tr>
+    
+  </tbody>
+</table>
+
+
+
+
+
+</body>
+
+</html>
+{% endblock %}

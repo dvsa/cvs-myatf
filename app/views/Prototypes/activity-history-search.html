@@ -1,0 +1,238 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Activity history
+{% endblock %}
+
+<!–– Beta header ––>
+
+{% block beforeContent %}
+
+{% from "phase-banner/macro.njk" import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "beta"
+},
+html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+
+<!–– Breadcrumbs ––>
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="todays-activity.html">Today's activity</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link">Select activity period</a>
+    </li>
+  </ol>
+</div>
+{% endblock %}
+
+{% block content %}
+<h2 class="govuk-heading-m">
+  P57832 Scania Lincoln
+</h2>
+
+
+
+<body class="govuk-template__body ">
+
+
+  <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+
+
+
+
+
+  <script src="/govuk-frontend/all.js"></script>
+  <script>
+    window.GOVUKFrontend.initAll()
+
+  </script>
+
+  <div class="govuk-form-group">
+    <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+        <h1 class="govuk-fieldset__heading">
+          Select activity period
+        </h1>
+      </legend>
+      <span id="how-contacted-conditional-hint" class="govuk-hint">
+        Select one option.
+      </span>
+      <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="how-contacted-conditional-1" name="how-contacted" type="radio" value="email"
+            data-aria-controls="conditional-how-contacted-conditional-1">
+          <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-1">
+            Select a single date
+          </label>
+        </div>
+
+        <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-1">
+
+          <!–– dropdown ––>
+
+          <span id="dob-hint" class="govuk-hint">
+            For example, 31 3 1980
+          </span>
+          <div class="govuk-date-input" id="dob">
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="dob-day">
+                  Day
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-day" name="dob-day"
+                  type="number" pattern="[0-9]*">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="dob-month">
+                  Month
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-month" name="dob-month"
+                  type="number" pattern="[0-9]*">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="dob-year">
+                  Year
+                </label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="dob-year" name="dob-year"
+                  type="number" pattern="[0-9]*">
+              </div>
+            </div>
+          </div>
+
+
+          <!–– dropdown ––>
+
+        </div>
+
+
+
+
+
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="how-contacted-conditional-2" name="how-contacted" type="radio" value="phone"
+            data-aria-controls="conditional-how-contacted-conditional-2">
+          <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+            Select a longer period of time
+          </label>
+        </div>
+        <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-2">
+
+
+          <!–– dropdown ––>
+
+          <div id="divdate21">
+
+              <span id="dob-hint" class="govuk-hint">
+                  <strong class="bold-small" style="color:black">From:</strong><br />for example, 31 3 2017
+              </span>
+      
+              <div class="govuk-date-input">
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="dob-day">
+                      Day
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-day" name="dob-day" type="number"
+                      pattern="[0-9]*">
+                  </div>
+                </div>
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="dob-month">
+                      Month
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-month" name="dob-month"
+                      type="number" pattern="[0-9]*">
+                  </div>
+                </div>
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="dob-year">
+                      Year
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="dob-year" name="dob-year"
+                      type="number" pattern="[0-9]*">
+                  </div>
+                </div>
+              </div>
+            </div>
+      
+            <div id="divdate22">
+      
+              <span id="divtitle2" class="govuk-hint">
+                  <strong class="bold-small" style="color:black">To:</strong> <br />for example, 31 3 2018
+              </span>
+      
+              <div class="govuk-date-input" id="divdate2">
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="dob-day">
+                      Day
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-day" name="dob-day" type="number"
+                      pattern="[0-9]*">
+                  </div>
+                </div>
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="dob-month">
+                      Month
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-month" name="dob-month"
+                      type="number" pattern="[0-9]*">
+                  </div>
+                </div>
+                <div class="govuk-date-input__item">
+                  <div class="govuk-form-group">
+                    <label class="govuk-label govuk-date-input__label" for="dob-year">
+                      Year
+                    </label>
+                    <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="dob-year" name="dob-year"
+                      type="number" pattern="[0-9]*">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          <!–– dropdown ––>
+
+        </div>
+      </div>
+    </fieldset>
+  </div>
+
+
+
+
+
+
+
+  <!–– Search button ––>
+
+
+  {% from "button/macro.njk" import govukButton %}
+
+  {{ govukButton({
+  "text": "Search",
+  "href": "activity-history-results.html",
+  "classes": "govuk-button"
+  }) }}
+
+
+</body>
+
+</html>
+{% endblock %}
