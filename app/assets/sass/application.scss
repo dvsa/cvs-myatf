@@ -31,6 +31,26 @@ $govuk-global-styles: true;
   color:#005ea5;
 }
 
+// Add vertical space between elements
+.v-space {
+  margin: 20px 0;
+  color: rgba(0, 0, 0, 0.0);
+}
+// Paste this (as many time as you want) between divs: <div><p class="v-space">space</p></div>
+
+
+
+// DY-Styles: myatf-account / datepicker
+
+#datepicker1 {
+  display: inline-block;
+  float: left;
+  width:100%;
+  padding-left: 20px;
+  padding-bottom: 20px
+}
+
+
 
 #divdate1 {
   display: inline-block;
@@ -40,5 +60,52 @@ $govuk-global-styles: true;
 #divdate2 {
   display: inline-block;
   float: left;
+  padding-left: 100px;
 }
 
+#divtitle2 {
+ 
+  padding-left: 100px;
+}
+
+
+// DY-Styles: myatf-account / radio buttons
+
+#radiopanel1 {
+  display: inline-block;
+  float: left;
+  width:100%;
+  padding-left: 20px;
+  padding-bottom: 20px
+}
+
+
+// DY-Styles: todays activity / running totals
+
+#runningtotal1 {
+
+  background-color: #DEE0E2; 
+  width:100%;
+  padding-left: 20px;
+  padding-bottom: 20px
+}
+
+#columpad1 {
+ 
+  padding-left: 10px;
+}
+
+// DY-Styles: todays activity-history-search / drop-downs
+
+#divdate21 {
+  display: inline-block;
+  float: left;
+  padding-left: 10px;
+ 
+}
+
+#divdate22 {
+  display: inline-block;
+  float: none;
+  padding-left: 0px;
+}
