@@ -1,0 +1,167 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+PFA balance
+{% endblock %}
+
+<!–– Beta header ––>
+
+{% block beforeContent %}
+
+{% from "phase-banner/macro.njk" import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "beta"
+},
+html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+
+<!–– Breadcrumbs ––>
+
+<div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="#">Home</a>
+        </li>
+
+        <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link">Pre-funded account</a>
+        </li>
+    </ol>
+</div>
+
+
+{% endblock %}
+{% block content %}
+
+<!-- Headings start here -->
+
+<div class="govuk-width-container">
+
+    <main class="govuk-main-wrapper">
+
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+                <h2 class="govuk-heading-m">
+                    P57832 Scania Lincoln
+                </h2>
+
+
+                <h1 class="govuk-heading-xl" style="margin-bottom: 2px">Pre-funded account</h1>
+                <span id="with-hint-hint" class="govuk-hint" style="margin-top: 0%;">Monday October 8 2018</span>
+
+
+                <!-- summary block starts here -->
+                <div>
+                    <p class="v-space">space</p>
+                </div>
+                <div>
+                    <table class="govuk-table" id="runningtotal1">
+                        <h1 class="govuk-fieldset__legend--m">
+                            Account at 0:00am on Monday 8 October 2018
+                        </h1>
+
+
+
+                        <tbody class="govuk-table__body">
+                            <col width="80%">
+                            <col width="20%">
+                            <tr class="govuk-table__row">
+                                <th class="govuk-table__header" scope="row" id="columpad1" style="border-color:white">
+                                    Balance</th>
+                                <td class="govuk-table__cell" style="border-color:white; text-align: right; padding-right:5px;">£2,123.89</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+
+                </div>
+                {% from "inset-text/macro.njk" import govukInsetText %}
+
+                {{ govukInsetText({
+                text: "Your Pre-funded account (PFA) balance is low. Based on your average activity, your PFA will run
+                out of funds in two days."
+                }) }}
+
+                {% from "button/macro.njk" import govukButton %}
+
+                {{ govukButton({
+                text: "Top up your PFA"
+                }) }}
+
+
+
+                <div>
+                    <p class="v-space">space</p>
+                </div>
+
+
+            </div>
+
+
+            <!-- Sidebar -->
+
+
+            <div class="govuk-grid-column-one-third">
+                <aside class="app-related-items" role="complementary">
+                    <h2 class="govuk-heading-m" id="subsection-title">
+                        MyATF financial activity
+                    </h2>
+                    <nav role="navigation" aria-labelledby="subsection-title">
+                        <ul class="govuk-list govuk-!-font-size-16">
+
+                            <li>
+                                <a href="myatf-account-date.html">
+                                    All payments, top ups and invoices
+                                </a>
+                            </li>
+                            <li>
+                                <a href="activity-history-search.html">
+                                    Activity history
+                                </a>
+                            </li>
+                            <li>
+                            <li>
+                                <a href="todays-activity.html">
+                                    Today's activity
+                                </a>
+                            </li>
+                            <li>
+                            <li>
+                                <a href="#">
+                                    Request a refund
+                                </a>
+                            </li>
+                            <li>
+                            <li>
+                                <a href="#">
+                                    Set up a balance alert
+                                </a>
+                            </li>
+                            <li>
+                        </ul>
+                    </nav>
+                    <br>
+                    <hr>
+                    <br>
+                    <p class="govuk-body">Useful links</p>
+                    <nav role="navigation" aria-labelledby="subsection-title">
+                        <ul class="govuk-list govuk-!-font-size-16">
+                            <li>
+                                <a href="#">
+                                    DVSA test fees (opens in a new window)
+                                </a>
+                            </li>
+
+                        </ul>
+                    </nav>
+                </aside>
+            </div>
+        </div>
+
+    </main>
+</div>
+
+
+{% endblock %}
