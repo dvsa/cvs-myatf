@@ -69,7 +69,50 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
 
 
-  
+  {% block radios %}
+  <!–– Radios ––>
+  <hr>
+
+  <div style=class="govuk-form-group">
+    <fieldset class="govuk-fieldset" aria-describedby="changed-name-hint">
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+        <h1 class="govuk-fieldset__legend--m">
+          Select a payment type to view
+        </h1>
+      </legend>
+
+
+
+      <div class="govuk-radios govuk-radios--inline">
+
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="changed-name-1" name="changed-name" type="radio" value="all-payments"
+            checked="checked">
+          <label class="govuk-label govuk-radios__label" for="changed-name-1">
+            All transactions
+          </label>
+        </div>
+
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="changed-name-2" name="changed-name" type="radio" value="invoices">
+          <label class="govuk-label govuk-radios__label" for="changed-name-2">
+            Invoices
+          </label>
+        </div>
+
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="changed-name-3" name="changed-name" type="radio" value="top-ups">
+          <label class="govuk-label govuk-radios__label" for="changed-name-3">
+            Account top-ups
+          </label>
+        </div>
+
+      </div>
+    </fieldset>
+  </div>
+  <hr>
+
+  {% endblock %}
 
 
 
@@ -77,7 +120,9 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
   <!–– 6 column table  ––>
 
-  
+  <div>
+    <p class="v-space">space</p>
+  </div>
 
   <table class="govuk-table">
     <h1 class="govuk-fieldset__legend--m">
