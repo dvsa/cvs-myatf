@@ -35,12 +35,41 @@
 {% block header %}
   {% include "includes/cookie-banner.html" %}
   {# Set serviceName in config.js. #}
-  {{ govukHeader({
-    homepageUrl: "/",
-    serviceName: serviceName,
-    serviceUrl: "/",
-    containerClasses: "govuk-width-container"
-  }) }}
+  {% from "header/macro.njk" import govukHeader %}
+
+{{ govukHeader({
+  homepageUrl: "home.html",
+  serviceName: "Prototype: Manage your ATF (MyATF)",
+  serviceUrl: "home.html",
+  navigation: [
+    {
+      href: "home.html",
+      text: "Home",
+      active: false
+    },
+    {
+      href: "todays-activity.html",
+      text: "Vehicle testing",
+      active: false
+    },
+    {
+      href: "account-balance.html",
+      text: "Records and acounts",
+      active: false
+      
+    },
+    {
+      href: "#3",
+      text: "Account settings",
+      active: false
+    },
+    {
+      href: "#4",
+      text: "Log out",
+      active: false
+    }
+  ]
+}) }}
 {% endblock %}
 
 {% if useAutoStoreData %}
