@@ -35,9 +35,8 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 {% endblock %}
 
 {% block content %}
-<h2 class="govuk-heading-m">
-  P57832 Scania Lincoln
-</h2>
+<span id="with-hint-hint" class="govuk-hint" style="margin-top: 0%; margin-bottom: 0%;">P57832 Scania Lincoln</span>
+<thead class="govuk-table__head">
 
 
 
@@ -63,6 +62,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
           Select activity period
         </h1>
       </legend>
+      <div><p class="v-space10">space</p></div>
       <span id="how-contacted-conditional-hint" class="govuk-hint">
         Select one option.
       </span>
