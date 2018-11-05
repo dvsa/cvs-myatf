@@ -16,6 +16,16 @@ $govuk-global-styles: true;
 
 // DY-Styles
 
+
+
+hr {
+  border: none;
+  height: 1px;
+  /* Set the hr color */
+  color: #BFC1C3; /* old IE */
+  background-color: #BFC1C3; /* Modern Browsers */
+}
+
 .govuk-grid-column-one-third hr {
   border-color: #dee0e2;
 }
