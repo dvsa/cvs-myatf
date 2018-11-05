@@ -214,19 +214,26 @@ hr {
   Width: 100%;
 } 
 
-
+// DY-Styles: Nav / two column local nav list <div style="localbox"></div>
 
 .localbox {
-  display: inline-block;
+  display: inline;
   width: 500px;
   height: 100px;
   
 }
 
 .localbox2 {
-  background-color: #dee0e2;
-  display: inline-block;
+
+  display: inline;
   width: 400px;
   height: 100px;
   padding: 2em;
+}
+
+.box2 {
+  float: left;
+  width: 200px;
+  height: 100px;
+  margin: 1em;
 }
