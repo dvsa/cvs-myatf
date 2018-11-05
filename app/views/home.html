@@ -30,9 +30,12 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
 {% block content %}
 
+<span id="with-hint-hint" class="govuk-hint" style="margin-top: 0%; margin-bottom: 0%;">P57832 Scania Lincoln</span>
+<thead class="govuk-table__head">
 
 <h1 class="govuk-heading-xl" style="margin-bottom: 2px">MyATF</h1>
-                <span id="with-hint-hint" class="govuk-hint" style="margin-top: 0%;">P57832 Scania Lincoln</span>
+
+
 
 
 
@@ -55,43 +58,87 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
   </script>
 
 
-
+<div><p class="v-space">space</p></div>
   <ul class="register-themes">
 
-    <li class="register-theme"><a class="register-theme__link" href="account-balance.html">
-        <h3 class="register-theme__heading govuk-heading-s govuk-!-margin-bottom-0 govuk-!-padding-bottom-1">Pre-funded account</h3>
-        <p class="register-theme__description govuk-body-s">View balance, transaction history and statements. Top up and set up direct debits.</p>
-        <p><strong>Current Balance: £2,123.89</strong></p><div><strong>Low balance alert: </strong>Your Prefunded account has fallen below £3000.</div></p>
-      </a></li>
-
     <li class="register-theme"><a class="register-theme__link" href="todays-activity.html">
-        <h3 class="register-theme__heading govuk-heading-s govuk-!-margin-bottom-0 govuk-!-padding-bottom-1">Vehicle testing</h3>
-        <p class="register-theme__description govuk-body-s">View today's activity in real-time, test history and utilisation</p><p></p>
-        <p><strong>Average utlisation: 94%</strong></p>
+      <h3 class="register-theme__heading govuk-heading-m govuk-!-margin-bottom-0 govuk-!-padding-bottom-1">Vehicle
+        testing</h3>
+      
+<p class="register-theme__description">
+        <ul class="govuk-list govuk-body-s">
+          <li>Track today's activity in real-time</li> 
+          <li>View activity history</li> 
+
+          <li>View H&S issues</li>
+          <li>Cancel a VSA</li>
+       
+      
+      </ul></p>
+
+
+      <p></p>
+
+
+    
+    <li class="register-theme"><a class="register-theme__link" href="account-balance.html">
+        <h3 class="register-theme__heading govuk-heading-m govuk-!-margin-bottom-0 govuk-!-padding-bottom-1">Records
+          and accounts</h3>
+          <p class="register-theme__description">
+              <ul class="govuk-list govuk-body-s">
+                <li>View PFA</li> 
+                <li>Top up PFA</li> 
+                <li>View transactions</li>
+                <li>View statements</li>
+                <li>View invoices</li>
+                <li>Request a refund</li>
+             
+            
+            </ul></p>
       </a></li>
 
-    <li class="register-theme"><a class="register-theme__link" href="#">
-        <h3 class="register-theme__heading govuk-heading-s govuk-!-margin-bottom-0 govuk-!-padding-bottom-1">Site issues</h3>
-        <p class="register-theme__description govuk-body-s">View and maage health and safety issues raised</p><p></p>
-        <p><strong>No outstanding site issues</strong></p>
+
+       
+      </a></li>
+
+    <li class="register-theme"><a class="register-theme__link" href="account-balance.html">
+        <h3 class="register-theme__heading govuk-heading-m govuk-!-margin-bottom-0 govuk-!-padding-bottom-1" style="color: red">Low
+          balance alert</h3>
+<p></p>
+
+        <p class="register-theme__description govuk-body-m">Your prefunded account has fallen below £3000</p> <p class="register-theme__description govuk-body-m"><strong>Top up now</strong></p>
+
       </a></li>
 
 
 
   </ul>
+  <div><p class="v-space">space</p></div>
+
   
 
-<hr>
 
 
 
+  <h2 class="govuk-heading-m">Account settings</h2>
 
-<h2 class="govuk-heading-m">Account settings</h2>
-<p><a href="#" class="govuk-link">ATF contact details</a></p>
-<p><a href="#" class="govuk-link">Manage user access</a></p>
-<p><a href="#" class="govuk-link">Set up email and SMS low balance alerts</a></p>
-<p><a href="#" class="govuk-link">Manage email preferences</a></p>
-<p><a href="#" class="govuk-link">Logout</a></p>
+  <ul class="govuk-list">
+      <li>
+        <a class="govuk-link" href="#">ATF contact details</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="#">Manage user access</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="#">Set up email and SMS low balance alerts</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="#">Manage email preferences</a>
+      </li>
+      <li>
+          <a class="govuk-link" href="#">Logout</a>
+        </li>
+    </ul>
 
 
 
