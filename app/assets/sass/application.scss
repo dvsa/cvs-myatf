@@ -31,12 +31,19 @@ $govuk-global-styles: true;
   color:#005ea5;
 }
 
-// Add vertical space between elements
+// Add 20px vertical space between elements
 .v-space {
   margin: 20px 0;
   color: rgba(0, 0, 0, 0.0);
 }
 // Paste this (as many time as you want) between divs: <div><p class="v-space">space</p></div>
+
+// Add 10px vertical space between elements
+.v-space10 {
+  margin: 10px 0;
+  color: rgba(0, 0, 0, 0.0);
+}
+// Paste this (as many time as you want) between divs: <div><p class="v-space10">space</p></div>
 
 
 
@@ -130,7 +137,10 @@ $govuk-global-styles: true;
 
 .register-theme__link {
   background: #f8f8f8;
-  border: 1px solid #bfc1c3;
+  
+  outline-style: solid;
+  outline-color: #bfc1c3;
+  outline-width: thin;
   box-sizing: border-box;
   display: block;
   height: 100%;
@@ -145,9 +155,11 @@ $govuk-global-styles: true;
 }
 
 .register-theme__link:hover {
-  background: #2B8CC4;
+  background: white;
   color: white !important;
-  border: 1px solid #bfc1c3;
+  outline-style: solid;
+  outline-color: 	#2b8cc4;
+  outline-width: medium;
   box-sizing: border-box;
   display: block;
   height: 100%;
@@ -163,7 +175,8 @@ $govuk-global-styles: true;
 
 .home_alert {
   
-  color:#005EA5; 
+  border-color: coral;
+  color:white; 
   background: white; 
   height: 80px;
   width: 100%;
@@ -174,5 +187,36 @@ $govuk-global-styles: true;
 
 
 
+// DY-Styles: Nav / horizontal top nav bar
+
+.first-page-menu-list li {
+  
+  display: inline;
+  padding: 10px;
+  
+}
 
 
+.bg-block {
+  background-color: #F8F8F8;
+  color: black;
+  padding: 5px;
+  Width: 100%;
+} 
+
+
+
+.localbox {
+  display: inline-block;
+  width: 500px;
+  height: 100px;
+  
+}
+
+.localbox2 {
+  background-color: #dee0e2;
+  display: inline-block;
+  width: 400px;
+  height: 100px;
+  padding: 2em;
+}
