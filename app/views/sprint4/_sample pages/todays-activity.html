@@ -1,0 +1,221 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Beta prototype
+{% endblock %}
+
+<!–– Beta header ––>
+
+{% block beforeContent %}
+
+<div class="govuk-phase-banner">
+    <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag ">
+            beta
+        </strong>
+        <span class="govuk-phase-banner__text">
+            This is a new service – your
+            <a class="govuk-link" href="#" style = "color:#005ea5;">feedback</a> will help us to improve it.
+        </span>
+    </p>
+</div>
+{% endblock %}
+{% block content %}
+
+<a href="#" class="govuk-back-link" style = "display: inline;">Home</a> <a href="#" style = "text-decoration: none; color: #6f777b; float: right;">Sign out</a> <a href="#"style = "text-decoration: none; color: #6f777b; float: right; padding-right: 5em">Select ATF site</a>
+
+<hr class="govuk-section-break govuk-section-break--l govuk-section-break--visible">
+<div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item" aria-current="page">Today's activity</li>
+    </ol>
+</div>
+
+
+
+<div class="govuk-width-container">
+
+    <main class="govuk-main-wrapper">
+
+        <div class="govuk-grid-row">
+            <div class="govuk-grid-column-two-thirds">
+                <h1 class="govuk-heading-l" style ="margin-bottom: 2px; padding: 0px;">P57832 Scania Lincoln</h1>
+                <span id="with-hint-hint" class="govuk-hint" style ="margin-top: 0%;">
+                    Heath Ln, Northwich CW8 4RH
+                </span>
+                <br><br>
+                <h1 class="govuk-heading-xl" style = "margin-bottom: 2px">Today's activity</h1>
+                <span id="with-hint-hint" class="govuk-hint" style ="margin-top: 0%;">Monday October 15 2018</span>
+
+                <br><br><br>
+                <div style="background-color: #dee0e2; padding-top: 25px; padding-bottom: 45px; padding-left: 15px; padding-right: 25px;">
+                    <h3 class="govuk-heading-m" style="display: inline; float: left;">Daily running total</h3>
+                    <h3 class="govuk-heading-m" style="display: inline; float: right;">£1276</h3>
+                </div>
+
+                <br><br><br><br>
+                <!-- Table starts here -->
+
+                <table class="govuk-table" >
+                    <thead class="govuk-table__head">
+                        <tr class="govuk-table__row">
+                            <th class="govuk-table__header" scope="col">Tester</th>
+                            <th class="govuk-table__header" scope="col">Vehicle</th>
+                            <th class="govuk-table__header" scope="col">Activity</th>
+                            <th class="govuk-table__header" scope="col" style="text-align: right;">Start</th>
+                            <th class="govuk-table__header" scope="col" style="text-align: right;">End</th>
+                            <th class="govuk-table__header" scope="col" style="text-align: right;">Fees</th>
+                            <th class="govuk-table__header"style = "padding: 10px;" scope="col">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody class="govuk-table__body">
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">1</td>
+                            <td class="govuk-table__cell">CN54 MKU</td>
+                            <td class="govuk-table__cell">3 axle motor vehicle annual test</td>
+                            <td class="govuk-table__cell" style="text-align: right;">11:00</td>
+                            <td class="govuk-table__cell" style="text-align: right;"></td>
+                            <td class="govuk-table__cell" style="text-align: right;">£113.00</td>
+                            <td class="govuk-table__cell"style = "padding: 10px;">In progress</td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">1</td>
+                            <td class="govuk-table__cell">PO58 FLN</td>
+                            <td class="govuk-table__cell">2 axle TRAILER annual test</td>
+                            <td class="govuk-table__cell" style="text-align: right;">10:15</td>
+                            <td class="govuk-table__cell" style="text-align: right;">10:55</td>
+                            <td class="govuk-table__cell" style="text-align: right;">£54.00</td>
+                            <td class="govuk-table__cell"style = "padding: 10px;">Complete</td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">1</td>
+                            <td class="govuk-table__cell">KV63 CYC</td>
+                            <td class="govuk-table__cell">3 axle motor vehicle annual test</td>
+                            <td class="govuk-table__cell" style="text-align: right;">09:30</td>
+                            <td class="govuk-table__cell" style="text-align: right;">10:10</td>
+                            <td class="govuk-table__cell" style="text-align: right;">£113.00</td>
+                            <td class="govuk-table__cell"style = "padding: 10px;">Complete</td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">1</td>
+                            <td class="govuk-table__cell">JY52 PDF</td>
+                            <td class="govuk-table__cell">3 axle motor vehicle annual test</td>
+                            <td class="govuk-table__cell" style="text-align: right;">08:45</td>
+                            <td class="govuk-table__cell" style="text-align: right;">09:25</td>
+                            <td class="govuk-table__cell" style="text-align: right;">£113.00</td>
+                            <td class="govuk-table__cell"style = "padding: 10px;">Complete</td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">1</td>
+                            <td class="govuk-table__cell">X973 PYK</td>
+                            <td class="govuk-table__cell">4 axle motor vehicle annual test</td>
+                            <td class="govuk-table__cell" style="text-align: right;">08:00</td>
+                            <td class="govuk-table__cell" style="text-align: right;">08:40</td>
+                            <td class="govuk-table__cell" style="text-align: right;">£137.00</td>
+                            <td class="govuk-table__cell"style = "padding: 10px;">Complete</td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">2</td>
+                            <td class="govuk-table__cell">AB58 XWV</td>
+                            <td class="govuk-table__cell">2 axle motor vehicle annual test</td>
+                            <td class="govuk-table__cell" style="text-align: right;">12:36</td>
+                            <td class="govuk-table__cell" style="text-align: right;">13:26</td>
+                            <td class="govuk-table__cell" style="text-align: right;">£91.00</td>
+                            <td class="govuk-table__cell"style = "padding: 10px;">Complete</td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">2</td>
+                            <td class="govuk-table__cell"></td>
+                            <td class="govuk-table__cell">Wait time</td>
+                            <td class="govuk-table__cell" style="text-align: right;">10:45</td>
+                            <td class="govuk-table__cell" style="text-align: right;"></td>
+                            <td class="govuk-table__cell" style="text-align: right;"></td>
+                            <td class="govuk-table__cell"style = "padding: 10px;"></td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">2</td>
+                            <td class="govuk-table__cell">BM55 NLV</td>
+                            <td class="govuk-table__cell">3 axle motor vehicle annual test</td>
+                            <td class="govuk-table__cell" style="text-align: right;">10:05</td>
+                            <td class="govuk-table__cell" style="text-align: right;">10:45</td>
+                            <td class="govuk-table__cell" style="text-align: right;">£188.00</td>
+                            <td class="govuk-table__cell"style = "padding: 10px;">Complete</td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">2</td>
+                            <td class="govuk-table__cell">RP16 OJW</td>
+                            <td class="govuk-table__cell">02 axle motor vehicle annual test</td>
+                            <td class="govuk-table__cell" style="text-align: right;">09:55</td>
+                            <td class="govuk-table__cell" style="text-align: right;">10:00</td>
+                            <td class="govuk-table__cell" style="text-align: right;">£91.00</td>
+                            <td class="govuk-table__cell"style = "padding: 10px;">Complete</td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">2</td>
+                            <td class="govuk-table__cell">BB62 DYA</td>
+                            <td class="govuk-table__cell">3 axle motor vehicle annual test</td>
+                            <td class="govuk-table__cell" style="text-align: right;">08:45</td>
+                            <td class="govuk-table__cell" style="text-align: right;">09:45</td>
+                            <td class="govuk-table__cell" style="text-align: right;">£188.00</td>
+                            <td class="govuk-table__cell"style = "padding: 10px;">Complete</td>
+                        </tr>
+                        <tr class="govuk-table__row">
+                            <td class="govuk-table__cell">2</td>
+                            <td class="govuk-table__cell">CB56 KTP</td>
+                            <td class="govuk-table__cell">3 axle motor vehicle annual test</td>
+                            <td class="govuk-table__cell" style="text-align: right;">08:00</td>
+                            <td class="govuk-table__cell" style="text-align: right;">08:40</td>
+                            <td class="govuk-table__cell" style="text-align: right;">£188.00</td>
+                            <td class="govuk-table__cell"style = "padding: 10px;">Complete</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <a href="#">Download today's activity (CSV, 24KB)</a>
+            </div>
+
+            <div class="govuk-grid-column-one-third">
+                <aside class="app-related-items" role="complementary">
+                    <h2 class="govuk-heading-m" id="subsection-title">
+                        MyATF lane activity
+                    </h2>
+                    <nav role="navigation" aria-labelledby="subsection-title">
+                        <ul class="govuk-list govuk-!-font-size-16">
+                            <li>
+                                <a href="#">
+                                    Activity history
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Cancel a booked test period
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <br>
+                    <hr>
+                    <br>
+                    <p class="govuk-body">Useful links</p>
+                    <nav role="navigation" aria-labelledby="subsection-title">
+                        <ul class="govuk-list govuk-!-font-size-16">
+                            <li>
+                                <a href="#">
+                                    Test fees
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Vehicle history
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </aside>
+            </div>
+        </div>
+
+    </main>
+</div>
+
+
+{% endblock %}

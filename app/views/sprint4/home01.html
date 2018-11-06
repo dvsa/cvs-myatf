@@ -1,0 +1,96 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Home
+{% endblock %}
+
+<!–– Beta header ––>
+
+{% block beforeContent %}
+
+{% from "phase-banner/macro.njk" import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "beta"
+},
+html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+
+<!–– Breadcrumbs ––>
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link">Home</a>
+    </li>
+  </ol>
+</div>
+{% endblock %}
+
+{% block content %}
+
+
+<h1 class="govuk-heading-xl" style="margin-bottom: 2px">MyATF</h1>
+                <span id="with-hint-hint" class="govuk-hint" style="margin-top: 0%;">P57832 Scania Lincoln</span>
+
+
+
+<body class="govuk-template__body ">
+  <script>
+    document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+
+  </script>
+
+  <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+
+
+
+
+
+  <script src="/govuk-frontend/all.js"></script>
+  <script>
+    window.GOVUKFrontend.initAll()
+
+  </script>
+
+
+
+  <ul class="register-themes">
+
+    <li class="register-theme"><a class="register-theme__link" href="account-balance.html">
+        <h3 class="register-theme__heading govuk-heading-s govuk-!-margin-bottom-0 govuk-!-padding-bottom-1">Pre-funded account</h3>
+        <p class="register-theme__description govuk-body-s">View balance, transaction history and statements. Top up and set up direct debits.</p>
+        <p><strong>Current Balance: £2,123.89</strong></p><div><strong>Low balance alert: </strong>Your Prefunded account has fallen below £3000.</div></p>
+      </a></li>
+
+    <li class="register-theme"><a class="register-theme__link" href="todays-activity.html">
+        <h3 class="register-theme__heading govuk-heading-s govuk-!-margin-bottom-0 govuk-!-padding-bottom-1">Vehicle testing</h3>
+        <p class="register-theme__description govuk-body-s">View today's activity in real-time, test history and utilisation</p><p></p>
+        <p><strong>Average utlisation: 94%</strong></p>
+      </a></li>
+
+    <li class="register-theme"><a class="register-theme__link" href="#">
+        <h3 class="register-theme__heading govuk-heading-s govuk-!-margin-bottom-0 govuk-!-padding-bottom-1">Site issues</h3>
+        <p class="register-theme__description govuk-body-s">View and maage health and safety issues raised</p><p></p>
+        <p><strong>No outstanding site issues</strong></p>
+      </a></li>
+
+    <li class="register-theme"><a class="register-theme__link" href="#">
+        <h3 class="register-theme__heading govuk-heading-s govuk-!-margin-bottom-0 govuk-!-padding-bottom-1">Account settings</h3>
+        <p class="register-theme__description govuk-body-s">ATF contact details, user permissions, email and SMS preferences</p>
+        <div>Set up a low balance alert</div></p>
+      </a></li>
+
+  </ul>
+
+
+
+
+
+
+
+</body>
+
+</html>
+{% endblock %}

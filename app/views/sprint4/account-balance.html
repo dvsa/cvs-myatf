@@ -1,0 +1,210 @@
+{% extends "layout-account.html" %}
+
+{% block pageTitle %}
+PFA balance
+{% endblock %}
+
+<!–– Beta header ––>
+
+{% block beforeContent %}
+
+{% from "phase-banner/macro.njk" import govukPhaseBanner %}
+
+
+
+{{ govukPhaseBanner({
+tag: {
+text: "beta"
+},
+html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+
+
+
+<!–– Breadcrumbs ––>
+
+<div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="home.html">Home</a>
+        </li>
+
+        <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link">Pre-funded account</a>
+        </li>
+    </ol>
+</div>
+
+
+{% endblock %}
+{% block content %}
+
+<!-- Headings start here -->
+
+<div class="govuk-width-container">
+
+    <main class="govuk-main-wrapper">
+
+
+        <!-- Local nav and header STARTS here -->
+
+        <span id="with-hint-hint" class="govuk-hint" style="margin-top: 0%; margin-bottom: 0%;">P57832 Scania Lincoln</span>
+        <thead class="govuk-table__head">
+
+            <h1 class="govuk-heading-xl" style="margin-bottom: 2px">Account activity</h1>
+
+
+
+
+
+            <div>
+                <p class="v-space10">space</p>
+            </div>
+
+
+<!-- Test START here -->
+
+
+
+
+
+
+
+
+<!-- Test END here -->
+
+            <!-- links START here -->
+            <div class="box">
+
+            <ul class="govuk-list" style="font-size:large">
+
+                <li style="margin-bottom: 10px;">
+                    &#8212; <span Style="padding-left: 5px;">View and top up PFA</span>
+                </li>
+
+                <li style="margin-bottom: 10px;"> &#8212;
+                    <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="#">View
+                        transactions</a>
+                </li>
+
+                <li style="margin-bottom: 10px;"> &#8212;
+                    <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="#">View
+                        statements</a>
+                    </li>
+
+                <li style="margin-bottom: 10px;"> &#8212;
+                    <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="#">View
+                        invoices</a>
+                    </li>
+
+
+
+                <li style="margin-bottom: 10px;"> &#8212;
+                    <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="#">Request a
+                        refund</a>
+                <li>
+
+                <li style="margin-bottom: 10px;"> &#8212;
+                    <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="#">View
+                        utilisation</a></li>
+
+
+                <li>
+                    &#8212; <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="https://www.gov.uk/government/publications/heavy-goods-vehicle-fees/heavy-goods-vehicle-hgv-and-trailer-test-fees"
+                        target="_blank">DVSA test fees (opens in a new window)</a>
+                </li>
+                
+
+
+                <li style="margin-bottom: 10px;">
+                    <p class="v-space10">space</p>
+                </li>
+
+            </ul>
+        
+
+                </div>
+                            <!-- links END here -->
+
+
+
+
+
+            
+            <hr>
+            <p class="v-space10">space</p>
+
+
+            <!-- Local nav and header ENDS here -->
+
+
+
+
+
+
+            <div class="govuk-grid-row">
+                <div class="govuk-grid-column-two-thirds">
+                    <h2 class="govuk-heading-m" style="margin-bottom: 2px">
+                        Pre-funded account (PFA)
+                    </h2>
+                    <span id="with-hint-hint" class="govuk-hint" style="margin-top: 0%;">Monday October 8 2018</span>
+
+
+                    <!-- summary block starts here -->
+                    <div>
+                        <p class="v-space">space</p>
+                    </div>
+                    <div>
+                        <table class="govuk-table" id="runningtotal1">
+
+
+
+
+                            <tbody class="govuk-table__body">
+                                <col width="80%">
+                                <col width="20%">
+                                <tr class="govuk-table__row">
+                                    <th class="govuk-table__header" scope="row" id="columpad1" style="border-color:white">
+                                        Balance (at 12:00am, 8 Oct 2018)</th>
+                                    <td class="govuk-table__header" style="border-color:white; text-align: right; padding-right:10px;">£2,123.89</td>
+
+                                </tr>
+                            </tbody>
+                        </table>
+
+
+                    </div>
+                    {% from "inset-text/macro.njk" import govukInsetText %}
+
+                    {{ govukInsetText({
+                    text: "Your PFA balance has fallen below your alert level. Please top up now."
+                    }) }}
+
+                    {% from "button/macro.njk" import govukButton %}
+
+                    {{ govukButton({
+                    text: "Top up your PFA"
+                    }) }}
+
+
+
+                    <div>
+                        <p class="v-space">space</p>
+                    </div>
+
+
+                </div>
+
+
+                <!-- Sidebar -->
+
+
+
+            </div>
+
+    </main>
+</div>
+
+
+{% endblock %}
