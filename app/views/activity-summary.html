@@ -1,0 +1,168 @@
+{% extends "layout-site.html" %}
+
+{% block pageTitle %}
+Todays activity
+{% endblock %}
+
+<!–– Beta header ––>
+
+{% block beforeContent %}
+
+{% from "phase-banner/macro.njk" import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "beta"
+},
+html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+
+<!–– Breadcrumbs ––>
+
+<div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="home.html">Home</a>
+        </li>
+
+        <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link">Site management summary</a>
+        </li>
+
+    </ol>
+</div>
+
+
+{% endblock %}
+{% block content %}
+
+<!-- Headings start here -->
+
+<div class="govuk-width-container">
+
+    <main class="govuk-main-wrapper">
+
+
+        <!-- Local nave and header STARTS here -->
+
+        <span id="with-hint-hint" class="govuk-hint" style="margin-top: 0%; margin-bottom: 0%;">P57832 Scania Lincoln</span>
+        <thead class="govuk-table__head">
+
+            <h1 class="govuk-heading-xl" style="margin-bottom: 2px">Site management</h1>
+
+
+
+
+
+            <div>
+                <p class="v-space10">space</p>
+            </div>
+
+
+
+
+            <!-- links start here -->
+
+
+            <ol class="govuk-list" style="font-size:large">
+
+                <li style="margin-bottom: 10px;"> &#8212;
+                    <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;">Summary</a></li>
+
+                <li style="margin-bottom: 10px;"> &#8212;
+                    <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="todays-activity.html">Today's
+                        activity</a></li>
+
+
+                <li style="margin-bottom: 10px;"> &#8212;
+                    <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="#">Utilisation</a></li>
+
+
+
+
+                <li style="margin-bottom: 10px;"> &#8212;
+                    <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="#">Health and
+                        safety issues</a></li>
+
+                <li style="margin-bottom: 10px;"> &#8212;
+                    <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="#">Cancel a
+                        tester</a></li>
+
+
+
+
+
+
+
+                <li style="margin-bottom: 10px;">
+                    <p class="v-space10">space</p>
+                </li>
+
+            </ol>
+            <hr>
+            <p class="v-space10">space</p>
+
+
+            <!-- Local nave and header ENDS here -->
+
+
+
+
+
+
+
+
+            <!-- Table starts here -->
+
+
+
+
+      
+ 
+
+
+            <table class="govuk-table" id="runningtotal2">
+                    <h1 class="govuk-fieldset__legend--m" style="margin-bottom: 2px">
+                        Summary
+                    </h1>
+                    <thead class="govuk-table__head">
+                      <tr class="govuk-table__row">
+                            <p class="v-space10">space</p>
+                      </tr>
+                    </thead>
+                    <tbody class="govuk-table__body">
+                      <tr class="govuk-table__row">
+                        <th class="govuk-table__header" scope="row"><a href="todays-activity.html">Today's fees</a> (real-time)</th>
+                        <td class="govuk-table__cell">£1088.80</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th class="govuk-table__header" scope="row"><a href="#">Utilisation</a> (December 2017 - November 2018)</th>
+                        <td class="govuk-table__cell">96%</td>
+                      </tr>
+                      <tr class="govuk-table__row">
+                        <th class="govuk-table__header" scope="row"><a href="#">Health and safety issues</a> (December 2017 - November 2018) </th>
+                        <td class="govuk-table__cell">4 issues</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+
+
+            <div>
+                <p class="v-space">space</p>
+            </div>
+
+
+
+
+
+
+
+</div>
+
+
+</main>
+</div>
+
+
+{% endblock %}

@@ -25,9 +25,11 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
       <a class="govuk-breadcrumbs__link" href="home.html">Home</a>
     </li>
     <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link" >Account activity - Transactions and invoices</a>
+      <a class="govuk-breadcrumbs__link" href="todays-activity.html">Today's activity</a>
     </li>
-
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link">Search for an invoice</a>
+    </li>
   </ol>
 </div>
 {% endblock %}
@@ -57,59 +59,13 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
     <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
       <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
         <h1 class="govuk-fieldset__heading">
-          Account activity
+          Search for an invoice
         </h1>
       </legend>
-      <div>
-          <p class="v-space10">space</p>
-      </div>
-
-      <div class="box">
-
-          <ul class="govuk-list" style="font-size:large">
-
- 
-
-              <li style="margin-bottom: 10px;"> &#8212;
-                  <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="account-balance.html">Balance: £2123.89</a>
-                  </li>
-
-
-              <li style="margin-bottom: 10px;"> &#8212;
-                  <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" >Transactions and 
-                      invoices</a>
-                  </li>
-
-
-
-              <li style="margin-bottom: 10px;"> &#8212;
-                  <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="#">Refunds</a>
-              <li>
-
-
-                  <li style="margin-bottom: 10px;">
-                      <p class="v-space10">space</p>
-                  </li>
-    
-              </ul>
-              <hr>                      
-      
-
-              </div>
-
-
-
-
-
-
-
-
       <div><p class="v-space10">space</p></div>
-      <h1 class="govuk-fieldset__legend--m">
-          Transactions and invoices 
-  
-          
-        </h1>
+      <span id="how-contacted-conditional-hint" class="govuk-hint">
+        Select one option.
+      </span>
       
       
       
@@ -282,8 +238,8 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
   {% from "button/macro.njk" import govukButton %}
 
   {{ govukButton({
-  "text": "Show transactions",
-  "href": "myatf-account.html",
+  "text": "Search",
+  "href": "activity-history-results.html",
   "classes": "govuk-button"
   }) }}
 

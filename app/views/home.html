@@ -1,4 +1,4 @@
-{% extends "layout-home.html" %}
+{% extends "layout2.html" %}
 
 {% block pageTitle %}
 Home
@@ -33,93 +33,87 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 <span id="with-hint-hint" class="govuk-hint" style="margin-top: 0%; margin-bottom: 0%;">P57832 Scania Lincoln</span>
 <thead class="govuk-table__head">
 
-<h1 class="govuk-heading-xl" style="margin-bottom: 2px">Manage your ATF</h1>
+  <h1 class="govuk-heading-xl" style="margin-bottom: 2px">Manage your ATF</h1>
 
 
 
 
 
-<body class="govuk-template__body ">
-  <script>
-    document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+  <body class="govuk-template__body ">
+    <script>
+      document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
 
-  </script>
+    </script>
 
-  <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
-
-
-
-
-
-  <script src="/govuk-frontend/all.js"></script>
-  <script>
-    window.GOVUKFrontend.initAll()
-
-  </script>
+    <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
 
 
 
 
 
+    <script src="/govuk-frontend/all.js"></script>
+    <script>
+      window.GOVUKFrontend.initAll()
 
-<div><p class="v-space">space</p></div>
-
-
-
-  <ul class="register-themes">
-
-    <li class="register-theme"><a class="register-theme__link" href="todays-activity.html">
-      <h3 class="register-theme__heading govuk-heading-m govuk-!-margin-bottom-0 govuk-!-padding-bottom-1" style="color: #005EA5">Site management</h3>
-      
-<p class="register-theme__description">
-        <ul class="govuk-list govuk-body-m">
-          <li>Today's testing activity</li> 
-          <li>Health and safety issues</li>
-          <li>Utilisation</li>
-          <li>Cancel testing sessions</li>
-       
-      
-      </ul></p>
+    </script>
 
 
-      <p></p>
 
 
-    
-    <li class="register-theme"><a class="register-theme__link" href="account-balance.html">
-        <h3 class="register-theme__heading govuk-heading-m govuk-!-margin-bottom-0 govuk-!-padding-bottom-1" style="color: #005EA5"> Account activity</h3>
-          <p class="register-theme__description">
-              <ul class="govuk-list govuk-body-m">
 
-                <li>Balance <strong>(£9123.89)</strong></li>
-                <li>Transactions</li>
-                <li>Invoices</li>
-                <li>Request a refund</li>
 
-             
+    <div>
+      <p class="v-space">space</p>
+    </div>
+
+
+
+    <ul class="register-themes">
+
+      <li class="register-theme">
+        <a class="register-theme__link" href="activity-summary.html">
+          <h3 class="register-theme__heading govuk-heading-m govuk-!-margin-bottom-0 govuk-!-padding-bottom-5" style="color: #005EA5">Site
+            management</h3>
+
             
-            </ul></p>
-      </a></li>
+            <p class="register-theme__description"> View real-time visit details, utilisation, health and safety issues  </p>
 
 
-       
-      </a></li>
+          <p></p>
 
-    
+        </a></li>
 
-
-
-  </ul>
-  <div><p class="v-space">space</p></div>
-
+      <li class="register-theme"><a class="register-theme__link" href="account-balance.html">
+          <h3 class="register-theme__heading govuk-heading-m govuk-!-margin-bottom-0 govuk-!-padding-bottom-5" style="color: #005EA5">
+            Account activity</h3>
   
+              
+              <p class="register-theme__description"> View balance and transactions, download invoices, top up online, and set up a direct debit  </p>
+              <p><strong>Current balance : £2,123.89</strong></p>
+         
+        </a></li>
+
+
+
+      
 
 
 
 
-  <h2 class="govuk-heading-m">Account settings</h2>
 
-  <ul class="govuk-list">
+    </ul>
+    <div>
+      <p class="v-space">space</p>
+    </div>
+
+
+
+
+
+
+    <h2 class="govuk-heading-m">Account settings</h2>
+
+    <ul class="govuk-list">
       <li>
         <a class="govuk-link" href="#">ATF contact details</a>
       </li>
@@ -133,15 +127,15 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
         <a class="govuk-link" href="#">Email preferences</a>
       </li>
       <li>
-          <a class="govuk-link" href="#">Logout</a>
-        </li>
+        <a class="govuk-link" href="#">Sign out</a>
+      </li>
     </ul>
 
 
 
 
 
-</body>
+  </body>
 
-</html>
-{% endblock %}
+  </html>
+  {% endblock %}

@@ -1,0 +1,147 @@
+{% extends "layout-home.html" %}
+
+{% block pageTitle %}
+Home
+{% endblock %}
+
+<!–– Beta header ––>
+
+{% block beforeContent %}
+
+{% from "phase-banner/macro.njk" import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "beta"
+},
+html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+
+<!–– Breadcrumbs ––>
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link">Home</a>
+    </li>
+  </ol>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<span id="with-hint-hint" class="govuk-hint" style="margin-top: 0%; margin-bottom: 0%;">P57832 Scania Lincoln</span>
+<thead class="govuk-table__head">
+
+<h1 class="govuk-heading-xl" style="margin-bottom: 2px">Manage your ATF</h1>
+
+
+
+
+
+<body class="govuk-template__body ">
+  <script>
+    document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+
+  </script>
+
+  <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+
+
+
+
+
+  <script src="/govuk-frontend/all.js"></script>
+  <script>
+    window.GOVUKFrontend.initAll()
+
+  </script>
+
+
+
+
+
+
+<div><p class="v-space">space</p></div>
+
+
+
+  <ul class="register-themes">
+
+    <li class="register-theme"><a class="register-theme__link" href="todays-activity.html">
+      <h3 class="register-theme__heading govuk-heading-m govuk-!-margin-bottom-0 govuk-!-padding-bottom-1" style="color: #005EA5">Site management</h3>
+      
+<p class="register-theme__description">
+        <ul class="govuk-list govuk-body-m">
+          <li>Today's testing activity</li> 
+          <li>Health and safety issues</li>
+          <li>Utilisation</li>
+          <li>Cancel testing sessions</li>
+       
+      
+      </ul></p>
+
+
+      <p></p>
+
+
+    
+    <li class="register-theme"><a class="register-theme__link" href="account-balance.html">
+        <h3 class="register-theme__heading govuk-heading-m govuk-!-margin-bottom-0 govuk-!-padding-bottom-1" style="color: #005EA5"> Account activity</h3>
+          <p class="register-theme__description">
+              <ul class="govuk-list govuk-body-m">
+
+                <li>Balance <strong>(£9123.89)</strong></li>
+                <li>Transactions</li>
+                <li>Invoices</li>
+                <li>Request a refund</li>
+
+             
+            
+            </ul></p>
+      </a></li>
+
+
+       
+      </a></li>
+
+    
+
+
+
+  </ul>
+  <div><p class="v-space">space</p></div>
+
+  
+
+
+
+
+  <h2 class="govuk-heading-m">Account settings</h2>
+
+  <ul class="govuk-list">
+      <li>
+        <a class="govuk-link" href="#">ATF contact details</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="#">User access</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="#">Email and SMS low balance alerts</a>
+      </li>
+      <li>
+        <a class="govuk-link" href="#">Email preferences</a>
+      </li>
+      <li>
+          <a class="govuk-link" href="#">Logout</a>
+        </li>
+    </ul>
+
+
+
+
+
+</body>
+
+</html>
+{% endblock %}
