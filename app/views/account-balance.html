@@ -123,40 +123,47 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
             <div class="govuk-grid-row">
                 <div class="govuk-grid-column-two-thirds">
-                    <h2 class="govuk-heading-m" style="margin-bottom: 2px">
-                        Pre-funded account (PFA)
-                    </h2>
-                    <span id="with-hint-hint" class="govuk-hint" style="margin-top: 0%;">Monday October 8 2018</span>
+                   
 
 
                     <!-- summary block starts here -->
-                    <div>
-                        <p class="v-space">space</p>
-                    </div>
-                    <div>
-                        <table class="govuk-table" id="runningtotal1">
+
+
+
+                    <table class="govuk-table">
+                        <h1 class="govuk-fieldset__legend--m">
+                         Prefunded account
+                          <span id="with-hint-hint" class="govuk-hint" style="margin-top: 0%; margin-bottom: 0%;">Monday October 8 2018</span>
+                          
+                        </h1>
+                        <thead class="govuk-table__head">
+                          <tr class="govuk-table__row">
+                            <th class="govuk-table__header" scope="col"></th>
+                            <th class="govuk-table__header govuk-table__header--text" scope="col"></th>
+                            <th class="govuk-table__header govuk-table__header--text" scope="col"></th>
+                      
+                            <th class="govuk-table__header govuk-table__header--numeric" scope="col"></th>
+                          </tr>
+                        </thead>
+                        <tbody class="govuk-table__body">
+                          <tr class="govuk-table__row">
+                            <td class="govuk-table__cell" scope="row">Balance (at 05:00am today)</td>
+                            <td class="govuk-table__cell"></td>
+                            <td class="govuk-table__cell"><a href="#"></a></td>
+                    
+                            <td class="govuk-table__cell govuk-table__cell--numeric"><strong>£2,123.89</strong></td>
+                          </tr>
+                              </tbody>
+                      </table>
 
 
 
 
-                            <tbody class="govuk-table__body">
-                                <col width="80%">
-                                <col width="20%">
-                                <tr class="govuk-table__row">
-                                    <th class="govuk-table__header" scope="row" id="columpad1" style="border-color:white">
-                                        Balance (at 05:00am)</th>
-                                    <td class="govuk-table__header" style="border-color:white; text-align: right; padding-right:10px;">£2,123.89</td>
 
-                                </tr>
-                            </tbody>
-                        </table>
-
-
-                    </div>
                     {% from "inset-text/macro.njk" import govukInsetText %}
 
                     {{ govukInsetText({
-                    text: "Your PFA balance has fallen below your alert level. Please top up now."
+                    text: "Your PFA balance has fallen below your £3,000 alert level. Please top up now."
                     }) }}
 
                     {% from "button/macro.njk" import govukButton %}
