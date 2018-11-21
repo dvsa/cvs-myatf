@@ -251,14 +251,40 @@ hr {
 }
 
 
-// DY-Styles: position right></div>
+// DY-Styles: position right
 
 .right_header {
     float: right;
-    margin-left: 85%
+    margin-left: 60%
 }
 
 .left_header {
   float: left;
   margin-left: 100%
 }
+
+
+
+// DY-Styles: pside by side divs in a container
+.invcontainer {
+  width: 100%;
+  height: 150px;
+  background: white;
+  margin: auto;
+  padding: 1px;
+}
+
+.invone {
+  width: 30%;
+  height: 150px;
+  background: white;
+  float: left;
+}
+
+.invtwo {
+  margin-left: 30%;
+  height: 150px;
+  background: white;
+}
+
+// DY-Styles: pside by side divs in a container - to use: <section class="container"><div class="one"></div><div class="two"></div></section>
