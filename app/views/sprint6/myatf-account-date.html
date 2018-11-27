@@ -1,0 +1,181 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+MyATF account date
+{% endblock %}
+
+<!–– Beta header ––>
+
+{% block beforeContent %}
+
+{% from "phase-banner/macro.njk" import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "beta"
+},
+html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+
+<!–– Breadcrumbs ––>
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+        <a class="govuk-breadcrumbs__link" href="home.html">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="account-balance.html">Pre
+        -funded account</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link">Select date range</a>
+    </li>
+  </ol>
+</div>
+{% endblock %}
+
+{% block content %}
+<h2 class="govuk-heading-m">
+  P57832 Scania Lincoln
+</h2>
+
+<h1 class="govuk-heading-xl">
+Pre-funded account
+</h1>
+
+<body class="govuk-template__body ">
+  <script>
+    document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+
+  </script>
+
+  <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+
+
+
+
+
+  <script src="/govuk-frontend/all.js"></script>
+  <script>
+    window.GOVUKFrontend.initAll()
+
+  </script>
+
+
+
+
+  <!–– date-picker ––>
+  {% block datepicker %}
+
+  <div  class="govuk-form-group" >
+    <fieldset class="govuk-fieldset" aria-describedby="dob-hint" role="group">
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+        <h1 class="govuk-fieldset__legend--m">
+          Select transactions from a date range
+        </h1>
+      </legend>
+
+
+      <div id="divdate1">
+
+        <span id="dob-hint" class="govuk-hint">
+            <strong class="bold-small" style="color:black">From:</strong><br />for example, 31 3 2017
+        </span>
+
+        <div class="govuk-date-input">
+          <div class="govuk-date-input__item">
+            <div class="govuk-form-group">
+              <label class="govuk-label govuk-date-input__label" for="dob-day">
+                Day
+              </label>
+              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-day" name="dob-day" type="number"
+                pattern="[0-9]*">
+            </div>
+          </div>
+          <div class="govuk-date-input__item">
+            <div class="govuk-form-group">
+              <label class="govuk-label govuk-date-input__label" for="dob-month">
+                Month
+              </label>
+              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-month" name="dob-month"
+                type="number" pattern="[0-9]*">
+            </div>
+          </div>
+          <div class="govuk-date-input__item">
+            <div class="govuk-form-group">
+              <label class="govuk-label govuk-date-input__label" for="dob-year">
+                Year
+              </label>
+              <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="dob-year" name="dob-year"
+                type="number" pattern="[0-9]*">
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="divdate2">
+
+        <span id="divtitle2" class="govuk-hint">
+            <strong class="bold-small" style="color:black">To:</strong> <br />for example, 31 3 2018
+        </span>
+
+        <div class="govuk-date-input" id="divdate2">
+          <div class="govuk-date-input__item">
+            <div class="govuk-form-group">
+              <label class="govuk-label govuk-date-input__label" for="dob-day">
+                Day
+              </label>
+              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-day" name="dob-day" type="number"
+                pattern="[0-9]*">
+            </div>
+          </div>
+          <div class="govuk-date-input__item">
+            <div class="govuk-form-group">
+              <label class="govuk-label govuk-date-input__label" for="dob-month">
+                Month
+              </label>
+              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-month" name="dob-month"
+                type="number" pattern="[0-9]*">
+            </div>
+          </div>
+          <div class="govuk-date-input__item">
+            <div class="govuk-form-group">
+              <label class="govuk-label govuk-date-input__label" for="dob-year">
+                Year
+              </label>
+              <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="dob-year" name="dob-year"
+                type="number" pattern="[0-9]*">
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </fieldset>
+    <div><p class="v-space">space</p></div>
+    {% from "button/macro.njk" import govukButton %}
+
+    {{ govukButton({
+      "text": "Submit",
+      "href": "myatf-account.html",
+      "classes": "govuk-button"
+    }) }}
+
+
+  </div>
+  {% endblock %}
+
+ 
+
+
+
+
+
+
+  <div><p class="v-space">space</p></div>
+
+</body>
+
+</html>
+{% endblock %}

@@ -1,4 +1,4 @@
-{% extends "layout2.html" %}
+{% extends "layout-site.html" %}
 
 {% block pageTitle %}
 Today's completed tests
@@ -25,7 +25,9 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
             <a class="govuk-breadcrumbs__link" href="home.html">Home</a>
         </li>
 
-
+        <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="activity-summary.html">Site management</a>
+        </li>
         <li class="govuk-breadcrumbs__list-item">
             <a class="govuk-breadcrumbs__link">Today's completed tests</a>
         </li>
@@ -64,7 +66,37 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
             <!-- links start here -->
 
 
+            <ol class="govuk-list" style="font-size:large">
 
+                <li style="margin-bottom: 10px;"> &#8212;
+                    <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="activity-summary.html">Summary</a></li>
+
+                <li style="margin-bottom: 10px;">
+                    &#8212; <span Style="padding-left: 5px;">Today's completed tests</span>
+                </li>
+
+
+                <li style="margin-bottom: 10px;"> &#8212;
+                    <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="#">Utilisation</a></li>
+
+
+                <li style="margin-bottom: 10px;"> &#8212;
+                    <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="#">Health and
+                        safety issues</a></li>
+
+
+
+
+
+
+
+
+
+                <li style="margin-bottom: 10px;">
+                    <p class="v-space10">space</p>
+                </li>
+
+            </ol>
             <hr>
             <p class="v-space10">space</p>
 
@@ -91,8 +123,8 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
                         search transactions</a></p>
 
 
-                <p align="right" class="govuk-body">Running total, net:<strong>
-                        £963.00</strong></p>
+                        <p align="right" class="govuk-body">Total net test fees:<strong>
+                                £963.00</strong></p>
 
                 <p class="v-space10">space</p>
 
@@ -102,17 +134,14 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
                 </h2>
 
 
-                <!–– Table 1 ––>
-
-
                 <thead class="govuk-table__head">
                     <tr class="govuk-table__row">
                         <th class="govuk-table__header" scope="col" style="text-align: left;">Start</th>
                         <th class="govuk-table__header" scope="col" style="text-align: left;">Test duration</th>
                         <th class="govuk-table__header" scope="col">Vehicle</th>
-                        <th class="govuk-table__header" scope="col">Activity</th>
+                        <th class="govuk-table__header" scope="col" >Activity</th>
                         <th class="govuk-table__header" scope="col">Pass/Fail</th>
-                        <th class="govuk-table__header" scope="col" style="text-align: right;">Net Amount</th>
+                        <th class="govuk-table__header" scope="col" style="text-align: right;">Net fees</th>
 
 
 
@@ -162,13 +191,13 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
                         <td class="govuk-table__cell"><a href="#">Pass</a></td>
                         <td class="govuk-table__cell" style="text-align: right;">£113.00</td>
 
-                    <tr class="govuk-table__row">
-                        <td class="govuk-table__cell" style="text-align: left;">10:55</td>
-                        <td class="govuk-table__cell" style="text-align: left;">18 mins</td>
-                        <td class="govuk-table__cell">KV63 CYC</td>
-                        <td class="govuk-table__cell">HGV Annual Test & LEC Low Emissions test</td>
-                        <td class="govuk-table__cell"><a href="#">Pass</a></td>
-                        <td class="govuk-table__cell" style="text-align: right;">£25.00</td>
+                        <tr class="govuk-table__row">
+                                <td class="govuk-table__cell" style="text-align: left;">10:55</td>
+                                <td class="govuk-table__cell" style="text-align: left;">18 mins</td>
+                                <td class="govuk-table__cell">KV63 CYC</td>
+                                <td class="govuk-table__cell">HGV Annual Test & LEC Low Emissions test</td>
+                                <td class="govuk-table__cell"><a href="#">Pass</a></td>
+                                <td class="govuk-table__cell" style="text-align: right;">£25.00</td>
 
 
                     <tr class="govuk-table__row">
@@ -210,7 +239,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
                         <th class="govuk-table__header" scope="col">Vehicle</th>
                         <th class="govuk-table__header" scope="col">Activity</th>
                         <th class="govuk-table__header" scope="col">Pass/Fail</th>
-                        <th class="govuk-table__header" scope="col" style="text-align: right;">Net Amount</th>
+                        <th class="govuk-table__header" scope="col" style="text-align: right;">Net fees</th>
 
 
                     </tr>

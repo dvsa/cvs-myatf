@@ -1,4 +1,4 @@
-{% extends "layout2.html" %}
+{% extends "layout-account.html" %}
 
 {% block pageTitle %}
 Invoice
@@ -31,10 +31,10 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
       <a class="govuk-breadcrumbs__link" href="activity-history-search.html">Search</a>
     </li>
     <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link" href="myatf-account.html">Transactions</a>
+      <a class="govuk-breadcrumbs__link" href="myatf-account.html">Transactions and invoices</a>
     </li>
     <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link">10 June 2018</a>
+      <a class="govuk-breadcrumbs__link">Invoice</a>
     </li>
 
 
@@ -48,117 +48,126 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
 
 
-<body class="govuk-template__body ">
+
+  <body class="govuk-template__body ">
 
 
-  <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+    <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
 
 
 
 
 
-  <script src="/govuk-frontend/all.js"></script>
-  <script>
-    window.GOVUKFrontend.initAll()
+    <script src="/govuk-frontend/all.js"></script>
+    <script>
+      window.GOVUKFrontend.initAll()
 
-  </script>
+    </script>
 
-  <div class="govuk-form-group">
-    <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
-      <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
-        <h1 class="govuk-fieldset__heading">
-          Account activity
-        </h1>
-      </legend>
-      <div>
+    <div class="govuk-form-group">
+      <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+        <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+          <h1 class="govuk-fieldset__heading">
+            Invoice
+          </h1>
+        </legend>
+
+
+
+
+        <!–– Side by side divs START  ––>
+
+        <section class="invcontainer">
+          <div class="invone govuk-body-s left-header">
+            Scania Lincoln<br>
+            Plot 5, Whisby Way<br>
+            Whisby Road Industrial Estate<br>
+            Lincoln<br>
+            LN6 3LQ</div>
+          <div class="invtwo govuk-body-s right_header">
+            <img src="https://eshare.net/wp-content/uploads/2017/11/dvsa-logo.png" width="150">
+          </div>
+        </section>
+
+        <!–– Side by side divs END  ––>
+
+        <p></p>
+
+        <!–– Side by side div no 2 START  ––>
+
+        <section class="invcontainer" style="margin-bottom: -20px;">
+          <div class="invone govuk-body-s left-header"></div>
+          <div class="invtwo govuk-body-s right_header" style="margin-top: -25px; margin-right: 10px">
+
+            The Ellipse<br>
+            Padley Rd<br>
+            Swansea<br>
+            SA1 8AN<br>
+            Tel: 03000 200 100<br>
+            <p></p>
+            VAT no: 133527855<br>
+          </div>
+        </section>
+
+        <!–– Side by side div no 2 END  ––>
+
+
+
+
+        <div>
           <p class="v-space10">space</p>
-      </div>
+        </div>
 
-      <div class="box">
+        <body class="govuk-template__body ">
+          <script>
+            document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
 
-          <ul class="govuk-list" style="font-size:large">
+          </script>
 
- 
-
-              <li style="margin-bottom: 10px;"> &#8212;
-                  <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="account-balance.html">Pre-funded account</a>
-                  </li>
-
-
-                  <li style="margin-bottom: 10px; "> &#8212;
-                      <span Style="padding-left: 5px;"> Transactions</span>
-                      </li>
+          <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
 
 
 
 
 
+          <script src="/govuk-frontend/all.js"></script>
+          <script>
+            window.GOVUKFrontend.initAll()
 
-                  <li style="margin-bottom: 10px;">
-                      <p class="v-space10">space</p>
-                  </li>
-    
-              </ul>
-              <hr>      
-              <div>
-                  <p class="v-space10">space</p>
-              </div>                
-      
-
-              </div>
-
-<body class="govuk-template__body ">
-  <script>
-    document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
-
-  </script>
-
-  <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
-
-
-
-
-
-  <script src="/govuk-frontend/all.js"></script>
-  <script>
-    window.GOVUKFrontend.initAll()
-
-  </script>
+          </script>
 
 
 
 
 
 
-  
 
 
 
 
+          <hr>
+          <p class="v-space10">space</p>
 
-  <!–– 6 column table  ––>
+          <!–– 6 column table  ––>
 
-  
+          <div>
 
-  <table class="govuk-table">
-    <h1 class="govuk-fieldset__legend--m">
-      Transaction
+            <table class="govuk-table">
 
-      <span id="with-hint-hint" class="govuk-hint" style="margin-top: 0%; margin-bottom: 0%;">10 June 2018</span>
-    </h1>
-    <p class="govuk-body"><a href="activity-history-search.html" class="govuk-link govuk-link--no-visited-state">
-        Search for another invoice </a></p>
-
+              <h1 class="govuk-fieldset__legend--m" style="margin-bottom: 2px">
+                Invoice no: 1-3498244389
+              </h1>
+              <span id="with-hint-hint" class="govuk-hint" style="margin-top: 0%;">10 June 2018</span>
               <thead class="govuk-table__head">
                 <tr class="govuk-table__row">
                   <th class="govuk-table__header" scope="col">Test date</th>
                   <th class="govuk-table__header govuk-table__header--numeric" scope="col" style="text-align: left;">Time</th>
                   <th class="govuk-table__header" scope="col">Activity</th>
                   <th class="govuk-table__header" scope="col">Registration/ID</th>
-                  <th class="govuk-table__header govuk-table__header--numeric" scope="col">Net amount</th>
+                  <th class="govuk-table__header govuk-table__header--numeric" scope="col">Fee</th>
                   <th class="govuk-table__header govuk-table__header--numeric" scope="col">VAT</th>
                   <th class="govuk-table__header govuk-table__header--numeric" scope="col" style="padding-right: 5px;">Total
-                    amount</th>
+                    fees</th>
 
                 </tr>
               </thead>
@@ -252,8 +261,6 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
               </tbody>
             </table>
-
-
           </div>
 
 
@@ -269,45 +276,46 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
           <p class="v-space10">space</p>
 
-       
+          <hr>
 
 
           <!–– Payment advice START ––>
 
+
           <div>
 
-            <table class="govuk-table">
+              <table class="govuk-table">
+  
+                <h1 class="govuk-fieldset__legend--m" style="margin-bottom: 2px">
+                 Payment advice
+                </h1>
+                <span id="with-hint-hint" class="govuk-hint" style="margin-top: 0%;">Invoice paid</span>
 
-              <h1 class="govuk-fieldset__legend--m" style="margin-bottom: 2px">
-               Payment advice
-              </h1>
-              <span id="with-hint-hint" class="govuk-hint" style="margin-top: 0%;">Invoice paid</span>
-
-              <thead class="govuk-table__head">
-                <tr class="govuk-table__row">
-                  <th class="govuk-table__header" scope="col">Date</th>
-                  <th class="govuk-table__header" scope="col">Reference No</th>
-                  <th class="govuk-table__header" scope="col">Payment type</th>
-                  <th class="govuk-table__header govuk-table__header--numeric" scope="col" style="padding-right: 5px;">Total amount</th>
-
-                </tr>
-              </thead>
-              <tbody class="govuk-table__body">
-                <tr class="govuk-table__row">
-                  <td class="govuk-table__cell govuk-body-s" scope="row">11 June 2018</td>
-                  <td class="govuk-table__cell govuk-body-s" scope="row">0123456789</td>
-                  <td class="govuk-table__cell govuk-body-s" scope="row">Pre-funded account</td>
-                  <td class="govuk-table__cell govuk-table__cell--numeric govuk-body-s" style="padding-right: 5px;">£764.80</td>
-                </tr>
-
-
-
-
-
-
-              </tbody>
-            </table>
-          </div>
+                <thead class="govuk-table__head">
+                  <tr class="govuk-table__row">
+                    <th class="govuk-table__header" scope="col">Date</th>
+                    <th class="govuk-table__header" scope="col">Reference No</th>
+                    <th class="govuk-table__header" scope="col">Payment type</th>
+                    <th class="govuk-table__header govuk-table__header--numeric" scope="col" style="padding-right: 5px;">Amount</th>
+  
+                  </tr>
+                </thead>
+                <tbody class="govuk-table__body">
+                  <tr class="govuk-table__row">
+                    <td class="govuk-table__cell govuk-body-s" scope="row">11 June 2018</td>
+                    <td class="govuk-table__cell govuk-body-s" scope="row">0123456789</td>
+                    <td class="govuk-table__cell govuk-body-s" scope="row">Pre-funded account</td>
+                    <td class="govuk-table__cell govuk-table__cell--numeric govuk-body-s" style="padding-right: 5px;">£764.80</td>
+                  </tr>
+  
+  
+  
+  
+  
+  
+                </tbody>
+              </table>
+            </div>
 
 
             <!–– Payment advice END ––>

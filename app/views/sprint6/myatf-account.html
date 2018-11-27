@@ -1,4 +1,4 @@
-{% extends "layout2.html" %}
+{% extends "layout-account.html" %}
 
 {% block pageTitle %}
 Transactions and invoices
@@ -86,7 +86,9 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
 
 
-
+              <li style="margin-bottom: 10px;"> &#8212;
+                  <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="#">Request a refund</a>
+              <li>
 
 
                   <li style="margin-bottom: 10px;">
@@ -157,14 +159,14 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
         <th class="govuk-table__header govuk-table__header--text" scope="col">Item</th>
         <th class="govuk-table__header govuk-table__header--text" scope="col"> Details</th>
   
-        <th class="govuk-table__header govuk-table__header--numeric" scope="col">Net amount</th>
+        <th class="govuk-table__header govuk-table__header--numeric" scope="col">Amount</th>
       </tr>
     </thead>
     <tbody class="govuk-table__body">
       <tr class="govuk-table__row">
         <td class="govuk-table__cell" scope="row">10 June 2018</td>
         <td class="govuk-table__cell">Top-up to PFA</td>
-        <td class="govuk-table__cell"><a href="#"  >Show receipt</a></td>
+        <td class="govuk-table__cell"><a href="#" target="_blank" target="_blank">Show receipt</a></td>
 
         <td class="govuk-table__cell govuk-table__cell--numeric">+ £15,000.00</td>
       </tr>
@@ -172,29 +174,29 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
       <tr class="govuk-table__row">
         <td class="govuk-table__cell" scope="row">10 June 2018</td>
         <td class="govuk-table__cell">Vehicle testing</td>
-        <td class="govuk-table__cell"><a href="invoice.html" >Show transaction</a></td>
+        <td class="govuk-table__cell"><a href="invoice.html" target="_blank">Show invoice</a></td>
 
-        <td class="govuk-table__cell govuk-table__cell--numeric">-£756.00</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric">- £790.80</td>
       </tr>
       <tr class="govuk-table__row">
         <td class="govuk-table__cell" scope="row">10 June 2018</td>
         <td class="govuk-table__cell">Vehicle testing</td>
-        <td class="govuk-table__cell"><a href="invoice.html" >Show transaction</a></td>
+        <td class="govuk-table__cell"><a href="invoice.html" target="_blank">Show invoice</a></td>
 
-        <td class="govuk-table__cell govuk-table__cell--numeric">-£756.00</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric">- £790.80</td>
       </tr>
       <tr class="govuk-table__row">
           <td class="govuk-table__cell" scope="row">10 June 2018</td>
           <td class="govuk-table__cell">Vehicle testing</td>
-          <td class="govuk-table__cell"><a href="invoice.html" >Show transaction</a></td>
+          <td class="govuk-table__cell"><a href="invoice.html" target="_blank">Show invoice</a></td>
 
-          <td class="govuk-table__cell govuk-table__cell--numeric">-£756.00</td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">- £790.80</td>
         </tr>
 
 
         <td class="govuk-table__cell" scope="row">11 June 2018</td>
         <td class="govuk-table__cell">Refund</td>
-        <td class="govuk-table__cell"><a href="#" >Show refund advice</a></td>
+        <td class="govuk-table__cell"><a href="#" target="_blank">Show refund advice</a></td>
 
         <td class="govuk-table__cell govuk-table__cell--numeric">+ £790.80</td>
       </tr>
@@ -202,51 +204,51 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
       <tr class="govuk-table__row">
         <td class="govuk-table__cell" scope="row">11 June 2018</td>
         <td class="govuk-table__cell">Vehicle testing</td>
-        <td class="govuk-table__cell"><a href="invoice.html" >Show transaction</a></td>
+        <td class="govuk-table__cell"><a href="invoice.html" target="_blank">Show invoice</a></td>
 
-        <td class="govuk-table__cell govuk-table__cell--numeric">-£756.00</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric">- £790.80</td>
       </tr>
       <tr class="govuk-table__row">
         <td class="govuk-table__cell" scope="row">11 June 2018</td>
         <td class="govuk-table__cell">Vehicle testing</td>
-        <td class="govuk-table__cell"><a href="invoice.html" >Show transaction</a></td>
+        <td class="govuk-table__cell"><a href="invoice.html" target="_blank">Show invoice</a></td>
 
-        <td class="govuk-table__cell govuk-table__cell--numeric">-£756.00</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric">- £790.80</td>
       </tr>
       <tr class="govuk-table__row">
         <td class="govuk-table__cell" scope="row">11 June 2018</td>
         <td class="govuk-table__cell">Vehicle testing</td>
-        <td class="govuk-table__cell"><a href="invoice.html" >Show transaction</a></td>
+        <td class="govuk-table__cell"><a href="invoice.html" target="_blank">Show invoice</a></td>
  
-        <td class="govuk-table__cell govuk-table__cell--numeric">-£756.00</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric">- £790.80</td>
       </tr>
       
       <tr class="govuk-table__row">
           <td class="govuk-table__cell" scope="row">12 June 2018</td>
           <td class="govuk-table__cell">Vehicle testing</td>
-          <td class="govuk-table__cell"><a href="invoice.html" >Show transaction</a></td>
+          <td class="govuk-table__cell"><a href="invoice.html" target="_blank">Show invoice</a></td>
 
-          <td class="govuk-table__cell govuk-table__cell--numeric">-£756.00</td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">- £790.80</td>
         </tr>
         <tr class="govuk-table__row">
           <td class="govuk-table__cell" scope="row">12 June 2018</td>
           <td class="govuk-table__cell">Vehicle testing</td>
-          <td class="govuk-table__cell"><a href="invoice.html" >Show transaction</a></td>
+          <td class="govuk-table__cell"><a href="invoice.html" target="_blank">Show invoice</a></td>
  
-          <td class="govuk-table__cell govuk-table__cell--numeric">-£756.00</td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">- £790.80</td>
         </tr>
         <tr class="govuk-table__row">
           <td class="govuk-table__cell" scope="row">12 June 2018</td>
           <td class="govuk-table__cell">Vehicle testing</td>
-          <td class="govuk-table__cell"><a href="invoice.html" >Show transaction</a></td>
+          <td class="govuk-table__cell"><a href="invoice.html" target="_blank">Show invoice</a></td>
 
-          <td class="govuk-table__cell govuk-table__cell--numeric">-£756.00</td>
+          <td class="govuk-table__cell govuk-table__cell--numeric">- £790.80</td>
         </tr>
         
         </tr>
         <td class="govuk-table__cell" scope="row">13 June 2018</td>
         <td class="govuk-table__cell">Refund</td>
-        <td class="govuk-table__cell"><a href="#" >Show refund advice</a></td>
+        <td class="govuk-table__cell"><a href="#" target="_blank">Show refund advice</a></td>
  
         <td class="govuk-table__cell govuk-table__cell--numeric">+ £790.80</td>
       </tr>
@@ -254,23 +256,23 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
       <tr class="govuk-table__row">
         <td class="govuk-table__cell" scope="row">13 June 2018</td>
         <td class="govuk-table__cell">Vehicle testing</td>
-        <td class="govuk-table__cell"><a href="invoice.html" >Show transaction</a></td>
+        <td class="govuk-table__cell"><a href="invoice.html" target="_blank">Show invoice</a></td>
 
-        <td class="govuk-table__cell govuk-table__cell--numeric">-£756.00</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric">- £790.80</td>
       </tr>
       <tr class="govuk-table__row">
         <td class="govuk-table__cell" scope="row">13 June 2018</td>
         <td class="govuk-table__cell">Vehicle testing</td>
-        <td class="govuk-table__cell"><a href="invoice.html" >Show transaction</a></td>
+        <td class="govuk-table__cell"><a href="invoice.html" target="_blank">Show invoice</a></td>
 
-        <td class="govuk-table__cell govuk-table__cell--numeric">-£756.00</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric">- £790.80</td>
       </tr>
       <tr class="govuk-table__row">
         <td class="govuk-table__cell" scope="row">13 June 2018</td>
         <td class="govuk-table__cell">Vehicle testing</td>
-        <td class="govuk-table__cell"><a href="invoice.html" >Show transaction</a></td>
+        <td class="govuk-table__cell"><a href="invoice.html" target="_blank">Show invoice</a></td>
 
-        <td class="govuk-table__cell govuk-table__cell--numeric">-£756.00</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric">- £790.80</td>
       </tr>
 
 

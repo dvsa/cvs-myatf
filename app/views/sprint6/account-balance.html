@@ -93,7 +93,9 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
 
 
-
+                <li style="margin-bottom: 10px;"> &#8212;
+                    <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="#">Request a refund</a>
+                <li>
 
 
             </ul>
@@ -158,7 +160,26 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
 
 
+                    {% from "inset-text/macro.njk" import govukInsetText %}
 
+                    {{ govukInsetText({
+                    text: "Your PFA balance has fallen below your £3,000 alert level. Please top up now."
+                    }) }}
+
+                    {% from "button/macro.njk" import govukButton %}
+
+                    {{ govukButton({
+                    text: "Top up your PFA"
+                    }) }}
+
+
+
+          
+ <p></p>
+                      
+
+
+                <p><a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="#">Set up a low balance alert</a></p>
 
                     </div>
 

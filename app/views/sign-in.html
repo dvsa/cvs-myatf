@@ -1,0 +1,97 @@
+{% extends "layout2.html" %}
+
+{% block pageTitle %}
+Home
+{% endblock %}
+
+<!–– Beta header ––>
+
+{% block beforeContent %}
+
+{% from "phase-banner/macro.njk" import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "beta"
+},
+html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+
+<!–– Breadcrumbs ––>
+
+
+{% endblock %}
+
+{% block content %}
+<script>
+  document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+
+</script>
+
+<a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+
+
+
+
+
+<script src="/govuk-frontend/all.js"></script>
+<script>
+  window.GOVUKFrontend.initAll()
+
+</script>
+
+<body class="govuk-template__body ">
+<thead class="govuk-table__head">
+
+
+  <h1 class="govuk-heading-l" style="margin-bottom: 2px">Sign in</h1>
+  <p class="v-space10">space</p>
+  <P>Enter your Authorised testing Facility (ATF) credentials to sign in. You <br>received these when you created your ATF online account.</P>
+
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="width-10">
+      User ID
+    </label>
+    <input class="govuk-input govuk-input--width-10" id="width-10" name="width-10" type="text">
+  </div>
+
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="width-10">
+      Password
+    </label>
+    <input class="govuk-input govuk-input--width-10" id="width-10" name="width-10" type="text">
+  </div>
+
+  
+  <form method="get" action="home.html">
+  <button type="submit" class="govuk-button">
+    Sign in
+  </button></form>
+  
+
+  <p class="v-space10">space</p>
+
+  <h2 class="govuk-heading-m">Problems signing in</h2>
+
+  <ul class="govuk-list">
+    <li>
+      <a class="govuk-link" href="#">Don't have an ATF account</a>
+    </li>
+    <li>
+      <a class="govuk-link" href="#">Forgotten user ID</a>
+    </li>
+    <li>
+      <a class="govuk-link" href="#">Forgotten password</a>
+    </li>
+
+  </ul>
+
+
+
+
+
+
+  </body>
+
+  </html>
+  {% endblock %}
