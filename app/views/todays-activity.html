@@ -78,9 +78,9 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
 
 
-            <!-- Table starts here -->
+            <!–– local headers START ––>
 
-            <table class="govuk-table" style="font-size:medium">
+      
                 <h1 class="govuk-fieldset__legend--m" style="margin-bottom: 2px">
                     Today's completed tests
                 </h1>
@@ -97,12 +97,21 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
                 <p class="v-space10">space</p>
 
 
+
+                <!–– local headers ENDS ––>
+
+
+
+                <!–– Table 1 start ––>
+
+                <table class="govuk-table" style="font-size:medium">
+
                 <h2 class="govuk-fieldset__legend--s" style="margin-bottom: 2px">
                     VSA 1
                 </h2>
 
 
-                <!–– Table 1 ––>
+             
 
 
                 <thead class="govuk-table__head">
@@ -110,7 +119,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
                         <th class="govuk-table__header" scope="col" style="text-align: left;">Start</th>
                         <th class="govuk-table__header" scope="col" style="text-align: left;">Test duration</th>
                         <th class="govuk-table__header" scope="col">Vehicle</th>
-                        <th class="govuk-table__header" scope="col">Activity</th>
+                        <th class="govuk-table__header" scope="col" width="40%">Activity</th>
                         <th class="govuk-table__header" scope="col">Pass/Fail</th>
                         <th class="govuk-table__header" scope="col" style="text-align: right;">Net Amount</th>
 
@@ -189,108 +198,120 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
             </table>
 
+           
+
             <div>
                 <p class="v-space">space</p>
             </div>
 
+            <!–– Table 1 end ––>
+
+            <!–– Table 2a start ––>
 
             <table class="govuk-table" style="font-size:medium">
 
+            <h2 class="govuk-fieldset__legend--s" style="margin-bottom: 2px">
+                VSA 2
+            </h2>
 
 
-                <h2 class="govuk-fieldset__legend--s" style="margin-bottom: 2px">
-                    VSA 2
-                </h2>
+         
 
 
-                <thead class="govuk-table__head">
-                    <tr class="govuk-table__row">
-                        <th class="govuk-table__header" scope="col" style="text-align: left;">Start</th>
-                        <th class="govuk-table__header" scope="col" style="text-align: left;">Test duration</th>
-                        <th class="govuk-table__header" scope="col">Vehicle</th>
-                        <th class="govuk-table__header" scope="col">Activity</th>
-                        <th class="govuk-table__header" scope="col">Pass/Fail</th>
-                        <th class="govuk-table__header" scope="col" style="text-align: right;">Net Amount</th>
-
-
-                    </tr>
-                </thead>
-
-
-                <tbody>
-
-                    <tr class="govuk-table__row">
-                        <td class="govuk-table__cell" style="text-align: left;">08:00</td>
-                        <td class="govuk-table__cell" style="text-align: left;">48 mins</td>
-                        <td class="govuk-table__cell">CB56 KTP</td>
-                        <td class="govuk-table__cell">3 axle motor vehicle annual test</td>
-                        <td class="govuk-table__cell"><a href="#">Pass</a></td>
-                        <td class="govuk-table__cell" style="text-align: right;">£113.00</td>
-
-
-                    </tr>
-
-                    <tr class="govuk-table__row">
-                        <td class="govuk-table__cell" style="text-align: left;">08:49</td>
-                        <td class="govuk-table__cell" style="text-align: left;">43 mins</td>
-                        <td class="govuk-table__cell">BB62 DYA</td>
-                        <td class="govuk-table__cell">3 axle motor vehicle annual test</td>
-                        <td class="govuk-table__cell"><a href="#">Pass</a></td>
-                        <td class="govuk-table__cell" style="text-align: right;">£113.00</td>
-
-
-                    </tr>
-
-                    <tr class="govuk-table__row">
-                        <td class="govuk-table__cell" style="text-align: left;">09:34</td>
-                        <td class="govuk-table__cell" style="text-align: left;">36 mins</td>
-                        <td class="govuk-table__cell">RP16 OJW</td>
-                        <td class="govuk-table__cell">2 axle motor vehicle annual test</td>
-                        <td class="govuk-table__cell"><a href="#">Pass</a></td>
-                        <td class="govuk-table__cell" style="text-align: right;">£91.00</td>
-
-
-                    </tr>
-
-                    <tr class="govuk-table__row">
-                        <td class="govuk-table__cell" style="text-align: left;">10:12</td>
-                        <td class="govuk-table__cell" style="text-align: left;">49 mins</td>
-                        <td class="govuk-table__cell">BM55 NLV</td>
-                        <td class="govuk-table__cell">3 axle motor vehicle annual test</td>
-                        <td class="govuk-table__cell"><a href="#">Fail</a></td>
-                        <td class="govuk-table__cell" style="text-align: right;">£113.00</td>
-
-
-                    </tr>
-
-                    <tr class="govuk-table__row">
-                        <td class="govuk-table__cell" style="text-align: left;">11.03</td>
-                        <td class="govuk-table__cell" style="text-align: left;">9 mins</td>
-                        <td class="govuk-table__cell"></td>
-                        <td class="govuk-table__cell">Wait time</td>
-                        <td class="govuk-table__cell"></td>
-                        <td class="govuk-table__cell" style="text-align: right;"></td>
-
-
-                    </tr>
-
-
-                    <tr class="govuk-table__row">
-                        <td class="govuk-table__cell" style="text-align: left;">11.13</td>
-                        <td class="govuk-table__cell" style="text-align: left;">39 mins</td>
-                        <td class="govuk-table__cell">AB58 XWV</td>
-                        <td class="govuk-table__cell">2 axle motor vehicle annual test</td>
-                        <td class="govuk-table__cell"><a href="#">Pass</a></td>
-                        <td class="govuk-table__cell" style="text-align: right;">£91.00</td>
-
-
-                    </tr>
-
-                </tbody>
+            <thead class="govuk-table__head">
+                <tr class="govuk-table__row">
+                    <th class="govuk-table__header" scope="col" style="text-align: left;">Start</th>
+                    <th class="govuk-table__header" scope="col" style="text-align: left;">Test duration</th>
+                    <th class="govuk-table__header" scope="col">Vehicle</th>
+                    <th class="govuk-table__header" scope="col" width="40%">Activity</th>
+                    <th class="govuk-table__header" scope="col">Pass/Fail</th>
+                    <th class="govuk-table__header" scope="col" style="text-align: right;">Net Amount</th>
 
 
 
-            </table>
+                </tr>
+            </thead>
+
+            <tbody>
+
+                <tr class="govuk-table__row">
+                    <td class="govuk-table__cell" style="text-align: left;">08:00</td>
+                    <td class="govuk-table__cell" style="text-align: left;">48 mins</td>
+                    <td class="govuk-table__cell">CB56 KTP</td>
+                    <td class="govuk-table__cell">3 axle motor vehicle annual test</td>
+                    <td class="govuk-table__cell"><a href="#">Pass</a></td>
+                    <td class="govuk-table__cell" style="text-align: right;">£113.00</td>
+
+
+                </tr>
+
+                <tr class="govuk-table__row">
+                    <td class="govuk-table__cell" style="text-align: left;">09:02</td>
+                    <td class="govuk-table__cell" style="text-align: left;">47 mins</td>
+                    <td class="govuk-table__cell">JY52 PDF</td>
+                    <td class="govuk-table__cell">3 axle motor vehicle annual test</td>
+                    <td class="govuk-table__cell"><a href="#">Fail</a></td>
+                    <td class="govuk-table__cell" style="text-align: right;">£113.00</td>
+
+
+                </tr>
+
+                <tr class="govuk-table__row">
+                    <td class="govuk-table__cell" style="text-align: left;">09:34</td>
+                    <td class="govuk-table__cell" style="text-align: left;">36 mins</td>
+                    <td class="govuk-table__cell">RP16 OJW</td>
+                    <td class="govuk-table__cell">2 axle motor vehicle annual test</td>
+                    <td class="govuk-table__cell"><a href="#">Pass</a></td>
+                    <td class="govuk-table__cell" style="text-align: right;">£91.00</td>
+
+
+                </tr>
+
+                <tr class="govuk-table__row">
+                    <td class="govuk-table__cell" style="text-align: left;">10:12</td>
+                    <td class="govuk-table__cell" style="text-align: left;">49 mins</td>
+                    <td class="govuk-table__cell">BM55 NLV</td>
+                    <td class="govuk-table__cell">3 axle motor vehicle annual test</td>
+                    <td class="govuk-table__cell"><a href="#">Fail</a></td>
+                    <td class="govuk-table__cell" style="text-align: right;">£113.00</td>
+
+                <tr class="govuk-table__row">
+                    <td class="govuk-table__cell" style="text-align: left;">11:03</td>
+                    <td class="govuk-table__cell" style="text-align: left;">9 mins</td>
+                    <td class="govuk-table__cell"></td>
+                    <td class="govuk-table__cell">Wait time</td>
+                    <td class="govuk-table__cell"><a href="#">Pass</a></td>
+                    <td class="govuk-table__cell" style="text-align: right;">£25.00</td>
+
+
+                <tr class="govuk-table__row">
+                    <td class="govuk-table__cell" style="text-align: left;">11.13</td>
+                    <td class="govuk-table__cell" style="text-align: left;">39 mins</td>
+                    <td class="govuk-table__cell">AB58 XWV</td>
+                    <td class="govuk-table__cell">2 axle motor vehicle annual test</td>
+                    <td class="govuk-table__cell"><a href="#">Pass</a></td>
+                    <td class="govuk-table__cell" style="text-align: right;">£91.00</td>
+
+
+                </tr>
+
+
+
+            </tbody>
+
+
+        </table>
+
+       
+
+        <div>
+            <p class="v-space">space</p>
+        </div>
+
+        <!–– Table 2a end ––>
+
+
+           
 
 
 
