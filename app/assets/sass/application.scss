@@ -293,11 +293,6 @@ hr {
 // DY-Styles: Start - responsive style for home page
 
 
-
-
-
-
-
   .home-block {
     display: inline-block;
     grid-column-gap: 1.5em;
@@ -313,9 +308,9 @@ hr {
 }
 
 .home-block li {
-  display: inline-block; /* Get all images to show in a row */
-  width: 31%;            /* Show 4 logos per row */
-  text-align: left;    /* Centre align the images */
+  display: inline-block; /* Get all things to show in a row */
+  width: 31%;            /* Show 3 things per row */
+  text-align: left;    /* Left align the text */
 }
 
 
@@ -331,9 +326,37 @@ hr {
     padding-right: 0px;
     padding-bottom: 0px;
     height: 80%;
+    
   
   } /* On small screens, show one thing per row */
 
 
 }
+
+
+
+.homebox {
+  color: #0b0c0c;
+  font-family: "nta", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: 400;
+  font-size: 14px;
+  font-size: 0.875rem;
+  line-height: 1.14286;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+
+@media (max-width: 500px) {
+  .govuk-body-s { 
+    font-size: 1.1em;
+    
+  
+  } /* On small screens, show one thing per row */
+
+
+}
+
 
