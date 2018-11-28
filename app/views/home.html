@@ -30,39 +30,38 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
 {% block content %}
 
+
+
+
+<script src="/govuk-frontend/all.js"></script>
+<script>
+  window.GOVUKFrontend.initAll()
+
+</script>
+
+
+
+
+<script>
+  document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+
+</script>
+
+<a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+
+
+
+
+
+
 <span id="with-hint-hint" class="govuk-hint" style="margin-top: 0%; margin-bottom: 0%;">P57832 Scania Lincoln</span>
-<thead class="govuk-table__head">
 
-  <h1 class="govuk-heading-xl" style="margin-bottom: 2px">Manage your ATF</h1>
-
-
-
-
+<h1 class="govuk-heading-xl">Manage your ATF</h1>
 
   <body class="govuk-template__body ">
-    <script>
-      document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
-
-    </script>
-
-    <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
 
 
 
-
-
-    <script src="/govuk-frontend/all.js"></script>
-    <script>
-      window.GOVUKFrontend.initAll()
-
-    </script>
-
-
-
-
-
-
-    
 
 
 
@@ -73,8 +72,8 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
           <h3 class="register-theme__heading govuk-heading-m govuk-!-margin-bottom-0 govuk-!-padding-bottom-5" style="color: #005EA5">Site
             management</h3>
 
-            
-            <p class="govuk-body-s"> View real-time and historic visit details </p>
+
+          <p class="govuk-body-s"> View real-time and historic visit details </p>
 
 
           <p></p>
@@ -84,21 +83,21 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
       <li class="home-block"><a class="register-theme__link" href="account-balance.html">
           <h3 class="register-theme__heading govuk-heading-m govuk-!-margin-bottom-0 govuk-!-padding-bottom-5" style="color: #005EA5">
             Account activity</h3>
-  
-              
-            <p class="govuk-body-s"> View balance and historic transactions</p>
-              <p class="register-theme__description govuk-body-s"><strong>Current balance : £2,123.89</strong></p>
-         
+
+
+          <p class="govuk-body-s"> View balance and historic transactions</p>
+          <p class="register-theme__description govuk-body-s"><strong>Current balance : £2,123.89</strong></p>
+
         </a></li>
 
 
 
-      
 
 
-        <div>
-          <p class="v-space">space</p>
-        </div>
+
+      <div>
+        <p class="v-space">space</p>
+      </div>
 
 
     </ul>
@@ -112,7 +111,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
 
     <ul class="govuk-list">
-      
+
       <li>
         <a class="govuk-link" href="sign-in.html">Sign out</a>
       </li>

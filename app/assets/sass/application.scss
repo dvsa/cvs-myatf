@@ -354,7 +354,17 @@ hr {
     font-size: 1.1em;
     
   
-  } /* On small screens, show one thing per row */
+  } /* On small screens, make box text bigger */
+
+
+}
+
+@media (max-width: 500px) {
+  .govuk-heading-xl { 
+    margin-bottom: -30px
+    
+  
+  } /* On small screens, reduce space below header */
 
 
 }
