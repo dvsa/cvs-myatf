@@ -69,22 +69,35 @@ hr {
 
 
 
-#divdate1 {
+#divdate21 {
   display: inline-block;
   float: left;
+  padding: 0 10px 0 0;
 }
 
-#divdate2 {
+#divdate22 {
   display: inline-block;
   float: left;
-  padding-left: 100px;
+  margin-left: 52px;
+  padding: 0 10px;
 }
 
-#divtitle2 {
- 
-  padding-left: 100px;
-}
+@media screen and (max-width: 700px){
+  #divdate21,
+  #divdate22{
+    width: 100%;
+    padding-left: 0;
+  }
 
+  #divdate22{
+    margin-top: 32px;
+    margin-left: 0;
+  }
+
+  #divdate2{
+    padding-left: 10px;
+  }
+}
 
 // DY-Styles: myatf-account / radio buttons
 
@@ -369,4 +382,51 @@ hr {
 
 }
 
+
+
+
+
+/* multi-date picker  */
+
+.multidate1 {
+  display: inline-block;
+  float: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+
+.multidate2 {
+  display: inline-block;
+  float: none;
+  padding-left: 0px;
+}
+
+@media (max-width: 500px) {
+  .multidate1 { 
+    width: 30%; 
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-top: 30px;
+    height: 80%;
+    
+  
+  } /* On small screens, make items stack */
+
+
+}
+
+@media (max-width: 500px) {
+  .multidate2 { 
+    width: 30%; 
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-top: 30px;
+    height: 80%;
+    
+  
+  } /* On small screens, make items stack */
+
+
+}
 
