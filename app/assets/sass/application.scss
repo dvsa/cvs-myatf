@@ -599,6 +599,70 @@ font-weight: bold;
 
 }
 
+#activity-line1 {
+ 
+  font-weight: normal;
+  background: 	#dee0e2;
+  padding-left: 172px;
+  padding-top: 16px;
+
+}
+
+#activity-line1:before {
+
+  content: "Date: ";
+  padding-left: 5px;
+  padding-top: 10px;
+}
+
+#activity-line2 {
+ 
+  font-weight: normal;
+  padding-left: 172px;
+  padding-top: 16px;
+
+}
+
+#activity-line2:before {
+
+  content: "Item: ";
+  padding-left: 5px;
+  padding-top: 10px;
+}
+
+#activity-line3 {
+ 
+  font-weight: normal;
+  padding-left: 5px;
+  padding-top: 16px;
+  
+
+}
+
+.collapse-line {
+
+  visibility: collapse;
+
+}
+
+
+
+#activity-line4 {
+ 
+  font-weight: bold;
+  padding-left: 172px;
+  padding-top: 16px;
+
+
+}
+
+#activity-line4:before {
+
+  content: "Net amount: ";
+  padding-left: 5px;
+  padding-top: 10px;
+}
+
 
 }
 
