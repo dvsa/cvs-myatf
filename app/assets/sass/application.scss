@@ -630,18 +630,41 @@ font-weight: bold;
   padding-top: 10px;
 }
 
+
+
+#activity-line3:before {
+
+  content: "Details: ";
+  padding-left: 5px;
+  padding-top: 10px;
+  padding-right: 103px;
+  color: black;
+ 
+  font-weight: bold;
+}
+
 #activity-line3 {
  
   font-weight: normal;
   padding-left: 5px;
   padding-top: 16px;
+  text-decoration: none;
   
-
 }
+
+
+
+
 
 .collapse-line {
 
-  visibility: collapse;
+  display: none;
+
+}
+
+.pretendlink {
+
+  color: #005EA5 !important;
 
 }
 
@@ -650,8 +673,10 @@ font-weight: bold;
 #activity-line4 {
  
   font-weight: bold;
-  padding-left: 172px;
+  padding-left: 5px;
   padding-top: 16px;
+  padding-right: 70px;
+  
 
 
 }
@@ -661,6 +686,8 @@ font-weight: bold;
   content: "Net amount: ";
   padding-left: 5px;
   padding-top: 10px;
+  color: black;
+  
 }
 
 
