@@ -691,6 +691,175 @@ font-weight: bold;
 }
 
 
+#transaction-line1 {
+  font-weight: normal;
+  background: 	#dee0e2;
+  padding-left: 230px;
+  padding-top: 16px;
+}
+
+#transaction-line1:before {
+  content: "Test date: ";
+  padding-left: 5px;
+  padding-top: 10px;
+}
+
+
+#transaction-line2 {
+  font-weight: normal;
+  padding-left: 230px;
+  padding-top: 16px;
+}
+
+#transaction-line2:before {
+  content: "Time: ";
+  padding-left: 5px;
+  padding-top: 10px;
+}
+
+
+
+#transaction-line3 {
+  font-weight: normal;
+  padding-left: 230px;
+  padding-top: 16px;
+  word-break: keep-all !important;
+}
+
+#transaction-line3:before {
+  content: "Activity: ";
+  padding-left: 5px;
+  padding-top: 10px;
+}
+
+
+
+#transaction-line4 {
+  font-weight: normal;
+  padding-left: 230px;
+  padding-top: 16px;
+
+}
+
+#transaction-line4:before {
+  content: "Registration/ID: ";
+  padding-left: 5px;
+  padding-top: 10px;
+}
+
+
+
+#transaction-line5 {
+  font-weight: normal;
+  padding-left: 220px;
+  padding-top: 16px;
+  padding-right: 50px;
+}
+#transaction-line5:before {
+  content: "Net Amount: ";
+  padding-left: 5px;
+  padding-top: 10px;
+}
+
+#transaction-line6 {
+  font-weight: normal;
+  padding-left: 220px;
+  padding-top: 16px;
+  padding-right: 50px;
+}
+#transaction-line6:before {
+  content: "VAT: ";
+  padding-left: 5px;
+  padding-top: 10px;
+}
+
+#transaction-line7 {
+  font-weight: normal;
+  padding-left: 220px;
+  padding-top: 16px;
+  padding-right: 50px !important;
+}
+#transaction-line7:before {
+  content: "Total: ";
+  padding-left: 5px;
+  padding-top: 10px;
+}
+
+#transaction-total {
+  font-weight: normal;
+  padding-left: 220px;
+  padding-top: 16px;
+  padding-right: 50px !important;
+  background: #6f777b !important;
+  color:white;
+}
+#transaction-total:before {
+  content: "Invoice total: ";
+  padding-left: 5px;
+  padding-top: 10px;
+}
+
+
+#advice-line1 {
+  font-weight: normal;
+  background: 	#dee0e2;
+  padding-left: 230px;
+  padding-top: 16px;
+}
+
+#advice-line1:before {
+  content: "Date: ";
+  padding-left: 5px;
+  padding-top: 10px;
+}
+
+#advice-line2 {
+  font-weight: normal;
+  padding-left: 230px;
+  padding-top: 16px;
+}
+
+#advice-line2:before {
+  content: "Reference no: ";
+  padding-left: 5px;
+  padding-top: 10px;
+}
+
+#advice-line3 {
+  font-weight: normal;
+  padding-left: 230px;
+  padding-top: 16px;
+  word-break: keep-all !important;
+}
+
+#advice-line3:before {
+  content: "Payment type: ";
+  padding-left: 5px;
+  padding-top: 10px;
+}
+
+/* rpayment advice */
+
+#advice-total {
+  font-weight: bold;
+  padding-left: 230px;
+  padding-top: 16px;
+  padding-right: 50px !important;
+}
+#advice-total:before {
+  content: "Total: ";
+  padding-left: 5px;
+  padding-top: 10px;
+}
+
+
+.resp-vspace{
+  padding-top: 30px;
+
+
+}
+
+
 }
 
 
