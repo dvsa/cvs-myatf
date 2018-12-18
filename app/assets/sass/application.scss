@@ -875,3 +875,17 @@ font-weight: bold;
 
 /* responsive tables */
 
+
+/*text box width*/
+.textwidth{
+  width: 380px;
+
+}
+
+@media (max-width: 500px) {
+  .textwidth {
+    width: 320px; 
+
+  }
+}
+
