@@ -1,4 +1,4 @@
-{% extends "layout-site.html" %}
+{% extends "layout2.html" %}
 
 {% block pageTitle %}
 Activity summary
@@ -111,7 +111,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
 
 
-            <table class="govuk-table" id="runningtotal2">
+            <table class="govuk-table" id="summary1">
                 <h1 class="govuk-fieldset__legend--m" style="margin-bottom: 2px">
                     <a id="summary-table">Summary</a>
                 </h1>
@@ -120,13 +120,13 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
                         <p class="v-space10">space</p>
                     </tr>
                 </thead>
-                <tbody class="govuk-table__body">
+                <tbody class="govuk-table__body" id="summary1">
                     <tr class="govuk-table__row">
-                        <td class="govuk-table__cell" scope="row" width="90%"><a href="todays-activity.html">Today's completed tests</a>
+                        <td class="govuk-table__cell" id="summary1" scope="row" width="90%"><a href="todays-activity.html">Today's completed tests</a>
                             </td>
                         <td class="govuk-table__cell govuk-table__cell--numeric govuk-body">8</td>
                     </tr>
-                    <tr class="govuk-table__row">
+                    <tr class="govuk-table__row" id="summary1">
                         <td class="govuk-table__cell" scope="row" width="90%">Today's test fees</td>
                             <td class="govuk-table__cell govuk-table__cell--numeric govuk-body">£1088.80</td>
                     </tr>
@@ -134,14 +134,14 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
 
                     <tr class="govuk-table__row">
-                        <td class="govuk-table__cell" scope="row"><a href="#">Open health and safety issues</a></td>
+                        <td class="govuk-table__cell" id="summary1" scope="row"><a href="#">Open health and safety issues</a></td>
                         <td class="govuk-table__cell govuk-table__cell--numeric govuk-body">4</td>
 
                     </tr>
                     <tr></tr>
 
                     <tr class="govuk-table__row">
-                        <td class="govuk-table__cell" scope="row"><a href="#">Utilisation</a> (This month)</td>
+                        <td class="govuk-table__cell" id="summary1" scope="row"><a href="#">Utilisation</a> (This month)</td>
                         <td class="govuk-table__cell govuk-table__cell--numeric govuk-body">96%</td>
                     </tr>
 
