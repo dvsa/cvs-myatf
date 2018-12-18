@@ -1,7 +1,7 @@
 {% extends "layout2.html" %}
 
 {% block pageTitle %}
-Sign in
+password 02
 {% endblock %}
 
 <!–– Beta header ––>
@@ -44,16 +44,11 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 <thead class="govuk-table__head">
 
 
-  <h1 class="govuk-heading-l" style="margin-bottom: 2px">Sign in</h1>
+  <h1 class="govuk-heading-l" style="margin-bottom: 2px">Reset your password</h1>
+  <p class="v-space10">space</p>
+  <p>Select a new password.</p>
   <p class="v-space10">space</p>
 
-
-  <div class="govuk-form-group">
-    <label class="govuk-label" for="width-20">
-      Email address
-    </label>
-    <input class="govuk-input govuk-input--width-20" id="width-20" name="width-10" type="text">
-  </div>
 
   <div class="govuk-form-group">
     <label class="govuk-label" for="width-20">
@@ -61,11 +56,19 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
     </label>
     <input class="govuk-input govuk-input--width-20" id="width-20" name="width-10" type="password">
   </div>
+  <div class="govuk-form-group">
+      <label class="govuk-label" for="width-20">
+        Re-type password
+      </label>
+      <input class="govuk-input govuk-input--width-20" id="width-20" name="width-10" type="password">
+    </div>
+
+
 
   
   <form method="get" action="home.html">
   <button type="submit" class="govuk-button">
-    Sign in
+    Submit
   </button></form>
   
 
@@ -76,7 +79,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
   <ul class="govuk-list">
 
       <li>
-          <a class="govuk-link" href="pass-recover-01.html">Forgotten password</a>
+          <a class="govuk-link" href="#">Forgotten password</a>
         </li>
    
 
