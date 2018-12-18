@@ -1,45 +1,74 @@
-<!DOCTYPE html>
-<html lang="en" class="email01">
+{% extends "layout2.html" %}
 
-<head>
+{% block pageTitle %}
+password 03
+{% endblock %}
 
-</head>
+<!–– Beta header ––>
 
-<body class="email01">
+{% block beforeContent %}
+
+{% from "phase-banner/macro.njk" import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "beta"
+},
+html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+
+<!–– Breadcrumbs ––>
+
+
+{% endblock %}
+
+{% block content %}
+<script>
+  document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');
+
+</script>
+
+<a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+
+
+
+
+
+<script src="/govuk-frontend/all.js"></script>
+<script>
+  window.GOVUKFrontend.initAll()
+
+</script>
+
+<body class="govuk-template__body ">
+<thead class="govuk-table__head">
+
+
+  <h1 class="govuk-heading-l" style="margin-bottom: 2px">Your password has been reset</h1>
+  <p class="v-space10">space</p>
+  <p>Please sign-in with your new password to manage your Authorised Testing Facility</p>
+  <p class="v-space10">space</p>
+
+
+
+
+  
+  <form method="get" action="sign-in.html">
+  <button type="submit" class="govuk-button">
+    Sign in
+  </button></form>
   
 
-  
+  <p class="v-space10">space</p>
 
-  <div class="email01">
-   
-      <h2 class="email01"><font face="arial" color="black">DVSA - Your password has been reset</font></h2>
-
-      <p><strong><font face="arial" color="black">From:</strong> DVSA Business support email <span style="color:gray;font-size:small;">no.reply@dvsa.gov.uk</span></font></p>
-
-      <p><strong><font face="arial" color="black">To: </strong>Shane Hemming  <span style="color:gray;font-size:small;">shane@hemmingATF.co.uk</span></font></p>
-
-      <p><strong><font face="arial" color="black">Date: </strong>7 January 2019  </font></p>
-      <hr>
-   
-  </div>
-
-  <div style="padding: 50px; text-align: left; line-height: 24px;">
-
-      <font face="arial" color="black">
-
-          <p>Your password has been reset. </p><p><a href="sign-in.html"><strong>Sign in to Manage Your Authorised Testing Facility</strong> </a></p>
-
-  
-      
-    
-
-      </font>
-
-  </div>
+ 
 
 
 
 
-</body>
 
-</html>
+
+  </body>
+
+  </html>
+  {% endblock %}
