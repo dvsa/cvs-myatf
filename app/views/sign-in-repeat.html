@@ -58,7 +58,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
       <div class="govuk-error-summary__body">
         <ul class="govuk-list govuk-error-summary__list">
           <li>
-            <a href="#name">Invalid sign-in details</a>
+            <a href="#name">You have had too many failed login attempts. Please try again in 10 minutes</a>
           </li>
         </ul>
       </div>
@@ -74,31 +74,11 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
 
 
- <div class="govuk-form-group govuk-form-group--error">
-  <label class="govuk-label" for="name">
-    Email address
-  </label>
-  <span id="name-error" class="govuk-error-message">
-    Enter your correct email address
-  </span>
-  <input class="govuk-input govuk-input--error textwidth" id="name" name="name" type="text" aria-describedby="name-error" value="me@mydomain.co.uk">
-</div>
 
-
-
-<div class="govuk-form-group govuk-form-group--error">
-  <label class="govuk-label" for="name">
-    Password
-  </label>
-  <span id="name-error" class="govuk-error-message">
-    Enter your correct password
-  </span>
-  <input class="govuk-input govuk-input--error textwidth" id="name" name="name" type="password" aria-describedby="name-error" value="password">
-</div>
 
 
   <form method="get" action="home.html">
-  <button type="submit" class="govuk-button">
+  <button type="submit" class="govuk-button" id="name" disabled>
     Sign in
   </button></form>
   
