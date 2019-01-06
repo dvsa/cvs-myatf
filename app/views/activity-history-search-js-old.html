@@ -100,8 +100,9 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
 
 
+<form>
 
-
+<fieldset></fieldset>
 
 
       <div><p class="v-space10">space</p></div>
@@ -119,13 +120,12 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
           <!–– email selection START ––>
 
 
-<form action="../">
-  <fieldset style="border-style: hidden;">
+
 
 
           <!–– email selection START ––>
         <div class="govuk-radios__item">
-          <input class="govuk-radios__input" id="how-contacted-conditional-1" name="radioselection" type="radio" value="invoice-4jan"
+          <input class="govuk-radios__input" id="radio01" name="selection" type="radio" value="invoice-4jan.html"
             data-aria-controls="conditional-how-contacted-conditional-1">
           <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-1">
             Select a single date
@@ -179,13 +179,13 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
 
         <div class="govuk-radios__item">
-          <input class="govuk-radios__input" id="how-contacted-conditional-2" name="radioselection" type="radio" value="myatf-account.html"
+          <input class="govuk-radios__input" id="how-contacted-conditional-2" name="how-contacted" type="radio" value="invoice.html"
             data-aria-controls="conditional-how-contacted-conditional-2">
           <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
             Select a longer period of time
           </label>
         </div>
-        <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-2">
+        <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="radio02">
 
 
           <!–– multit-date dropdown START ––>
@@ -274,23 +274,27 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
         </div>
       </div>
-   
-  </div>
 
-
-
-
-
-
-  <input type="button" class="govuk-button" value="Show transactions" onclick="ob=this.form.radioselection;for(i=0;i<ob.length;i++){if(ob[i].checked){window.open(ob[i].value,'_self');};}" />
+      <input type="button" class="govuk-button" value="Show transactions" onclick="ob=this.form.selection;for(i=0;i<ob.length;i++){
+        if(ob[i].checked){window.open(ob[i].value,'_self');};}" />
 
 
 </fieldset>
-</form>
-      
 
-<p></p>
+    </form>
 
+
+
+
+
+
+
+
+
+
+
+    </fieldset>
+  </div>
 
 
 
@@ -301,7 +305,11 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
   <!–– Search button ––>
 
 
+      
 
+
+
+ 
 
 
 </body>

@@ -119,13 +119,12 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
           <!–– email selection START ––>
 
 
-<form action="../">
-  <fieldset style="border-style: hidden;">
+
 
 
           <!–– email selection START ––>
         <div class="govuk-radios__item">
-          <input class="govuk-radios__input" id="how-contacted-conditional-1" name="radioselection" type="radio" value="invoice-4jan"
+          <input class="govuk-radios__input" id="how-contacted-conditional-1" name="how-contacted" type="radio" value="email"
             data-aria-controls="conditional-how-contacted-conditional-1">
           <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-1">
             Select a single date
@@ -179,7 +178,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
 
         <div class="govuk-radios__item">
-          <input class="govuk-radios__input" id="how-contacted-conditional-2" name="radioselection" type="radio" value="myatf-account.html"
+          <input class="govuk-radios__input" id="how-contacted-conditional-2" name="how-contacted" type="radio" value="phone"
             data-aria-controls="conditional-how-contacted-conditional-2">
           <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
             Select a longer period of time
@@ -274,23 +273,8 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
         </div>
       </div>
-   
+    </fieldset>
   </div>
-
-
-
-
-
-
-  <input type="button" class="govuk-button" value="Show transactions" onclick="ob=this.form.radioselection;for(i=0;i<ob.length;i++){if(ob[i].checked){window.open(ob[i].value,'_self');};}" />
-
-
-</fieldset>
-</form>
-      
-
-<p></p>
-
 
 
 
@@ -301,7 +285,13 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
   <!–– Search button ––>
 
 
+  {% from "button/macro.njk" import govukButton %}
 
+  {{ govukButton({
+  "text": "Show transactions",
+  "href": "myatf-account.html",
+  "classes": "govuk-button"
+  }) }}
 
 
 </body>
