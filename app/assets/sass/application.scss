@@ -56,6 +56,14 @@ hr {
 // Paste this (as many time as you want) between divs: <div><p class="v-space10">space</p></div>
 
 
+// Add 10px vertical space between elements
+.v-space2 {
+  margin: 1px 0;
+  color: rgba(0, 0, 0, 0.0);
+}
+// Paste this (as many time as you want) between divs: <div><p class="v-space2">space</p></div>
+
+
 
 // DY-Styles: myatf-account / datepicker
 
@@ -689,6 +697,75 @@ font-weight: bold;
   color: black;
   
 }
+
+#hidden {
+
+  visibility: 0;
+
+}
+
+#sum-line1 {
+  font-weight: bold;
+  background: 	#dee0e2;
+  text-align: left;
+  padding-left: 5px;
+  padding-top: 16px;
+}
+
+#sum-line1:before {
+  content: "8 ";
+  text-align: right;
+  padding-left: 160px;
+  padding-top: 12px;
+}
+
+#sum-line2 {
+  background: 	#dee0e2;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 5px;
+  padding-top: 16px;
+}
+
+#sum-line2:before {
+  content: "£963.00 ";
+  text-align: right;
+  padding-left: 160px;
+  padding-top: 12px;
+}
+
+#sum-line3 {
+  background: 	#dee0e2;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 5px;
+  padding-top: 16px;
+}
+
+#sum-line3:before {
+  content: "1";
+  text-align: right;
+  padding-left: 160px;
+  padding-top: 12px;
+}
+
+#sum-line4 {
+  background: 	#dee0e2;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 5px;
+  padding-top: 16px;
+}
+
+#sum-line4:before {
+  content: "96%";
+  text-align: right;
+  padding-left: 160px;
+  padding-top: 12px;
+}
+
+
+
 
 
 #transaction-line1 {
