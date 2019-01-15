@@ -788,6 +788,7 @@ font-weight: bold;
 
 #transaction-line1 {
   font-weight: normal;
+  text-align: right;
   background: 	#dee0e2;
   padding-left: 200px;
   padding-top: 16px;
@@ -802,6 +803,7 @@ font-weight: bold;
 
 #transaction-line2 {
   font-weight: normal;
+  text-align: right !important;
   padding-left: 200px;
   padding-top: 16px;
 }
@@ -816,6 +818,7 @@ font-weight: bold;
 
 #transaction-line3 {
   font-weight: normal;
+  text-align: right !important;
   padding-left: 200px;
   padding-top: 16px;
   word-break: keep-all !important;
@@ -831,6 +834,7 @@ font-weight: bold;
 
 #transaction-line4 {
   font-weight: normal;
+  text-align: right !important;
   padding-left: 200px;
   padding-top: 16px;
 
@@ -846,6 +850,7 @@ font-weight: bold;
 
 #transaction-line5 {
   font-weight: normal;
+  text-align: right !important;
   padding-left: 200px;
   padding-top: 16px;
   padding-right: 50px;
@@ -858,6 +863,7 @@ font-weight: bold;
 
 #transaction-line6 {
   font-weight: normal;
+  text-align: right !important;
   padding-left: 200px;
   padding-top: 16px;
   padding-right: 50px;
@@ -870,6 +876,7 @@ font-weight: bold;
 
 #transaction-line7 {
   font-weight: normal;
+  text-align: right !important;
   padding-left: 200px;
   padding-top: 16px;
   padding-right: 50px !important;
@@ -883,6 +890,7 @@ font-weight: bold;
 
 #transaction-total {
   font-weight: normal;
+
   padding-left: 200px;
   padding-top: 16px;
   padding-right: 50px !important;
@@ -898,8 +906,9 @@ font-weight: bold;
 
 #advice-line1 {
   font-weight: normal;
+  text-align: right !important;
   background: 	#dee0e2;
-  padding-left: 230px;
+  padding-left: 200px;
   padding-top: 16px;
 }
 
@@ -911,7 +920,8 @@ font-weight: bold;
 
 #advice-line2 {
   font-weight: normal;
-  padding-left: 230px;
+  text-align: right !important;
+  padding-left: 200px;
   padding-top: 16px;
 }
 
@@ -923,7 +933,8 @@ font-weight: bold;
 
 #advice-line3 {
   font-weight: normal;
-  padding-left: 230px;
+  text-align: right !important;
+  padding-left: 200px;
   padding-top: 16px;
   word-break: keep-all !important;
 }
@@ -938,7 +949,7 @@ font-weight: bold;
 
 #advice-total {
   font-weight: bold;
-  padding-left: 230px;
+  padding-left: 200px;
   padding-top: 16px;
   padding-right: 50px !important;
 }
