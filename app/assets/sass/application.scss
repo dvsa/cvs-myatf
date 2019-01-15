@@ -449,11 +449,29 @@ hr {
 table,head,tbody,th,td,tr {
   display: block;
 }
+
+
+
+.sum-table tr{
+  display: flex;
+  justify-content: space-between;
+  border-top: 0;
+  padding-bottom: 6px;
+  border-bottom: 1px solid #bfc1c3
+}
+
+.sum-table tr td{
+  border-bottom: 0;
+}
+
 thead tr {
 display: none;
 
 }
 
+.mobile-hide{
+  display: none;
+}
 
 tr {
 border-top: 1px solid #ccc; 
@@ -704,65 +722,65 @@ font-weight: bold;
 
 }
 
-#sum-line1 {
-  font-weight: bold;
-  background: 	#dee0e2;
-  text-align: left;
-  padding-left: 5px;
-  padding-top: 16px;
-}
+// #sum-line1 {
+//   font-weight: bold;
+//   background: 	#dee0e2;
+//   text-align: left;
+//   padding-left: 5px;
+//   padding-top: 16px;
+// }
 
-#sum-line1:before {
-  content: "8 ";
-  text-align: right;
-  padding-left: 160px;
-  padding-top: 12px;
-}
+// #sum-line1:before {
+//   content: "8 ";
+//   text-align: right;
+//   padding-left: 160px;
+//   padding-top: 12px;
+// }
 
-#sum-line2 {
-  background: 	#dee0e2;
-  font-weight: bold;
-  text-align: left;
-  padding-left: 5px;
-  padding-top: 16px;
-}
+// #sum-line2 {
+//   background: 	#dee0e2;
+//   font-weight: bold;
+//   text-align: left;
+//   padding-left: 5px;
+//   padding-top: 16px;
+// }
 
-#sum-line2:before {
-  content: "£963.00 ";
-  text-align: right;
-  padding-left: 160px;
-  padding-top: 12px;
-}
+// #sum-line2:before {
+//   content: "£963.00 ";
+//   text-align: right;
+//   padding-left: 160px;
+//   padding-top: 12px;
+// }
 
-#sum-line3 {
-  background: 	#dee0e2;
-  font-weight: bold;
-  text-align: left;
-  padding-left: 5px;
-  padding-top: 16px;
-}
+// #sum-line3 {
+//   background: 	#dee0e2;
+//   font-weight: bold;
+//   text-align: left;
+//   padding-left: 5px;
+//   padding-top: 16px;
+// }
 
-#sum-line3:before {
-  content: "1";
-  text-align: right;
-  padding-left: 160px;
-  padding-top: 12px;
-}
+// #sum-line3:before {
+//   content: "1";
+//   text-align: right;
+//   padding-left: 160px;
+//   padding-top: 12px;
+// }
 
-#sum-line4 {
-  background: 	#dee0e2;
-  font-weight: bold;
-  text-align: left;
-  padding-left: 5px;
-  padding-top: 16px;
-}
+// #sum-line4 {
+//   background: 	#dee0e2;
+//   font-weight: bold;
+//   text-align: left;
+//   padding-left: 5px;
+//   padding-top: 16px;
+// }
 
-#sum-line4:before {
-  content: "96%";
-  text-align: right;
-  padding-left: 160px;
-  padding-top: 12px;
-}
+// #sum-line4:before {
+//   content: "96%";
+//   text-align: right;
+//   padding-left: 160px;
+//   padding-top: 12px;
+// }
 
 
 
@@ -945,6 +963,10 @@ font-weight: bold;
   padding-top: 16px;
 
   text-align: left;
+}
+
+.sum-table{
+  
 }
 
 }
