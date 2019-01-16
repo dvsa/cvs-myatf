@@ -64,9 +64,51 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
       </div>
     </div>
 
-    <div class="govuk-inset-text">
-      <a href="placeholder.html">Contact DVSA</a> for further assistance
-    </div>
+ 
+
+
+    <!–– message appear start ––>
+   
+
+    <script language="javascript"> 
+      function toggle() {
+          var ele = document.getElementById("toggleText");
+          var text = document.getElementById("displayText");
+          if(ele.style.display == "block") {
+                  ele.style.display = "none";
+              text.innerHTML = "To recitify this please alert DVSA";
+          }
+          else {
+              ele.style.display = "block";
+              text.innerHTML = "";
+          }
+      } 
+      </script>
+      
+      <div class="govuk-body-m">
+        <a id="displayText" href="javascript:toggle();">Please contact DVSA if you believe this to be incorrect</a></div>
+    
+      <div id="toggleText" style="display: none" class="govuk-inset-text">DVSA have been informed. Please check your email</div>
+    
+
+
+<!–– message appear end ––>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <p class="v-space10">space</p>
 
     <h2 class="govuk-error-summary__title" id="error-summary-title">
