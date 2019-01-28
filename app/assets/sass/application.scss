@@ -456,7 +456,28 @@ hr.new1 {
 }
 
 
+.sign-out{
 
+
+margin-left: 400px
+
+
+
+}
+
+@media (max-width: 500px) {
+  .sign-out { 
+   
+    padding-left: 100px;
+    white-space: nowrap;
+
+
+    
+  
+  } /* On small screens, make items stack */
+
+
+}
 
 
 /* multi-date picker  */
