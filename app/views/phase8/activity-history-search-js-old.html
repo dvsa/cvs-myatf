@@ -59,35 +59,39 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
   <div class="govuk-form-group">
     <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
       <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-        <h1 class="govuk-heading-l" style="margin-bottom: 2px"> Account activity</h1>
+        <h1 class="govuk-fieldset__heading">
+          Account activity
+        </h1>
       </legend>
       <div>
           <p class="v-space10">space</p>
       </div>
 
-      <ol class="govuk-list" style="font-size:large">
+      <div class="box">
 
-        <li style="margin-bottom: 10px;"> &#8212;
-            <a href="account-summary.html" class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;">Summary</a></li>
+          <ul class="govuk-list" style="font-size:large">
 
-        <li style="margin-bottom: 10px;"> &#8212;
-            <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="account-balance.html">Top up pre-funded account (PFA)</a></li>
+ 
 
-
-        <li style="margin-bottom: 10px;"> &#8212;
-            <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="activity-history-search.html">Transactions</a></li>
+              <li style="margin-bottom: 10px;"> &#8212;
+                  <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="account-balance.html">Pre-funded account</a>
+                  </li>
 
 
+              <li style="margin-bottom: 10px;"> &#8212;
+                  <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" >Transactions</a>
+                  </li>
 
-      
+
+                  <li style="margin-bottom: 10px;"> &#8212;
+                      <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="sign-in.html">Sign out</a></li>
 
 
-
-        <li style="margin-bottom: 10px;">
-            <p class="v-space2">space</p>
-        </li>
-
-    </ol>
+                  <li style="margin-bottom: 10px;">
+                      <p class="v-space10">space</p>
+                  </li>
+    
+              </ul>
               <hr>                      
       
 
@@ -96,8 +100,9 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
 
 
+<form>
 
-
+<fieldset></fieldset>
 
 
       <div><p class="v-space10">space</p></div>
@@ -115,13 +120,12 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
           <!–– email selection START ––>
 
 
-<form action="../">
-  <fieldset style="border-style: hidden;">
+
 
 
           <!–– email selection START ––>
         <div class="govuk-radios__item">
-          <input class="govuk-radios__input" id="how-contacted-conditional-1" name="radioselection" type="radio" value="invoice-4jan"
+          <input class="govuk-radios__input" id="radio01" name="selection" type="radio" value="invoice-4jan.html"
             data-aria-controls="conditional-how-contacted-conditional-1">
           <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-1">
             Select a single date
@@ -175,13 +179,13 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
 
         <div class="govuk-radios__item">
-          <input class="govuk-radios__input" id="how-contacted-conditional-2" name="radioselection" type="radio" value="myatf-account.html"
+          <input class="govuk-radios__input" id="how-contacted-conditional-2" name="how-contacted" type="radio" value="invoice.html"
             data-aria-controls="conditional-how-contacted-conditional-2">
           <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
             Select a longer period of time
           </label>
         </div>
-        <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-2">
+        <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="radio02">
 
 
           <!–– multit-date dropdown START ––>
@@ -270,23 +274,27 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
         </div>
       </div>
-   
-  
 
+      <input type="button" class="govuk-button" value="Show transactions" onclick="ob=this.form.selection;for(i=0;i<ob.length;i++){
+        if(ob[i].checked){window.open(ob[i].value,'_self');};}" />
 
-
-
-
-
-  <input type="button" class="govuk-button" value="Show transactions" onclick="ob=this.form.radioselection;for(i=0;i<ob.length;i++){if(ob[i].checked){window.open(ob[i].value,'_self');};}" />
-</div>
 
 </fieldset>
-</form>
-      
 
-<p></p>
+    </form>
 
+
+
+
+
+
+
+
+
+
+
+    </fieldset>
+  </div>
 
 
 
@@ -297,7 +305,11 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
   <!–– Search button ––>
 
 
+      
 
+
+
+ 
 
 
 </body>

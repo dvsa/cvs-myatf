@@ -59,35 +59,37 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
   <div class="govuk-form-group">
     <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
       <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
-        <h1 class="govuk-heading-l" style="margin-bottom: 2px"> Account activity</h1>
+        <h1 class="govuk-fieldset__heading">
+          Account activity
+        </h1>
       </legend>
       <div>
           <p class="v-space10">space</p>
       </div>
 
-      <ol class="govuk-list" style="font-size:large">
+      <div class="box">
 
-        <li style="margin-bottom: 10px;"> &#8212;
-            <a href="account-summary.html" class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;">Summary</a></li>
+          <ul class="govuk-list" style="font-size:large">
 
-        <li style="margin-bottom: 10px;"> &#8212;
-            <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="account-balance.html">Top up pre-funded account (PFA)</a></li>
+ 
 
-
-        <li style="margin-bottom: 10px;"> &#8212;
-            <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="activity-history-search.html">Transactions</a></li>
+              <li style="margin-bottom: 10px;"> &#8212;
+                  <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="account-balance.html">Pre-funded account</a>
+                  </li>
 
 
+              <li style="margin-bottom: 10px;"> &#8212;
+                  <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" >Transactions</a>
+                  </li>
 
-      
 
+ 
 
-
-        <li style="margin-bottom: 10px;">
-            <p class="v-space2">space</p>
-        </li>
-
-    </ol>
+                  <li style="margin-bottom: 10px;">
+                      <p class="v-space10">space</p>
+                  </li>
+    
+              </ul>
               <hr>                      
       
 
@@ -271,7 +273,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
         </div>
       </div>
    
-  
+  </div>
 
 
 
@@ -279,7 +281,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
 
   <input type="button" class="govuk-button" value="Show transactions" onclick="ob=this.form.radioselection;for(i=0;i<ob.length;i++){if(ob[i].checked){window.open(ob[i].value,'_self');};}" />
-</div>
+
 
 </fieldset>
 </form>
