@@ -420,6 +420,12 @@ hr.new1 {
   
 }
 
+hr.new2 {
+  border-top: 4px solid govuk-colour("blue");
+  margin-bottom: 0px !important;
+  
+}
+
 
 .homebox {
   color: #0b0c0c;
@@ -1098,7 +1104,11 @@ padding-left: 50px;
 
 }
 
-
+div.ex1 {
+  width:400px;
+  
+  border: 0px solid #73AD21;
+}
 
 
 /* cookie banner start */
