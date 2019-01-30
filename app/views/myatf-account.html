@@ -25,7 +25,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
       <a class="govuk-breadcrumbs__link" href="home.html">Home</a>
     </li>
     <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link" href="account-balance.html">Account activity</a>
+      <a class="govuk-breadcrumbs__link" href="account-summary.html">Account activity</a>
     </li>
     <li class="govuk-breadcrumbs__list-item">
       <a class="govuk-breadcrumbs__link" href="activity-history-search.html">Search</a>
@@ -73,15 +73,14 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
         <ol class="govuk-list" style="font-size:large">
 
-          <li style="margin-bottom: 10px;"> &#8212;
-              <a href="account-summary.html" class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;">Summary</a></li>
-
-          <li style="margin-bottom: 10px;"> &#8212;
-              <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="account-balance.html">Top up pre-funded account (PFA)</a></li>
 
 
           <li style="margin-bottom: 10px;"> &#8212;
-              <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="activity-history-search.html">Transactions</a></li>
+              <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="account-summary.html">Top up pre-funded account (PFA)</a></li>
+
+
+          <li style="margin-bottom: 10px;"> &#8212;
+              <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="activity-history-search.html">Search transactions</a></li>
 
 
 
@@ -155,6 +154,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
       <tr class="govuk-table__row">
         <th class="govuk-table__header" scope="col">Date</th>
         <th class="govuk-table__header govuk-table__header--text" scope="col">Item</th>
+        <th class="govuk-table__header govuk-table__header--text" scope="col">Number</th>
         <th class="govuk-table__header govuk-table__header--numeric" scope="col">Net amount</th>
 
       <th class="govuk-table__header govuk-table__header--numeric" scope="col">Balance</th>      </tr>
@@ -164,7 +164,8 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
       <tr class="govuk-table__row">
         <td class="govuk-table__cell" scope="row" id="activity-line1">10 June 2018</td>
-        <td class="govuk-table__cell"><a href="placeholder.html" id="activity-line3" >Top up to PFA</a></td>
+        <td class="govuk-table__cell" id="activity-line3" >Top up to PFA</td>
+        <td class="govuk-table__cell"><a id="activity-line3" >1-234567890</a></td>
         <td class="govuk-table__cell govuk-table__cell--numeric" id="activity-line4">+£15,000.00</td>
         <td class="govuk-table__cell govuk-table__cell--numeric" id="activity-line4">£16,140.00</td>
       </tr>
@@ -174,6 +175,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
       <tr class="govuk-table__row">
         <td class="govuk-table__cell" scope="row"  id="activity-line1">10 June 2018</td>
         <td class="govuk-table__cell"><a href="invoice.html" id="activity-line3">Vehicle testing</a></td>
+        <td class="govuk-table__cell"><a id="activity-line3" >1-234567890</a></td>
         <td class="govuk-table__cell govuk-table__cell--numeric" id="activity-line4">-£756.00</td>
         <td class="govuk-table__cell govuk-table__cell--numeric" id="activity-line4">£15,384.00</td>
       </tr>
@@ -181,7 +183,8 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
       <tr class="govuk-table__row">
         <td class="govuk-table__cell" scope="row" id="activity-line1">11 June 2018</td>
-        <td class="govuk-table__cell"><a href="placeholder.html" id="activity-line3">Refund</a></td>
+        <td class="govuk-table__cell" id="activity-line3">Refund</td>
+        <td class="govuk-table__cell"><a id="activity-line3" >1-234567890</a></td>
         <td class="govuk-table__cell govuk-table__cell--numeric" id="activity-line4">+ £790.80</td>
         <td class="govuk-table__cell govuk-table__cell--numeric" id="activity-line4">£16,174.80</td>
       </tr>
@@ -190,6 +193,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
       <tr class="govuk-table__row">
         <td class="govuk-table__cell" scope="row" id="activity-line1">11 June 2018</td>
         <td class="govuk-table__cell"><a href="invoice.html" id="activity-line3">Vehicle testing</a></td>
+        <td class="govuk-table__cell"><a id="activity-line3" >1-234567890</a></td>
         <td class="govuk-table__cell govuk-table__cell--numeric" id="activity-line4">-£756.00</td>
         <td class="govuk-table__cell govuk-table__cell--numeric" id="activity-line4">£15,418.80</td>
       </tr>
@@ -199,6 +203,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
       <tr class="govuk-table__row">
           <td class="govuk-table__cell" scope="row" id="activity-line1">12 June 2018</td>
           <td class="govuk-table__cell"><a href="invoice.html" id="activity-line3">Vehicle testing</a></td>
+          <td class="govuk-table__cell"><a id="activity-line3" >1-234567890</a></td>
           <td class="govuk-table__cell govuk-table__cell--numeric" id="activity-line4">-£756.00</td>
           <td class="govuk-table__cell govuk-table__cell--numeric" id="activity-line4">£14,662.80</td>
         </tr>
@@ -207,7 +212,8 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
         
         </tr>
         <td class="govuk-table__cell" scope="row" id="activity-line1">13 June 2018</td>
-        <td class="govuk-table__cell"><a href="placeholder.html" id="activity-line3">Refund</a></td>
+        <td class="govuk-table__cell" id="activity-line3">Refund</td>
+        <td class="govuk-table__cell"><a id="activity-line3" >1-234567890</a></td>
         <td class="govuk-table__cell govuk-table__cell--numeric" id="activity-line4">+ £790.80</td>
         <td class="govuk-table__cell govuk-table__cell--numeric" id="activity-line4">£15,453.60</td>
       </tr>
@@ -215,6 +221,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
       <tr class="govuk-table__row">
         <td class="govuk-table__cell" scope="row" id="activity-line1">13 June 2018</td>
         <td class="govuk-table__cell"><a href="invoice.html" id="activity-line3">Vehicle testing</a></td>
+        <td class="govuk-table__cell"><a id="activity-line3" >1-234567890</a></td>
         <td class="govuk-table__cell govuk-table__cell--numeric" id="activity-line4">-£756.00</td>
         <td class="govuk-table__cell govuk-table__cell--numeric" id="activity-line4">£14,697.60</td>
       </tr>
