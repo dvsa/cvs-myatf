@@ -1,0 +1,132 @@
+{% extends "layout2.html" %}
+
+{% block pageTitle %}
+Activity summary
+{% endblock %}
+
+<!–– Beta header ––>
+
+{% block beforeContent %}
+
+{% from "phase-banner/macro.njk" import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "beta"
+},
+html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+
+<!–– Breadcrumbs ––>
+
+<div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="home.html">Home</a>
+        </li>
+
+        <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href='javascript:history.go(-1)'>Previous page</a>
+        </li>
+
+        <li class="govuk-breadcrumbs__list-item">
+            Placeholder page
+        </li>
+
+    </ol>
+</div>
+
+
+
+
+{% endblock %}
+{% block content %}
+
+<!-- Headings start here -->
+
+<div class="govuk-width-container">
+
+    <main class="govuk-main-wrapper">
+
+
+        <!-- Local nave and header STARTS here -->
+
+
+        <thead class="govuk-table__head">
+
+            <h1 class="govuk-heading-xl" style="margin-bottom: 2px">Placeholder page</h1>
+            <div>
+                <p class="v-space10">space</p>
+            </div>
+
+            <p class="govuk-body-m">This site is a protototype. Some designs and functions are incomplete at this stage. For this reason, the page you wanted to access is currently not available. </p>
+            
+            <p class="govuk-body-l">If you land on this page during a user test, please describe:</p>
+
+
+
+            <ul class="govuk-list govuk-list--bullet">
+                <li>what you were trying to do when you clicked onto this page</li>
+                <li>what you expected find here</li>
+              </ul>
+
+              <p>Then please click the link below to take you back to the previous page</p>
+
+
+              <div>
+                <p class="v-space">space</p>
+            </div>
+
+
+              <button type="submit" class="govuk-button" onclick="history.go(-1)">
+                Return to previous page
+              </button>
+
+
+
+
+
+            <div>
+                <p class="v-space10">space</p>
+            </div>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+            <!-- Table starts here -->
+
+
+
+
+
+
+
+
+
+
+
+           
+
+
+
+
+
+
+
+</div>
+
+
+</main>
+</div>
+
+
+{% endblock %}

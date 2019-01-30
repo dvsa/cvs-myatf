@@ -1,0 +1,203 @@
+{% extends "layout2.html" %}
+
+{% block pageTitle %}
+Nav Test 1
+{% endblock %}
+
+<!–– Beta header ––>
+
+{% block beforeContent %}
+
+{% from "phase-banner/macro.njk" import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "beta"
+},
+html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+
+<!–– Breadcrumbs ––>
+
+<div class="govuk-breadcrumbs">
+    <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link" href="home.html">Home</a>
+        </li>
+
+        <li class="govuk-breadcrumbs__list-item">
+            <a class="govuk-breadcrumbs__link">Site management</a>
+        </li>
+
+    </ol>
+</div>
+
+
+{% endblock %}
+{% block content %}
+
+<!-- Headings start here -->
+
+<div class="govuk-width-container">
+
+    <main class="govuk-main-wrapper">
+
+
+        <!-- Local nave and header STARTS here -->
+
+        <span id="with-hint-hint" class="govuk-hint" style="margin-top: 0%; margin-bottom: 0%;">P57832 Scania Lincoln</span>
+        <thead class="govuk-table__head">
+
+            <h1 class="govuk-heading-xl" style="margin-bottom: 2px">Design concept</h1>
+
+
+
+
+
+      
+
+
+
+
+            <!-- links start here -->
+
+
+
+
+<!-- side-by-side STARTS here -->
+
+            <ul class="nav-block">
+
+                <li style="padding-top: 0px;">
+                  
+
+                    
+          
+                      
+                    
+                        <br><span class="govuk-body-m">&#8212;  <a href="#summary-table">Summary</a> </span>
+                        <br><span class="govuk-body-m">&#8212;  <a href="todays-activity.html">Today's
+                            completed tests</a> </span>
+                        <br><span class="govuk-body-m">&#8212;  <a href="placeholder.html">Health and
+                            safety issues</a> </span>
+                        <br><span class="govuk-body-m">&#8212;  <a href="placeholder.html">Historic utilisation</a> </span>
+                   
+          
+                  </li>
+          
+                <li>
+                    
+                    <p class="v-space2">space</p>
+          
+                    <hr class="new1" > 
+                <br><span class="govuk-fieldset__legend--s nav-sub-title"> Useful links</span> 
+                    
+                    <br><span class="govuk-body-s"> <a href="#">Vehicle MOT history (opens in a new window)</a> </span>
+                    <br><span class="govuk-body-s"> <a href="#">Test fees (opens in a new window)</a> </span>
+                    <br><span class="govuk-body-s"> <a href="#">Cancel a test (opens in a new window)</a> </span>
+                    <br><span class="govuk-body-s"> <a href="#">Contact DVSA (opens in a new window)</a> </span>
+ 
+                    
+          
+                  </li>
+          
+          
+          
+          
+          
+          
+                <div>
+                  <p class="v-space">space</p>
+                </div>
+          
+          
+              </ul>
+
+ <!-- side-by-side ENDS here -->
+
+
+
+
+            <hr>
+            <p class="v-space10">space</p>
+
+
+            <!-- Local nave and header ENDS here -->
+
+
+
+
+
+
+
+
+            <!-- Table starts here -->
+
+
+
+
+
+
+
+
+            <table class="govuk-table sum-table" id="summary1">
+                <h1 class="govuk-fieldset__legend--m" style="margin-bottom: 2px">
+                    <a id="summary-table">Content goes here</a>
+                </h1>
+                <thead class="govuk-table__head">
+                    <tr class="govuk-table__row">
+                        <p class="v-space10 mobile-hide">space</p>
+                    </tr>
+                </thead>
+
+
+                <tbody class="govuk-table__body" id="summary1">
+
+                    <tr class="govuk-table__row">
+                        <td class="govuk-table__cell" id="sum-line1" scope="row" ><a href="#">Item 1</a>
+                            </td>
+                        <td class="govuk-table__cell govuk-table__cell--numeric">100</td>
+                    </tr>
+
+
+                    <tr class="govuk-table__row">
+                        <td class="govuk-table__cell" id="sum-line2" scope="row" >Item 2</td>
+                            <td class="govuk-table__cell govuk-table__cell--numeric">200</td>
+                    </tr>
+
+
+
+                    <tr class="govuk-table__row">
+                        <td class="govuk-table__cell" id="sum-line3" scope="row"><a href="#">Item 3</a></td>
+                        <td class="govuk-table__cell govuk-table__cell--numeric" id="sum-line3">300</td>
+
+                    </tr>
+                    
+
+                    <tr class="govuk-table__row">
+                        <td class="govuk-table__cell" id="sum-line4" scope="row"><a href="#">Item 4</a></td>
+                        <td class="govuk-table__cell govuk-table__cell--numeric" >400</td>
+                    </tr>
+
+                </tbody>
+            </table>
+
+
+
+            <div>
+                <p class="v-space">space</p>
+            </div>
+
+
+
+
+    </div>
+
+</div>
+
+
+</main>
+</div>
+
+
+{% endblock %}

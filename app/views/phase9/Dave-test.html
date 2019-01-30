@@ -1,0 +1,291 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %}
+Dave's test page
+{% endblock %}
+
+<!–– Beta header ––>
+
+{% block beforeContent %}
+
+{% from "phase-banner/macro.njk" import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "beta"
+},
+html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+
+<!–– Breadcrumbs ––>
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="https://www.gov.uk">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Section</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link">Subsection</a>
+    </li>
+  </ol>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<h1 class="govuk-heading-xl">
+  Dave's test page
+</h1>
+
+
+<!–– Checkbox Form ––>
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="nationality-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+      <h2 class="govuk-fieldset__heading">
+        What is your nationality?
+      </h2>
+    </legend>
+    <span id="nationality-hint" class="govuk-hint">
+      If you have dual nationality, select all options that are relevant to you.
+    </span>
+    <div class="govuk-checkboxes">
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="nationality-1" name="nationality" type="checkbox" value="british"
+          aria-describedby="nationality-1-item-hint">
+        <label class="govuk-label govuk-checkboxes__label" for="nationality-1">
+          British
+        </label>
+        <span id="nationality-1-item-hint" class="govuk-hint govuk-checkboxes__hint">
+          including English, Scottish, Welsh and Northern Irish
+        </span>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="nationality-2" name="nationality" type="checkbox" value="irish">
+        <label class="govuk-label govuk-checkboxes__label" for="nationality-2">
+          Irish
+        </label>
+      </div>
+      <div class="govuk-checkboxes__item">
+        <input class="govuk-checkboxes__input" id="nationality-3" name="nationality" type="checkbox" value="other">
+        <label class="govuk-label govuk-checkboxes__label" for="nationality-3">
+          Citizen of another country
+        </label>
+      </div>
+    </div>
+  </fieldset>
+</div>
+
+
+
+
+<!–– Progressive reveal radio button Form  ––>
+
+<div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+    <legend class="govuk-fieldset__legend govuk-fieldset__legend--xl">
+      <h2 class="govuk-fieldset__heading">
+        How would you prefer to be contacted?
+      </h2>
+    </legend>
+    <span id="how-contacted-conditional-hint" class="govuk-hint">
+      Select one option.
+    </span>
+    <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="how-contacted-conditional-1" name="how-contacted" type="radio" value="email"
+          data-aria-controls="conditional-how-contacted-conditional-1">
+        <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-1">
+          Email
+        </label>
+      </div>
+      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-1">
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="contact-by-email">
+            Email address
+          </label>
+          <input class="govuk-input govuk-!-width-one-third" id="contact-by-email" name="contact-by-email" type="email">
+        </div>
+
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="how-contacted-conditional-2" name="how-contacted" type="radio" value="phone"
+          data-aria-controls="conditional-how-contacted-conditional-2">
+        <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">
+          Phone
+        </label>
+      </div>
+      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-2">
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="contact-by-phone">
+            Phone number
+          </label>
+          <input class="govuk-input govuk-!-width-one-third" id="contact-by-phone" name="contact-by-phone" type="tel">
+        </div>
+
+      </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="how-contacted-conditional-3" name="how-contacted" type="radio" value="text"
+          data-aria-controls="conditional-how-contacted-conditional-3">
+        <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-3">
+          Text message
+        </label>
+      </div>
+      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-3">
+        <div class="govuk-form-group">
+          <label class="govuk-label" for="contact-by-text">
+            Mobile phone number
+          </label>
+          <input class="govuk-input govuk-!-width-one-third" id="contact-by-text" name="contact-by-text" type="tel">
+        </div>
+
+      </div>
+    </div>
+  </fieldset>
+</div>
+
+
+
+
+<p>Here's a list</p>
+
+<ul class="govuk-list govuk-list--bullet">
+  <li>do something</li>
+  <li>update your name, address or other details</li>
+  <li>do something else</li>
+</ul>
+
+<!–– Inset text  ––>
+
+<div class="govuk-inset-text">
+  It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes in the application.
+</div>
+
+
+<!–– Dave's vertical space css Form...  CSS is in assets / sass / applications.scss––>
+<div class="vertical-space">
+  <p>vertical space class</p>
+</div>
+
+<!–– 2 column table  ––>
+<div>
+  <table class="govuk-table">
+    <caption class="govuk-table__caption">Here's a 2 column table</caption>
+    <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header" scope="col">Date</th>
+        <th class="govuk-table__header" scope="col">Amount</th>
+      </tr>
+    </thead>
+    <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header" scope="row">First 6 weeks</th>
+        <td class="govuk-table__cell">£109.80 per week</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header" scope="row">Next 33 weeks</th>
+        <td class="govuk-table__cell">£109.80 per week</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header" scope="row">Total estimated pay</th>
+        <td class="govuk-table__cell">£4,282.20</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<!–– Dave's vertical space css Form...  CSS is in assets / sass / applications.scss––>
+<div class="vertical-space">
+  <p></p>
+</div>
+
+
+<!–– 3 column table  ––>
+
+<table class="govuk-table">
+  <caption class="govuk-table__caption">Here's a 3 column table</caption>
+  <thead class="govuk-table__head">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col">Month you apply</th>
+      <th class="govuk-table__header govuk-table__header--numeric" scope="col">Rate for bicycles</th>
+      <th class="govuk-table__header govuk-table__header--numeric" scope="col">Rate for vehicles</th>
+    </tr>
+  </thead>
+  <tbody class="govuk-table__body">
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">January</th>
+      <td class="govuk-table__cell govuk-table__cell--numeric">£85</td>
+      <td class="govuk-table__cell govuk-table__cell--numeric">£95</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">February</th>
+      <td class="govuk-table__cell govuk-table__cell--numeric">£75</td>
+      <td class="govuk-table__cell govuk-table__cell--numeric">£55</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="row">March</th>
+      <td class="govuk-table__cell govuk-table__cell--numeric">£165</td>
+      <td class="govuk-table__cell govuk-table__cell--numeric">£125</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Registering takes around 5 minutes.</p>
+
+
+<a href="#" role="button" class="govuk-button govuk-button--start govuk-!-margin-top-2 govuk-!-margin-bottom-8">Start
+  now</a>
+
+<h2 class="govuk-heading-m">Before you start</h2>
+
+<p>You can also <a href="#">register by post</a>.</p>
+
+<p>The online service is also available in <a href="#">Welsh (Cymraeg)</a>.</p>
+
+<p>You can’t register for this service if you’re in the UK illegally.</p>
+
+</div>
+
+<!–– right hand column  ––>
+
+<div class="govuk-grid-column-one-third">
+
+  <aside class="app-related-items" role="complementary">
+    <h2 class="govuk-heading-m" id="subsection-title">
+      Subsection
+    </h2>
+    <nav role="navigation" aria-labelledby="subsection-title">
+      <ul class="govuk-list govuk-!-font-size-16">
+        <li>
+          <a href="#">
+            Related link
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            Related link
+          </a>
+        </li>
+        <li>
+          <a href="#" class="govuk-!-font-weight-bold">
+            More <span class="govuk-visually-hidden">in Subsection</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </aside>
+
+</div>
+
+
+
+
+
+</div>
+
+
+{% endblock %}
