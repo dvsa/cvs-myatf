@@ -44,34 +44,20 @@
 {% endblock %}
 
 {% if useAutoStoreData %}
-  {% block footer %}
+{% block footer %}
     {{ govukFooter({
       meta: {
         items: [
           {
-            href: "#",
-            text: "Vehicle MOT history"
+            href: "https://govuk-prototype-kit.herokuapp.com/",
+            text: "GOV.UK Prototype Kit " + releaseVersion
           },
           {
-            href: "#",
-            text: "Test fees"
-          },
-          {
-            href: "#",
-            text: "Cancel a test"
-        
-          },
-          {
-            href: "#",
-            text: "Contact DVSA"
-        
+            href: "/prototype-admin/clear-data",
+            text: "Clear data"
           }
         ]
       }
-
-      
-
-
     }) }}
   {% endblock %}
 {% endif %}
