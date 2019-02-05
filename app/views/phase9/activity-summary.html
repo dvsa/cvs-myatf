@@ -26,7 +26,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
         </li>
 
         <li class="govuk-breadcrumbs__list-item">
-            <a class="govuk-breadcrumbs__link">Pre-funded account balance</a>
+            <a class="govuk-breadcrumbs__link">Site management</a>
         </li>
 
     </ol>
@@ -48,7 +48,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
         <span id="with-hint-hint" class="govuk-hint" style="margin-top: 0%; margin-bottom: 0%;">P57832 Scania Lincoln</span>
         <thead class="govuk-table__head">
 
-            <h1 class="govuk-heading-l" style="margin-bottom: 2px">Account activity</h1>
+            <h1 class="govuk-heading-xl" style="margin-bottom: 2px">Site management</h1>
 
 
 
@@ -66,16 +66,20 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
             <ol class="govuk-list" style="font-size:large">
 
+                <li style="margin-bottom: 10px;"> &#8212;
+                    <a href="#summary-table" class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;">Summary</a></li>
+
+                <li style="margin-bottom: 10px;"> &#8212;
+                    <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="todays-activity.html">Today's
+                        completed tests</a></li>
 
 
                 <li style="margin-bottom: 10px;"> &#8212;
-                    <span class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;"> Pre-funded account balance</span></li>
-
+                    <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="placeholder.html">Health and
+                        safety issues</a></li>
 
                 <li style="margin-bottom: 10px;"> &#8212;
-                    <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="activity-history-search.html">Search transactions</a></li>
-
-
+                    <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="placeholder.html">Historic utilisation</a></li>
 
               
  
@@ -110,7 +114,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
             <table class="govuk-table sum-table" id="summary1">
                 <h1 class="govuk-fieldset__legend--m" style="margin-bottom: 2px">
-                    <a id="summary-table">Pre-funded account balance</a>
+                    <a id="summary-table">Summary</a>
                 </h1>
                 <thead class="govuk-table__head">
                     <tr class="govuk-table__row">
@@ -122,20 +126,30 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
                 <tbody class="govuk-table__body" id="summary1">
 
                     <tr class="govuk-table__row">
-                        <td class="govuk-table__cell" id="sum-line1" scope="row">PFA balance
+                        <td class="govuk-table__cell" id="sum-line1" scope="row" ><a href="todays-activity.html">Today's completed tests</a>
                             </td>
-                        <td class="govuk-table__cell govuk-table__cell--numeric">£2123.89</td>
+                        <td class="govuk-table__cell govuk-table__cell--numeric">8</td>
                     </tr>
 
 
                     <tr class="govuk-table__row">
-                        <td class="govuk-table__cell" id="sum-line2" scope="row" ><a href="todays-activity.html">Today's running total</a></td>
+                        <td class="govuk-table__cell" id="sum-line2" scope="row" >Today's running total</td>
                             <td class="govuk-table__cell govuk-table__cell--numeric">£963.00</td>
                     </tr>
 
 
 
+                    <tr class="govuk-table__row">
+                        <td class="govuk-table__cell" id="sum-line3" scope="row">Open <a href="placeholder.html">health and safety issues</a></td>
+                        <td class="govuk-table__cell govuk-table__cell--numeric" id="sum-line3">1</td>
 
+                    </tr>
+                    
+
+                    <tr class="govuk-table__row">
+                        <td class="govuk-table__cell" id="sum-line4" scope="row"><a href="placeholder.html">Utilisation</a> (This month)</td>
+                        <td class="govuk-table__cell govuk-table__cell--numeric" >96%</td>
+                    </tr>
 
                 </tbody>
             </table>
