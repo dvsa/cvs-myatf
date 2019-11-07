@@ -1,0 +1,60 @@
+{% extends "layout2.html" %}
+
+{% block pageTitle %}
+Identity Verification
+{% endblock %}
+
+<!–– Beta header ––>
+
+{% block beforeContent %}
+
+{% from "phase-banner/macro.njk" import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "beta"
+},
+html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+
+<!–– Breadcrumbs ––>
+
+
+{% endblock %}
+
+{% block content %}
+<script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+<a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+<script src="/govuk-frontend/all.js"></script>
+<script>window.GOVUKFrontend.initAll()</script>
+
+<body class="govuk-template__body ">
+  <h1 class="govuk-heading-l" style="margin-bottom: 2px">Identity verification</h1>
+  <p class="v-space10">space</p>
+  <p class="govuk-body">We've sent a verification to your phone.</p>
+  <p class="v-space10">space</p>
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="width-20">Please enter your six digit code below</label>
+    <input class="govuk-input govuk-input--width-4" id="width-4" name="width-4" readonly="readonly" >
+  </div>
+  
+  <form method="get" action="home.html">
+    <button type="submit" class="govuk-button">Submit</button>
+  </form>
+
+  <p class="v-space10">space</p>
+  <ul class="govuk-list">
+    <li>
+      <a class="govuk-link" href="multi-factor-authentication.html">Request a new code</a>
+    </li>
+    <!-- <li>
+      <p class="v-space10">space</p>
+    </li> -->
+    <li>
+      <a class="govuk-link" href="sign-in.html">Cancel</a>
+    </li>
+  </ul>
+</body>
+
+</html>
+{% endblock %}

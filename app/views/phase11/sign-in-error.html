@@ -1,0 +1,94 @@
+{% extends "layout2.html" %}
+
+{% block pageTitle %}
+Sign in error
+{% endblock %}
+
+<!–– Beta header ––>
+
+{% block beforeContent %}
+
+{% from "phase-banner/macro.njk" import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "beta"
+},
+html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+
+<!–– Breadcrumbs ––>
+
+
+{% endblock %}
+
+{% block content %}
+<script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+<a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+<script src="/govuk-frontend/all.js"></script>
+<script>window.GOVUKFrontend.initAll()</script>
+
+<body class="govuk-template__body ">
+  <thead class="govuk-table__head">
+    <h1 class="govuk-heading-l" style="margin-bottom: 2px">Sign in</h1>
+    <p class="v-space10">space</p>
+  </thead>
+  
+<!–– error message start ––>
+  <div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="error-summary">
+    <h2 class="govuk-error-summary__title" id="error-summary-title">There is a problem</h2>
+    <div class="govuk-error-summary__body">
+      <ul class="govuk-list govuk-error-summary__list">
+        <li>
+          <span style="font-weight: bold; color: #B10E1E">Incorrect sign-in details. The email / password combination is not valid</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+<!–– error message end ––>    
+    
+  <p class="v-space10">space</p>
+  <div class="govuk-form-group govuk-form-group--error">
+    <label class="govuk-label" for="name">Email address</label>
+    <span id="name-error" class="govuk-error-message">Enter your correct email address</span>
+    <input class="govuk-input govuk-input--error textwidth" id="name" name="name" type="text" aria-describedby="name-error" value="me@mydomain.co.uk">
+    <p class="v-space10">space</p>
+    <label class="govuk-label" for="name">Password</label>
+    <span id="name-error" class="govuk-error-message">Enter your correct password</span>
+    <input class="govuk-input govuk-input--error textwidth" id="name" name="name" type="password" aria-describedby="name-error" value="password">
+  </div>
+    
+  <div class="govuk-form-group">
+    <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
+      <div class="govuk-checkboxes">
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
+          <label class="govuk-label govuk-checkboxes__label" for="waste-1">I agree to the <a href="#">terms and conditions</a></label>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+    
+  <div>
+    <p class="v-space10">space</p>
+  </div>
+    
+  <form method="get" action="home.html">
+    <button type="submit" class="govuk-button">Sign in</button>
+  </form>
+    
+  <p class="v-space10">space</p>
+  <h2 class="govuk-heading-m">Problems signing in</h2>
+  <ul class="govuk-list">
+    <li>
+      <a class="govuk-link" href="reset-password.html">I have forgotten my login email</a>
+    </li>
+    <li>
+      <a class="govuk-link" href="reset-password.html">I have forgotten my login password</a>
+    </li>
+  </ul>
+</body>
+
+  </html>
+  {% endblock %}
