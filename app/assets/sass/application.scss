@@ -463,12 +463,25 @@ hr.new2 {
 
 
 .sign-out{
-
-
-margin-left: 400px
-
-
-
+    &__home{
+      margin-left: 89%;
+    }
+    
+    &__sitemanagement{
+      margin-left: 74%;
+    }
+    
+    &__cookies{
+      margin-left: 81%;
+    }
+    
+    &__pfa{
+      margin-left: 66%;
+    }
+    
+    &__searchTransactions{
+      margin-left: 72%;
+    }
 }
 
 @media (max-width: 500px) {
