@@ -1,4 +1,4 @@
-{% extends "layout2.html" %}
+{% extends "layout3.html" %}
 
 {% block pageTitle %}
 Identity Verification
@@ -18,7 +18,9 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
 
 <!–– Breadcrumbs ––>
-
+<div class="govuk-breadcrumbs">
+  <a href="sign-in.html" class="govuk-back-link">Back</a>
+</div>
 
 {% endblock %}
 
@@ -29,8 +31,33 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 <script>window.GOVUKFrontend.initAll()</script>
 
 <body class="govuk-template__body ">
-  <h1 class="govuk-heading-l" style="margin-bottom: 2px">Identity verification</h1>
+  <h1 class="govuk-heading-l" style="margin-bottom: 2px">How would you like to receive<br> your security code</h1>
   <p class="v-space10">space</p>
+  <div class="govuk-form-group govuk-!-padding-bottom-5">
+    <fieldset class="govuk-fieldset">
+      <div class="govuk-radios">
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+          <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+            SMS text to 07*****88
+          </label>
+        </div>
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+          <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+            Phone call to 020*****452
+          </label>
+        </div>
+    </fieldset>
+  </div>
+
+  <!-- <p class="v-space10">space</p> -->
+
+  <form method="get" action="multi-factor-authentication-code.html">
+    <button type="submit" class="govuk-button govuk-button__callPhone">Continue</button>
+  </form>
+
+  <!--   
   <p class="govuk-body">In order to keep your information secure, we need to authenticate you.
     <span class="govuk-hint">To do this, we can send you a code via SMS text or phone call to the following number.</span>  
   </p>
@@ -51,7 +78,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
   </form>
   
   <br>
-  <a class="govuk-link" href="sign-in.html">Cancel</a>
+  <a class="govuk-link" href="sign-in.html">Cancel</a> -->
 </body>
 
   </html>

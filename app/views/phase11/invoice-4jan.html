@@ -1,0 +1,165 @@
+{% extends "layout2.html" %}
+
+{% block pageTitle %}
+Invoice
+{% endblock %}
+
+<!–– Beta header ––>
+
+{% block beforeContent %}
+
+{% from "phase-banner/macro.njk" import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "beta"
+},
+html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+
+<!–– Breadcrumbs ––>
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="home.html">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="activity-history-search.html">Search transactions</a>
+    </li> 
+    <li>
+      <span class="sign-out__invoice">
+        <a href="sign-in.html">Sign out</a>
+      </span>
+    </li>
+  </ol>
+</div>
+{% endblock %}
+
+{% block content %}
+<span id="with-hint-hint" class="govuk-hint" style="margin-top: 0%; margin-bottom: 0%;">P57832 Scania Lincoln</span>
+<body class="govuk-template__body ">
+  <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+  <script src="/govuk-frontend/all.js"></script>
+  <script>window.GOVUKFrontend.initAll()</script>
+  <div class="govuk-form-group">
+  <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
+  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+  <h1 class="govuk-fieldset__heading">Account activity</h1>
+  </legend>
+  <div>
+  <p class="v-space10">space</p>
+  </div>
+
+  <div class="box">
+  <ol class="govuk-list" style="font-size:large">
+    <li style="margin-bottom: 10px;"> &#8212;
+      <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="account-summary.html">Pre-funded account balance</a>
+    </li>
+    <li style="margin-bottom: 10px;"> &#8212;
+      <a Style="padding-left: 5px;" >Search transactions</a>
+    </li>
+    <li style="margin-bottom: 10px;">
+      <p class="v-space2">space</p>
+    </li>
+  </ol>
+  <hr>
+  <div>
+  <p class="v-space10">space</p>
+  </div>
+  </div>
+
+  <!–– 6 column table  ––>
+  <table class="govuk-table" style="font-size:medium">
+    <h1 class="govuk-fieldset__legend--m">Transaction
+      <span id="with-hint-hint" class="govuk-hint" style="margin-top: 0%; margin-bottom: 0%;">4 January 2019</span>
+    </h1>
+    <p>
+      <a href="account-activity-search.html">Search different dates</a>
+    </p>
+    <p class="v-space10">space</p>
+    
+    <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header" scope="col">Test</th>
+        <th class="govuk-table__header" scope="col">Activity</th>
+        <th class="govuk-table__header govuk-table__header--numeric" scope="col">Net amount</th>
+        <th class="govuk-table__header govuk-table__header--numeric" scope="col" style="padding-right: 5px;">Total amount</th>
+      </tr>
+    </thead>
+
+    <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell govuk-body-s" scope="row" id="transaction-line1">4 January 2019</td>
+        <td class="govuk-table__cell govuk-body-s" scope="row" id="transaction-line2">4 axle motor vehicle annual test</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric govuk-body-s" id="transaction-line3">£137.00</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric govuk-body-s" style="padding-right: 5px;" id="transaction-line4">£137.00</td>
+      </tr>
+      
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell govuk-body-s" scope="row" id="transaction-line1">4 January 2019</td>
+        <td class="govuk-table__cell govuk-body-s" scope="row" id="transaction-line2"> 3 axle motor vehicle annual test</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric govuk-body-s" id="transaction-line3">£113.00</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric govuk-body-s" style="padding-right: 5px;" id="transaction-line4">£113.00</td>
+      </tr>
+      
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell govuk-body-s" scope="row" id="transaction-line1">4 January 2019</td>
+        <td class="govuk-table__cell govuk-body-s" scope="row" id="transaction-line2">3 axle motor vehicle annual test</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric govuk-body-s" id="transaction-line3">£113.00</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric govuk-body-s" style="padding-right: 5px;" id="transaction-line4">£113.00</td>
+      </tr>
+
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell govuk-body-s" scope="row" id="transaction-line1">4 January 2019</td>
+        <td class="govuk-table__cell govuk-body-s" scope="row" id="transaction-line2">3 axle motor vehicle annual test</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric govuk-body-s" id="transaction-line3">£113.00</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric govuk-body-s" style="padding-right: 5px;" id="transaction-line4">£113.00</td>
+      </tr>
+
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell govuk-body-s" scope="row" id="transaction-line1">4 January 2019</td>
+        <td class="govuk-table__cell govuk-body-s" scope="row" id="transaction-line2">3 axle motor vehicle annual test</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric govuk-body-s" id="transaction-line3">£113.00</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric govuk-body-s" style="padding-right: 5px;" id="transaction-line4">£113.00</td>
+      </tr>
+
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell govuk-body-s" scope="row" id="transaction-line1">4 January 2019</td>
+        <td class="govuk-table__cell govuk-body-s" scope="row" id="transaction-line2">4 axle motor vehicle annual test</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric govuk-body-s" id="transaction-line3">£137.00</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric govuk-body-s" style="padding-right: 5px;" id="transaction-line7">£137.00</td>
+      </tr>
+
+      <tr class="govuk-table__row" style="background:white;">
+        <td class="govuk-table__cell govuk-body-s collapse-line" scope="row" id="transaction-line1"></td>
+        <td class="govuk-table__cell govuk-body-s collapse-line" scope="row" id="transaction-line2"></td>
+        <td class="govuk-table__cell govuk-table__cell--numeric govuk-body-s" id="transaction-line2"><strong>£1, 250.00</strong></td>
+        <td class="govuk-table__cell govuk-table__cell--numeric govuk-body-s" style="padding-right: 5px" id="transaction-line4"><strong>£1,250.00</strong></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+
+  <p>
+    <a href="http://cvs.devphase.co.uk/invoice-4jan.pdf" target="_blank">Printable invoice (PDF, 58KB)</a>
+  </p>
+  <hr>
+  <p class="v-space10">space</p>
+  <h4 class="govuk-heading-s">VAT</h4>
+
+  <ul class="govuk-list govuk-list--bullet">
+  <li>
+    <span class="govuk-body govuk-!-font-size-14"> Statuary vehicle testing is zero rated, attracting 0% VAT </span>
+  </li>
+  <li>
+    <span class="govuk-body govuk-!-font-size-14"> Voluntary vehicle testing is standard rated, attracting 20% VAT</span>
+  </li>
+  <li>
+    <span class="govuk-body govuk-!-font-size-14"> Retained fees are standard rated, attracting 20% VAT</span>
+  </li>
+  </ul>
+
+
+</body>
+{% endblock %}

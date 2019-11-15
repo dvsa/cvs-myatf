@@ -1,4 +1,4 @@
-{% extends "layout2.html" %}
+{% extends "layout3.html" %}
 
 {% block pageTitle %}
 Sign in error
@@ -39,7 +39,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
     <div class="govuk-error-summary__body">
       <ul class="govuk-list govuk-error-summary__list">
         <li>
-          <span style="color:#B10E1E; font-weight:bold;">Your account is no longer active</span>
+          <span style="color:#B10E1E; font-weight:bold;">Your account is not currently active. To reactivate it, contact the DVSA on <a href="mailto:dvsasupport@dvsa.gov.uk">dvsasupport@dvsa.gov.uk</a></span>
         </li>
       </ul>
     </div>
@@ -60,9 +60,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
     } 
   </script>
     
-  <div class="govuk-body-m">Please contact DVSA Central Support (01234 567890) if you believe this to be incorrect</div>
 <!–– message appear end ––>    
-  <p class="v-space10">space</p>
   <h2 class="govuk-error-summary__title" id="error-summary-title">Sign in to another account</h2>
     
   <div class="govuk-form-group">
@@ -75,23 +73,12 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
     <input class="govuk-input govuk-input--width-20" id="width-20" name="width-10" type="password">
   </div>
     
-  <div class="govuk-form-group">
-    <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
-      <div class="govuk-checkboxes">
-        <div class="govuk-checkboxes__item">
-          <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
-          <label class="govuk-label govuk-checkboxes__label" for="waste-1">I agree to the <a href="#">terms and conditions</a></label>
-        </div>
-      </div>
-    </fieldset>
-  </div>
-    
   <div>
     <p class="v-space10">space</p>
   </div>
     
   <form method="get" action="home.html">
-    <button type="submit" class="govuk-button">Sign in</button>
+    <button type="submit" class="govuk-button">Continue</button>
   </form>
 <!–– error message end ––>  
   <p class="v-space10">space</p>

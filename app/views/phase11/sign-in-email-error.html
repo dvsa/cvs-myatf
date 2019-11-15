@@ -41,7 +41,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
     <div class="govuk-error-summary__body">
       <ul class="govuk-list govuk-error-summary__list">
         <li>
-          <span style="font-weight: bold; color: #B10E1E">The sign-in details you have entered do not match</span>
+          <span style="font-weight: bold; color: #B10E1E">The email address you have entered is not valid</span>
         </li>
       </ul>
     </div>
@@ -51,13 +51,15 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
   <p class="v-space10">space</p>
   <div class="govuk-form-group govuk-form-group--error">
     <label class="govuk-label" for="name">Email address</label>
-    <span id="name-error" class="govuk-error-message">Your email address or password is incorrect</span>
-    <input class="govuk-input govuk-input--error textwidth" id="name" name="name" type="text" aria-describedby="name-error" value="me@mydomain.co.uk">
-    <p class="v-space10">space</p>
-    <label class="govuk-label" for="name">Password</label>
-    <input class="govuk-input govuk-input--error textwidth" id="name" name="name" type="password" aria-describedby="name-error" value="password">
+    <span id="name-error" class="govuk-error-message">Enter a valid sign in email address</span>
+    <input class="govuk-input govuk-input--error textwidth" id="name" name="name" type="text" aria-describedby="name-error">
   </div>
-    
+  
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="name">Password</label>
+    <input class="govuk-input textwidth" id="name" name="name" type="password" aria-describedby="name-error" value="password">
+  </div>       
+
   <div>
     <p class="v-space10">space</p>
   </div>
