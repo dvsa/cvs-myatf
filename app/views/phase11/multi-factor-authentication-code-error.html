@@ -18,7 +18,9 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
 
 <!–– Breadcrumbs ––>
-
+<div class="govuk-breadcrumbs">
+  <a href="sign-in.html" class="govuk-back-link">Back</a>
+</div>
 
 {% endblock %}
 
@@ -29,31 +31,23 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 <script>window.GOVUKFrontend.initAll()</script>
 
 <body class="govuk-template__body ">
-  <h1 class="govuk-heading-l" style="margin-bottom: 2px">Identity verification</h1>
+  <h1 class="govuk-heading-l" style="margin-bottom: 2px">Check your phone</h1>
   <p class="v-space10">space</p>
-  <p class="govuk-body">We've sent a verification to your phone.</p>
+  <p class="govuk-body">We've sent a 6-digit security code to your phone.</p>
   <p class="v-space10">space</p>
-  <div class="govuk-form-group">
-    <label class="govuk-label" for="width-20">Please enter your six digit code below</label>
-    <input class="govuk-input govuk-input--width-4" id="width-4" name="width-4" type="number" placeholder="924851" disabled>
+  <div class="govuk-form-group govuk-form-group--error"">
+    <label class="govuk-label" for="width-20">Security code</label>
+    <span class="govuk-error-message">The 6-digit code you have entered does not match our records. Please try again.</span>
+    <input class="govuk-input govuk-input--width-4 govuk-input--error"" id="width-4" name="width-4" type="number" placeholder="924851" disabled>
   </div>
-  
-  <p id="nationality-error" class="govuk-error-message govuk-body"><span class="govuk-visually-hidden">Error:</span> The verification code you have entered does not match our records. <br>Please try again, or request a new code.</p>
-  
   <form method="get" action="multi-factor-authentication-verfication-code.html">
     <button type="submit" class="govuk-button">Submit</button>
   </form>
 
-  <p class="v-space10">space</p>
+  <!-- <p class="v-space10">space</p> -->
   <ul class="govuk-list">
     <li>
-      <a class="govuk-link" href="multi-factor-authentication.html">Request a new code</a>
-    </li>
-    <!-- <li>
-      <p class="v-space10">space</p>
-    </li> -->
-    <li>
-      <a class="govuk-link" href="sign-in.html">Cancel</a>
+      <a class="govuk-link" href="multi-factor-authentication.html">Didn't receive a code?</a>
     </li>
   </ul>
 </body>

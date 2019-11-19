@@ -1,21 +1,38 @@
 .app-cookie-banner {
   @include govuk-font(16);
   @include govuk-text-colour;
-
   box-sizing: border-box;
   width: 100%;
-  
-
   padding-top: govuk-spacing(3);
   padding-right: govuk-spacing(3);
   padding-bottom: govuk-spacing(3);
   padding-left: govuk-spacing(3);
-  background-color: lighten(desaturate(govuk-colour("light-blue"), 8.46), 42.55);
+  background-color: lighten(desaturate(govuk-colour("white"), 8.46), 42.55);
+  border: solid black 2px;
+}
+
+.app-cookie-banner, .app-cookie-banner__button{
+  color: #048633;
+}
+
+.cookiesSpacer{
+  margin-right: 2%;
 }
 
 .app-cookie-banner__message {
   margin: 0;
   @include govuk-width-container;
+}
+
+.app-cookie-banner__button{
+  padding-top: 1.5%;
+  padding-bottom: 1%;
+  width: auto;
+  line-height: 1;
+  display: inline-block;
+  border: 2px solid #048633;
+  background-color: white;
+  text-align: center;
 }
 
 @include govuk-media-query($media-type: print) {
