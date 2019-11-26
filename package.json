@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node start.js",
     "lint": "standard",
-    "test": "gulp test && npm run lint"
+    "test": "gulp test && npm run lint",
     "security-checks": "git secrets --scan && git log -p | scanrepo"
   },
   "devDependencies": {
@@ -57,7 +57,7 @@
     "ignore": [
       "nunjucks"
     ]
-  }
+  },
   "husky": {
     "hooks": {
       "pre-commit": "npm run security-checks"
