@@ -18,10 +18,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
 
 <!–– Breadcrumbs ––>
-<div class="govuk-breadcrumbs">
   <a href="create-your-account-password.html" class="govuk-back-link">Back</a>
-</div>
-
 {% endblock %}
 
 {% block content %}
@@ -31,23 +28,34 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 <script>window.GOVUKFrontend.initAll()</script>
 
 <body class="govuk-template__body ">
-  <h1 class="govuk-caption-l" style="margin-bottom: 2px">Create your account</h1>
-  <p class="govuk-heading-l">Enter your mobile phone number</p>
-  <p class="v-space10">space</p>
-  <p class="govuk-heading-s">You will get a code sent to this number every time you sign in.</p>
-  <div class="govuk-form-group govuk-form-group--error">
-    <label class="govuk-label" for="width-20">Mobile number</label>
-    <span class="govuk-error-message">Enter a valid U mobile phone number, like 07700 900 982 or +44 7700 900 923</span>
-    <input class="govuk-input govuk-input--width-20 govuk-input--error" id="width-20" name="width-10" type="text">
+<!–– error message start ––> 
+  <div class="govuk-error-summary govuk-!-margin-bottom-8" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="error-summary">
+  <h2 class="govuk-error-summary__title" id="error-summary-title">There is a problem</h2>
+    <div class="govuk-error-summary__body">
+      <ul class="govuk-list govuk-error-summary__list">
+        <li>
+          <a href="#mobile" style="font-weight: bold;">Enter a valid UK mobile phone number, like 07700 900 982 or +44 7700 900 923</a>
+        </li>
+      </ul>
+    </div>
   </div>
+<!–– error message end ––>    
+  <span class="govuk-caption-l">Create your account</span>
+  <h1 class="govuk-heading-l govuk-!-margin-bottom-8">Enter your mobile phone number</h1>  
+  
+  <p class="govuk-body govuk-!-font-weight-bold">You will get a code sent to this number every time you sign in.</p>
+  
+  <div class="govuk-form-group govuk-form-group--error govuk-!-margin-bottom-6">
+    <label class="govuk-label" for="mobile">Mobile number</label>
+    <span id="email-error" class="govuk-error-message">
+      <span class="govuk-visually-hidden">Error:</span> Enter a valid U mobile phone number, like 07700 900 982 or +44 7700 900 923
+    </span>
+    <input class="govuk-input govuk-input--error textwidth" id="mobile" name="mobile" type="text" aria-describedby="mobile-error">
+  </div> 
 
-  <div>
-    <p class="v-space10">space</p>
-  </div>
-  <form method="get" action="multi-factor-authentication.html">
+  <form class="govuk-!-margin-bottom-5" method="get" action="multi-factor-authentication.html">
     <button type="submit" class="govuk-button">Continue</button>
   </form>
 </body>
 
-  </html>
-  {% endblock %}
+{% endblock %}

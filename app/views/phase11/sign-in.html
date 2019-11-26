@@ -29,43 +29,27 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 <script>window.GOVUKFrontend.initAll()</script>
 
 <body class="govuk-template__body ">
-  <h1 class="govuk-heading-l" style="margin-bottom: 2px">Sign in</h1>
-  <p class="v-space10">space</p>
-  <div class="govuk-form-group">
-    <label class="govuk-label" for="width-20">Email address</label>
-    <input class="govuk-input govuk-input--width-20" id="width-20" name="width-10" type="text">
-  </div>
-  <div class="govuk-form-group">
-    <label class="govuk-label" for="width-20">Password</label>
-    <input class="govuk-input govuk-input--width-20" id="width-20" name="width-10" type="password">
-  </div>
+  <h1 class="govuk-heading-l govuk-!-margin-bottom-8">Sign in</h1> 
+  
+  <div class="govuk-form-group  govuk-!-margin-bottom-6">
+    <label class="govuk-label" for="email">Email address</label>
+    <input class="govuk-input textwidth govuk-!-margin-bottom-6" id="email" name="email" type="text" aria-describedby="email-error">
+    
+    <label class="govuk-label" for="password">Password</label>
+    <input class="govuk-input textwidth" id="password" name="password" type="text" aria-describedby="password-error">
+  </div> 
 
-  <!-- <div class="govuk-form-group">
-    <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
-      <div class="govuk-checkboxes">
-        <div class="govuk-checkboxes__item">
-          <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
-          <label class="govuk-label govuk-checkboxes__label" for="waste-1">I agree to the <a href="placeholder.html">terms and conditions</a></label>
-        </div>
-      </div>
-    </fieldset>
-  </div> -->
-
-  <div>
-    <p class="v-space10">space</p>
-  </div>
-  <form method="get" action="multi-factor-authentication.html">
+  <form class="govuk-!-margin-bottom-5" method="get" action="home.html">
     <button type="submit" class="govuk-button">Continue</button>
   </form>
 
-  <!-- <p class="v-space10">space</p> -->
   <h2 class="govuk-heading-m">Problems signing in</h2>
   <ul class="govuk-list">
     <li class="govuk-!-padding-bottom-2">
       <a class="govuk-link" href="reset-password.html">I have forgotten my login email</a>
     </li>
     <li>
-      <a class="govuk-link" href="reset-password.html">I have forgotten my password</a>
+      <a class="govuk-link" href="reset-password.html">I have forgotten my login password</a>
     </li>
   </ul>
 </body>

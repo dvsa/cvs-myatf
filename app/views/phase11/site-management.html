@@ -16,7 +16,6 @@ text: "beta"
 html: 'This is a new service – your <a class="govuk-link" href="placeholder.html">feedback</a> will help us to improve it.'
 }) }}
 
-
 <!–– Breadcrumbs ––>
 <div class="govuk-breadcrumbs">
   <ol class="govuk-breadcrumbs__list">
@@ -39,41 +38,38 @@ html: 'This is a new service – your <a class="govuk-link" href="placeholder.ht
 {% block content %}
 
 <!-- Headings start here -->
-<div class="govuk-width-container">
-    <!-- Local nave and header STARTS here -->
-  <span id="with-hint-hint" class="govuk-hint" style="margin-top: 0%; margin-bottom: 0%;">P57832 Scania Lincoln</span>
-  <thead class="govuk-table__head">
-    <h1 class="govuk-heading-l govuk-!-padding-bottom-4" style="margin-bottom: 2px">Site management</h1>
-    <!-- links start here -->
-    <ol class="govuk-list" style="font-size:large">
-      <li style="margin-bottom: 10px;"> &#8212;
+<body>
+  <span class="govuk-caption-m">P57832 Scania Lincoln</span>
+  <h1 class="govuk-heading-l govuk-!-margin-bottom-8">Manage your ATF</h1>
+  
+<!–– local headers START ––>
+    <ol class="govuk-list govuk-!-margin-bottom-8" style="font-size:large">
+      <li class="govuk-!-margin-bottom-2"> &#8212;
         <span style="padding-left: 5px;">Today's completed tests</span>
       </li>
-      <li style="margin-bottom: 10px;"> &#8212;
+      <li class="govuk-!-margin-bottom-2"> &#8212;
         <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="account-activity-search.html">Search transactions</a>
       </li>
-      <li style="margin-bottom: 10px;"> &#8212;
+      <li class="govuk-!-margin-bottom-2"> &#8212;
         <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="#">Vehicle MOT history</a>
       </li>
-      <li style="margin-bottom: 10px;">
-        <p class="v-space2">space</p>
+      <li>
+        <hr>
       </li>
     </ol>
-    <hr>
-    <p class="v-space10">space</p>
-  </thead>
-    <!-- Local nav and header ENDS here -->
+<!–– local headers END ––>
 
 <!–– local headers START ––>
-  <h1 class="govuk-fieldset__legend--m" style="margin-bottom: 2px">Today's completed tests</h1>
+  <h1 class="govuk-fieldset__legend--m govuk-!-margin-bottom-1">Today's completed tests</h1>
   <span id="with-hint-hint" class="govuk-hint" style="margin-top: 0%;">Monday 16 October 2019</span>
-  <p class="v-space2">space</p>
-  <p align="left" class="govuk-body">Today's running total, net: <strong>£963.00</strong><br><span class="govuk-body-s">Charged at the end of each day</span></p>
-  <p class="v-space2">space</p>
+
+  <p align="left" class="govuk-body govuk-!-margin-bottom-8">Today's running total, net: <strong>£963.00</strong><br>
+    <span class="govuk-body-s">Charged at the end of each day</span>
+  </p>
 <!–– local headers ENDS ––>
     
 <!–– Table 1 start ––>
-  <table class="govuk-table" style="font-size:medium">
+  <table class="govuk-table govuk-!-margin-bottom-8" style="font-size:medium">
     <h2 class="govuk-fieldset__legend--s" style="margin-bottom: 2px">
       <a id="test-table">Assessor 1</a>
     </h2>
@@ -145,11 +141,6 @@ html: 'This is a new service – your <a class="govuk-link" href="placeholder.ht
       </tr>
     </tbody>
   </table>
-    
-  <div>
-    <p class="v-space">space</p>
-  </div>
-
 <!–– Table 1 end ––>
 
 <!–– Table 2a start ––>
@@ -223,16 +214,6 @@ html: 'This is a new service – your <a class="govuk-link" href="placeholder.ht
       </tr>
     </tbody>
   </table>
-  
-  <div>
-    <p class="v-space">space</p>
-  </div>
-<!–– Table 2a end ––>
-
-  <div>
-    <p class="v-space">space</p>
-  </div>
-</div>
-
-
+<!–– Table 2 end ––>
+</body>
 {% endblock %}

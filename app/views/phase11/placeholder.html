@@ -16,7 +16,6 @@ text: "beta"
 html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
 }) }}
 
-
 <!–– Breadcrumbs ––>
 <div class="govuk-breadcrumbs">
   <ol class="govuk-breadcrumbs__list">
@@ -35,32 +34,20 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
   </ol>
 </div>
 {% endblock %}
+
 {% block content %}
+<body class="govuk-template__body ">
+  <h1 class="govuk-heading-l govuk-!-margin-bottom-8">Placeholder page</h1>  
+  <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
+  <p class="govuk-body-m">This site is a prototype. Some designs and functions are incomplete at this stage. For this reason, the page you wanted to access is currently not available.</p>
+  <p class="govuk-body-m govuk-!-font-weight-bold">If you land on this page during a user test, please describe:</p>
 
-<!-- Headings start here -->
-<div class="govuk-width-container">
-  <main class="govuk-main-wrapper">
-  <!-- Local nave and header STARTS here -->
-    <h1 class="govuk-heading-l" style="margin-bottom: 2px">Placeholder page</h1>
-    <hr class="govuk-section-break govuk-section-break--xl govuk-section-break--visible">
-    <p class="govuk-body-m">This site is a prototype. Some designs and functions are incomplete at this stage. For this reason, the page you wanted to access is currently not available.</p>
-    <p class="govuk-body-l">If you land on this page during a user test, please describe:</p>
+  <ul class="govuk-list govuk-list--bullet">
+    <li>what you were trying to do when you clicked onto this page</li>
+    <li>what you expected find here</li>
+  </ul>
+  <p class="govuk-!-margin-bottom-6">Then please click the link below to take you back to the previous page</p>
 
-    <ul class="govuk-list govuk-list--bullet">
-      <li>what you were trying to do when you clicked onto this page</li>
-      <li>what you expected find here</li>
-    </ul>
-    <p>Then please click the link below to take you back to the previous page</p>
-
-    <div>
-      <p class="v-space">space</p>
-    </div>
-    <button type="submit" class="govuk-button" onclick="history.go(-1)">Return to previous page</button>
-    <div>
-      <p class="v-space10">space</p>
-    </div>
-  </main>
-</div>
-
-
+  <button type="submit" class="govuk-button" onclick="history.go(-1)">Return to previous page</button>
+</body>
 {% endblock %}

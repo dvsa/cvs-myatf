@@ -323,7 +323,8 @@ hr {
     padding-bottom: 0;
     padding-left: 0;
     padding-right: 10px;
-    padding-top: 20px;
+    // padding-top: 20px;
+    margin-top: 0px;
     width: 100%;
     height: 160px;
 }
@@ -489,6 +490,10 @@ hr.new2 {
     
     &__invoice{
       margin-left: 72%;
+    }
+    
+    &__placeholder{
+      margin-left: 61%;
     }
 }
 

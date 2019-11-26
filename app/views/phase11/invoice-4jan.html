@@ -38,11 +38,11 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
 {% block content %}
 <span id="with-hint-hint" class="govuk-hint" style="margin-top: 0%; margin-bottom: 0%;">P57832 Scania Lincoln</span>
+<a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+<script src="/govuk-frontend/all.js"></script>
+<script>window.GOVUKFrontend.initAll()</script>
+
 <body class="govuk-template__body ">
-  <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
-  <script src="/govuk-frontend/all.js"></script>
-  <script>window.GOVUKFrontend.initAll()</script>
-  <div class="govuk-form-group">
   <fieldset class="govuk-fieldset" aria-describedby="how-contacted-conditional-hint">
   <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
   <h1 class="govuk-fieldset__heading">Account activity</h1>
@@ -139,25 +139,24 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
       </tr>
     </tbody>
   </table>
-  </div>
 
   <p>
     <a href="http://cvs.devphase.co.uk/invoice-4jan.pdf" target="_blank">Printable invoice (PDF, 58KB)</a>
   </p>
-  <hr>
-  <p class="v-space10">space</p>
+  <hr class="govuk-!-margin-bottom-8">
+
   <h4 class="govuk-heading-s">VAT</h4>
 
   <ul class="govuk-list govuk-list--bullet">
-  <li>
-    <span class="govuk-body govuk-!-font-size-14"> Statuary vehicle testing is zero rated, attracting 0% VAT </span>
-  </li>
-  <li>
-    <span class="govuk-body govuk-!-font-size-14"> Voluntary vehicle testing is standard rated, attracting 20% VAT</span>
-  </li>
-  <li>
-    <span class="govuk-body govuk-!-font-size-14"> Retained fees are standard rated, attracting 20% VAT</span>
-  </li>
+    <li>
+      <span class="govuk-body govuk-!-font-size-14"> Statuary vehicle testing is zero rated, attracting 0% VAT </span>
+    </li>
+    <li>
+      <span class="govuk-body govuk-!-font-size-14"> Voluntary vehicle testing is standard rated, attracting 20% VAT</span>
+    </li>
+    <li>
+      <span class="govuk-body govuk-!-font-size-14"> Retained fees are standard rated, attracting 20% VAT</span>
+    </li>
   </ul>
 
 
