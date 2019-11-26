@@ -31,6 +31,18 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 <script>window.GOVUKFrontend.initAll()</script>
 
 <body class="govuk-template__body ">
+  <!–– error message start ––>
+    <div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="error-summary">
+      <h2 class="govuk-error-summary__title" id="error-summary-title">There is a problem</h2>
+      <div class="govuk-error-summary__body">
+        <ul class="govuk-list govuk-error-summary__list">
+          <li>
+            <span style="font-weight: bold; color: #B10E1E">The 6-digit code entered does not match our records. Please try again.</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  <!–– error message end ––>  
   <h1 class="govuk-heading-l" style="margin-bottom: 2px">Check your phone</h1>
   <p class="v-space10">space</p>
   <p class="govuk-body">We've sent a 6-digit security code to your phone.</p>
@@ -47,7 +59,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
   <!-- <p class="v-space10">space</p> -->
   <ul class="govuk-list">
     <li>
-      <a class="govuk-link" href="multi-factor-authentication.html">Didn't receive a code?</a>
+      <a class="govuk-link" href="multi-factor-authentication.html">Resend code</a>
     </li>
   </ul>
 </body>

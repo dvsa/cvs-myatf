@@ -41,7 +41,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
     <div class="govuk-error-summary__body">
       <ul class="govuk-list govuk-error-summary__list">
         <li>
-          <span style="font-weight: bold; color: #B10E1E">You have had too many failed login attempts on this account. Please try again at 09.45am.</span>
+          <span style="font-weight: bold; color: #B10E1E">You have had too many failed log in attempts on this account. Please try again at 09.45am.</span>
         </li>
       </ul>
     </div>
@@ -49,16 +49,15 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 <!–– error message end ––>    
     
   <p class="v-space10">space</p>
-  <div class="govuk-form-group">
+  <div class="govuk-form-group govuk-form-group--error">
     <label class="govuk-label" for="name">Email address</label>
-    <input class="govuk-input textwidth" id="name" name="name" type="text" aria-describedby="name-error">
-  </div>
-  
-  <div class="govuk-form-group">
+    <span id="name-error" class="govuk-error-message">Your email address or password is incorrect</span>
+    <input class="govuk-input govuk-input--error textwidth" id="name" name="name" type="text" aria-describedby="name-error" value="me@mydomain.co.uk">
+    <p class="v-space10">space</p>
     <label class="govuk-label" for="name">Password</label>
-    <input class="govuk-input textwidth" id="name" name="name" type="password" aria-describedby="name-error" >
-  </div>       
-
+    <input class="govuk-input govuk-input--error textwidth" id="name" name="name" type="password" aria-describedby="name-error" value="password">
+  </div>
+    
   <div>
     <p class="v-space10">space</p>
   </div>
@@ -66,15 +65,13 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
   <form method="get" action="home.html">
     <button type="submit" class="govuk-button">Continue</button>
   </form>
-    
-  <p class="v-space10">space</p>
   <h2 class="govuk-heading-m">Problems signing in</h2>
   <ul class="govuk-list">
-    <li>
+    <li class="govuk-!-padding-bottom-2">
       <a class="govuk-link" href="reset-password.html">I have forgotten my login email</a>
     </li>
     <li>
-      <a class="govuk-link" href="reset-password.html">I have forgotten my login password</a>
+      <a class="govuk-link" href="reset-password.html">I have forgotten my password</a>
     </li>
   </ul>
 </body>

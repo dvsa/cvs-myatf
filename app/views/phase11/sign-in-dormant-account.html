@@ -1,7 +1,7 @@
 {% extends "layout3.html" %}
 
 {% block pageTitle %}
-Concurrent session sign in error 
+Sign in error
 {% endblock %}
 
 <!–– Beta header ––>
@@ -24,50 +24,41 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
 {% block content %}
 <script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
 <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
 <script src="/govuk-frontend/all.js"></script>
 <script>window.GOVUKFrontend.initAll()</script>
 
 <body class="govuk-template__body ">
-<!–– error message start ––>  
+  
+<!–– error message start ––>
   <div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="error-summary">
     <h2 class="govuk-error-summary__title" id="error-summary-title">There is a problem</h2>
+    <div class="govuk-error-summary__body">
       <ul class="govuk-list govuk-error-summary__list">
         <li>
-          <span style="color:#B10E1E; font-weight:bold;">Your are currently logged in on two other devices. To continue, please log out of one of these other sessions</span>
+          <span style="font-weight: bold; color: #B10E1E">Your account is no longer active</span>
         </li>
       </ul>
-  </div>  
-  
-  <h1 class="govuk-heading-l" style="margin-bottom: 2px">Sign in</h1>  
+    </div>
+  </div>
+<!–– error message end ––>    
+  <h1 class="govuk-heading-l" style="margin-bottom: 2px">Sign in</h1>
   <p class="v-space10">space</p>
-
+  
+  <p class="govuk-caption-m">If you would like to reactivate the account for richardsmith@emailaddress.co.uk, please submit the following information:</p>
   <div class="govuk-form-group">
-    <label class="govuk-label" for="width-20">Email address</label>
-    <input class="govuk-input govuk-input--width-20" id="width-20" name="width-10" type="text">
-  </div>
-    
-  <div class="govuk-form-group">
-    <label class="govuk-label" for="width-20">Password</label>
-    <input class="govuk-input govuk-input--width-20" id="width-20" name="width-10" type="password">
-  </div>
-    
-  <div class="govuk-form-group">
-    <fieldset class="govuk-fieldset" aria-describedby="waste-hint">
-      <div class="govuk-checkboxes">
-        <div class="govuk-checkboxes__item">
-          <input class="govuk-checkboxes__input" id="waste-1" name="waste" type="checkbox" value="carcasses">
-          <label class="govuk-label govuk-checkboxes__label" for="waste-1">I agree to the <a href="#">terms and conditions</a></label>
-        </div>
-      </div>
-    </fieldset>
+    <label class="govuk-label" for="name">ATF site</label>
+    <input class="govuk-input textwidth" id="name" name="name" type="text" aria-describedby="name-error">
+    <p class="v-space10">space</p>
+    <label class="govuk-label" for="name">Full name</label>
+    <input class="govuk-input textwidth" id="name" name="name" type="password" aria-describedby="name-error">
   </div>
     
   <form method="get" action="home.html">
-    <button type="submit" class="govuk-button">Continue</button>
+    <button type="submit" class="govuk-button">Submit</button>
   </form>
-<!–– error message end ––>  
-  <p class="v-space10">space</p>
+
   <h2 class="govuk-heading-m">Problems signing in</h2>
   <ul class="govuk-list">
     <li class="govuk-!-padding-bottom-2">

@@ -3,12 +3,13 @@
   @include govuk-text-colour;
   box-sizing: border-box;
   width: 100%;
-  padding-top: govuk-spacing(3);
-  padding-right: govuk-spacing(3);
-  padding-bottom: govuk-spacing(3);
-  padding-left: govuk-spacing(3);
+  padding-top: govuk-spacing(1);
+  padding-right: govuk-spacing(1);
+  padding-bottom: govuk-spacing(1);
+  padding-left: govuk-spacing(1);
   background-color: lighten(desaturate(govuk-colour("white"), 8.46), 42.55);
   border: solid black 2px;
+  text-align: center;
 }
 
 .app-cookie-banner, .app-cookie-banner__button{
@@ -25,8 +26,8 @@
 }
 
 .app-cookie-banner__button{
-  padding-top: 1.5%;
-  padding-bottom: 1%;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
   width: auto;
   line-height: 1;
   display: inline-block;
