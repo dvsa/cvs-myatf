@@ -5,15 +5,27 @@ Sign in
 {% endblock %}
 <!–– Beta header ––>
 {% block header %}
-<div class="app-cookie-banner static">
+<div class="app-cookie-banner static" id="app-cookie-banner">
   <div class="govuk-width-container govuk-!-font-size-14">
     <span class="app-cookie-banner__message">GOV.UK uses cookies to make the site simpler. 
       <a href="cookies.html" class="cookiesSpacer">Find out more about cookies</a>
-      <button class="app-cookie-banner__button govuk-!-font-size-14 cookiesSpacer">Accept cookies</button>
+      <button onclick="closeCookieBanner()" class="app-cookie-banner__button govuk-!-font-size-14 cookiesSpacer">Accept cookies</button>
       <!-- <button class="app-cookie-banner__button govuk-!-font-size-14">Cookie settings</button> -->
     </span>
   </div>
 </div>
+
+<script>
+function closeCookieBanner() {
+  var x = document.getElementById("app-cookie-banner");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
 <header class="govuk-header " role="banner" data-module="header">
 <div class="govuk-header__container govuk-width-container">
   <div class="govuk-header__logo">
