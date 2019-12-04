@@ -1,0 +1,118 @@
+{% extends "layout3.html" %}
+
+{% block pageTitle %}
+Invite a team member
+{% endblock %}
+
+<!–– Beta header ––>
+
+{% block beforeContent %}
+
+{% from "phase-banner/macro.njk" import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "beta"
+},
+html: 'This is a new service – your <a class="govuk-link" href="placeholder.html">feedback</a> will help us to improve it.'
+}) }}
+
+<!–– Breadcrumbs ––>
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a href="home.html" class="govuk-breadcrumbs__link">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      View team members
+    </li>
+    <li>
+      <span class="sign-out__viewTeam">
+        <a href="sign-in.html">Sign out</a>
+      </span>
+    </li>
+  </ol>
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+<!-- Headings start here -->
+<body>
+  <div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="govuk-error-summary">
+    <h2 class="govuk-error-summary__title" id="error-summary-title">
+      There is a problem
+    </h2>
+    <div class="govuk-error-summary__body">
+      <ul class="govuk-list govuk-error-summary__list">
+        <li>
+          <a href="#teamMembers">You have reached your team member limt</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <span class="govuk-caption-l">Manage your ATF</span>
+  <h1 class="govuk-heading-l">View team members</h1>  
+<!–– local headers START ––>
+  <p class="govuk-body">You can have up to three team members managing your account.</p>
+<!–– local headers ENDS ––>
+    
+    
+  <script>
+    function deleteRow(row) {
+    var i = row.parentNode.parentNode.rowIndex;
+    document.getElementById("team-member-table").deleteRow(i);
+    }
+  </script>
+<!–– Table 1 start ––>
+  <div class="govuk-form-group--error">
+  <table class="govuk-table" id="team-member-table">
+    <p class="govuk-!-font-weight-bold govuk-!-margin-bottom-1">Team members</p>
+    <p class="govuk-!-font-weight-bold govuk-!-margin-bottom-1" style="color: #b10e1e">You have reached your team member limt</p>
+    <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header" scope="col" style="text-align: left;">Name</th>
+        <th class="govuk-table__header" scope="col" style="text-align: left;">Email</th>
+        <th class="govuk-table__header" scope="col">Status</th>
+        <th class="govuk-table__header" scope="col"></th>
+      </tr>
+    </thead>
+      
+    <tbody class="govuk-table__body" id="teamMembers">
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell" scope="row" style="text-align: left;">Emily Smith</td>
+        <td class="govuk-table__cell" scope="row" style="text-align: left;">emilysmith@atf.co.uk</td>
+        <td class="govuk-table__cell" scope="row">Active</td>
+        <td class="govuk-table__cell" scope="row">
+          <a class="govuk-link govuk-link--no-visited-state  link" value="Delete" onclick="deleteRow(this)">Remove</a>
+        </td> 
+      </tr>
+
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell" scope="row" style="text-align: left;">Greg James</td>
+        <td class="govuk-table__cell" scope="row" style="text-align: left;">gregjames@atf.co.uk</td>
+        <td class="govuk-table__cell statusPending" scope="row">Pending</td>
+        <td class="govuk-table__cell" scope="row">
+          <a class="govuk-link govuk-link--no-visited-state link" value="Delete" onclick="deleteRow(this)">Remove</a>
+        </td> 
+      </tr>
+
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell" scope="row" style="text-align: left;">Paul Kelly</td>
+        <td class="govuk-table__cell" scope="row" style="text-align: left;">paulkelly@atf.co.uk</td>
+        <td class="govuk-table__cell" scope="row">Active</td>
+        <td class="govuk-table__cell" scope="row">
+          <a class="govuk-link govuk-link--no-visited-state  link" value="Delete" onclick="deleteRow(this)">Remove</a>
+        </td> 
+      </tr>
+    </tbody>
+  </table>
+  </div>
+<!–– Table 1 end ––>
+  <form method="get" action="register-add-secondary-delegate.html">
+    <button type="submit" class="govuk-button">Invite team member</button>
+    <!-- <p>You have reached your team member limt.</p> -->
+  </form>
+</body>
+{% endblock %}

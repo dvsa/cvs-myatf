@@ -35,7 +35,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
 {% block content %}
 <span class="govuk-caption-m">P57832 Scania Lincoln</span>
-<h1 class="govuk-heading-l govuk-!-margin-bottom-8">Account activity</h1>
+<h1 class="govuk-heading-l">Account activity</h1>
 <thead class="govuk-table__head">
 <body class="govuk-template__body ">
 <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
@@ -160,12 +160,9 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
           </div>
         </div>
 <!–– To END ––>
-<!–– multit-date dropdown END ––>
-
-      </div>  
-      <div>
-        <p class="v-space10">space</p>
-      </div>
+<!–– multi-date dropdown END ––>
+      </div> 
+      <div class="govuk-!-margin-bottom-6"></div> 
       <input type="button" class="govuk-button" value="Show transactions" onclick="ob=this.form.radioselection;for(i=0;i<ob.length;i++){if(ob[i].checked){window.open(ob[i].value,'_self');};}" />
     </fieldset>
   </form>

@@ -63,7 +63,21 @@ hr {
 }
 // Paste this (as many time as you want) between divs: <div><p class="v-space2">space</p></div>
 
+.indexText01{
+  color:gray; 
+  // padding-left:5px
+}
 
+
+.indexText02{
+  color:orange; 
+  // padding-left:5px
+}
+
+.indexText03{
+  color:green; 
+  // padding-left:5px
+}
 
 // DY-Styles: myatf-account / datepicker
 
@@ -480,21 +494,26 @@ hr.new2 {
       margin-left: 66%;
     }
     
-    &__searchTransactions{
+    &__searchTransactions, &__invoice, &__viewTeam{
       margin-left: 72%;
     }
     
-    &__terms{
+    &__terms, &__addTeam{
       margin-left: 71%;
-    }
-    
-    &__invoice{
-      margin-left: 72%;
     }
     
     &__placeholder{
       margin-left: 61%;
     }
+}
+
+.link{
+  color:#1d70b8; 
+  text-decoration: underline;
+}
+
+.statusPending{
+  color: #626a6e;
 }
 
 @media (max-width: 500px) {

@@ -27,24 +27,24 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 <script src="/govuk-frontend/all.js"></script>
 <script>window.GOVUKFrontend.initAll()</script>
 
-<body class="govuk-template__body ">
-  <h1 class="govuk-heading-l govuk-!-margin-bottom-8">How would you like to receive<br> your security code?</h1> 
+<body class="govuk-template__body">
+  <h1 class="govuk-heading-l ">How would you like to receive<br> your security code?</h1> 
   
   <div class="govuk-form-group">
     <fieldset class="govuk-fieldset">
       <div class="govuk-radios">
         <div class="govuk-radios__item">
-          <input class="govuk-radios__input"  type="radio">
+          <input class="govuk-radios__input" name="radio" type="radio">
           <label class="govuk-label govuk-radios__label">SMS text to 07*****88</label>
         </div>
         <div class="govuk-radios__item">
-          <input class="govuk-radios__input" type="radio">
-          <label class="govuk-label govuk-radios__label">Phone call to 020*****452</label>
+          <input class="govuk-radios__input" name="radio" type="radio">
+          <label class="govuk-label govuk-radios__label">Phone call to 02*******52</label>
         </div>
     </fieldset>
   </div>
 
-  <form class="govuk-!-margin-bottom-5" method="get" action="multi-factor-authentication-code.html">
+  <form method="get" action="multi-factor-authentication-code.html">
     <button type="submit" class="govuk-button">Continue</button>
   </form>
 </body>

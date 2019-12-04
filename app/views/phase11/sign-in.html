@@ -6,11 +6,11 @@ Sign in
 <!–– Beta header ––>
 {% block header %}
 <div class="app-cookie-banner static" id="app-cookie-banner">
-  <div class="govuk-width-container govuk-!-font-size-14">
+  <div class="govuk-width-container govuk-!-font-size-19">
     <span class="app-cookie-banner__message">GOV.UK uses cookies to make the site simpler. 
       <a href="cookies.html" class="cookiesSpacer">Find out more about cookies</a>
-      <button onclick="closeCookieBanner()" class="app-cookie-banner__button govuk-!-font-size-14 cookiesSpacer">Accept cookies</button>
-      <!-- <button class="app-cookie-banner__button govuk-!-font-size-14">Cookie settings</button> -->
+      <button onclick="closeCookieBanner()" class="app-cookie-banner__button govuk-!-font-size-19 cookiesSpacer">Accept cookies</button>
+      <!-- <button onclick="window.location.href = 'cookies.html';" type="submit" class="app-cookie-banner__button govuk-!-font-size-19">Cookies settings</button> -->
     </span>
   </div>
 </div>
@@ -69,9 +69,9 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 <script>window.GOVUKFrontend.initAll()</script>
 
 <body class="govuk-template__body ">
-  <h1 class="govuk-heading-l govuk-!-margin-bottom-8">Sign in</h1> 
+  <h1 class="govuk-heading-l">Sign in</h1> 
   
-  <div class="govuk-form-group  govuk-!-margin-bottom-6">
+  <div class="govuk-form-group">
     <label class="govuk-label" for="email">Email address</label>
     <input class="govuk-input textwidth govuk-!-margin-bottom-6" id="email" name="email" type="text" aria-describedby="email-error">
     
@@ -79,7 +79,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
     <input class="govuk-input textwidth" id="password" name="password" type="password" aria-describedby="password-error">
   </div> 
 
-  <form class="govuk-!-margin-bottom-5" method="get" action="multi-factor-authentication.html">
+  <form method="get" action="multi-factor-authentication.html">
     <button type="submit" class="govuk-button">Continue</button>
   </form>
 
