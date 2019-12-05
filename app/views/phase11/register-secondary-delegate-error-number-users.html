@@ -8,7 +8,7 @@ Invite a team member
 
 {% block beforeContent %}
 
-{% from "phase-banner/macro.njk" import govukPhaseBanner %}
+{% from "govuk/components/phase-banner/macro.njk" import govukPhaseBanner %}
 {{ govukPhaseBanner({
 tag: {
 text: "beta"
@@ -70,7 +70,7 @@ html: 'This is a new service – your <a class="govuk-link" href="placeholder.ht
   <div class="govuk-form-group--error">
   <table class="govuk-table" id="team-member-table">
     <p class="govuk-!-font-weight-bold govuk-!-margin-bottom-1">Team members</p>
-    <p class="govuk-!-font-weight-bold govuk-!-margin-bottom-1" style="color: #b10e1e">You have reached your team member limt</p>
+    <p class="govuk-!-font-weight-bold govuk-!-margin-bottom-1" style="color: #d4351c">You have reached your team member limt</p>
     <thead class="govuk-table__head">
       <tr class="govuk-table__row">
         <th class="govuk-table__header" scope="col" style="text-align: left;">Name</th>
