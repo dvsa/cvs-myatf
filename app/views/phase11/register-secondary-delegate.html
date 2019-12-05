@@ -1,7 +1,7 @@
 {% extends "layout3.html" %}
 
 {% block pageTitle %}
-Invite a team member
+Team members
 {% endblock %}
 
 <!–– Beta header ––>
@@ -23,10 +23,10 @@ html: 'This is a new service – your <a class="govuk-link" href="placeholder.ht
       <a href="home.html" class="govuk-breadcrumbs__link">Home</a>
     </li>
     <li class="govuk-breadcrumbs__list-item">
-      View team members
+      Team members
     </li>
     <li>
-      <span class="sign-out__viewTeam">
+      <span class="sign-out">
         <a href="sign-in.html">Sign out</a>
       </span>
     </li>
@@ -39,9 +39,9 @@ html: 'This is a new service – your <a class="govuk-link" href="placeholder.ht
 
 <!-- Headings start here -->
 <body>
-  <span class="govuk-caption-l">Manage your ATF</span>
-  <h1 class="govuk-heading-l">View team members</h1>  
-  <p class="govuk-body">You can have up to three team members managing your account.</p>
+  <span class="govuk-caption-m">P57832 Scania Lincoln</span>
+  <h1 class="govuk-heading-l">Team members</h1>  
+  <p class="govuk-body">You can give up to three team members access to this account.</p>
   
   <script>
     function deleteRow(row) {
@@ -51,12 +51,11 @@ html: 'This is a new service – your <a class="govuk-link" href="placeholder.ht
   </script>
 <!–– Table 1 start ––>
   <table class="govuk-table" id="team-member-table">
-    <caption class="govuk-table__caption">Team members</caption>
     <thead class="govuk-table__head">
       <tr class="govuk-table__row">
         <th class="govuk-table__header" scope="col" style="text-align: left;">Name</th>
         <th class="govuk-table__header" scope="col" style="text-align: left;">Email</th>
-        <th class="govuk-table__header" scope="col">Status</th>
+        <th class="govuk-table__header" scope="col">Account active</th>
         <th class="govuk-table__header" scope="col"></th>
       </tr>
     </thead>
@@ -65,27 +64,27 @@ html: 'This is a new service – your <a class="govuk-link" href="placeholder.ht
       <tr class="govuk-table__row">
         <td class="govuk-table__cell" scope="row" style="text-align: left;">Emily Smith</td>
         <td class="govuk-table__cell" scope="row" style="text-align: left;">emilysmith@atf.co.uk</td>
-        <td class="govuk-table__cell" scope="row">Active</td>
+        <td class="govuk-table__cell" scope="row">Yes</td>
         <td class="govuk-table__cell" scope="row">
-          <a class="govuk-link govuk-link--no-visited-state  link" value="Delete" onclick="deleteRow(this)">Remove</a>
+          <a class="govuk-link govuk-link--no-visited-state" href="remove-secondary-delegate.html">Remove</a>
         </td> 
       </tr>
 
       <tr class="govuk-table__row">
         <td class="govuk-table__cell" scope="row" style="text-align: left;">Greg James</td>
         <td class="govuk-table__cell" scope="row" style="text-align: left;">gregjames@atf.co.uk</td>
-        <td class="govuk-table__cell statusPending" scope="row">Pending</td>
+        <td class="govuk-table__cell" scope="row">No</td>
         <td class="govuk-table__cell" scope="row">
-          <a class="govuk-link govuk-link--no-visited-state  link" value="Delete" onclick="deleteRow(this)">Remove</a>
+          <a class="govuk-link govuk-link--no-visited-state" href="remove-secondary-delegate.html">Remove</a>
         </td> 
       </tr>
 
       <tr class="govuk-table__row">
         <td class="govuk-table__cell" scope="row" style="text-align: left;">Paul Kelly</td>
         <td class="govuk-table__cell" scope="row" style="text-align: left;">paulkelly@atf.co.uk</td>
-        <td class="govuk-table__cell" scope="row">Active</td>
+        <td class="govuk-table__cell" scope="row">Yes</td>
         <td class="govuk-table__cell" scope="row">
-          <a class="govuk-link govuk-link--no-visited-state  link" value="Delete" onclick="deleteRow(this)">Remove</a>
+          <a class="govuk-link govuk-link--no-visited-state" href="remove-secondary-delegate.html">Remove</a>
         </td> 
       </tr>
     </tbody>

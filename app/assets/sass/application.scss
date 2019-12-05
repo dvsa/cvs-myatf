@@ -476,35 +476,8 @@ hr.new2 {
 
 }
 
-
 .sign-out{
-    &__home{
-      margin-left: 89%;
-    }
-    
-    &__sitemanagement{
-      margin-left: 74%;
-    }
-    
-    &__cookies{
-      margin-left: 81%;
-    }
-    
-    &__pfa{
-      margin-left: 66%;
-    }
-    
-    &__searchTransactions, &__invoice, &__viewTeam{
-      margin-left: 72%;
-    }
-    
-    &__terms, &__addTeam{
-      margin-left: 71%;
-    }
-    
-    &__placeholder{
-      margin-left: 61%;
-    }
+  float: right;   
 }
 
 .link{

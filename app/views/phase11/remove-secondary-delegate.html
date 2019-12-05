@@ -1,7 +1,7 @@
 {% extends "layout3.html" %}
 
 {% block pageTitle %}
-Invite a team member
+Remove team member
 {% endblock %}
 
 <!–– Beta header ––>
@@ -23,11 +23,9 @@ html: 'This is a new service – your <a class="govuk-link" href="placeholder.ht
       <a href="home.html" class="govuk-breadcrumbs__link">Home</a>
     </li>
     <li class="govuk-breadcrumbs__list-item">
-      <a href="register-secondary-delegate.html" class="govuk-breadcrumbs__link">Team member</a>
+      <a href="register-secondary-delegate.html" class="govuk-breadcrumbs__link">Team members</a>
     </li>
-    <li class="govuk-breadcrumbs__list-item">
-      Invite a team member
-    </li>
+    <li class="govuk-breadcrumbs__list-item">Remove team member</li>
     <li>
       <span class="sign-out">
         <a href="sign-in.html">Sign out</a>
@@ -35,8 +33,6 @@ html: 'This is a new service – your <a class="govuk-link" href="placeholder.ht
     </li>
   </ol>
 </div>
-
-<a href="register-secondary-delegate.html" class="govuk-back-link">Back</a>
 {% endblock %}
 
 {% block content %}
@@ -44,18 +40,16 @@ html: 'This is a new service – your <a class="govuk-link" href="placeholder.ht
 <!-- Headings start here -->
 <body>
   <span class="govuk-caption-m">P57832 Scania Lincoln</span>
-  <h1 class="govuk-heading-l">Invite a team member</h1>  
+  <h1 class="govuk-heading-l">Remove a team member</h1>  
     
-  <div class="govuk-form-group">
-    <label class="govuk-label" for="mobile">Name</label>
-    <input class="govuk-input textwidth govuk-!-margin-bottom-6" id="name" name="name" type="text" aria-describedby="name">
-    
-    <label class="govuk-label" for="mobile">Email</label>
-    <input class="govuk-input textwidth" id="email" name="email" type="text" aria-describedby="email">
-  </div>
+  <p class="govuk-body">You are going to delete a team member from the portal.</p>
+  
+  <p class="govuk-body">This will remove their access to your account.</p>
+  
+  <p class="govuk-body">Are you sure you would like to continue?</p>
 
-  <form method="get" action="register-secondary-delegate-confirmation.html">
-    <button type="submit" class="govuk-button">Send invite</button>
-  </form>
+  <button onclick="window.location.href = 'remove-secondary-delegate-confirmed.html';" class="govuk-button govuk-!-margin-right-1" data-module="govuk-button">Confirm</button>
+
+  <button onclick="window.location.href = 'register-secondary-delegate.html';" class="govuk-button govuk-button--secondary" data-module="govuk-button">Cancel</button>
 </body>
 {% endblock %}
