@@ -58,7 +58,6 @@
       "nunjucks"
     ]
   },
-},
 "husky": {
   "hooks": {
     "pre-commit": "npm run security-checks"

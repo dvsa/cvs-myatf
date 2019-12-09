@@ -1,0 +1,14 @@
+app/views/phase11/create-your-account-password-match-error.html
+app/views/phase11/create-your-account-password-short-error.html
+app/views/phase11/reset-password-short-error.html
+app/views/phase11/reset-password.html
+app/views/phase11/reset-password-requirements-error.html
+app/views/phase11/create-your-account-password-character-error.html
+app/views/phase11/reset-password-match-error.html
+app/views/phase11/create-your-account-password.html
+app/views/phase11/sign-in-error-no-password.html
+app/views/phase11/archive/reset-password-requirements-error.html
+app/views/phase11/create-your-account-password-terms-error.html
+app/views/phase11/reset-password-confirmation.html
+app/views/phase11/reset-password-email-link.html
+.npmrc
