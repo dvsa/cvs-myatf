@@ -25,39 +25,25 @@ html: 'This is a new service – your <a class="govuk-link" href="placeholder.ht
     <li class="govuk-breadcrumbs__list-item">
       Team members
     </li>
-    <li>
+    <!-- <li>
       <span class="sign-out">
         <a href="sign-in.html">Sign out</a>
       </span>
-    </li>
+    </li> -->
   </ol>
 </div>
 
-<a href="register-secondary-delegate.html" class="govuk-back-link">Back</a>
 {% endblock %}
 
 {% block content %}
 
 <!-- Headings start here -->
 <body>
-  <div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="govuk-error-summary">
-    <h2 class="govuk-error-summary__title" id="error-summary-title">
-      There is a problem
-    </h2>
-    <div class="govuk-error-summary__body">
-      <ul class="govuk-list govuk-error-summary__list">
-        <li>
-          <a href="#teamMembers">You have reached your team member limt</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-
   <span class="govuk-caption-m">P57832 Scania Lincoln</span>
   <h1 class="govuk-heading-l">View team members</h1>  
-<!–– local headers START ––>
+
   <p class="govuk-body">You can have up to three team members managing your account.</p>
-<!–– local headers ENDS ––>
+  <div class="govuk-inset-text">You have reached the maximum number of team members for this account.<br>You will need to remove a team member before anyone else can be added.</div>
     
     
   <script>
@@ -67,53 +53,48 @@ html: 'This is a new service – your <a class="govuk-link" href="placeholder.ht
     }
   </script>
 <!–– Table 1 start ––>
-  <div class="govuk-form-group--error">
   <table class="govuk-table" id="team-member-table">
-    <p class="govuk-!-font-weight-bold govuk-!-margin-bottom-1">Team members</p>
-    <p class="govuk-!-font-weight-bold govuk-!-margin-bottom-1" style="color: #b10e1e">You have reached your team member limt</p>
     <thead class="govuk-table__head">
       <tr class="govuk-table__row">
         <th class="govuk-table__header" scope="col" style="text-align: left;">Name</th>
         <th class="govuk-table__header" scope="col" style="text-align: left;">Email</th>
-        <th class="govuk-table__header" scope="col">Status</th>
+        <th class="govuk-table__header" scope="col">Account active</th>
         <th class="govuk-table__header" scope="col"></th>
       </tr>
     </thead>
       
-    <tbody class="govuk-table__body" id="teamMembers">
+    <tbody class="govuk-table__body">
       <tr class="govuk-table__row">
         <td class="govuk-table__cell" scope="row" style="text-align: left;">Emily Smith</td>
         <td class="govuk-table__cell" scope="row" style="text-align: left;">emilysmith@atf.co.uk</td>
-        <td class="govuk-table__cell" scope="row">Active</td>
+        <td class="govuk-table__cell" scope="row">Yes</td>
         <td class="govuk-table__cell" scope="row">
-          <a class="govuk-link govuk-link--no-visited-state  link" value="Delete" onclick="deleteRow(this)">Remove</a>
+          <a class="govuk-link govuk-link--no-visited-state" href="remove-secondary-delegate.html">Remove</a>
         </td> 
       </tr>
 
       <tr class="govuk-table__row">
         <td class="govuk-table__cell" scope="row" style="text-align: left;">Greg James</td>
         <td class="govuk-table__cell" scope="row" style="text-align: left;">gregjames@atf.co.uk</td>
-        <td class="govuk-table__cell statusPending" scope="row">Pending</td>
+        <td class="govuk-table__cell" scope="row">No</td>
         <td class="govuk-table__cell" scope="row">
-          <a class="govuk-link govuk-link--no-visited-state link" value="Delete" onclick="deleteRow(this)">Remove</a>
+          <a class="govuk-link govuk-link--no-visited-state" href="remove-secondary-delegate.html">Remove</a>
         </td> 
       </tr>
 
       <tr class="govuk-table__row">
         <td class="govuk-table__cell" scope="row" style="text-align: left;">Paul Kelly</td>
         <td class="govuk-table__cell" scope="row" style="text-align: left;">paulkelly@atf.co.uk</td>
-        <td class="govuk-table__cell" scope="row">Active</td>
+        <td class="govuk-table__cell" scope="row">Yes</td>
         <td class="govuk-table__cell" scope="row">
-          <a class="govuk-link govuk-link--no-visited-state  link" value="Delete" onclick="deleteRow(this)">Remove</a>
+          <a class="govuk-link govuk-link--no-visited-state" href="remove-secondary-delegate.html">Remove</a>
         </td> 
       </tr>
     </tbody>
   </table>
-  </div>
 <!–– Table 1 end ––>
-  <form method="get" action="register-add-secondary-delegate.html">
+  <!-- <form method="get" action="register-add-secondary-delegate.html">
     <button type="submit" class="govuk-button">Invite team member</button>
-    <!-- <p>You have reached your team member limt.</p> -->
-  </form>
+  </form> -->
 </body>
 {% endblock %}
