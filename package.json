@@ -13,7 +13,7 @@
     "security-checks": "git secrets --scan && git log -p | scanrepo"
   },
   "devDependencies": {
-    "husky": "^3.0.9"
+    "husky": "^3.1.0"
   },
   "dependencies": {
     "acorn": "^6.0.5",
@@ -56,8 +56,8 @@
     ]
   },
   "husky": {
-  "hooks": {
-    "pre-commit": "npm run security-checks"
+    "hooks": {
+      "pre-commit": "npm run security-checks"
     }
   }
 }
