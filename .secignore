@@ -12,4 +12,6 @@ app/views/phase11/create-your-account-password-terms-error.html
 app/views/phase11/reset-password-confirmation.html
 app/views/phase11/reset-password-email-link.html
 .npmrc
+app/views/phase11/reset-password-used-error.html
 app/views/phase11/create-your-account-password-used-error.html
+
