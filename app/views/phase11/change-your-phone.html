@@ -1,7 +1,7 @@
 {% extends "layout-sign-in.html" %}
 
 {% block pageTitle %}
-Change your password
+Change your security phone number
 {% endblock %}
 
 <!–– Beta header ––>
@@ -29,18 +29,18 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
 <body class="govuk-template__body ">
   <span class="govuk-caption-l">Your settings</span>
-  <h1 class="govuk-heading-l">Change your password</h1>
+  <h1 class="govuk-heading-l">Change your phoneNumber</h1>
     
   <div class="govuk-form-group">
-    <label class="govuk-label" for="password">Existing password</label>
-    <input class="govuk-input textwidth govuk-!-margin-bottom-6" id="password" name="password" type="password" >
+    <label class="govuk-label" for="phoneNumber">Existing mobile number</label>
+    <input class="govuk-input textwidth govuk-!-margin-bottom-6" id="phoneNumber" name="phoneNumber" type="text" >
     
-    <label class="govuk-label" for="password">New password</label>
-    <label class="govuk-caption-m">Your password must be 10 characters or more.</label>
-    <input class="govuk-input textwidth govuk-!-margin-bottom-6" id="password" name="password" type="password" >
+    <label class="govuk-label" for="phoneNumber">New mobile number</label>
+    <label class="govuk-caption-m">Your phoneNumber must be 10 characters or more.</label>
+    <input class="govuk-input textwidth govuk-!-margin-bottom-6" id="phoneNumber" name="phoneNumber" type="text" >
       
-    <label class="govuk-label" for="mobile">Confirm new password</label>
-    <input class="govuk-input textwidth" id="width-20" name="width-10" type="password">
+    <label class="govuk-label" for="mobile">Confirm new mobile number</label>
+    <input class="govuk-input textwidth" id="width-20" name="width-10" type="text">
   </div> 
 
   <form method="get" action="create-your-account.html">
