@@ -1,6 +1,6 @@
 {% extends "layout3.html" %}
 {% block pageTitle %}
-Home
+Home v3
 {% endblock %}
 
 {% block beforeContent %}
@@ -36,20 +36,39 @@ Home
 <h1 class="govuk-heading-l">Manage your ATF</h1>
 
 <body class="govuk-template__body ">
-  <ul class="home-block">
+  <ul class="home-block govuk-!-margin-bottom-8">
     <li class="home-block">
-      <a class="register-theme__link" href="site-management.html">
+      <a class="register-theme__linkv2" href="site-management.html">
         <h3 class="register-theme__heading govuk-heading-m" style="color: #005EA5">Site management</h3>
         <p class="govuk-body-s"> View real-time and historic visit details</p>
         <p></p>
       </a>
     </li>
     <li class="home-block">
-      <a class="register-theme__link" href="account-activity-prefunded-balance.html">
+      <a class="register-theme__linkv2" href="account-activity-prefunded-balance.html">
         <h3 class="register-theme__heading govuk-heading-m" style="color: #005EA5">Account activity</h3>
         <p class="govuk-body-s"> View balance and historic transactions</p>
         <p class="register-theme__description govuk-body-s"><strong>Current balance : £2,123.89</strong></p>
       </a>
+    </li>
+  </ul>
+  
+  <h1 class="govuk-heading-m">Account settings</h1>
+  <ul class="govuk-list">
+    <li>&#8212; 
+      <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="account-details-v2.html">Your details</a>
+    </li>
+    <li>&#8212;
+      <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="reset-password.html">Change password</a>
+    </li>
+    <li>&#8212;
+      <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="placeholder.html">Change email</a>
+    </li>
+    <li>&#8212;
+      <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="placeholder.html">Change security phone number</a>
+    </li>
+    <li>&#8212;
+      <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="register-secondary-delegate.html">Manage team members</a>
     </li>
   </ul>
 </body>
