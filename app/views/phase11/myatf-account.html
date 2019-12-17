@@ -1,0 +1,162 @@
+{% extends "layout2.html" %}
+
+{% block pageTitle %}
+Transactions and invoices
+{% endblock %}
+
+<!–– Beta header ––>
+
+{% block beforeContent %}
+
+{% from "phase-banner/macro.njk" import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "beta"
+},
+html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+
+<!–– Breadcrumbs ––>
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="home.html">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="account-activity-prefunded-balance.html">Account activity</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="account-activity-search.html">Search transactions</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" >Transactions</a>
+    </li>
+  </ol>
+</div>
+{% endblock %}
+
+{% block content %}
+<span class="govuk-caption-m">P57832 Scania Lincoln</span>
+<h1 class="govuk-heading-l">Account activity</h1>
+<thead class="govuk-table__head">
+<body class="govuk-template__body ">
+<a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+<script src="/govuk-frontend/all.js"></script>
+<script>window.GOVUKFrontend.initAll()</script>
+
+  <div class="govuk-form-group marginTopRemoved">
+    <hr class="govuk-!-margin-bottom-8"> 
+    <ol class="govuk-list govuk-!-margin-bottom-8" style="font-size:large">
+      <li style="margin-bottom: 10px;"> &#8212;
+        <span style="padding-left: 5px;">Pre-funded account balance</span>
+      </li>
+      <li style="margin-bottom: 10px;"> &#8212;
+        <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="account-activity-search.html">Search transactions</a>
+      </li>
+      <li style="margin-bottom: 10px;"> &#8212;
+        <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="#">Top up account</a>
+      </li>
+    </ol>
+    <hr>
+  </div> 
+  <!-- Local nave and header ENDS here -->      
+  <h1 class="govuk-fieldset__legend--m govuk-!-margin-bottom-1">Transactions</h1>
+  <span id="with-hint-hint" class="govuk-hint" style="margin-top: 0%;">16 October 2019 - 17 December 2019</span>
+  <p class="govuk-body">
+     <a href="activity-history-search.html" class="govuk-link govuk-link--no-visited-state">Search different dates</a>
+  </p>
+
+  <p style="text-align: right;">
+    <span class="govuk-body" >
+      <a href="placeholder.html" class="govuk-link govuk-link--no-visited-state">Printable version (PDF, 62KB)</a>
+    </span>
+  </p>
+  <p style="text-align: right;">
+    <span class="govuk-body">
+      <a href="placeholder.html" class="govuk-link govuk-link--no-visited-state">Download spreadsheet (CSV, 24KB)</a>
+    </span>
+  </p>
+
+  <table class="govuk-table">
+    <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+      <th class="govuk-table__header" scope="col">Date</th>
+      <th class="govuk-table__header govuk-table__header--text" scope="col">Item</th>
+      <th class="govuk-table__header govuk-table__header--text" scope="col">Number</th>
+      <th class="govuk-table__header govuk-table__header--numeric" scope="col">Net amount</th>
+      <th class="govuk-table__header govuk-table__header--numeric" scope="col">Balance</th>      </tr>
+    </thead>
+
+    <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell" scope="row" id="activity-line1">10 June 2018</td>
+        <td class="govuk-table__cell" id="activity-line3" >Top up to PFA</td>
+        <td class="govuk-table__cell"><a id="activity-line3" >1-234567890</a></td>
+        <td class="govuk-table__cell govuk-table__cell--numeric" id="activity-line4">+£15,000.00</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric" id="activity-line4">£16,140.00</td>
+      </tr>
+
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell" scope="row"  id="activity-line1">10 June 2018</td>
+        <td class="govuk-table__cell"><a href="invoice.html" id="activity-line3">Vehicle testing</a></td>
+        <td class="govuk-table__cell"><a id="activity-line3" >1-234567890</a></td>
+        <td class="govuk-table__cell govuk-table__cell--numeric" id="activity-line4">-£756.00</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric" id="activity-line4">£15,384.00</td>
+      </tr>
+
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell" scope="row" id="activity-line1">11 June 2018</td>
+        <td class="govuk-table__cell" id="activity-line3">Refund</td>
+        <td class="govuk-table__cell"><a id="activity-line3" >1-234567890</a></td>
+        <td class="govuk-table__cell govuk-table__cell--numeric" id="activity-line4">+ £790.80</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric" id="activity-line4">£16,174.80</td>
+      </tr>
+
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell" scope="row" id="activity-line1">11 June 2018</td>
+        <td class="govuk-table__cell"><a href="invoice.html" id="activity-line3">Vehicle testing</a></td>
+        <td class="govuk-table__cell"><a id="activity-line3" >1-234567890</a></td>
+        <td class="govuk-table__cell govuk-table__cell--numeric" id="activity-line4">-£756.00</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric" id="activity-line4">£15,418.80</td>
+      </tr>
+
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell" scope="row" id="activity-line1">12 June 2018</td>
+        <td class="govuk-table__cell"><a href="invoice.html" id="activity-line3">Vehicle testing</a></td>
+        <td class="govuk-table__cell"><a id="activity-line3" >1-234567890</a></td>
+        <td class="govuk-table__cell govuk-table__cell--numeric" id="activity-line4">-£756.00</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric" id="activity-line4">£14,662.80</td>
+      </tr>
+
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell" scope="row" id="activity-line1">13 June 2018</td>
+        <td class="govuk-table__cell" id="activity-line3">Refund</td>
+        <td class="govuk-table__cell"><a id="activity-line3" >1-234567890</a></td>
+        <td class="govuk-table__cell govuk-table__cell--numeric" id="activity-line4">+ £790.80</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric" id="activity-line4">£15,453.60</td>
+      </tr>
+
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell" scope="row" id="activity-line1">13 June 2018</td>
+        <td class="govuk-table__cell"><a href="invoice.html" id="activity-line3">Vehicle testing</a></td>
+        <td class="govuk-table__cell"><a id="activity-line3" >1-234567890</a></td>
+        <td class="govuk-table__cell govuk-table__cell--numeric" id="activity-line4">-£756.00</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric" id="activity-line4">£14,697.60</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p style="text-align: right;">
+    <span class="govuk-body">
+      <a href="placeholder.html" class="govuk-link govuk-link--no-visited-state">Printable version (PDF, 62KB)</a>
+    </span>
+  </p>
+  <p style="text-align: right;">
+    <span class="govuk-body">
+      <a href="placeholder.html" class="govuk-link govuk-link--no-visited-state">Download spreadsheet (CSV, 24KB)</a>
+    </span>
+  </p>
+</body>
+{% endblock %}
