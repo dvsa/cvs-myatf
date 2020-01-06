@@ -15,3 +15,4 @@ app/views/phase11/reset-password-email-link.html
 app/views/phase11/reset-password-used-error.html
 app/views/phase11/create-your-account-password-used-error.html
 app/views/phase11/change-your-password.html
+app/views/phase11/account-details-reset-password-confirmation.html
