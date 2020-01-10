@@ -1,0 +1,151 @@
+{% extends "layout2.html" %}
+
+{% block pageTitle %}
+Transactions and invoices
+{% endblock %}
+
+<!–– Beta header ––>
+
+{% block beforeContent %}
+
+{% from "phase-banner/macro.njk" import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "beta"
+},
+html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+
+<!–– Breadcrumbs ––>
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="home.html">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="account-activity-prefunded-balance.html">Account activity</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="account-activity-search.html">Search transactions</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" >Transactions</a>
+    </li>
+  </ol>
+</div>
+{% endblock %}
+
+{% block content %}
+<span class="govuk-caption-m">P57832 Scania Lincoln</span>
+<h1 class="govuk-heading-l">Account activity</h1>
+<thead class="govuk-table__head">
+<body class="govuk-template__body ">
+<a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+<script src="/govuk-frontend/all.js"></script>
+<script>window.GOVUKFrontend.initAll()</script>
+
+  <div class="govuk-form-group marginTopRemoved">
+    <ol class="govuk-list govuk-!-margin-bottom-8" style="font-size:large">
+      <li style="margin-bottom: 10px;"> &#8212;
+        <span style="padding-left: 5px;">Pre-funded account balance</span>
+      </li>
+      <li style="margin-bottom: 10px;"> &#8212;
+        <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="account-activity-search.html">Search transactions</a>
+      </li>
+      <li style="margin-bottom: 10px;"> &#8212;
+        <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="#">Top up account</a>
+      </li>
+    </ol>
+    <hr>
+  </div> 
+  <!-- Local nave and header ENDS here -->      
+  <h1 class="govuk-fieldset__legend--m govuk-!-margin-bottom-1">Transactions</h1>
+  <span id="with-hint-hint" class="govuk-hint" style="margin-top: 0%;">07 January 2020 - 09 January 2020</span>
+  <p class="govuk-body">
+     <a href="activity-history-search.html" class="govuk-link govuk-link--no-visited-state">Search different dates</a>
+  </p>
+  
+  <table class="govuk-table" style="font-size:medium">
+    <h2 class="govuk-fieldset__legend--s" style="margin-bottom: 2px">Assessor 2</h2>
+
+    <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header" scope="col">Start</th>
+        <th class="govuk-table__header" scope="col">Duration</th>
+        <th class="govuk-table__header" scope="col">Vehicle</th>
+        <th class="govuk-table__header" scope="col">Activity</th>
+        <th class="govuk-table__header" scope="col">Pass/Fail</th>
+        <th class="govuk-table__header govuk-table__header--numeric" scope="col" >Net Amount</th>
+      </tr>
+    </thead>
+      
+    <tbody>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell" id="a-line2">09:00</td>
+        <td class="govuk-table__cell" id="a-line3">48 mins</td>
+        <td class="govuk-table__cell" id="a-line4">CB56 KTP</td>
+        <td class="govuk-table__cell" id="a-line5">Class 6A first test</td>
+        <td class="govuk-table__cell" id="a-line6">Pass</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric" id="a-line7">£113.00</td>
+      </tr>
+
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell" id="a-line2">09:48</td>
+        <td class="govuk-table__cell" id="a-line3">47 mins</td>
+        <td class="govuk-table__cell" id="a-line4">JY52 PDF</td>
+        <td class="govuk-table__cell" id="a-line5">LEC PSV - Without linked test</td>
+        <td class="govuk-table__cell" id="a-line6">Fail</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric" id="a-line7">£113.00</td>
+      </tr>
+
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell" id="a-line2">10:35</td>
+        <td class="govuk-table__cell" id="a-line3">36 mins</td>
+        <td class="govuk-table__cell" id="a-line4">RP16 OJW</td>
+        <td class="govuk-table__cell" id="a-line5">PSV PG9 full insp PT/fee no cert</td>
+        <td class="govuk-table__cell" id="a-line6">Pass</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric" id="a-line7">£91.00</td>
+      </tr>
+
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell" id="a-line2">11:11</td>
+        <td class="govuk-table__cell" id="a-line3">49 mins</td>
+        <td class="govuk-table__cell" id="a-line4">BM55 NLV</td>
+        <td class="govuk-table__cell" id="a-line5">Voluntary speed limiter checks</td>
+        <td class="govuk-table__cell" id="a-line6">Fail</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric" id="a-line7">£113.00</td>
+      </tr>
+
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell" id="a-line2">12:05</td>
+        <td class="govuk-table__cell" id="a-line3">9 mins</td>
+        <td class="govuk-table__cell" id="a-line4"></td>
+        <td class="govuk-table__cell" id="a-line5">Wait time - Admin</td>
+        <td class="govuk-table__cell" id="a-line6"></td>
+        <td class="govuk-table__cell govuk-table__cell--numeric" id="a-line7"></td>
+      </tr>
+      
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell" id="a-line2">12.14</td>
+        <td class="govuk-table__cell" id="a-line3">39 mins</td>
+        <td class="govuk-table__cell" id="a-line4">AB58 XWV</td>
+        <td class="govuk-table__cell" id="a-line5">Articulated bus annual test large</td>
+        <td class="govuk-table__cell" id="a-line6">Pass</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric" id="a-line7">£91.00</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+    <p class="govuk-body">
+      <a href="placeholder.html" class="govuk-link govuk-link--no-visited-state">Printable version (PDF, 62KB)</a>
+    </p>
+
+    <p class="govuk-body">
+      <a href="placeholder.html" class="govuk-link govuk-link--no-visited-state">Download spreadsheet (CSV, 24KB)</a>
+    </p>
+
+</body>
+{% endblock %}
