@@ -1,4 +1,4 @@
-{% extends "layout2.html" %}
+{% extends "layout3.html" %}
 
 {% block pageTitle %}
 Multiple date transaction result
@@ -46,20 +46,19 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 <script src="/govuk-frontend/all.js"></script>
 <script>window.GOVUKFrontend.initAll()</script>
 
-  <div class="govuk-form-group marginTopRemoved">
-    <ol class="govuk-list govuk-!-margin-bottom-8">
-      <li style="margin-bottom: 10px;"> &#8212;
-        <span style="padding-left: 5px;">Pre-funded account balance</span>
-      </li>
-      <li style="margin-bottom: 10px;"> &#8212;
-        <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="account-activity-search.html">Search transactions</a>
-      </li>
-      <li style="margin-bottom: 10px;"> &#8212;
-        <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="#">Top up account</a>
-      </li>
-    </ol>
-    <hr>
-  </div> 
+<!–– local headers START ––>
+  <ol class="govuk-list govuk-!-margin-bottom-8">
+    <li class="govuk-!-margin-bottom-2"> &#8212;
+      <span style="padding-left: 5px;">Search transactions</span>
+    </li>
+    <li> &#8212;
+      <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="account-activity-prefunded-balance.html">Pre-funded account balance</a>
+    </li>
+    <li>
+      <hr class="govuk-!-margin-bottom-8 govuk-!-margin-top-8">
+    </li>
+  </ol>
+<!–– local headers END ––>
   <!-- Local nave and header ENDS here -->      
   <h1 class="govuk-fieldset__legend--m govuk-!-margin-bottom-1">Transactions</h1>
   <span id="with-hint-hint" class="govuk-hint" style="margin-top: 0%;">07 January 2020 - 09 January 2020</span>
@@ -117,7 +116,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
       </tr>
 
       <tr class="govuk-table__row">
-        <td class="govuk-table__cell" id="a-line3">09 January 2020s</td>
+        <td class="govuk-table__cell" id="a-line3">09 January 2020</td>
         <td class="govuk-table__cell" id="a-line4">TD60 VLM</td>
         <td class="govuk-table__cell" id="a-line5">Articulated bus annual test large</td>
         <td class="govuk-table__cell" id="a-line6">Pass</td>
