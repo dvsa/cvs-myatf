@@ -1,7 +1,7 @@
 {% extends "layout2.html" %}
 
 {% block pageTitle %}
-Transactions and invoices
+Multiple date transaction result
 {% endblock %}
 
 <!–– Beta header ––>
@@ -47,7 +47,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 <script>window.GOVUKFrontend.initAll()</script>
 
   <div class="govuk-form-group marginTopRemoved">
-    <ol class="govuk-list govuk-!-margin-bottom-8" style="font-size:large">
+    <ol class="govuk-list govuk-!-margin-bottom-8">
       <li style="margin-bottom: 10px;"> &#8212;
         <span style="padding-left: 5px;">Pre-funded account balance</span>
       </li>
@@ -67,85 +67,105 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
      <a href="activity-history-search.html" class="govuk-link govuk-link--no-visited-state">Search different dates</a>
   </p>
   
-  <table class="govuk-table" style="font-size:medium">
-    <h2 class="govuk-fieldset__legend--s" style="margin-bottom: 2px">Assessor 2</h2>
-
+  <table class="govuk-table">
     <thead class="govuk-table__head">
       <tr class="govuk-table__row">
-        <th class="govuk-table__header" scope="col">Start</th>
-        <th class="govuk-table__header" scope="col">Duration</th>
+        <th class="govuk-table__header" scope="col">Date</th>
         <th class="govuk-table__header" scope="col">Vehicle</th>
         <th class="govuk-table__header" scope="col">Activity</th>
         <th class="govuk-table__header" scope="col">Pass/Fail</th>
-        <th class="govuk-table__header govuk-table__header--numeric" scope="col" >Net Amount</th>
+        <th class="govuk-table__header govuk-table__header--numeric" scope="col">Net Amount</th>
+        <th class="govuk-table__header govuk-table__header--numeric" scope="col">Total Amount</th>
       </tr>
     </thead>
       
     <tbody>
       <tr class="govuk-table__row">
-        <td class="govuk-table__cell" id="a-line2">09:00</td>
-        <td class="govuk-table__cell" id="a-line3">48 mins</td>
+        <td class="govuk-table__cell" id="a-line3">07 January 2020</td>
         <td class="govuk-table__cell" id="a-line4">CB56 KTP</td>
         <td class="govuk-table__cell" id="a-line5">Class 6A first test</td>
         <td class="govuk-table__cell" id="a-line6">Pass</td>
         <td class="govuk-table__cell govuk-table__cell--numeric" id="a-line7">£113.00</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric" id="a-line7">£113.00</td>
       </tr>
 
       <tr class="govuk-table__row">
-        <td class="govuk-table__cell" id="a-line2">09:48</td>
-        <td class="govuk-table__cell" id="a-line3">47 mins</td>
+        <td class="govuk-table__cell" id="a-line3">07 January 2020</td>
         <td class="govuk-table__cell" id="a-line4">JY52 PDF</td>
         <td class="govuk-table__cell" id="a-line5">LEC PSV - Without linked test</td>
         <td class="govuk-table__cell" id="a-line6">Fail</td>
         <td class="govuk-table__cell govuk-table__cell--numeric" id="a-line7">£113.00</td>
-      </tr>
-
-      <tr class="govuk-table__row">
-        <td class="govuk-table__cell" id="a-line2">10:35</td>
-        <td class="govuk-table__cell" id="a-line3">36 mins</td>
-        <td class="govuk-table__cell" id="a-line4">RP16 OJW</td>
-        <td class="govuk-table__cell" id="a-line5">PSV PG9 full insp PT/fee no cert</td>
-        <td class="govuk-table__cell" id="a-line6">Pass</td>
-        <td class="govuk-table__cell govuk-table__cell--numeric" id="a-line7">£91.00</td>
-      </tr>
-
-      <tr class="govuk-table__row">
-        <td class="govuk-table__cell" id="a-line2">11:11</td>
-        <td class="govuk-table__cell" id="a-line3">49 mins</td>
-        <td class="govuk-table__cell" id="a-line4">BM55 NLV</td>
-        <td class="govuk-table__cell" id="a-line5">Voluntary speed limiter checks</td>
-        <td class="govuk-table__cell" id="a-line6">Fail</td>
         <td class="govuk-table__cell govuk-table__cell--numeric" id="a-line7">£113.00</td>
       </tr>
 
       <tr class="govuk-table__row">
-        <td class="govuk-table__cell" id="a-line2">12:05</td>
-        <td class="govuk-table__cell" id="a-line3">9 mins</td>
-        <td class="govuk-table__cell" id="a-line4"></td>
-        <td class="govuk-table__cell" id="a-line5">Wait time - Admin</td>
-        <td class="govuk-table__cell" id="a-line6"></td>
-        <td class="govuk-table__cell govuk-table__cell--numeric" id="a-line7"></td>
+        <td class="govuk-table__cell" id="a-line3">08 January 2020</td>
+        <td class="govuk-table__cell" id="a-line4">RP16 OJW</td>
+        <td class="govuk-table__cell" id="a-line5">PSV PG9 full insp PT/fee no cert</td>
+        <td class="govuk-table__cell" id="a-line6">Pass</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric" id="a-line7">£91.00</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric" id="a-line7">£91.00</td>
+      </tr>
+
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell" id="a-line3">08 January 2020</td>
+        <td class="govuk-table__cell" id="a-line4">BM55 NLV</td>
+        <td class="govuk-table__cell" id="a-line5">Voluntary speed limiter checks</td>
+        <td class="govuk-table__cell" id="a-line6">Fail</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric" id="a-line7">£113.00</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric" id="a-line7">£113.00</td>
+      </tr>
+
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell" id="a-line3">09 January 2020s</td>
+        <td class="govuk-table__cell" id="a-line4">TD60 VLM</td>
+        <td class="govuk-table__cell" id="a-line5">Articulated bus annual test large</td>
+        <td class="govuk-table__cell" id="a-line6">Pass</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric" id="a-line7">£91.00</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric" id="a-line7">£91.00</td>
       </tr>
       
       <tr class="govuk-table__row">
-        <td class="govuk-table__cell" id="a-line2">12.14</td>
-        <td class="govuk-table__cell" id="a-line3">39 mins</td>
+        <td class="govuk-table__cell" id="a-line3">09 January 2020</td>
         <td class="govuk-table__cell" id="a-line4">AB58 XWV</td>
         <td class="govuk-table__cell" id="a-line5">Articulated bus annual test large</td>
         <td class="govuk-table__cell" id="a-line6">Pass</td>
         <td class="govuk-table__cell govuk-table__cell--numeric" id="a-line7">£91.00</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric" id="a-line7">£91.00</td>
+      </tr>
+      
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell  collapse-line" scope="row" id="transaction-line1"></td>
+        <td class="govuk-table__cell  collapse-line" scope="row" id="transaction-line2"></td>
+        <td class="govuk-table__cell  collapse-line" scope="row" id="transaction-line2"></td>
+        <td class="govuk-table__cell  collapse-line" scope="row" id="transaction-line2"></td>
+        <td class="govuk-table__cell govuk-table__cell--numeric" id="transaction-line2"><strong>£612.00</strong></td>
+        <td class="govuk-table__cell govuk-table__cell--numeric" id="transaction-line4"><strong>£612.00</strong></td>
       </tr>
     </tbody>
   </table>
 
 
     <p class="govuk-body">
-      <a href="placeholder.html" class="govuk-link govuk-link--no-visited-state">Printable version (PDF, 62KB)</a>
+      <a href="placeholder.html" class="govuk-link govuk-link--no-visited-state">Printable invoice (PDF, 62KB)</a>
     </p>
 
     <p class="govuk-body">
-      <a href="placeholder.html" class="govuk-link govuk-link--no-visited-state">Download spreadsheet (CSV, 24KB)</a>
+      <a href="placeholder.html" class="govuk-link govuk-link--no-visited-state">Download invoice (CSV, 24KB)</a>
     </p>
+    
+    <h4 class="govuk-heading-s">VAT</h4>
 
+    <ul class="govuk-list govuk-list--bullet">
+      <li>
+        <span class="govuk-body govuk-!-font-size-14"> Statuary vehicle testing is zero rated, attracting 0% VAT </span>
+      </li>
+      <li>
+        <span class="govuk-body govuk-!-font-size-14"> Voluntary vehicle testing is standard rated, attracting 20% VAT</span>
+      </li>
+      <li>
+        <span class="govuk-body govuk-!-font-size-14"> Retained fees are standard rated, attracting 20% VAT</span>
+      </li>
+    </ul>
 </body>
 {% endblock %}
