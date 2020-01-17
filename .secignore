@@ -26,3 +26,4 @@ app/views/phase11/create-your-account-password-common-error.html
 app/views/phase11/reset-password-common-error.html
 app/views/phase11/change-your-password-common-error.html
 app/views/phase11/change-your-password-invalid-error.html
+app/views/phase11/change-password-email-link-v2.html
