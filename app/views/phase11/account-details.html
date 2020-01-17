@@ -1,7 +1,7 @@
 {% extends "layout3.html" %}
 
 {% block pageTitle %}
-Account details
+Settings
 {% endblock %}
 
 <!–– Beta header ––>
@@ -23,7 +23,7 @@ html: 'This is a new service – your <a class="govuk-link" href="placeholder.ht
       <a href="home.html" class="govuk-breadcrumbs__link">Home</a>
     </li>
     <li class="govuk-breadcrumbs__list-item">
-      Account details
+      Your settings
     </li>
   </ol>
 </div>
@@ -34,12 +34,15 @@ html: 'This is a new service – your <a class="govuk-link" href="placeholder.ht
 
 <!-- Headings start here -->
 <body>
-  <span class="govuk-caption-m">Your settings</span>
-  <h1 class="govuk-heading-l">Account details</h1>
+  <span class="govuk-caption-m">P57832 Scania Lincoln</span>
+  <h1 class="govuk-heading-l">Your settings</h1>
   
   <ol class="govuk-list govuk-!-margin-bottom-8" style="font-size:large">
     <li class="govuk-!-margin-bottom-2"> &#8212;
-      <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="change-your-password.html">Change password</a>
+      <span style="padding-left: 5px;">Your details</span>
+    </li>
+    <li class="govuk-!-margin-bottom-2"> &#8212;
+      <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="change-password-email-link.html">Change password</a>
     </li>
     <!-- <li class="govuk-!-margin-bottom-2"> &#8212;
       <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="placeholder.html">Change security phone number</a>
@@ -47,6 +50,23 @@ html: 'This is a new service – your <a class="govuk-link" href="placeholder.ht
     <li class="govuk-!-margin-bottom-2"> &#8212;
       <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="register-secondary-delegate.html">Manage team members</a>
     </li>
+    <li>
+      <hr class="govuk-!-margin-bottom-8 govuk-!-margin-top-8">
+    </li>
   </ol>
+
+  <h1 class="govuk-fieldset__legend--m govuk-!-margin-bottom-1">Your details</h1>
+  <table class="govuk-table">
+    <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Email address</th>
+        <td class="govuk-table__cell">johnsmith@atf.co.uk</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header">Security phone number</th>
+        <td class="govuk-table__cell">0749 4672 319</td>
+      </tr>
+    </tbody>
+  </table>
 </body>
 {% endblock %}
