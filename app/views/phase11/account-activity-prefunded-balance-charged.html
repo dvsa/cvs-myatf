@@ -1,0 +1,83 @@
+{% extends "layout3.html" %}
+
+{% block pageTitle %}
+Account activity
+{% endblock %}
+
+<!–– Beta header ––>
+
+{% block beforeContent %}
+
+{% from "phase-banner/macro.njk" import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "beta"
+},
+html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+
+<!–– Breadcrumbs ––>
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a href="home.html" class="govuk-breadcrumbs__link">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">Account activity</li>
+  </ol>
+</div>
+{% endblock %}
+
+{% block content %}
+<!-- Headings start here -->
+
+<div class="govuk-width-container">
+<!-- Local nave and header STARTS here -->
+  <span class="govuk-caption-m">P57832 Scania Lincoln</span>
+  <h1 class="govuk-heading-l">Account activity</h1>
+  <hr class="govuk-!-margin-bottom-8">
+                <!-- links start here -->
+  <ol class="govuk-list">
+    <li style="margin-bottom: 10px;"> &#8212;
+      <span style="padding-left: 5px;">Pre-funded account balance</span>
+    </li>
+    <li style="margin-bottom: 10px;"> &#8212;
+      <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="account-activity-search.html">Search historic transactions</a>
+    </li>
+    <li style="margin-bottom: 10px;"> &#8212;
+      <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="#">Top up account</a>
+    </li>
+  </ol>  
+  <br>
+  <hr class="govuk-!-margin-bottom-8">
+<!-- Local nav and header ENDS here -->
+
+<!-- Table starts here -->
+  <table class="govuk-table sum-table" id="summary1">
+    <h1 class="govuk-fieldset__legend--m" style="margin-bottom: 2px">
+      <span id="summary-table">Pre-funded account balance</span>
+    </h1>
+    <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+        <br>
+      </tr>
+    </thead>
+
+    <tbody class="govuk-table__body" id="summary1">
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell" id="sum-line1" scope="row">PFA balance</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric">£2123.89</td>
+      </tr>
+
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell" id="sum-line2" scope="row" >
+          <a href="todays-completed-tests.html">Today's running total, net</a>
+          <br>
+          <span class="govuk-body-s">Amount deducted for todays testing</span>
+        </td>
+        <td class="govuk-table__cell govuk-table__cell--numeric">£963.00</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+{% endblock %}
