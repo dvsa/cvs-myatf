@@ -1,0 +1,68 @@
+{% extends "layout3.html" %}
+{% block pageTitle %}
+Home
+{% endblock %}
+
+{% block beforeContent %}
+
+<div class="govuk-phase-banner">
+  <p class="govuk-phase-banner__content"><strong class="govuk-tag govuk-phase-banner__content__tag">beta</strong>
+    <span class="govuk-phase-banner__text">This is a new service – your
+      <a class="govuk-link" href="#">feedback</a> will help us to improve it.
+    </span>
+  </p>
+</div>
+
+<!–– Breadcrumbs ––>
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a href="home.html" class="govuk-breadcrumbs__link">Home</a>
+    </li>
+  </ol>
+</div>
+{% endblock %}
+
+{% block content %}
+<script src="/govuk-frontend/all.js"></script>
+<script>window.GOVUKFrontend.initAll()</script>
+<script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+
+<a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+
+<div class="govuk-warning-text atf-warning-text--colour panel panel-border-wide">
+  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+  <strong class="govuk-warning-text__text">
+    <span class="govuk-warning-text__assistive">Warning</span>You do not have enough money in your account to continue testing. Top up now.
+  </strong>
+</div>
+
+<span class="govuk-caption-m">P57832 Scania Lincoln</span>
+<h1 class="govuk-heading-l">Manage your ATF</h1>
+
+<body class="govuk-template__body ">
+  <ul class="home-block">
+    <li class="home-block">
+      <a class="register-theme__linkv2" href="todays-completed-tests.html">
+        <h3 class="register-theme__heading govuk-heading-m">Site management</h3>
+        <p class="govuk-body-s"> View real-time tests</p>
+        <p></p>
+      </a>
+    </li>
+    <li class="home-block">
+      <a class="register-theme__linkv2" href="account-activity-prefunded-balance.html">
+        <h3 class="register-theme__heading govuk-heading-m">Account activity</h3>
+        <p class="govuk-body-s"> View balance and historic transactions</p>
+        <p class="register-theme__description govuk-body-s govuk-error-message"><strong>Current balance : -£2,123.89</strong></p>
+      </a>
+    </li>
+    <li class="home-block">
+      <a class="register-theme__linkv2" href="account-details.html">
+        <h3 class="register-theme__heading govuk-heading-m">Your settings</h3>
+        <p class="govuk-body-s">View your login details and manage your team members</p>
+      </a>
+    </li>
+  </ul>
+</body>
+{% endblock %}

@@ -16,7 +16,33 @@ $govuk-global-styles: true;
 
 // DY-Styles
 
+.atf-warning-text--colour {
+  background-color: #fceaeb;
+}
 
+.govuk-inset-text{
+  color: #b00a1f !important;
+}
+.panel{
+  border-left-width: 0.5em;
+}
+
+.panel-border-wide{
+  box-sizing: border-box;
+  clear: both;
+  border-left-style: solid;
+  border-color: #b00a1f;
+  padding: 1em;
+  margin-bottom: 0.78947em;
+}
+
+.govuk-warning-text__icon{
+  margin-left: 1.5%;
+}
+
+.error-color{
+  color: #b10e1e;
+}
 
 hr {
   border: none;

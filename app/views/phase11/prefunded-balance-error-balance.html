@@ -1,7 +1,7 @@
 {% extends "layout3.html" %}
 
 {% block pageTitle %}
-Account activity
+Account activity - Error Balance
 {% endblock %}
 
 <!–– Beta header ––>
@@ -65,19 +65,26 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
     <tbody class="govuk-table__body" id="summary1">
       <tr class="govuk-table__row">
-        <td class="govuk-table__cell" id="sum-line1" scope="row">Current balance</td>
-        <td class="govuk-table__cell govuk-table__cell--numeric">£2123.89</td>
+        <td class="govuk-table__cell govuk-!-font-weight-bold error-color" id="sum-line1" scope="row">Current balance</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric govuk-!-font-weight-bold error-color">-£2123.89</td>
       </tr>
 
       <tr class="govuk-table__row">
         <td class="govuk-table__cell" id="sum-line2" scope="row" >
-          <a href="todays-completed-tests.html">Today's total (net)</a>
+          <a href="todays-completed-tests.html">Today's running total (net)</a>
           <br>
-          <span class="govuk-body-s">Charged on completion of today's testing.</span>
+          <span class="govuk-body-s">To be charged on completion of today's testing.</span>
         </td>
         <td class="govuk-table__cell govuk-table__cell--numeric">£963.00</td>
       </tr>
     </tbody>
   </table>
+  
+  <div class="govuk-warning-text atf-warning-text--colour panel panel-border-wide">
+    <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+    <strong class="govuk-warning-text__text">
+      <span class="govuk-warning-text__assistive">Warning</span>You do not have enough money in your account to continue testing. Top up now.
+    </strong>
+  </div>
 </div>
 {% endblock %}
