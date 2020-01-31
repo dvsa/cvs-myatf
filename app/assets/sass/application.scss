@@ -16,13 +16,11 @@ $govuk-global-styles: true;
 
 // DY-Styles
 
-.atf-warning-text--colour {
+//warning text banner
+.atf-warning-background--colour {
   background-color: #fceaeb;
 }
 
-.govuk-inset-text{
-  color: #b00a1f !important;
-}
 .panel{
   border-left-width: 0.5em;
 }
@@ -43,6 +41,7 @@ $govuk-global-styles: true;
 .error-color{
   color: #b10e1e;
 }
+//end 
 
 hr {
   border: none;

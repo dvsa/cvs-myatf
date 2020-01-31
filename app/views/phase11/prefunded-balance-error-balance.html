@@ -54,9 +54,17 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
 <!-- Table starts here -->
   <table class="govuk-table sum-table" id="summary1">
-    <h1 class="govuk-fieldset__legend--m" style="margin-bottom: 2px">
+    <h1 class="govuk-fieldset__legend--m govuk-!-margin-bottom-6">
       <span id="summary-table">Pre-funded account balance</span>
     </h1>
+    
+    <div class="govuk-warning-text atf-warning-background--colour panel panel-border-wide ">
+      <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+      <strong class="govuk-warning-text__text">
+        <span class="govuk-warning-text__assistive">Warning</span>Your account balance has fallen below zero. To avoid future visits being cancelled, <a href="account-activity-top-up.html">top up now.</a>
+      </strong>
+    </div>
+    
     <thead class="govuk-table__head">
       <tr class="govuk-table__row">
         <br>
@@ -79,12 +87,5 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
       </tr>
     </tbody>
   </table>
-  
-  <div class="govuk-warning-text atf-warning-text--colour panel panel-border-wide">
-    <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-    <strong class="govuk-warning-text__text">
-      <span class="govuk-warning-text__assistive">Warning</span>You do not have enough money in your account to continue testing. <a href="account-activity-top-up.html">Top up now.</a>
-    </strong>
-  </div>
 </div>
 {% endblock %}
