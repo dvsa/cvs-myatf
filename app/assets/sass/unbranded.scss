@@ -1,15 +1,3 @@
-// The unbranded stylesheet is used if you need to create pages in your
-// prototype without the GOV.UK branding.
-//
-// See localhost:3000/docs/examples/blank-unbranded
-
-// Import colour palette and applied colours so that we can use
-// $govuk-body-background-colour in our overrides below.
-// 
-// If you need to enable compatibility mode or the legacy palette, do that
-// *before* these imports.
-@import "node_modules/govuk-frontend/govuk/settings/colours-palette";
-@import "node_modules/govuk-frontend/govuk/settings/colours-applied";
 @import "node_modules/govuk-frontend/settings/all";
 
 // Override the govuk-frontend font stack
