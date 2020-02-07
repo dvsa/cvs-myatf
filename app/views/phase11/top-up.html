@@ -35,28 +35,12 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 <!-- Local nave and header STARTS here -->
   <span class="govuk-caption-m">P57832 Scania Lincoln</span>
   <h1 class="govuk-heading-l">Top up account</h1>
-  <hr class="govuk-!-margin-bottom-8">
-                <!-- links start here -->
-  <!-- <ol class="govuk-list">
-    <li class="govuk-!-margin-bottom-2"> &#8212;
-      <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="account-activity-prefunded-balance.html">Pre-funded account balance</a>
-    </li>
-    <li style="margin-bottom: 10px;"> &#8212;
-      <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="account-activity-search.html">Search historic transactions</a>
-    </li>
-    <li style="margin-bottom: 10px;"> &#8212;
-      <span style="padding-left: 5px;">Top up your account</span>
-    </li>
-  </ol>  
-  <br>
-  <hr class="govuk-!-margin-bottom-8">
-<!-- Local nav and header ENDS here --> 
-<h1 class="govuk-fieldset__legend--m" id="jump-link">Payment method</h1>      
-<!–– Radios START ––>
-<div class="govuk-radios govuk-radios--conditional" data-module="radios">
-<!–– Single selection START ––>
-  <form action="../">
-    <fieldset style="border-style: hidden;">
+  
+  <h1 class="govuk-fieldset__legend--m" id="jump-link">Choose your top up method</h1>      
+  <!–– Radios START ––>
+  <div class="govuk-radios govuk-radios--conditional" data-module="radios">
+  <!–– Single selection START ––>
+    <form action="../">
 <!–– Single date radio button START ––>
       <div class="govuk-radios__item">
         <input class="govuk-radios__input" id="how-contacted-conditional-1" name="radioselection" type="radio" value="transaction-result-single" data-aria-controls="conditional-how-contacted-conditional-1">
@@ -68,13 +52,20 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
           <div class="govuk-date-input" id="dob">
             <div class="govuk-date-input__item">
               <div class="govuk-form-group">
-                <label class="govuk-label govuk-date-input__label" for="dob-year">Top up amount</label>
-                <input class="govuk-input govuk-date-input__input" id="dob-year" name="dob-year" type="number" style="width: 15%">
+                <label class="govuk-label govuk-date-input__label" for="dob-year">Enter the amount you want to top up</label>
+                <input class="govuk-input govuk-date-input__input inputRightAlign" id="dob-year" name="dob-year" type="number" placeholder="£">
               </div>
-              <div class="govuk-inset-text">It can take up to 8 weeks to register a lasting power of attorney if there are no mistakes in the application.</div>
             </div>
             
           </div>
+          
+          <!-- <div class="form-group govuk-date-inpu">
+  <label for="input-3 govuk-label">
+    Input 3
+  </label>
+  <span id="currency" class="prefix" aria-label="Enter amount in pounds">£</span>
+  <input class="input-prefix" id="input-3" name="input-3" type="text" aria-describedby="currency">
+</div> -->
 <!–– dropdown ––>
       </div>
       

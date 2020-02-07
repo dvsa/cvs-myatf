@@ -15,6 +15,48 @@ $govuk-global-styles: true;
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
 // DY-Styles
+//fixed Placeholder
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  border: 2px solid black;
+  padding: 5px;
+  font-size: 16px;
+}
+
+span.prefix {
+  position: absolute;
+  padding: 8px;
+  margin-left: 2px;
+}
+
+span.suffix {
+  position: absolute;
+  margin-left: -32px;
+  padding: 8px;
+}
+
+.input-prefix {
+  padding-left: 30px;
+}
+
+.input-suffix {
+  padding-right: 30px;
+}
+
+a:focus {
+  color: black;
+  background: yellow;
+  outline: 3px solid yellow;
+}
 
 //warning text banner
 .atf-warning-background--colour {
