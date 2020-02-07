@@ -16,46 +16,13 @@ $govuk-global-styles: true;
 
 // DY-Styles
 //fixed Placeholder
-
-.form-group {
-  margin-bottom: 30px;
-}
-
-label {
-  display: block;
-  margin-bottom: 5px;
-}
-
-input {
-  border: 2px solid black;
-  padding: 5px;
-  font-size: 16px;
-}
-
-span.prefix {
-  position: absolute;
-  padding: 8px;
-  margin-left: 2px;
-}
-
-span.suffix {
-  position: absolute;
-  margin-left: -32px;
-  padding: 8px;
-}
-
-.input-prefix {
-  padding-left: 30px;
-}
-
-.input-suffix {
-  padding-right: 30px;
-}
-
-a:focus {
+input::placeholder {
   color: black;
-  background: yellow;
-  outline: 3px solid yellow;
+  text-align: left;
+}
+
+.input-rightAlign{
+  text-align: right;
 }
 
 //warning text banner
