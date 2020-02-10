@@ -1,7 +1,7 @@
 {% extends "layout3.html" %}
 
 {% block pageTitle %}
-Search historic transactions
+Search top up
 {% endblock %}
 
 <!–– Beta header ––>
@@ -16,6 +16,7 @@ text: "beta"
 html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
 }) }}
 
+
 <!-- Breadcrumbs -->
 <div class="govuk-breadcrumbs">
   <ol class="govuk-breadcrumbs__list">
@@ -25,36 +26,40 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
     <li class="govuk-breadcrumbs__list-item">
       <a href="account-activity-prefunded-balance.html" class="govuk-breadcrumbs__link">Account activity</a>
     </li>
-    <li class="govuk-breadcrumbs__list-item">Search historic transactions</li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a href="top-up.html" class="govuk-breadcrumbs__link">Top up account</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">Search top up transactions</li>
   </ol>
 </div>
 {% endblock %}
 
 {% block content %}
-<a href="#main-content" class="govuk-skip-link">Skip to main content</a>
-<script src="/govuk-frontend/all.js"></script>
-<script>window.GOVUKFrontend.initAll()</script>
-<span class="govuk-caption-m">P57832 Scania Lincoln</span>
-<h1 class="govuk-heading-l">Account activity</h1>
+<!-- Headings start here -->
 
+<div class="govuk-width-container">
+<!-- Local nave and header STARTS here -->
+  <span class="govuk-caption-m">P57832 Scania Lincoln</span>
+  <h1 class="govuk-heading-l">Top up account</h1>
+  
 <!-- local headers START -->
-<hr class="govuk-!-margin-bottom-8">
-<ol class="govuk-list">
-  <li class="govuk-!-margin-bottom-2"> &#8212;
-    <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="account-activity-prefunded-balance.html">Pre-funded account balance</a>
-  </li>
-  <li class="govuk-!-margin-bottom-2"> &#8212;
-    <span Style="padding-left: 5px;">Search historic transactions</span>
-  </li>
-  <li style="govuk-!-margin-bottom-2"> &#8212;
-    <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="top-up.html">Top up account</a>
-  </li>
-</ol>  
-<br>
-<hr class="govuk-!-margin-bottom-8">
-<!-- local headers END -->
+    <hr class="govuk-!-margin-bottom-8">
+      <ol class="govuk-list govuk-!-margin-bottom-8">
+        
+        <li class="govuk-!-margin-bottom-2"> &#8212;
+          <span style="padding-left: 5px;">Search top up transactions</span>
+        </li>
+        <li class="govuk-!-margin-bottom-2"> &#8212;
+          <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="top-up-transaction-history.html">Top up transaction history</a>
+        </li>
+        <li>
+          <hr class="govuk-!-margin-bottom-8 govuk-!-margin-top-8">
+        </li>
+      </ol>
+<!-- Local headers END -->
 
-<h1 class="govuk-fieldset__legend--m" id="jump-link">Search historic transactions</h1>      
+
+<h1 class="govuk-fieldset__legend--m" id="jump-link">Search top up transactions</h1>      
 <!-- Radios START -->
 <div class="govuk-radios govuk-radios--conditional" data-module="radios">
 <!-- Single selection START -->
@@ -62,7 +67,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
     <fieldset style="border-style: hidden;">
 <!-- Single date radio button START -->
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="how-contacted-conditional-1" name="radioselection" type="radio" value="transaction-result-single" data-aria-controls="conditional-how-contacted-conditional-1">
+        <input class="govuk-radios__input" id="how-contacted-conditional-1" name="radioselection" type="radio" value="top-up-search-result-single" data-aria-controls="conditional-how-contacted-conditional-1">
         <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-1">Select a single date</label>
       </div>
 
@@ -94,7 +99,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
 <!-- Long period selection START -->
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="how-contacted-conditional-2" name="radioselection" type="radio" value="transaction-results-multiple" data-aria-controls="conditional-how-contacted-conditional-2">
+        <input class="govuk-radios__input" id="how-contacted-conditional-2" name="radioselection" type="radio" value="top-up-search-result-multiple" data-aria-controls="conditional-how-contacted-conditional-2">
         <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">Select a longer period of time</label>
       </div>
       <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-2">
@@ -166,6 +171,6 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
       <input type="button" class="govuk-button" value="Show transactions" onclick="ob=this.form.radioselection;for(i=0;i<ob.length;i++){if(ob[i].checked){window.open(ob[i].value,'_self');};}" />
     </fieldset>
   </form>
+  
 </div>
-<!-- Search button -->
 {% endblock %}
