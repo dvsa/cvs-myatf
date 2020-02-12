@@ -38,86 +38,20 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 <!-- Local nave and header STARTS here -->
   <span class="govuk-caption-m">P57832 Scania Lincoln</span>
   <h1 class="govuk-heading-l">Top up account</h1>
+
+  <p>You can top up your account by using a credit or debit card, or set up a regular direct debit.</p>
+
+  <h1 class="govuk-fieldset__legend--m">Credit/debit card</h1>
+  <p>A credit/debit card can be used to top up your PFA regularly or as a one off payment.</p>
+  <form method="get" action="top-up-card.html">
+    <button type="submit" class="govuk-button">Top up by card</button>
+  </form>  
   
-<!-- local headers START -->
-  <ol class="govuk-list govuk-!-margin-bottom-8">
-    <li class="govuk-!-margin-bottom-2"> &#8212;
-      <span style="padding-left: 5px;">Choose your top up method</span>
-    </li>
-    <li class="govuk-!-margin-bottom-2"> &#8212;
-      <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="top-up-transaction-history.html">Top up transaction history</a>
-    </li>
-    <li>
-      <hr class="govuk-!-margin-bottom-8 govuk-!-margin-top-8">
-    </li>
-  </ol>
-<!-- local headers END -->
-  
-  <h1 class="govuk-fieldset__legend--m" id="jump-link">Choose your top up method</h1>      
-<!-- Radios START -->
-  <div class="govuk-radios govuk-radios--conditional" data-module="radios">
-<!-- Single selection START -->
-    <form action="../">
-<!-- Single date radio button START -->
-      <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="how-contacted-conditional-1" name="radioselection" type="radio" value="top-up-order-summary" data-aria-controls="conditional-how-contacted-conditional-1">
-        <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-1">Credit/debit card</label>
-      </div>
-      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-1">
-<!-- dropdown -->
-          <div class="govuk-date-input">
-            <div class="govuk-date-input__item">
-              <div class="govuk-form-group">
-                <label class="govuk-label govuk-date-input__label" for="dob-year">Enter the amount you want to top up</label>
-                <input class="govuk-input govuk-date-input__input inputRightAlign govuk-input--width-5" id="dob-year" name="dob-year" type="number" placeholder="£" min="1" maxlength = "7">
-              </div>
-            </div>    
-          </div>
-<!-- dropdown -->
-      </div>
-<!-- Single selection END -->
-      
-<!-- Multiple selection START -->      
-      <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="how-contacted-conditional-2" name="radioselection" type="radio" value="placeholder" data-aria-controls="conditional-how-contacted-conditional-2">
-        <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">Direct debit</label>
-      </div>
-      
-      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-2">
-<!-- dropdown -->
-          <div class="govuk-date-input">
-            <div class="govuk-date-input__item">
-              <div class="govuk-form-group">
-                <label class="govuk-label govuk-date-input__label" for="dob-year">Enter the amount you want to top up</label>
-                <input class="govuk-input govuk-date-input__input inputRightAlign govuk-input--width-5" id="dob-year" name="dob-year" type="number" placeholder="£" min="1" maxlength = "7">
-              </div>
-              
-              <p class="govuk-label">Select your payment date(s)</p>
-              <p class="govuk-caption-m ">You can choose to pay either once or twice a month</p>
-              
-              <div class="govuk-checkboxes">
-                <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
-                  <label class="govuk-label govuk-checkboxes__label" for="waste">
-                    5<sup>th</sup> of the month
-                  </label>
-                </div>
-                <div class="govuk-checkboxes__item">
-                  <input class="govuk-checkboxes__input" id="waste-2" name="waste" type="checkbox" value="mines">
-                  <label class="govuk-label govuk-checkboxes__label" for="waste-2">
-                    20<sup>th</sup> of the month
-                  </label>
-                </div>
-              </div>
-            </div>    
-          </div>
-<!-- dropdown -->
-      </div>
-<!-- Multiple selection END -->           
-      <div class="govuk-!-margin-bottom-6"></div> 
-      <input type="button" class="govuk-button" value="Continue" onclick="ob=this.form.radioselection;for(i=0;i<ob.length;i++){if(ob[i].checked){window.open(ob[i].value,'_self');};}" />
-      
-      
+  <h1 class="govuk-fieldset__legend--m">Direct debit</h1>
+  <p>lorem ipsum</p>
+  <form method="get" action="top-up-dd.html">
+    <button type="submit" class="govuk-button">Set up a direct debit</button>
+  </form> 
 
 </div>
 {% endblock %}
