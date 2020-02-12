@@ -40,18 +40,17 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
   <h1 class="govuk-heading-l">Top up account</h1>
   
 <!-- local headers START -->
-    <hr class="govuk-!-margin-bottom-8">
-      <ol class="govuk-list govuk-!-margin-bottom-8">
-        <li class="govuk-!-margin-bottom-2"> &#8212;
-          <span style="padding-left: 5px;">Top up account</span>
-        </li>
-        <li class="govuk-!-margin-bottom-2"> &#8212;
-          <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="top-up-transaction-history.html">Top up transaction history</a>
-        </li>
-        <li>
-          <hr class="govuk-!-margin-bottom-8 govuk-!-margin-top-8">
-        </li>
-      </ol>
+  <ol class="govuk-list govuk-!-margin-bottom-8">
+    <li class="govuk-!-margin-bottom-2"> &#8212;
+      <span style="padding-left: 5px;">Choose your top up method</span>
+    </li>
+    <li class="govuk-!-margin-bottom-2"> &#8212;
+      <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="top-up-transaction-history.html">Top up transaction history</a>
+    </li>
+    <li>
+      <hr class="govuk-!-margin-bottom-8 govuk-!-margin-top-8">
+    </li>
+  </ol>
 <!-- local headers END -->
   
   <h1 class="govuk-fieldset__legend--m" id="jump-link">Choose your top up method</h1>      
@@ -80,29 +79,33 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
       
 <!-- Multiple selection START -->      
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="how-contacted-conditional-2" name="radioselection" type="radio" value="placeholder" data-aria-controls="conditional-how-contacted-conditional-2">
+        <input class="govuk-radios__input" id="how-contacted-conditional-2" name="radioselection" type="radio" value="placeholder" data-aria-controls="conditional-how-contacted-conditional-2" checked>
         <label class="govuk-label govuk-radios__label" for="how-contacted-conditional-2">Direct debit</label>
       </div>
       
-      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-2">
+      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-how-contacted-conditional-2" >
 <!-- dropdown -->
           <div class="govuk-date-input">
             <div class="govuk-date-input__item">
-              <p>You've previously set up a direct debit with the following details.</p>
+              <p class="govuk-!-margin-bottom-4">You have previously set up a direct debit with the following details:</p>
               <table class="govuk-table">
                 <tbody class="govuk-table__body">
                   <hr class="govuk-!-margin-bottom-1">
+                  <tr class="govuk-table__row">
+                    <th scope="row" class="govuk-table__header">Status</th>
+                    <td class="govuk-table__cell">Pending</td>
+                  </tr>
                   <tr class="govuk-table__row">
                     <th scope="row" class="govuk-table__header">Amount</th>
                     <td class="govuk-table__cell">£12,000.00</td>
                   </tr>
                   <tr class="govuk-table__row">
-                    <th scope="row" class="govuk-table__header">Dates</th>
-                    <td class="govuk-table__cell">2nd of the month</td>
+                    <th scope="row" class="govuk-table__header">Date(s)</th>
+                    <td class="govuk-table__cell">5<sup>th</sup> of the month; 20<sup>th</sup> of the month</td>
                   </tr>
                 </tbody>
               </table>
-              <p class="govuk-body">
+              <p>
                 <a class="govuk-link govuk-link--no-visited-state govuk-!-padding-right-2" href="top-up-change-dd.html">Change</a>
                 <a class="govuk-link govuk-link--no-visited-state" href="top-up-remove-dd.html">Remove</a>
               </p>
