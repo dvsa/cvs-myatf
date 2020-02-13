@@ -39,19 +39,25 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
   <span class="govuk-caption-m">P57832 Scania Lincoln</span>
   <h1 class="govuk-heading-l">Top up account</h1>
 
-  <p>You can top up your account by using a credit or debit card, or set up a regular direct debit.</p>
+  <p class="govuk-!-margin-bottom-8">You can top up your account by using a credit/debit card, or set up a regular direct debit. <br>Payment via BACS is no longer supported.</p>
 
-  <h1 class="govuk-fieldset__legend--m">Credit/debit card</h1>
-  <p>A credit/debit card can be used to top up your PFA regularly or as a one off payment.</p>
-  <form method="get" action="top-up-card.html">
-    <button type="submit" class="govuk-button">Top up by card</button>
-  </form>  
-  
-  <h1 class="govuk-fieldset__legend--m">Direct debit</h1>
-  <p>lorem ipsum</p>
-  <form method="get" action="top-up-dd.html">
-    <button type="submit" class="govuk-button">Set up a direct debit</button>
-  </form> 
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-one-half">
+      <h1 class="govuk-fieldset__legend--m" >Credit/debit card</h1>
+      <p class="govuk-!-padding-right-9">Use a credit/debit card to top up your PFA regularly or as a one off payment.</p>
+      <form method="get" action="top-up-card.html">
+        <button type="submit" class="govuk-button">Top up by card</button>
+      </form>  
+    </div>
+
+    <div class="govuk-grid-column-one-half">
+      <h1 class="govuk-fieldset__legend--m">Direct debit</h1>
+      <p class="govuk-!-padding-right-9">Set up direct debit to make regular payments to your PFA.</p>
+      <form method="get" action="top-up-dd.html">
+        <button type="submit" class="govuk-button">Set up a direct debit</button>
+      </form> 
+    </div>
+  </div>
 
 </div>
 {% endblock %}
