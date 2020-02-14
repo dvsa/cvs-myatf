@@ -17,7 +17,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 }) }}
 
 
-<!-- Breadcrumbs -->
+<!–– Breadcrumbs ––>
 <div class="govuk-breadcrumbs">
   <ol class="govuk-breadcrumbs__list">
     <li class="govuk-breadcrumbs__list-item">
@@ -36,19 +36,25 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
 <div class="govuk-width-container">
 <!-- Local nave and header STARTS here -->
+<div class="govuk-warning-text atf-warning-background--colour1 panel panel-border-wide ">
+  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+  <strong class="govuk-warning-text__text">
+    <span class="govuk-warning-text__assistive">Warning</span>Your top up was unsuccessful. Contact your payment provider for further information.
+  </strong>
+</div>
+
   <span class="govuk-caption-m">P57832 Scania Lincoln</span>
   <h1 class="govuk-heading-l">Top up account</h1>
 
   <p class="govuk-!-margin-bottom-8">You can top up your account by using a credit/debit card, or set up a regular direct debit. <br>Payment via BACS is no longer supported.</p>
-
-  <!-- <div class="govuk-grid-row">
-    <div class="govuk-grid-column-one-half"> -->
+  <!-- <div class="govuk-grid-row"> -->
+    <!-- <div class="govuk-grid-column-one-half"> -->
       <h1 class="govuk-fieldset__legend--m" >Credit/debit card</h1>
       <p class="govuk-!-padding-right-9">Use a credit/debit card to top up your PFA regularly or as a one off payment.</p>
       <form method="get" action="top-up-card.html">
         <button type="submit" class="govuk-button">Top up by card</button>
       </form>  
-    </div>
+    <!-- </div> -->
 
     <!-- <div class="govuk-grid-column-one-half"> -->
       <h1 class="govuk-fieldset__legend--m">Direct debit</h1>
@@ -56,8 +62,8 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
       <form method="get" action="top-up-dd.html">
         <button type="submit" class="govuk-button">Set up a direct debit</button>
       </form> 
-    <!-- </div>
-  </div> -->
+    <!-- </div> -->
+  <!-- </div> -->
 
 </div>
 {% endblock %}

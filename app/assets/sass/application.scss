@@ -27,6 +27,10 @@ input::placeholder {
 }
 
 //warning text banner
+.atf-warning-background--colour1{
+  background-color: #fceaeb;
+}
+
 .atf-warning-background--colour {
   background-color: #fceaeb;
 }
@@ -78,6 +82,16 @@ hr {
 
 .confirmation{
   background: #00823b !important;
+  color: white;
+}
+
+.pending{
+  background: #ffdd00 !important;
+  color: black;
+}
+
+.failed{
+  background: #d4351c !important;
   color: white;
 }
 
