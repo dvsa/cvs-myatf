@@ -17,6 +17,10 @@ $govuk-global-styles: true;
 // DY-Styles
 
 //fixed Placeholder
+.text-color__white{
+  color: white !important;
+}
+
 input::placeholder {
   color: black;
   text-align: left;
@@ -43,16 +47,9 @@ input::placeholder {
   box-sizing: border-box;
   clear: both;
   border-left-style: solid;
+  border-color: #b00a1f;
   padding: 1.5em;
   margin-bottom: 0.78947em;
-}
-
-.panel-border-color{
-  border-color: #b00a1f;
-}
-
-.panel-border-color1{
-  border-color: #005ea5;
 }
 
 .govuk-warning-text__icon{
