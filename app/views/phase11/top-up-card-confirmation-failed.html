@@ -1,4 +1,4 @@
-{% extends "layout3.html" %}
+{% extends "layout-small-footer.html" %}
 
 {% block pageTitle %}
 Top up card confirmation
@@ -33,7 +33,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
   <p>Once your payment has been confirmed or declined the status will be updated in your transaction history.</p> -->
 
 
-  <div class="govuk-grid-row">
+  <!-- <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
       <div class="govuk-panel failed govuk-!-margin-bottom-6">
         <h1 class="govuk-panel__title failed">Top up unsuccessful</h1>
@@ -44,6 +44,17 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
       <p class="govuk-body govuk-!-margin-bottom-6">Your top up was unsuccessful. Contact your payment provider for further information.</p>
 
     </div>
-  </div>
+  </div> -->
+  
+  <h1 class="govuk-heading-l">Top up unsuccessful</h1>
+  <p class="govuk-body">Your top up has been unsuccessful. No money has been taken from your account.</p>
+  <!-- <p class="govuk-body">For more information, contact your payment provider.</p>
+  <p class="govuk-body">
+    <a href="#" class="govuk-link govuk-link--no-visited-state">Go back to try the payment again</a>
+  </p>
+  <hr class="govuk-!-margin-bottom-6 govuk-!-margin-top-6"> -->
+  <p class="govuk-body">Contact your payment provider for further information or <a href="#" class="govuk-link govuk-link--no-visited-state">go back to try the payment again</a>.</p>
+  <!-- <hr class="govuk-!-margin-bottom-6 govuk-!-margin-top-6">
+  <p class="govuk-body">Contact your payment provider for further information or <a href="#" class="govuk-link govuk-link--no-visited-state">go back to try the payment again</a>.</p> -->
 </body>
 {% endblock %}

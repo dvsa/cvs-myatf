@@ -17,6 +17,10 @@ $govuk-global-styles: true;
 // DY-Styles
 
 //fixed Placeholder
+.govuk-footer--app{
+  margin-top: 20%;
+}
+
 .text-color__white{
   color: white !important;
 }
