@@ -23,16 +23,6 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
     <li class="govuk-breadcrumbs__list-item">
       <a href="home.html" class="govuk-breadcrumbs__link">Home</a>
     </li>
-    <!-- <li class="govuk-breadcrumbs__list-item">
-      <a href="account-activity-prefunded-balance.html" class="govuk-breadcrumbs__link">Account activity</a>
-    </li>
-    <li class="govuk-breadcrumbs__list-item">
-      <a href="top-up.html" class="govuk-breadcrumbs__link">Top up account</a>
-    </li>
-    <li class="govuk-breadcrumbs__list-item">
-      <a href="top-up-dd.html" class="govuk-breadcrumbs__link">Set up a direct debit</a>
-    </li>
-    <li class="govuk-breadcrumbs__list-item">Confirm your direct debit amount and payment date(s)</li> -->
   </ol>
 </div>
 {% endblock %}
@@ -40,20 +30,33 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 {% block content %}
 <!-- Headings start here -->
 <body>
-  <div class="govuk-grid-row">
+  <h1 class="govuk-heading-l">Payment summary</h1>
+  
+  <div class="govuk-warning-text atf-warning-background-color--green panel panel-border-wide panel-border-color--green govuk-!-margin-bottom-6">
+    <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+    <strong class="govuk-warning-text__text">
+      <span class="govuk-warning-text__assistive">Warning</span>Your payment has been successful. Your order number is <a href="placeholder.html" class="govuk-link govuk-link--no-visited-state">ORD-AB123-45CD6</a>
+    </strong>
+  </div>
+  <!--<div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-      <div class="govuk-panel confirmation govuk-!-margin-bottom-6">
+      <!-- <div class="govuk-panel confirmation govuk-!-margin-bottom-6">
         <h1 class="govuk-panel__title confirmation">Top up successful</h1>
         <p class="govuk-panel__body confirmation">Your order number is<br><strong>ORD-AB123-45CD6</strong></p>
-      </div>
-        
-      <h2 class="govuk-heading-m">What happens next</h2>
+      </div> -->
+      
+      
+      <!-- <h2 class="govuk-heading-m">What happens next</h2> -->
       <p>Your PFA balance will be updated shortly.</p>
-      <p class="govuk-body govuk-!-margin-bottom-6">To view further details about this top up payment <a href="placeholder.html" class="govuk-link govuk-link--no-visited-state">click here</a>.</p>
+      <p class="govuk-body govuk-!-margin-bottom-6">Further details about your payment can be found in your <a href="placeholder.html" class="govuk-link govuk-link--no-visited-state">transaction summary</a>.</p>
       
       <table class="govuk-table">
-        <caption class="govuk-table__caption">Payment summary</caption>
+        <caption class="govuk-table__caption">Transaction details</caption>
         <tbody class="govuk-table__body">
+          <tr class="govuk-table__row">
+            <th scope="row" class="govuk-table__header">Order number</th>
+            <td class="govuk-table__cell">ORD-AB123-45CD6</td>
+          </tr>
           <tr class="govuk-table__row">
             <th scope="row" class="govuk-table__header">Top up amount</th>
             <td class="govuk-table__cell">£10,000.00</td>
@@ -65,7 +68,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
         </tbody>
       </table>
 
-    </div>
-  </div>
+    <!-- </div>
+  </div> -->
 </body>
 {% endblock %}

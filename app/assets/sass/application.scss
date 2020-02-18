@@ -35,8 +35,9 @@ input::placeholder {
 }
 
 //warning text banner
-.atf-warning-background--colour1{
-  background-color: #eaf4f9;
+.atf-warning-background-color--green{
+  background-color: #e2f5ec;
+  // background-color: #e0f0d9;
 }
 
 .atf-warning-background--colour {
@@ -51,9 +52,20 @@ input::placeholder {
   box-sizing: border-box;
   clear: both;
   border-left-style: solid;
-  border-color: #b00a1f;
   padding: 1.5em;
   margin-bottom: 0.78947em;
+}
+
+.panel-border-color--red{
+  border-color: #b00a1f !important;
+}
+
+.panel-border-color--blue{
+  border-color: #005ea5 !important;
+}
+
+.panel-border-color--green{
+  border-color: #00703c !important;
 }
 
 .govuk-warning-text__icon{
