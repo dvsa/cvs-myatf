@@ -1,0 +1,72 @@
+{% extends "layout3.html" %}
+
+{% block pageTitle %}
+Top up by card
+{% endblock %}
+
+<!–– Beta header ––>
+
+{% block beforeContent %}
+
+{% from "phase-banner/macro.njk" import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "beta"
+},
+html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+
+<!-- Breadcrumbs -->
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a href="home.html" class="govuk-breadcrumbs__link">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a href="account-activity-prefunded-balance.html" class="govuk-breadcrumbs__link">Account activity</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a href="top-up.html" class="govuk-breadcrumbs__link">Top up account</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">Top up by credit/debit card</li>
+  </ol>
+</div>
+{% endblock %}
+
+{% block content %}
+<!-- Headings start here -->
+<div class="govuk-width-container">
+  
+  <div class="govuk-width-container">
+    <div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="govuk-error-summary">
+    <h2 class="govuk-error-summary__title" id="error-summary-title">
+      There is a problem
+    </h2>
+    <div class="govuk-error-summary__body">
+      <ul class="govuk-list govuk-error-summary__list">
+        <li>
+          <a href="#currency">Enter a top up amount</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+<!-- Local nav and header STARTS here -->
+  <span class="govuk-caption-m">P57832 Scania Lincoln</span>
+  <h1 class="govuk-heading-l">Top up by credit/debit card</h1>
+  
+  <div class="govuk-form-group govuk-form-group--error">
+    <label class="govuk-label govuk-date-input__label" for="dob-year">Enter the amount you want to top up</label>
+    <p class="govuk-caption-m ">Minimum top up of £50</p>
+    <span id="name-error" class="govuk-error-message">
+      <span class="govuk-visually-hidden">Error:</span> Enter a top up amount
+    </span>
+    <input class="govuk-input govuk-date-input__input inputRightAlign govuk-input--width-5 govuk-input--error" id="dob-year" name="dob-year" type="number" placeholder="£" min="1" maxlength = "7">
+  </div>
+  
+  <form method="get" action="top-up-card-review.html">
+    <button type="submit" class="govuk-button">Continue</button>
+  </form>  
+</div>
+{% endblock %}
