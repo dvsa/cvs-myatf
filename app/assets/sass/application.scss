@@ -16,6 +16,7 @@ $govuk-global-styles: true;
 
 // DY-Styles
 
+
 //fixed Placeholder
 .govuk-footer--app{
   margin-top: 20%;
@@ -37,7 +38,10 @@ input::placeholder {
 //warning text banner
 .atf-warning-background-color--green{
   background-color: #e2f5ec;
-  // background-color: #e0f0d9;
+}
+
+.atf-warning-background-color--blue{
+background-color: #ebf4f9;
 }
 
 .atf-warning-background--colour {

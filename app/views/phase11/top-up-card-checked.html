@@ -1,7 +1,7 @@
 {% extends "layout3.html" %}
 
 {% block pageTitle %}
-Set up direct debit
+Top up by card
 {% endblock %}
 
 <!–– Beta header ––>
@@ -29,7 +29,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
     <li class="govuk-breadcrumbs__list-item">
       <a href="top-up.html" class="govuk-breadcrumbs__link">Top up account</a>
     </li>
-    <li class="govuk-breadcrumbs__list-item">Set up a direct debit</li>
+    <li class="govuk-breadcrumbs__list-item">Top up by credit/debit card</li>
   </ol>
 </div>
 {% endblock %}
@@ -40,35 +40,15 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 <div class="govuk-width-container">
 <!-- Local nav and header STARTS here -->
   <span class="govuk-caption-m">P57832 Scania Lincoln</span>
-  <h1 class="govuk-heading-l">Top up account</h1>
-  
-  <h1 class="govuk-fieldset__legend--m" id="jump-link">Set up a direct debit</h1>      
+  <h1 class="govuk-heading-l">Top up by credit/debit card</h1>
   
   <div class="govuk-form-group">
     <label class="govuk-label govuk-date-input__label" for="dob-year">Enter the amount you want to top up</label>
     <p class="govuk-caption-m ">Minimum top up of £50</p>
-    <input class="govuk-input govuk-date-input__input govuk-input--width-10" id="amount" name="amount" placeholder="£" type="text" pattern="[0-9]*" inputmode="numeric" min="1" maxlength = "10" spellcheck="false">
+    <input class="govuk-input govuk-date-input__input govuk-input--width-10" id="amount" name="amount" value="£300000.00" type="text" pattern="[0-9]*" inputmode="numeric" min="1" maxlength = "10" spellcheck="false">
   </div>
   
-  <p class="govuk-label">Select your payment date(s)</p>
-  <p class="govuk-caption-m ">You can choose to pay either once or twice a month</p>
-  
-  <div class="govuk-checkboxes govuk-!-margin-bottom-6">
-    <div class="govuk-checkboxes__item">
-      <input class="govuk-checkboxes__input" id="date_5" name="date_5" type="checkbox" value="date_5">
-      <label class="govuk-label govuk-checkboxes__label" for="date_5">
-        5<sup>th</sup> of the month
-      </label>
-    </div>
-    <div class="govuk-checkboxes__item">
-      <input class="govuk-checkboxes__input" id="date_20" name="date_20" type="checkbox" value="date_20">
-      <label class="govuk-label govuk-checkboxes__label" for="date_20">
-        20<sup>th</sup> of the month
-      </label>
-    </div>
-  </div>
-  
-  <form method="get" action="top-up-dd-review.html">
+  <form method="get" action="top-up-card-review.html">
     <button type="submit" class="govuk-button">Continue</button>
   </form>  
 </div>

@@ -45,7 +45,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
   <div class="govuk-form-group">
     <label class="govuk-label govuk-date-input__label" for="dob-year">Enter the amount you want to top up</label>
     <p class="govuk-caption-m ">Minimum top up of £50</p>
-    <input class="govuk-input govuk-date-input__input inputRightAlign govuk-input--width-5" id="dob-year" name="dob-year" type="number" placeholder="£" min="1" maxlength = "7">
+    <input class="govuk-input govuk-date-input__input govuk-input--width-10" id="amount" name="amount" placeholder="£" type="text" pattern="[0-9]*" inputmode="numeric" min="1" maxlength = "10" spellcheck="false">
   </div>
   
   <form method="get" action="top-up-card-review.html">
