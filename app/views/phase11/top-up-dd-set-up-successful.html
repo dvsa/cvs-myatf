@@ -1,0 +1,91 @@
+{% extends "layout3.html" %}
+
+{% block pageTitle %}
+Top up account
+{% endblock %}
+
+<!–– Beta header ––>
+
+{% block beforeContent %}
+
+{% from "phase-banner/macro.njk" import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "beta"
+},
+html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+
+<!-- Breadcrumbs -->
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a href="home.html" class="govuk-breadcrumbs__link">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a href="account-activity-prefunded-balance.html" class="govuk-breadcrumbs__link">Account activity</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">Top up account</li>
+  </ol>
+</div>
+{% endblock %}
+
+{% block content %}
+<!-- Headings start here -->
+
+<div class="govuk-width-container">
+<!-- Local nave and header STARTS here -->
+
+  <div class="govuk-warning-text atf-warning-background-color--green panel panel-border-wide panel-border-color--green govuk-!-margin-bottom-6">
+    <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+    <strong class="govuk-warning-text__text">
+      <span class="govuk-warning-text__assistive">Warning</span>Your direct debit has been set up.
+    </strong>
+  </div>
+  
+  <span class="govuk-caption-m">P57832 Scania Lincoln</span>
+  <h1 class="govuk-heading-l">Top up account</h1>
+
+  <p>You can top up your account by using a credit/debit card, or set up a regular direct debit. <br>Payment via BACS is no longer supported.</p>
+
+  <hr class="govuk-!-margin-bottom-6 govuk-!-margin-top-6">
+  
+  <h1 class="govuk-fieldset__legend--m" >Credit/debit card</h1>
+  <p class="govuk-!-padding-right-9">Use a credit/debit card to top up your PFA regularly or as a one off payment.</p>
+  <form method="get" action="top-up-card.html">
+    <button class="govuk-button govuk-!-margin-bottom-6" type="submit" class="govuk-button">Top up by card</button>
+  </form>  
+
+  <hr class="govuk-!-margin-bottom-6">
+
+  <h1 class="govuk-fieldset__legend--m">Direct debit</h1>
+  
+  <div class="govuk-date-input__item">
+    <p class="govuk-!-margin-bottom-4">You have previously set up a direct debit with the following details:</p>
+    <table class="govuk-table govuk-!-margin-bottom-2">
+      <tbody class="govuk-table__body">
+        <hr class="govuk-!-margin-bottom-1">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Status</th>
+          <td class="govuk-table__cell">Active</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Amount</th>
+          <td class="govuk-table__cell">£12,000.00</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header">Date(s)</th>
+          <td class="govuk-table__cell">5<sup>th</sup> of the month; 20<sup>th</sup> of the month</td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      <a class="govuk-link govuk-link--no-visited-state govuk-!-padding-right-2" href="top-up-dd-confirm-change.html">Change</a>
+      <a class="govuk-link govuk-link--no-visited-state" href="top-up-dd-confirm-removal.html">Remove</a>
+    </p>
+  </div>    
+
+
+</div>
+{% endblock %}
