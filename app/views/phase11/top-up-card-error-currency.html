@@ -62,7 +62,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
     <span id="name-error" class="govuk-error-message">
       <span class="govuk-visually-hidden">Error:</span> Enter a top up amount
     </span>
-    <input class="govuk-input govuk-date-input__input inputRightAlign govuk-input--width-5 govuk-input--error" id="dob-year" name="dob-year" type="number" placeholder="£" min="1" maxlength = "7">
+    <input class="govuk-input govuk-date-input__input govuk-input--width-10 govuk-input--error" placeholder="£" id="amount" name="amount" type="text" pattern="[0-9]*" inputmode="numeric" min="1" maxlength = "10" autocomplete="off">
   </div>
   
   <form method="get" action="top-up-card-review.html">
