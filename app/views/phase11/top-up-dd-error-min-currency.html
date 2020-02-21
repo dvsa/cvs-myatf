@@ -44,7 +44,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
   <div class="govuk-error-summary__body">
     <ul class="govuk-list govuk-error-summary__list">
       <li>
-        <a href="#currency">Enter a minimum top up amount of £50</a>
+        <a href="#currency">Enter a top up amount more than £50</a>
       </li>
     </ul>
   </div>
@@ -60,7 +60,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
     <label class="govuk-label govuk-date-input__label" for="dob-year">Enter the amount you want to top up</label>
     <p class="govuk-caption-m ">Minimum top up of £50</p>
     <span id="name-error" class="govuk-error-message">
-      <span class="govuk-visually-hidden">Error:</span> Enter a minimum top up amount of £50
+      <span class="govuk-visually-hidden">Error:</span> Enter a top up amount more than £50
     </span>
     <input class="govuk-input govuk-date-input__input govuk-input--width-10 govuk-input--error" placeholder="£" id="amount" name="amount" type="text" pattern="[0-9]*" inputmode="numeric" min="1" maxlength = "10" autocomplete="off">
   </div>
@@ -70,7 +70,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
   
   <div class="govuk-checkboxes govuk-!-margin-bottom-6">
     <div class="govuk-checkboxes__item">
-      <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses">
+      <input class="govuk-checkboxes__input" id="waste" name="waste" type="checkbox" value="carcasses" checked>
       <label class="govuk-label govuk-checkboxes__label" for="waste">
         5<sup>th</sup> of the month
       </label>
