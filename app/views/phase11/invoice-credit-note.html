@@ -1,0 +1,100 @@
+{% extends "layout3.html" %}
+
+{% block pageTitle %}
+Credit note invoice
+{% endblock %}
+
+<!–– Beta header ––>
+
+{% block beforeContent %}
+
+{% from "phase-banner/macro.njk" import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "beta"
+},
+html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+
+<!–– Breadcrumbs ––>
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="home.html">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="account-activity-prefunded-balance.html">Account activity</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="account-activity-search.html">Search historic transactions</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="transactions-all-results-multiple.html">Historic transactions</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link">Credit note invoice</a>
+    </li>
+  </ol>
+</div>
+{% endblock %}
+
+{% block content %}
+<thead class="govuk-table__head">
+<body class="govuk-template__body ">
+<a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+<script src="/govuk-frontend/all.js"></script>
+<script>window.GOVUKFrontend.initAll()</script>
+
+<!-- Local nav and header ENDS here -->      
+
+  <h1 class="govuk-heading-l govuk-!-margin-bottom-0">Credit note invoice <span id="with-hint-hint" class="govuk-hint" style="margin-top: 0%;">08 January 2020</span></h1>
+  
+  <p class="govuk-body govuk-!-margin-bottom-6" >
+     To view different invoices, <a href="account-activity-search.html" class="govuk-link govuk-link--no-visited-state">Search historic transactions</a>
+  </p>
+  
+  <table class="govuk-table">
+    <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header" scope="col">Date</th>
+        <th class="govuk-table__header" scope="col">Invoice number</th>
+        <th class="govuk-table__header" scope="col">Transaction reference</th>        
+        <th class="govuk-table__header" scope="col">Refund amount</th>
+      </tr>
+    </thead>
+      
+    <tbody>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">08 January 2020</td>
+        <td class="govuk-table__cell">1-23456789</td>
+        <td class="govuk-table__cell">1-23456789</td>
+        <td class="govuk-table__cell">+ £790.00</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  <p class="govuk-body">
+    <a href="placeholder.html" class="govuk-link govuk-link--no-visited-state">Print invoice</a>
+  </p>
+
+  <p class="govuk-body">
+    <a href="placeholder.html" class="govuk-link govuk-link--no-visited-state">Download invoice</a>
+  </p>
+  
+  <h4 class="govuk-heading-s">VAT</h4>
+
+  <ul class="govuk-list govuk-list--bullet">
+    <li>
+      <span class="govuk-body govuk-!-font-size-14"> Statuary vehicle testing is zero rated, attracting 0% VAT </span>
+    </li>
+    <li>
+      <span class="govuk-body govuk-!-font-size-14"> Voluntary vehicle testing is standard rated, attracting 20% VAT</span>
+    </li>
+    <li>
+      <span class="govuk-body govuk-!-font-size-14"> Retained fees are standard rated, attracting 20% VAT</span>
+    </li>
+  </ul>
+</body>
+{% endblock %}
