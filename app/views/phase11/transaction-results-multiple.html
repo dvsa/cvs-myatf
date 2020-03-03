@@ -34,7 +34,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
       <a class="govuk-breadcrumbs__link" href="transactions-all-results-multiple.html">Historic transactions</a>
     </li>
     <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link" >Vehicle testing</a>
+      <a class="govuk-breadcrumbs__link" >Vehicle testing details</a>
     </li>
   </ol>
 </div>
@@ -48,24 +48,19 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 <script>window.GOVUKFrontend.initAll()</script>
 
 <!-- Local nav and header ENDS here -->      
-
-  <h1 class="govuk-heading-l govuk-!-margin-bottom-0">Vehicle testing invoice <span id="with-hint-hint" class="govuk-hint" style="margin-top: 0%;">07 January 2020</span></h1>
   
-  <p class="govuk-body govuk-!-margin-bottom-6" >
-     <a href="account-activity-search.html" class="govuk-link govuk-link--no-visited-state">Search different dates</a>
-  </p>
+  <h1 class="govuk-heading-l govuk-!-margin-bottom-6">Vehicle testing details <span id="with-hint-hint" class="govuk-hint" style="margin-top: 0%;">07 January 2020</span></h1>
   
-  <p class="govuk-body govuk-!-margin-bottom-2" style="float: right;">
-    <a href="placeholder.html" class="govuk-link govuk-link--no-visited-state">Download CSV</a>
-  </p>
-  <p class="govuk-body govuk-!-margin-bottom-2 govuk-!-margin-right-4" style="float: right;">
-    <a href="placeholder.html" class="govuk-link govuk-link--no-visited-state">Print PDF</a>
-  </p>
+  <p class="govuk-body govuk-!-margin-bottom-2 govuk-!-margin-right-4" style="float: left;">
+    <a href="placeholder.html" class="govuk-link govuk-link--no-visited-state">Print invoice (PDF, 53KB)</a>
+  </p>  
   
-  <table class="govuk-table">
+  <table class="govuk-table govuk-!-margin-bottom-8">
+    <caption class="govuk-table__caption">Invoice: ORD-20203001-1B2A</caption>
     <thead class="govuk-table__head">
       <tr class="govuk-table__row">
         <th class="govuk-table__header" scope="col">Date</th>
+        <th class="govuk-table__header" scope="col">Start</th>
         <th class="govuk-table__header" scope="col">Vehicle</th>
         <th class="govuk-table__header" scope="col">Activity</th>
         <th class="govuk-table__header" scope="col">Result</th>
@@ -77,6 +72,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
     <tbody>
       <tr class="govuk-table__row">
         <td class="govuk-table__cell" id="a-line3">07 January 2020</td>
+        <td class="govuk-table__cell" id="a-line4">09.00</td>
         <td class="govuk-table__cell" id="a-line4">CB56 KTP</td>
         <td class="govuk-table__cell" id="a-line5">Class 6A first test</td>
         <td class="govuk-table__cell" id="a-line6">Pass</td>
@@ -86,6 +82,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
       <tr class="govuk-table__row">
         <td class="govuk-table__cell" id="a-line3">07 January 2020</td>
+        <td class="govuk-table__cell" id="a-line4">09.00</td>
         <td class="govuk-table__cell" id="a-line4">JY52 PDF</td>
         <td class="govuk-table__cell" id="a-line5">LEC PSV - Without linked test</td>
         <td class="govuk-table__cell" id="a-line6">Fail</td>
@@ -95,6 +92,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
       <tr class="govuk-table__row">
         <td class="govuk-table__cell" id="a-line3">07 January 2020</td>
+        <td class="govuk-table__cell" id="a-line4">09.00</td>
         <td class="govuk-table__cell" id="a-line4">RP16 OJW</td>
         <td class="govuk-table__cell" id="a-line5">PSV PG9 full insp PT/fee no cert</td>
         <td class="govuk-table__cell" id="a-line6">Pass</td>
@@ -104,6 +102,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
       <tr class="govuk-table__row">
         <td class="govuk-table__cell" id="a-line3">07 January 2020</td>
+        <td class="govuk-table__cell" id="a-line4">09.00</td>
         <td class="govuk-table__cell" id="a-line4">BM55 NLV</td>
         <td class="govuk-table__cell" id="a-line5">Voluntary speed limiter checks</td>
         <td class="govuk-table__cell" id="a-line6">Fail</td>
@@ -113,6 +112,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
       <tr class="govuk-table__row">
         <td class="govuk-table__cell" id="a-line3">07 January 2020</td>
+        <td class="govuk-table__cell" id="a-line4">09.00</td>
         <td class="govuk-table__cell" id="a-line4">TD60 VLM</td>
         <td class="govuk-table__cell" id="a-line5">Articulated bus annual test large</td>
         <td class="govuk-table__cell" id="a-line6">Pass</td>
@@ -122,6 +122,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
       
       <tr class="govuk-table__row">
         <td class="govuk-table__cell" id="a-line3">07 January 2020</td>
+        <td class="govuk-table__cell" id="a-line4">09.00</td>
         <td class="govuk-table__cell" id="a-line4">AB58 XWV</td>
         <td class="govuk-table__cell" id="a-line5">Articulated bus annual test large</td>
         <td class="govuk-table__cell" id="a-line6">Pass</td>
@@ -130,6 +131,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
       </tr>
       
       <tr class="govuk-table__row">
+        <td class="govuk-table__cell  collapse-line" scope="row" id="transaction-line1"></td>
         <td class="govuk-table__cell  collapse-line" scope="row" id="transaction-line1"></td>
         <td class="govuk-table__cell  collapse-line" scope="row" id="transaction-line2"></td>
         <td class="govuk-table__cell  collapse-line" scope="row" id="transaction-line2"></td>
@@ -141,26 +143,13 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
   </table>
 
 
-    <!-- <p class="govuk-body">
-      <a href="placeholder.html" class="govuk-link govuk-link--no-visited-state">Print invoice (PDF, 62KB)</a>
-    </p>
+  <h4 class="govuk-heading-m">VAT information</h4>
+  <p class="govuk-body ">Rates will change depending on the vehicle test type: </p>
 
-    <p class="govuk-body">
-      <a href="placeholder.html" class="govuk-link govuk-link--no-visited-state">Download invoice (CSV, 24KB)</a>
-    </p>
-     -->
-    <h4 class="govuk-heading-s">VAT</h4>
-
-    <ul class="govuk-list govuk-list--bullet">
-      <li>
-        <span class="govuk-body govuk-!-font-size-14"> Statuary vehicle testing is zero rated, attracting 0% VAT </span>
-      </li>
-      <li>
-        <span class="govuk-body govuk-!-font-size-14"> Voluntary vehicle testing is standard rated, attracting 20% VAT</span>
-      </li>
-      <li>
-        <span class="govuk-body govuk-!-font-size-14"> Retained fees are standard rated, attracting 20% VAT</span>
-      </li>
-    </ul>
+  <ul class="govuk-list govuk-list--bullet">
+    <li>Statuary vehicle testing is zero rated, attracting 0% VAT</li>
+    <li>Voluntary vehicle testing is standard rated, attracting 20% VAT</li>
+    <li>Retained fees are standard rated, attracting 20% VAT</li>
+  </ul>
 </body>
 {% endblock %}

@@ -34,7 +34,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
       <a class="govuk-breadcrumbs__link" href="transactions-all-results-multiple.html">Historic transactions</a>
     </li>
     <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link">Cancellation invoice</a>
+      <a class="govuk-breadcrumbs__link">Cancellation details</a>
     </li>
   </ol>
 </div>
@@ -48,14 +48,15 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 <script>window.GOVUKFrontend.initAll()</script>
 
 <!-- Local nav and header ENDS here -->      
-
-  <h1 class="govuk-heading-l govuk-!-margin-bottom-0">Cancellation invoice <span id="with-hint-hint" class="govuk-hint" style="margin-top: 0%;">08 January 2020</span></h1>
+  <span class="govuk-caption-m">P57832 Scania Lincoln</span>
+  <h1 class="govuk-heading-l govuk-!-margin-bottom-6">Cancellation details <span id="with-hint-hint" class="govuk-hint" style="margin-top: 0%;">08 January 2020</span></h1>
   
-  <p class="govuk-body govuk-!-margin-bottom-6" >
-     To view different invoices, <a href="account-activity-search.html" class="govuk-link govuk-link--no-visited-state">Search historic transactions</a>
-  </p>
+  <p class="govuk-body govuk-!-margin-bottom-2 govuk-!-margin-right-4" style="float: left;">
+    <a href="placeholder.html" class="govuk-link govuk-link--no-visited-state">Print invoice (PDF, 53KB)</a>
+  </p>  
   
-  <table class="govuk-table">
+  <table class="govuk-table govuk-!-margin-bottom-8">
+    <caption class="govuk-table__caption">Invoice: ORD-20203001-1B2A</caption>
     <thead class="govuk-table__head">
       <tr class="govuk-table__row">
         <th class="govuk-table__header" scope="col">Date</th>
@@ -75,26 +76,13 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
     </tbody>
   </table>
   
-  <p class="govuk-body">
-    <a href="placeholder.html" class="govuk-link govuk-link--no-visited-state">Print invoice</a>
-  </p>
-
-  <p class="govuk-body">
-    <a href="placeholder.html" class="govuk-link govuk-link--no-visited-state">Download invoice</a>
-  </p>
-  
-  <h4 class="govuk-heading-s">VAT</h4>
+  <h4 class="govuk-heading-m">VAT information</h4>
+  <p class="govuk-body ">Rates will change depending on the vehicle test type: </p>
 
   <ul class="govuk-list govuk-list--bullet">
-    <li>
-      <span class="govuk-body govuk-!-font-size-14"> Statuary vehicle testing is zero rated, attracting 0% VAT </span>
-    </li>
-    <li>
-      <span class="govuk-body govuk-!-font-size-14"> Voluntary vehicle testing is standard rated, attracting 20% VAT</span>
-    </li>
-    <li>
-      <span class="govuk-body govuk-!-font-size-14"> Retained fees are standard rated, attracting 20% VAT</span>
-    </li>
+    <li>Statuary vehicle testing is zero rated, attracting 0% VAT</li>
+    <li>Voluntary vehicle testing is standard rated, attracting 20% VAT</li>
+    <li>Retained fees are standard rated, attracting 20% VAT</li>
   </ul>
 </body>
 {% endblock %}

@@ -1,0 +1,164 @@
+{% extends "layout3.html" %}
+
+{% block pageTitle %}
+Top up invoice
+{% endblock %}
+
+<!–– Beta header ––>
+
+{% block beforeContent %}
+
+{% from "phase-banner/macro.njk" import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "beta"
+},
+html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+
+<!–– Breadcrumbs ––>
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="home.html">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="account-activity-prefunded-balance.html">Account activity</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="account-activity-search.html">Search historic transactions</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="transactions-all-results-multiple.html">Historic transactions</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link">Top up details</a>
+    </li>
+  </ol>
+</div>
+{% endblock %}
+
+{% block content %}
+<thead class="govuk-table__head">
+<body class="govuk-template__body ">
+<a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+<script src="/govuk-frontend/all.js"></script>
+<script>window.GOVUKFrontend.initAll()</script>
+
+
+<span class="govuk-caption-m">P57832 Scania Lincoln</span>
+<h1 class="govuk-heading-l govuk-!-margin-bottom-1">Top up PFA details</h1>
+<p class="govuk-body govuk-!-margin-bottom-4">Invoice number: ORD-20203001-1B2A </p>
+<p class="govuk-!-margin-bottom-4">
+  <a href="placeholder.html" class="govuk-body govuk-link govuk-link--no-visited-state">Print invoice (PDF, 53KB)</a>
+</p>
+
+<h1 class="govuk-heading-m govuk-!-margin-bottom-1">£12,000.00</h1>
+<p class="govuk-body govuk-!-margin-bottom-4">paid by card on 30 January 2020</p>
+
+<table class="govuk-table govuk-!-margin-bottom-8">
+  <p class="govuk-heading-m">Supplier details</p>
+  <tbody class="govuk-table__body">
+    <hr class="govuk-!-margin-bottom-1">
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header govuk-!-width-one-half">Supplier</th>
+      <td class="govuk-table__cell">DVSA</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header govuk-!-width-one-half">Address</th>
+      <td class="govuk-table__cell">The Ellipse Padley Road, Swansea SA18AN</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header govuk-!-width-one-half">VAT number</th>
+      <td class="govuk-table__cell">989 212 656</td>
+    </tr>
+  </tbody>
+</table>
+
+<table class="govuk-table govuk-!-margin-bottom-8">
+  <p class="govuk-heading-m">Purchaser details</p>
+  <tbody class="govuk-table__body">
+    <hr class="govuk-!-margin-bottom-1">
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header govuk-!-width-one-half">Purchaser</th>
+      <td class="govuk-table__cell">Mike Thomas</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header govuk-!-width-one-half">Authorised Testing Facility</th>
+      <td class="govuk-table__cell">Scania Lincoln</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header govuk-!-width-one-half">Address</th>
+      <td class="govuk-table__cell">122 Example Road, Birmingham, ABC 123</td>
+    </tr>
+    <tr class="govuk-table__row">
+      <th scope="row" class="govuk-table__header govuk-!-width-one-half">“P” Number</th>
+      <td class="govuk-table__cell">2345566</td>
+    </tr>
+  </tbody>
+  
+  <table class="govuk-table govuk-!-margin-bottom-8">
+    <p class="govuk-heading-m">Payment details</p>
+    <tbody class="govuk-table__body">
+      <hr class="govuk-!-margin-bottom-1">
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header govuk-!-width-one-half">Status</th>
+        <td class="govuk-table__cell">Successful</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header govuk-!-width-one-half">Payment reference</th>
+        <td class="govuk-table__cell">DVSA XXXX</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header govuk-!-width-one-half">Payment method</th>
+        <td class="govuk-table__cell">Card</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header govuk-!-width-one-half">Amount</th>
+        <td class="govuk-table__cell">£12,000.00</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header govuk-!-width-one-half">Purchase date</th>
+        <td class="govuk-table__cell">30 january 2020</td>
+      </tr>
+      <tr class="govuk-table__row">
+        <th scope="row" class="govuk-table__header govuk-!-width-one-half">Card number</th>
+        <td class="govuk-table__cell">MASTERCARD 556951******7683</td>
+      </tr>
+    </tbody>
+    
+    <table class="govuk-table govuk-!-margin-bottom-8">
+      <p class="govuk-heading-m">Order details</p>
+      <tbody class="govuk-table__body">
+        <hr class="govuk-!-margin-bottom-1">
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header govuk-!-width-one-half">Item</th>
+          <td class="govuk-table__cell">Pre-funded account top up</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header govuk-!-width-one-half">Product code</th>
+          <td class="govuk-table__cell">xxxx</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header govuk-!-width-one-half">Invoice number</th>
+          <td class="govuk-table__cell">xxxx</td>
+        </tr>
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header govuk-!-width-one-half">Total price</th>
+          <td class="govuk-table__cell">£12,000.00</td>
+        </tr>
+      </tbody>
+</table>
+
+<h4 class="govuk-heading-m">VAT information</h4>
+<p class="govuk-body ">Rates will change depending on the vehicle test type: </p>
+
+<ul class="govuk-list govuk-list--bullet">
+  <li>Statuary vehicle testing is zero rated, attracting 0% VAT</li>
+  <li>Voluntary vehicle testing is standard rated, attracting 20% VAT</li>
+  <li>Retained fees are standard rated, attracting 20% VAT</li>
+</ul>
+</body>
+{% endblock %}
