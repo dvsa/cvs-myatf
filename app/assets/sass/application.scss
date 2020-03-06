@@ -21,6 +21,11 @@ $govuk-global-styles: true;
   padding: 0.5em 0.5em 0.5em 2em;
 }
 
+.download-links{
+  background: url(https://github.com/alphagov/govuk_frontend_toolkit/blob/master/images/icon-file-download.png?raw=true) no-repeat 10px 50%;
+  padding: 0.5em 0.5em 0.5em 2em;
+}
+
 //fixed Placeholder
 .govuk-footer--app{
   margin-top: 20%;
