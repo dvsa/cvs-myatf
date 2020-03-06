@@ -46,70 +46,68 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 <script src="/govuk-frontend/all.js"></script>
 <script>window.GOVUKFrontend.initAll()</script>
 
-<!-- local headers START -->
-<ol class="govuk-list">
-  <li> &#8212;
-    <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="account-activity-prefunded-balance.html">Pre-funded account balance</a>
-  </li>
-  <li> &#8212;
-    <span Style="padding-left: 5px;">Search historic transactions</span>
-  </li>
-  <li> &#8212;
-    <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="top-up.html">Top up account</a>
-  </li>
-</ol>  
-<br>
-<hr class="govuk-!-margin-bottom-8">
-<!-- local headers END -->
+  <!-- local headers START -->
+  <ol class="govuk-list">
+    <li> &#8212;
+      <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="account-activity-prefunded-balance.html">Pre-funded account balance</a>
+    </li>
+    <li> &#8212;
+      <span Style="padding-left: 5px;">Search historic transactions</span>
+    </li>
+    <li> &#8212;
+      <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="top-up.html">Top up account</a>
+    </li>
+  </ol>  
+  <br>
+  <hr class="govuk-!-margin-bottom-8">
+  <!-- local headers END -->
+  <span class="govuk-!-margin-bottom-4 printer-links" style="float: right;">
+    <a href="placeholder.html" class="govuk-body govuk-link govuk-link--no-visited-state" style="color: black !important;">Download all transactions (CSV, 45KB)</a>
+  </span>
+  <h1 class="govuk-fieldset__legend--m govuk-!-margin-bottom-1">Historic transactions</h1>
+  <span id="with-hint-hint" class="govuk-hint" style="margin-top: 0%;">04 January 2020</span>
+  <p class="govuk-body">
+     <a href="account-activity-search.html" class="govuk-link govuk-link--no-visited-state">Search different dates</a>
+  </p>
 
-<h1 class="govuk-fieldset__legend--m govuk-!-margin-bottom-1">Historic transactions</h1>
-<span id="with-hint-hint" class="govuk-hint" style="margin-top: 0%;">04 January 2020</span>
-<p class="govuk-body">
-   <a href="account-activity-search.html" class="govuk-link govuk-link--no-visited-state">Search different dates</a>
-</p>
-
-<p class="govuk-body govuk-!-margin-bottom-2" style="float: left;">
-  <a href="placeholder.html" class="govuk-link govuk-link--no-visited-state">Download all transactions (CSV, 45KB)</a>
-</p>
-
-<table class="govuk-table govuk-!-margin-bottom-8">
-  <thead class="govuk-table__head">
-    <tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="col">Date</th>
-      <th class="govuk-table__header" scope="col">Item</th>
-      <th class="govuk-table__header" scope="col">Invoice number</th>
-      <th class="govuk-table__header govuk-table__header--numeric" scope="col">Net amount (ex. VAT)</th>
-      <th class="govuk-table__header govuk-table__header--numeric" scope="col">Balance</th>
-    </tr>
-  </thead>
-    
-  <tbody>
-    <tr class="govuk-table__row">
-      <td class="govuk-table__cell">04 January 2020</td>
-      <td class="govuk-table__cell"><a href="transaction-result-single">Vehicle testing</a></td>
-      <td class="govuk-table__cell">ORD-20191016-P5T8G</td>
-      <td class="govuk-table__cell govuk-table__cell--numeric">- £756.00</td>
-      <td class="govuk-table__cell govuk-table__cell--numeric">£11,244.00</td>
-    </tr>
-    
-    <tr class="govuk-table__row">
-      <td class="govuk-table__cell">04 January 2020</td>
-      <td class="govuk-table__cell"><a href="invoice-top-up">Top up to PFA</a></td>
-      <td class="govuk-table__cell">ORD-20191016-P5T8G</td>
-      <td class="govuk-table__cell govuk-table__cell--numeric">+ £10,000.00</td>
-      <td class="govuk-table__cell govuk-table__cell--numeric">£21,244.00</td>
-    </tr>
-  </tbody>
-</table>
+  <table class="govuk-table govuk-!-margin-bottom-8">
+    <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header" scope="col">Date</th>
+        <th class="govuk-table__header" scope="col">Item</th>
+        <th class="govuk-table__header" scope="col">Reference number</th>
+        <th class="govuk-table__header govuk-table__header--numeric" scope="col">Net amount (ex. VAT)</th>
+        <th class="govuk-table__header govuk-table__header--numeric" scope="col">Balance</th>
+      </tr>
+    </thead>
+      
+    <tbody>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">04 January 2020</td>
+        <td class="govuk-table__cell"><a href="transaction-result-single">Vehicle testing</a></td>
+        <td class="govuk-table__cell">INV-20191016-P5T8G</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric">- £756.00</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric">£11,244.00</td>
+      </tr>
+      
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">04 January 2020</td>
+        <td class="govuk-table__cell"><a href="invoice-top-up">Top up to PFA</a></td>
+        <td class="govuk-table__cell">PAY-20191016-P5T8G</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric">+ £10,000.00</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric">£21,244.00</td>
+      </tr>
+    </tbody>
+  </table>
 
 
-<h4 class="govuk-heading-m">VAT information</h4>
-<p class="govuk-body ">Rates will change depending on the vehicle test type: </p>
+  <h4 class="govuk-heading-m">VAT information</h4>
+  <p class="govuk-body ">Rates will change depending on the vehicle test type: </p>
 
-<ul class="govuk-list govuk-list--bullet">
-  <li>Statuary vehicle testing is zero rated, attracting 0% VAT</li>
-  <li>Voluntary vehicle testing is standard rated, attracting 20% VAT</li>
-  <li>Retained fees are standard rated, attracting 20% VAT</li>
-</ul>
+  <ul class="govuk-list govuk-list--bullet">
+    <li>statuary vehicle testing is zero rated, attracting 0% VAT</li>
+    <li>voluntary vehicle testing is standard rated, attracting 20% VAT</li>
+    <li>retained fees are standard rated, attracting 20% VAT</li>
+  </ul>
 </body>
 {% endblock %}

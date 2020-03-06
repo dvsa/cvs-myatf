@@ -16,6 +16,10 @@ $govuk-global-styles: true;
 
 // DY-Styles
 
+.printer-links{
+  background: url(https://assets.publishing.service.gov.uk/government-frontend/govuk_publishing_components/icon-print-b04bc2c6b31f73054f79768fd91f76df0b164b247c0905d8ca07b45cfb4f9a3b.png) no-repeat 10px 50%;
+  padding: 0.5em 0.5em 0.5em 2em;
+}
 
 //fixed Placeholder
 .govuk-footer--app{

@@ -1,7 +1,7 @@
 {% extends "layout3.html" %}
 
 {% block pageTitle %}
-Valid date - single date
+Incomplete month - single date
 {% endblock %}
 
 <!–– Beta header ––>
@@ -38,7 +38,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
   <div class="govuk-error-summary__body">
     <ul class="govuk-list govuk-error-summary__list">
       <li>
-        <a href="#single-date-search"> Transaction date must be real</a>
+        <a href="#single-date-search"> Transaction date must include a month</a>
       </li>
     </ul>
   </div>
@@ -83,14 +83,14 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 <!-- dropdown -->
         <div class="govuk-form-group--error">
         <span class="govuk-error-message">
-          <span class="govuk-visually-hidden">Error:</span> Transaction date must be real
+          <span class="govuk-visually-hidden">Error:</span> Transaction date must include a month
         </span>
         <span id="dob-hint" class="govuk-hint">For example, 20-1-2019</span>
           <div class="govuk-date-input " id="dob">
             <div class="govuk-date-input__item">
               <div class="govuk-form-group">
                 <label class="govuk-label govuk-date-input__label" for="dob-day">Day</label>
-                <input class="govuk-input govuk-input--error govuk-date-input__input govuk-input--width-2" id="dob-day" name="dob-day" type="number" pattern="[0-9]*">
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-day" name="dob-day" type="number" pattern="[0-9]*">
               </div>
             </div>
             <div class="govuk-date-input__item">
@@ -102,7 +102,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
             <div class="govuk-date-input__item">
               <div class="govuk-form-group">
                 <label class="govuk-label govuk-date-input__label" for="dob-year">Year</label>
-                <input class="govuk-input govuk-input--error govuk-date-input__input govuk-input--width-4" id="dob-year" name="dob-year" type="number" pattern="[0-9]*">
+                <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="dob-year" name="dob-year" type="number" pattern="[0-9]*">
               </div>
             </div>
           </div>

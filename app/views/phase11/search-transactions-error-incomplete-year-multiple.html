@@ -1,7 +1,7 @@
 {% extends "layout3.html" %}
 
 {% block pageTitle %}
-Valid date - single date
+Incomplete year - multiple date
 {% endblock %}
 
 <!–– Beta header ––>
@@ -38,7 +38,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
   <div class="govuk-error-summary__body">
     <ul class="govuk-list govuk-error-summary__list">
       <li>
-        <a href="#single-date-search"> Transaction date must be real</a>
+        <a href="#multi-date-search"> Transaction date must include a year</a>
       </li>
     </ul>
   </div>
@@ -75,53 +75,52 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
     <fieldset style="border-style: hidden;">
 <!-- Single date radio button START -->
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="single-date-search" name="radioselection" type="radio" value="transactions-all-results-single" data-aria-controls="conditional-single-date-search" checked>
+        <input class="govuk-radios__input" id="single-date-search" name="radioselection" type="radio" value="transactions-all-results-single" data-aria-controls="conditional-single-date-search">
         <label class="govuk-label govuk-radios__label" for="single-date-search">Select a single date</label>
       </div>
 
       <div class="govuk-radios__conditional govuk-radios__conditional--hidden " id="conditional-single-date-search">
 <!-- dropdown -->
-        <div class="govuk-form-group--error">
-        <span class="govuk-error-message">
-          <span class="govuk-visually-hidden">Error:</span> Transaction date must be real
-        </span>
-        <span id="dob-hint" class="govuk-hint">For example, 20-1-2019</span>
-          <div class="govuk-date-input " id="dob">
-            <div class="govuk-date-input__item">
-              <div class="govuk-form-group">
-                <label class="govuk-label govuk-date-input__label" for="dob-day">Day</label>
-                <input class="govuk-input govuk-input--error govuk-date-input__input govuk-input--width-2" id="dob-day" name="dob-day" type="number" pattern="[0-9]*">
-              </div>
+      <span id="dob-hint" class="govuk-hint">For example, 20-1-2019</span>
+        <div class="govuk-date-input " id="dob">
+          <div class="govuk-date-input__item">
+            <div class="govuk-form-group">
+              <label class="govuk-label govuk-date-input__label" for="dob-day">Day</label>
+              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-day" name="dob-day" type="number" pattern="[0-9]*">
             </div>
-            <div class="govuk-date-input__item">
-              <div class="govuk-form-group">
-                <label class="govuk-label govuk-date-input__label" for="dob-month">Month</label>
-                <input class="govuk-input govuk-input--error govuk-date-input__input govuk-input--width-2" id="dob-month" name="dob-month" type="number" pattern="[0-9]*">
-              </div>
+          </div>
+          <div class="govuk-date-input__item">
+            <div class="govuk-form-group">
+              <label class="govuk-label govuk-date-input__label" for="dob-month">Month</label>
+              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-month" name="dob-month" type="number" pattern="[0-9]*">
             </div>
-            <div class="govuk-date-input__item">
-              <div class="govuk-form-group">
-                <label class="govuk-label govuk-date-input__label" for="dob-year">Year</label>
-                <input class="govuk-input govuk-input--error govuk-date-input__input govuk-input--width-4" id="dob-year" name="dob-year" type="number" pattern="[0-9]*">
-              </div>
+          </div>
+          <div class="govuk-date-input__item">
+            <div class="govuk-form-group">
+              <label class="govuk-label govuk-date-input__label" for="dob-year">Year</label>
+              <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="dob-year" name="dob-year" type="number" pattern="[0-9]*">
             </div>
           </div>
         </div>
-<!-- dropdown -->
       </div>
+<!-- dropdown -->
 
 <!-- Long period selection START -->
       <div class="govuk-radios__item">
-        <input class="govuk-radios__input" id="multi-date-search" name="radioselection" type="radio" value="transactions-all-results-multiple" data-aria-controls="conditional-multi-date-search">
+        <input class="govuk-radios__input" id="multi-date-search" name="radioselection" type="radio" value="transactions-all-results-multiple" data-aria-controls="conditional-multi-date-search" checked>
         <label class="govuk-label govuk-radios__label" for="multi-date-search">Select a longer period of time</label>
       </div>
       <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-multi-date-search">
 <!-- Long period selection END -->
 
 <!-- From START -->
+      <div class="govuk-form-group--error">
+        <span class="govuk-error-message">
+          <span class="govuk-visually-hidden">Error:</span> Transaction date must include a year
+        </span>
         <div id="divdate21" class="multidate1">
           <span id="dob-hint" class="govuk-hint">
-            <strong class="bold-small" style="color:black">From:</strong><br />For example, 3-1-2019
+            <strong class="bold-small" style="color:black">From:</strong><br>For example, 3-1-2019
           </span>
               
           <div class="govuk-date-input">
@@ -142,17 +141,18 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
             <div class="govuk-date-input__item">
               <div class="govuk-form-group">
                 <label class="govuk-label govuk-date-input__label" for="dob-year">Year</label>
-                <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="dob-year" name="dob-year" type="number" pattern="[0-9]*">
+                <input class="govuk-input govuk-input--error govuk-date-input__input govuk-input--width-4" id="dob-year" name="dob-year" type="number" pattern="[0-9]*">
               </div>
             </div>
           </div>
         </div>
+      
 <!-- From End -->
 
 <!-- To START -->
         <div id="divdate22" class="mult1date2">
           <span id="divtitle2" class="govuk-hint">
-            <strong class="bold-small" style="color:black">To:</strong> <br />For example, 10-2-2019
+            <strong class="bold-small" style="color:black">To:</strong> <br>For example, 10-2-2019
           </span>
           <div class="govuk-date-input" id="divdate2">
             <div class="govuk-date-input__item">
@@ -177,6 +177,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
             </div>
           </div>
         </div>
+      </div>
 <!-- To END -->
 <!-- multi-date dropdown END -->
       </div> 

@@ -61,23 +61,25 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 <br>
 <hr class="govuk-!-margin-bottom-8">
 <!-- local headers END -->
-
+<span class="govuk-!-margin-bottom-4 printer-links" style="float: right;">
+  <a href="placeholder.html" class="govuk-body govuk-link govuk-link--no-visited-state" style="color: black !important;">Download all transactions (CSV, 45KB)</a>
+</span>
 <h1 class="govuk-fieldset__legend--m govuk-!-margin-bottom-1">Historic transactions</h1>
 <span id="with-hint-hint" class="govuk-hint" style="margin-top: 0%;">07 January 2020 - 09 January 2020</span>
 <p class="govuk-body">
    <a href="account-activity-search.html" class="govuk-link govuk-link--no-visited-state">Search different dates</a>
 </p>
-
+<!-- 
 <p class="govuk-body govuk-!-margin-bottom-2" style="float: left;">
   <a href="placeholder.html" class="govuk-link govuk-link--no-visited-state">Download all transactions (CSV, 45KB)</a>
-</p>
+</p> -->
 
 <table class="govuk-table govuk-!-margin-bottom-8">
   <thead class="govuk-table__head">
     <tr class="govuk-table__row">
       <th class="govuk-table__header" scope="col">Date</th>
       <th class="govuk-table__header" scope="col">Item</th>
-      <th class="govuk-table__header" scope="col">Invoice number</th>
+      <th class="govuk-table__header" scope="col">Reference number</th>
       <th class="govuk-table__header govuk-table__header--numeric" scope="col">Net amount (ex. VAT)</th>
       <th class="govuk-table__header govuk-table__header--numeric" scope="col">Balance</th>
     </tr>
@@ -87,7 +89,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
     <tr class="govuk-table__row">
       <td class="govuk-table__cell">07 January 2020</td>
       <td class="govuk-table__cell"><a href="invoice-top-up">Top up to PFA</a></td>
-      <td class="govuk-table__cell">ORD-20191016-P5T8G</td>
+      <td class="govuk-table__cell">INV-20191016-P5T8G</td>
       <td class="govuk-table__cell govuk-table__cell--numeric">+ £10,000.00</td>
       <td class="govuk-table__cell govuk-table__cell--numeric">£12,000.00</td>
     </tr>
@@ -95,7 +97,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
     <tr class="govuk-table__row">
       <td class="govuk-table__cell">07 January 2020</td>
       <td class="govuk-table__cell"><a href="transaction-results-multiple">Vehicle testing</a></td>
-      <td class="govuk-table__cell">ORD-20191016-P5T8G</td>
+      <td class="govuk-table__cell">INV-20191016-P5T8G</td>
       <td class="govuk-table__cell govuk-table__cell--numeric">- £756.00</td>
       <td class="govuk-table__cell govuk-table__cell--numeric">£11,244.00</td>
     </tr>
@@ -103,7 +105,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
     <tr class="govuk-table__row">
       <td class="govuk-table__cell">08 January 2020</td>
       <td class="govuk-table__cell"><a href="invoice-refund">Refund</a></td>
-      <td class="govuk-table__cell">ORD-20191016-P5T8G</td>
+      <td class="govuk-table__cell">INV-20191016-P5T8G</td>
       <td class="govuk-table__cell govuk-table__cell--numeric">+ £790.00</td>
       <td class="govuk-table__cell govuk-table__cell--numeric">£12,034.00</td>
     </tr>
@@ -111,7 +113,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
     <tr class="govuk-table__row">
       <td class="govuk-table__cell">09 January 2020</td>
       <td class="govuk-table__cell"><a href="invoice-cancellation">Cancellation</a></td>
-      <td class="govuk-table__cell">ORD-20191016-P5T8G</td>
+      <td class="govuk-table__cell">INV-20191016-P5T8G</td>
       <td class="govuk-table__cell govuk-table__cell--numeric">- £756.00</td>
       <td class="govuk-table__cell govuk-table__cell--numeric">£11,278.00</td>
     </tr>
@@ -119,7 +121,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
     <tr class="govuk-table__row">
       <td class="govuk-table__cell">09 January 2020</td>
       <td class="govuk-table__cell"><a href="invoice-compensation">Compensation</a></td>
-      <td class="govuk-table__cell">ORD-20191016-P5T8G</td>
+      <td class="govuk-table__cell">INV-20191016-P5T8G</td>
       <td class="govuk-table__cell govuk-table__cell--numeric">+ £1,000.00</td>
       <td class="govuk-table__cell govuk-table__cell--numeric">£12,278.00</td>
     </tr>
@@ -127,7 +129,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
     <tr class="govuk-table__row">
       <td class="govuk-table__cell">09 January 2020</td>
       <td class="govuk-table__cell"><a href="invoice-credit-note">Credit note</a></td>
-      <td class="govuk-table__cell">ORD-20191016-P5T8G</td>
+      <td class="govuk-table__cell">INV-20191016-P5T8G</td>
       <td class="govuk-table__cell govuk-table__cell--numeric">+ £100.00</td>
       <td class="govuk-table__cell govuk-table__cell--numeric">£12,378.00</td>
     </tr>
@@ -146,9 +148,9 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
   <p class="govuk-body ">Rates will change depending on the vehicle test type: </p>
 
   <ul class="govuk-list govuk-list--bullet">
-    <li>Statuary vehicle testing is zero rated, attracting 0% VAT</li>
-    <li>Voluntary vehicle testing is standard rated, attracting 20% VAT</li>
-    <li>Retained fees are standard rated, attracting 20% VAT</li>
+    <li>statuary vehicle testing is zero rated, attracting 0% VAT</li>
+    <li>voluntary vehicle testing is standard rated, attracting 20% VAT</li>
+    <li>retained fees are standard rated, attracting 20% VAT</li>
   </ul>
 </body>
 {% endblock %}
