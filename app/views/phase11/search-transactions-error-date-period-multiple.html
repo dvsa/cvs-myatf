@@ -1,0 +1,190 @@
+{% extends "layout3.html" %}
+
+{% block pageTitle %}
+Incomplete day - multiple date
+{% endblock %}
+
+<!–– Beta header ––>
+
+{% block beforeContent %}
+
+{% from "phase-banner/macro.njk" import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "beta"
+},
+html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+<!-- Breadcrumbs -->
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a href="home.html" class="govuk-breadcrumbs__link">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a href="account-activity-prefunded-balance.html" class="govuk-breadcrumbs__link">Account activity</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">Search historic transactions</li>
+  </ol>
+</div>
+{% endblock %}
+
+{% block content %}
+<div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="govuk-error-summary">
+  <h2 class="govuk-error-summary__title" id="error-summary-title">
+    There is a problem
+  </h2>
+  <div class="govuk-error-summary__body">
+    <ul class="govuk-list govuk-error-summary__list">
+      <li>
+        <a href="#multi-date-search"> First transaction date must be after 1 January 2014</a>
+      </li>
+    </ul>
+  </div>
+</div>
+<a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+<script src="/govuk-frontend/all.js"></script>
+<script>window.GOVUKFrontend.initAll()</script>
+<span class="govuk-caption-m">P57832 Scania Lincoln</span>
+<h1 class="govuk-heading-l">Account activity</h1>
+
+<!-- local headers START -->
+<ol class="govuk-list">
+  <li> &#8212;
+    <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="account-activity-prefunded-balance.html">Pre-funded account balance</a>
+  </li>
+  <li> &#8212;
+    <span Style="padding-left: 5px;">Search historic transactions</span>
+  </li>
+  <li> &#8212;
+    <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="top-up.html">Top up account</a>
+  </li>
+</ol>  
+<br>
+<hr class="govuk-!-margin-bottom-8">
+<!-- local headers END -->
+
+<h1 class="govuk-fieldset__legend--m" id="jump-link">Search historic transactions</h1>      
+
+<p class="govuk-body">For today's transactions, see <a class="govuk-link govuk-link--no-visited-state" href="todays-completed-tests.html">today's completed tests</a>.</p>
+<!-- Radios START -->
+<div class="govuk-radios govuk-radios--conditional" data-module="radios">
+<!-- Single selection START -->
+  <form action="../">
+    <fieldset style="border-style: hidden;">
+<!-- Single date radio button START -->
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="single-date-search" name="radioselection" type="radio" value="transactions-all-results-single" data-aria-controls="conditional-single-date-search">
+        <label class="govuk-label govuk-radios__label" for="single-date-search">Select a single date</label>
+      </div>
+
+      <div class="govuk-radios__conditional govuk-radios__conditional--hidden " id="conditional-single-date-search">
+<!-- dropdown -->
+      <span id="dob-hint" class="govuk-hint">For example, 20-1-2019</span>
+        <div class="govuk-date-input " id="dob">
+          <div class="govuk-date-input__item">
+            <div class="govuk-form-group">
+              <label class="govuk-label govuk-date-input__label" for="dob-day">Day</label>
+              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-day" name="dob-day" type="number" pattern="[0-9]*">
+            </div>
+          </div>
+          <div class="govuk-date-input__item">
+            <div class="govuk-form-group">
+              <label class="govuk-label govuk-date-input__label" for="dob-month">Month</label>
+              <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-month" name="dob-month" type="number" pattern="[0-9]*">
+            </div>
+          </div>
+          <div class="govuk-date-input__item">
+            <div class="govuk-form-group">
+              <label class="govuk-label govuk-date-input__label" for="dob-year">Year</label>
+              <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="dob-year" name="dob-year" type="number" pattern="[0-9]*">
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- dropdown -->
+
+<!-- Long period selection START -->
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="multi-date-search" name="radioselection" type="radio" value="transactions-all-results-multiple" data-aria-controls="conditional-multi-date-search" checked>
+        <label class="govuk-label govuk-radios__label" for="multi-date-search">Select a longer period of time</label>
+      </div>
+      <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-multi-date-search">
+<!-- Long period selection END -->
+
+<!-- From START -->
+      <div class="govuk-form-group--error">
+        <span class="govuk-error-message">
+          <span class="govuk-visually-hidden">Error:</span> First transaction date must be after 1 January 2014
+        </span>
+        <div id="divdate21" class="multidate1">
+          <span id="dob-hint" class="govuk-hint">
+            <strong class="bold-small" style="color:black">From:</strong><br>For example, 3-1-2019
+          </span>
+              
+          <div class="govuk-date-input">
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="dob-day">Day</label>
+                <input class="govuk-input govuk-input--error govuk-date-input__input govuk-input--width-2" id="dob-day" name="dob-day" type="number" pattern="[0-9]*">
+              </div>
+            </div>
+                        
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="dob-month">Month</label>
+                <input class="govuk-input govuk-input--error govuk-date-input__input govuk-input--width-2" id="dob-month" name="dob-month" type="number" pattern="[0-9]*">
+              </div>
+            </div>
+            
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="dob-year">Year</label>
+                <input class="govuk-input govuk-input--error govuk-date-input__input govuk-input--width-4" id="dob-year" name="dob-year" type="number" pattern="[0-9]*">
+              </div>
+            </div>
+          </div>
+        </div>
+      
+<!-- From End -->
+
+<!-- To START -->
+        <div id="divdate22" class="mult1date2">
+          <span id="divtitle2" class="govuk-hint">
+            <strong class="bold-small" style="color:black">To:</strong> <br>For example, 10-2-2019
+          </span>
+          <div class="govuk-date-input" id="divdate2">
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="dob-day">Day</label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-day" name="dob-day" type="number" pattern="[0-9]*">
+              </div>
+            </div>
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="dob-month">Month</label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-2" id="dob-month" name="dob-month"
+              type="number" pattern="[0-9]*">
+              </div>
+            </div>
+
+            <div class="govuk-date-input__item">
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-date-input__label" for="dob-year">Year</label>
+                <input class="govuk-input govuk-date-input__input govuk-input--width-4" id="dob-year" name="dob-year"type="number" pattern="[0-9]*">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<!-- To END -->
+<!-- multi-date dropdown END -->
+      </div> 
+      <div class="govuk-!-margin-bottom-6"></div> 
+      <input type="button" class="govuk-button" value="Show transactions" onclick="ob=this.form.radioselection;for(i=0;i<ob.length;i++){if(ob[i].checked){window.open(ob[i].value,'_self');};}" />
+    </fieldset>
+  </form>
+</div>
+<!-- Search button -->
+{% endblock %}
