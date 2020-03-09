@@ -61,20 +61,13 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
   <br>
   <hr class="govuk-!-margin-bottom-8">
   <!-- local headers END -->
-  <span class="govuk-!-margin-bottom-4 download-links" style="float: right;">
-    <a href="placeholder.html" class="govuk-body govuk-link govuk-link--no-visited-state" style="color: black !important;">Download full statement (CSV, 45KB)</a>
-  </span>
   <h1 class="govuk-fieldset__legend--m govuk-!-margin-bottom-1">Historic transactions</h1>
-  <span id="with-hint-hint" class="govuk-hint" style="margin-top: 0%;">07 January 2020 - 09 January 2020</span>
+  <span id="with-hint-hint" class="govuk-hint" style="margin-top: 0%;">07 January 2020 - 09 January 2020 <a href="account-activity-search.html" class="govuk-link govuk-link--no-visited-state">Change</a></span>
   <p class="govuk-body">
-     <a href="account-activity-search.html" class="govuk-link govuk-link--no-visited-state">Search different dates</a>
+    <a href="placeholder.html" class="govuk-body govuk-link govuk-link--no-visited-state">Download full statement (CSV, 45KB)</a>
   </p>
-  <!-- 
-  <p class="govuk-body govuk-!-margin-bottom-2" style="float: left;">
-    <a href="placeholder.html" class="govuk-link govuk-link--no-visited-state">Download all transactions (CSV, 45KB)</a>
-  </p> -->
-
-  <table class="govuk-table">
+  
+  <table class="govuk-table" id="transactiontable">
     <thead class="govuk-table__head">
       <tr class="govuk-table__row">
         <th class="govuk-table__header" scope="col">Date</th>

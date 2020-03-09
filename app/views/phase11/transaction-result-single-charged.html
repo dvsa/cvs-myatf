@@ -1,7 +1,7 @@
 {% extends "layout3.html" %}
 
 {% block pageTitle %}
-Single date transaction result - charged
+Single date transaction result
 {% endblock %}
 
 <!–– Beta header ––>
@@ -25,147 +25,136 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
       <a class="govuk-breadcrumbs__link" href="home.html">Home</a>
     </li>
     <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link" href="todays-completed-tests-charged.html">Site management</a>
+      <a class="govuk-breadcrumbs__link" href="account-activity-prefunded-balance.html">Account activity</a>
     </li>
     <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link">Transaction</a>
+      <a class="govuk-breadcrumbs__link" href="account-activity-search.html">Search historic transactions</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="transactions-all-results-single.html">Historic transactions</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link">Vehicle testing details</a>
     </li>
   </ol>
 </div>
 {% endblock %}
 
 {% block content %}
-<span id="with-hint-hint" class="govuk-hint" style="margin-top: 0%; margin-bottom: 0%;">P57832 Scania Lincoln</span>
 <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
 <script src="/govuk-frontend/all.js"></script>
 <script>window.GOVUKFrontend.initAll()</script>
 
 <body class="govuk-template__body ">
-  <h1 class="govuk-heading-l">Account activity</h1>
-  
-<!-- local headers START -->
-  <ol class="govuk-list">
-    <li> &#8212;
-      <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="account-activity-prefunded-balance.html">Pre-funded account balance</a>
-    </li>
-    <li> &#8212;
-      <span Style="padding-left: 5px;">Search historic transactions</span>
-    </li>
-    <li> &#8212;
-      <a class="govuk-link govuk-link--no-visited-state" Style="padding-left: 5px;" href="top-up.html">Top up account</a>
-    </li>
-  </ol>  
-  <br>
-  <hr class="govuk-!-margin-bottom-8">
-<!-- local headers END -->
-
 <!-- 6 column table -->
-  <h1 class="govuk-fieldset__legend--m">Transaction
-  <span id="with-hint-hint" class="govuk-hint" style="margin-top: 0%; margin-bottom: 0%;">16 October 2019</span>
+  <span class="govuk-caption-m">P57832 Scania Lincoln</span>
+  <h1 class="govuk-heading-l govuk-!-margin-bottom-6">Vehicle testing details 
+    <span id="with-hint-hint" class="govuk-hint" style="margin-top: 0%;">16 October 2019</span>
   </h1>
-  <p class="">
-  <a href="account-activity-search.html">Search different dates</a>
-  </p>
+  
+  <table class="govuk-table govuk-!-margin-bottom-8">
+    <caption class="govuk-table__caption">Invoice number: INV-20203001-1B2A <br><a href="placeholder.html" class="govuk-body govuk-link govuk-link--no-visited-state">Print invoice (PDF, 53KB)</a></caption>
+    <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header" scope="col">Unique ID</th>
+        <!-- <th class="govuk-table__header" scope="col">Date</th> -->
+        <th class="govuk-table__header" scope="col">Start time</th>
+        <th class="govuk-table__header" scope="col">Vehicle</th>
+        <th class="govuk-table__header" scope="col">Activity</th>
+        <th class="govuk-table__header govuk-table__header--numeric" scope="col">Amount<br>(ex VAT)</th>
+        <th class="govuk-table__header govuk-table__header--numeric" scope="col">VAT</th>
+        <th class="govuk-table__header govuk-table__header--numeric" scope="col">Total<br>(inc VAT)</th>
+      </tr>
+    </thead>
+      
+    <tbody>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">1T2G3HL4</td>
+        <!-- <td class="govuk-table__cell">04 January 2020</td> -->
+        <td class="govuk-table__cell">09:00</td>
+        <td class="govuk-table__cell">CB56 KTP</td>
+        <td class="govuk-table__cell">2 axle motor vehicle annual test</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric">£113.00</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric">£22.60</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric">£135.60</td>
+      </tr>
 
-  <table class="govuk-table">
-  <thead class="govuk-table__head">
-    <tr class="govuk-table__row">
-      <th class="govuk-table__header" scope="col">Date</th>
-      <th class="govuk-table__header" scope="col">Vehicle</th>
-      <th class="govuk-table__header" scope="col">Activity</th>
-      <th class="govuk-table__header" scope="col">Result</th>
-      <th class="govuk-table__header govuk-table__header--numeric" scope="col">Amount (ex. VAT)</th>
-      <th class="govuk-table__header govuk-table__header--numeric" scope="col">Total Amount</th>
-    </tr>
-  </thead>
-    
-  <tbody>
-    <tr class="govuk-table__row">
-      <td class="govuk-table__cell" id="a-line3">16 October 2019</td>
-      <td class="govuk-table__cell" id="a-line4">CB56 KTP</td>
-      <td class="govuk-table__cell" id="a-line5">Part paid prohibition clearance</td>
-      <td class="govuk-table__cell" id="a-line6">Pass</td>
-      <td class="govuk-table__cell govuk-table__cell--numeric" id="a-line7">£113.00</td>
-      <td class="govuk-table__cell govuk-table__cell--numeric" id="a-line7">£113.00</td>
-    </tr>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">6E9G3WK7</td>
+        <!-- <td class="govuk-table__cell">04 January 2020</td> -->
+        <td class="govuk-table__cell">10:00</td>
+        <td class="govuk-table__cell">JY52 PDF</td>
+        <td class="govuk-table__cell">4 axle motor vehicle annual test</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric">£113.00</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric">£22.60</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric">£135.60</td>
+      </tr>
 
-    <tr class="govuk-table__row">
-      <td class="govuk-table__cell" id="a-line3">16 October 2019</td>
-      <td class="govuk-table__cell" id="a-line4">JY52 PDF</td>
-      <td class="govuk-table__cell" id="a-line5">LEC PSV - Without linked test</td>
-      <td class="govuk-table__cell" id="a-line6">Fail</td>
-      <td class="govuk-table__cell govuk-table__cell--numeric" id="a-line7">£113.00</td>
-      <td class="govuk-table__cell govuk-table__cell--numeric" id="a-line7">£113.00</td>
-    </tr>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">2D1SAPB5</td>
+        <!-- <td class="govuk-table__cell">04 January 2020</td> -->
+        <td class="govuk-table__cell">11:00</td>
+        <td class="govuk-table__cell">RP16 OJW</td>
+        <td class="govuk-table__cell">5 axle motor vehicle annual test</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric">£91.00</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric">£0.00</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric">£91.00</td>
+      </tr>
 
-    <tr class="govuk-table__row">
-      <td class="govuk-table__cell" id="a-line3">16 October 2019</td>
-      <td class="govuk-table__cell" id="a-line4">RP16 OJW</td>
-      <td class="govuk-table__cell" id="a-line5">PSV PG9 full insp PT/fee no cert</td>
-      <td class="govuk-table__cell" id="a-line6">Pass</td>
-      <td class="govuk-table__cell govuk-table__cell--numeric" id="a-line7">£91.00</td>
-      <td class="govuk-table__cell govuk-table__cell--numeric" id="a-line7">£91.00</td>
-    </tr>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">32RKQ21A</td>
+        <!-- <td class="govuk-table__cell">04 January 2020</td> -->
+        <td class="govuk-table__cell">12:00</td>
+        <td class="govuk-table__cell">BM55 NLV</td>
+        <td class="govuk-table__cell">3 axle motor vehicle annual test</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric">£113.00</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric">£22.60</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric">£135.60</td>
+      </tr>
 
-    <tr class="govuk-table__row">
-      <td class="govuk-table__cell" id="a-line3">16 October 2019</td>
-      <td class="govuk-table__cell" id="a-line4">BM55 NLV</td>
-      <td class="govuk-table__cell" id="a-line5">Voluntary speed limiter checks</td>
-      <td class="govuk-table__cell" id="a-line6">Fail</td>
-      <td class="govuk-table__cell govuk-table__cell--numeric" id="a-line7">£113.00</td>
-      <td class="govuk-table__cell govuk-table__cell--numeric" id="a-line7">£113.00</td>
-    </tr>
-
-    <tr class="govuk-table__row">
-      <td class="govuk-table__cell" id="a-line3">16 October 2019</td>
-      <td class="govuk-table__cell" id="a-line4">TD60 VLM</td>
-      <td class="govuk-table__cell" id="a-line5">Articulated bus annual test large</td>
-      <td class="govuk-table__cell" id="a-line6">Pass</td>
-      <td class="govuk-table__cell govuk-table__cell--numeric" id="a-line7">£91.00</td>
-      <td class="govuk-table__cell govuk-table__cell--numeric" id="a-line7">£91.00</td>
-    </tr>
-    
-    <tr class="govuk-table__row">
-      <td class="govuk-table__cell" id="a-line3">16 October 2019</td>
-      <td class="govuk-table__cell" id="a-line4">AB58 XWV</td>
-      <td class="govuk-table__cell" id="a-line5">Articulated bus annual test large</td>
-      <td class="govuk-table__cell" id="a-line6">Pass</td>
-      <td class="govuk-table__cell govuk-table__cell--numeric" id="a-line7">£91.00</td>
-      <td class="govuk-table__cell govuk-table__cell--numeric" id="a-line7">£91.00</td>
-    </tr>
-    
-    <tr class="govuk-table__row">
-      <td class="govuk-table__cell  collapse-line" scope="row" id="transaction-line1"></td>
-      <td class="govuk-table__cell  collapse-line" scope="row" id="transaction-line2"></td>
-      <td class="govuk-table__cell  collapse-line" scope="row" id="transaction-line2"></td>
-      <td class="govuk-table__cell  collapse-line" scope="row" id="transaction-line2"></td>
-      <td class="govuk-table__cell govuk-table__cell--numeric" id="transaction-line2"><strong>£612.00</strong></td>
-      <td class="govuk-table__cell govuk-table__cell--numeric" id="transaction-line4"><strong>£612.00</strong></td>
-    </tr>
-  </tbody>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">T8JOX99Y</td>
+        <!-- <td class="govuk-table__cell">04 January 2020</td> -->
+        <td class="govuk-table__cell">14:00</td>
+        <td class="govuk-table__cell">TD60 VLM</td>
+        <td class="govuk-table__cell">2 axle motor vehicle annual test</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric">£91.00</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric">£0.00</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric">£91.00</td>
+      </tr>
+      
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">GT1L9DNA</td>
+        <!-- <td class="govuk-table__cell">04 January 2020</td> -->
+        <td class="govuk-table__cell">15:00</td>
+        <td class="govuk-table__cell">AB58 XWV</td>
+        <td class="govuk-table__cell">2 axle motor vehicle annual test</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric">£91.00</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric">£0.00</td>
+        <td class="govuk-table__cell govuk-table__cell--numeric"">£91.00</td>
+      </tr>
+      
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell collapse-line" scope="row"></td>
+        <!-- <td class="govuk-table__cell collapse-line" scope="row"></td> -->
+        <td class="govuk-table__cell collapse-line" scope="row"></td>
+        <td class="govuk-table__cell collapse-line" scope="row"></td>
+        <td class="govuk-table__cell collapse-line" scope="row"></td>
+        <td class="govuk-table__cell govuk-table__cell--numeric"><strong>£612.00</strong></td>
+        <td class="govuk-table__cell govuk-table__cell--numeric"><strong>£67.80</strong></td>
+        <td class="govuk-table__cell govuk-table__cell--numeric"><strong>£679.80</strong></td>
+      </tr>
+    </tbody>
   </table>
 
-
-  <p class="govuk-body">
-    <a href="placeholder.html" class="govuk-link govuk-link--no-visited-state">Print invoice (PDF, 62KB)</a>
-  </p>
-
-  <p class="govuk-body">
-    <a href="placeholder.html" class="govuk-link govuk-link--no-visited-state">Download invoice (CSV, 24KB)</a>
-  </p>
-
-  <h4 class="govuk-heading-s">VAT</h4>
+  <h4 class="govuk-heading-m">VAT information</h4>
+  <p class="govuk-body ">Rates will change depending on the vehicle test type: </p>
 
   <ul class="govuk-list govuk-list--bullet">
-    <li>
-      <span class="govuk-body govuk-!-font-size-14"> Statuary vehicle testing is zero rated, attracting 0% VAT </span>
-    </li>
-    <li>
-      <span class="govuk-body govuk-!-font-size-14"> Voluntary vehicle testing is standard rated, attracting 20% VAT</span>
-    </li>
-    <li>
-      <span class="govuk-body govuk-!-font-size-14"> Retained fees are standard rated, attracting 20% VAT</span>
-    </li>
+    <li>statuary vehicle testing is zero rated, attracting 0% VAT</li>
+    <li>voluntary vehicle testing is standard rated, attracting 20% VAT</li>
+    <li>retained fees are standard rated, attracting 20% VAT</li>
   </ul>
+
 </body>
 {% endblock %}
