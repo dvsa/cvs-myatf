@@ -57,7 +57,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
         <th class="govuk-table__header" scope="col">Date</th>
         <th class="govuk-table__header" scope="col">Item</th>
         <th class="govuk-table__header" scope="col">Transaction number</th>
-        <th class="govuk-table__header govuk-table__header--numeric" scope="col">Net amount (ex. VAT)</th>
+        <th class="govuk-table__header govuk-table__header--numeric" scope="col">Net amount (inc. VAT)</th>
         <th class="govuk-table__header govuk-table__header--numeric" scope="col">PFA balance</th>
       </tr>
     </thead>
@@ -80,15 +80,5 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
       </tr>
     </tbody>
   </table>
-
-
-  <h4 class="govuk-heading-m">VAT information</h4>
-  <p class="govuk-body ">Rates will change depending on the vehicle test type: </p>
-
-  <ul class="govuk-list govuk-list--bullet">
-    <li>statuary vehicle testing is zero rated, attracting 0% VAT</li>
-    <li>voluntary vehicle testing is standard rated, attracting 20% VAT</li>
-    <li>retained fees are standard rated, attracting 20% VAT</li>
-  </ul>
 </body>
 {% endblock %}
