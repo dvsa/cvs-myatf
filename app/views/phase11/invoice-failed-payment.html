@@ -1,0 +1,81 @@
+{% extends "layout3.html" %}
+
+{% block pageTitle %}
+Compensation invoice
+{% endblock %}
+
+<!–– Beta header ––>
+
+{% block beforeContent %}
+
+{% from "phase-banner/macro.njk" import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "beta"
+},
+html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+
+<!–– Breadcrumbs ––>
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="home.html">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="account-activity-prefunded-balance.html">Account activity</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="account-activity-search.html">Search historic transactions</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="transactions-all-results-multiple.html">Historic transactions</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link">Failed payment details</a>
+    </li>
+  </ol>
+</div>
+{% endblock %}
+
+{% block content %}
+<thead class="govuk-table__head">
+<body class="govuk-template__body ">
+<a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+<script src="/govuk-frontend/all.js"></script>
+<script>window.GOVUKFrontend.initAll()</script>
+
+<!-- Local nav and header ENDS here -->    
+  <span class="govuk-caption-m">P57832 Scania Lincoln</span>
+  <h1 class="govuk-heading-l govuk-!-margin-bottom-4">Failed payment details <span id="with-hint-hint" class="govuk-hint" style="margin-top: 0%;">10 January 2020</span></h1>
+
+  <p>
+    <a href="placeholder.html" class="govuk-body govuk-link govuk-link--no-visited-state">Print failed payment details (PDF, 53KB)</a>
+  </p>
+  
+  <table class="govuk-table govuk-!-margin-bottom-8">
+    <!-- <caption class="govuk-table__caption">Invoice: CRE-20203001-1B2A</caption> -->
+    <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header govuk-!-width-one-quarter" scope="col">Transaction number</th>
+        <th class="govuk-table__header govuk-!-width-one-quarter" scope="col">Item</th>
+        <th class="govuk-table__header govuk-!-width-one-quarter" scope="col">Related invoice</th>      
+        <th class="govuk-table__header govuk-!-width-one-quarter govuk-table__header--numeric" scope="col">Total</th>
+      </tr>
+    </thead>
+      
+    <tbody>
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell">REF-20200102-3GH7</td>
+        <td class="govuk-table__cell">Failed payment</td>
+        <td class="govuk-table__cell">
+          <a href="transaction-result-single" class="govuk-link govuk-link--no-visited-state">INV-20203001-1B2A</a>
+        </td>
+        <td class="govuk-table__cell govuk-table__cell--numeric">£756.00</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+{% endblock %}
