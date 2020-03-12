@@ -50,22 +50,22 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
     <input class="govuk-input govuk-date-input__input govuk-input--width-10" id="amount" name="amount" placeholder="£" type="text" pattern="[0-9]*" inputmode="numeric" min="1" maxlength = "10" autocomplete="off">
   </div>
   
-  <p class="govuk-label">Select your payment date(s)</p>
-  <p class="govuk-caption-m ">Choose to pay either once or twice a month</p>
+  <p class="govuk-label">Select your payment date</p>
   
-  <div class="govuk-checkboxes govuk-!-margin-bottom-6">
-    <div class="govuk-checkboxes__item">
-      <input class="govuk-checkboxes__input" id="date_10" name="date_5" type="checkbox" value="date_5">
-      <label class="govuk-label govuk-checkboxes__label" for="date_5">
-        5<sup>th</sup> of the month
-      </label>
-    </div>
-    <div class="govuk-checkboxes__item">
-      <input class="govuk-checkboxes__input" id="date_20" name="date_20" type="checkbox" value="date_20">
-      <label class="govuk-label govuk-checkboxes__label" for="date_20">
-        20<sup>th</sup> of the month
-      </label>
-    </div>
+  <div class="govuk-form-group" >
+    <fieldset class="govuk-fieldset">
+      <div class="govuk-radios">
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="date" name="radioselection" type="radio" value="transactions-all-results-single" >
+          <label class="govuk-label govuk-radios__label" for="date">5th of the month</label>
+        </div>
+
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="date-1" name="radioselection" type="radio" value="transactions-all-results-multiple" >
+          <label class="govuk-label govuk-radios__label" for="date-1">20th of the month</label>
+        </div>
+      </div>
+    </fieldset>
   </div>
   
   <form method="get" action="top-up-dd-review.html">
