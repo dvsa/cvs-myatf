@@ -1,7 +1,7 @@
 {% extends "layout-small-footer.html" %}
 
 {% block pageTitle %}
-Direct debit unsuccessful 
+Direct debit pending 
 {% endblock %}
 
 <!–– Beta header ––>
@@ -28,11 +28,11 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 {% block content %}
 <!-- Headings start here -->
 <body> 
-  <h1 class="govuk-heading-l">Your direct debit was unsuccessful</h1>
-  <p class="govuk-body">No money has been taken from your account.</p>
-  <p class="govuk-body">Contact your bank for further information or go back and try the payment again.</p>
-  <form method="get" action="top-up-dd.html">
-    <button type="submit" class="govuk-button">Try and set up again</button>
+  <h1 class="govuk-heading-l">Your direct debit is pending</h1>
+  <p class="govuk-body">We are processing your payment. This could take up to 10 working days.</p>
+  <p class="govuk-body">Check the top up page for a status update or try again later.</p>
+  <form method="get" action="top-up-dd-set-up.html">
+    <button type="submit" class="govuk-button">View direct debit</button>
   </form> 
 </body>
 {% endblock %}
