@@ -1,7 +1,7 @@
-{% extends "layout3.html" %}
+{% extends "layout-small-footer.html" %}
 
 {% block pageTitle %}
-Top up account
+Top up card confirmation
 {% endblock %}
 
 <!–– Beta header ––>
@@ -15,24 +15,29 @@ text: "beta"
 },
 html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
 }) }}
-
-
 <!-- Breadcrumbs -->
 <div class="govuk-breadcrumbs">
   <ol class="govuk-breadcrumbs__list">
     <li class="govuk-breadcrumbs__list-item">
       <a href="home.html" class="govuk-breadcrumbs__link">Home</a>
     </li>
-    <li class="govuk-breadcrumbs__list-item">
-      <a href="account-activity-prefunded-balance.html" class="govuk-breadcrumbs__link">Account activity</a>
-    </li>
-    <li class="govuk-breadcrumbs__list-item">Top up account</li>
   </ol>
 </div>
-
 {% endblock %}
 
 {% block content %}
+<!-- Headings start here -->
+<body> 
+  <h1 class="govuk-heading-l">Your direct debit has been removed</h1>
+  <p class="govuk-body">Direct debit payments will stop after one working day.</p>
+  <p class="govuk-body">If you need to top up after this time, use an alternative top up method.</p>
+  <form method="get" action="home.html">
+    <button type="submit" class="govuk-button">Go to home</button>
+  </form> 
+</body>
+
+
+
 <!-- Headings start here -->
 <div class="govuk-width-container">
   <div class="govuk-warning-text atf-warning-background-color--green panel panel-border-wide panel-border-color--green govuk-!-margin-bottom-6">
@@ -86,9 +91,10 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
   <hr class="govuk-!-margin-top-2 govuk-!-margin-bottom-6">
   
   <h1 class="govuk-fieldset__legend--s">Cheque or Postal Order</h1>
-  <p class="govuk-body">Send a cheque or postal order to top up your pre-funded account to: </p>
+  <p class="govuk-body">Send a cheque or Postal Order to top up your pre-funded account to: </p>
 	<p class="govuk-body">Driver and Vehicle Standards Agency (DVSA),<br>
-	Finance, Ellipse,<br>
+	Finance,<br>
+  Ellipse,<br>
 	Padley Road<br>
 	Swansea,<br>
 	SA1 8AN</p>
