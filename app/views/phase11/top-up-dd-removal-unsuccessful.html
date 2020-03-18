@@ -35,12 +35,19 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 {% block content %}
 <!-- Headings start here -->
 <div class="govuk-width-container">
-  <div class="govuk-warning-text atf-warning-background--colour panel panel-border-wide panel-border-color--red govuk-!-margin-bottom-6">
+  
+  <div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="govuk-error-summary">
+    <h2 class="govuk-error-summary__title" id="error-summary-title">Your direct debit could not be removed</h2>
+    <div class="govuk-error-summary__body">
+      <p class="govuk-body govuk-!-margin-bottom-2">Contact your bank for further information.</p>
+    </div>
+  </div>
+  <!-- <div class="govuk-warning-text atf-warning-background--colour panel panel-border-wide panel-border-color--red govuk-!-margin-bottom-6">
     <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
     <strong class="govuk-warning-text__text">
       <span class="govuk-warning-text__assistive">Warning</span>Your direct debit could not be removed. Contact your bank for further information.
     </strong>
-  </div>
+  </div> -->
   <span class="govuk-caption-m">P57832 Scania Lincoln</span>
   <h1 class="govuk-heading-l">Account activity</h1>
 
@@ -107,11 +114,12 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
   <h1 class="govuk-fieldset__legend--s">Cheque or Postal Order</h1>
   <p class="govuk-body">Send a cheque or postal order to top up your pre-funded account to: </p>
 	<p class="govuk-body">Driver and Vehicle Standards Agency (DVSA),<br>
-	Finance, Ellipse,<br>
+	Finance,<br>
+  Ellipse,<br>
 	Padley Road<br>
 	Swansea,<br>
 	SA1 8AN</p>
-  <p class="govuk-body">These should be made payable to Driver and Vehicle Standards Agency (DVSA) and be crossed “Account Payee only”.</p>
+  <p class="govuk-body">Make sure you include your pre-funded account number, and make these payable to Driver and Vehicle Standards Agency (DVSA) and be crossed “Account Payee only”.</p>
 
 </div>
 {% endblock %}

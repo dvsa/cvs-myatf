@@ -1,0 +1,45 @@
+{% extends "layout3.html" %}
+
+{% block pageTitle %}
+No transaction results
+{% endblock %}
+
+<!–– Beta header ––>
+
+{% block beforeContent %}
+
+{% from "phase-banner/macro.njk" import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "beta"
+},
+html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+
+<!–– Breadcrumbs ––>
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="home.html">Home</a>
+    </li>
+  </ol>
+</div>
+{% endblock %}
+
+{% block content %}
+<thead class="govuk-table__head">
+<body class="govuk-template__body ">
+  <a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+  <script src="/govuk-frontend/all.js"></script>
+  <script>window.GOVUKFrontend.initAll()</script>
+
+  <h1 class="govuk-heading-l">Something went wrong</h1>
+  <p class="govuk-body">We have been unable to load your historic transactions. Go back and search again.</p>
+  <form method="get" action="account-activity-search.html">
+    <button type="submit" class="govuk-button">Search historic transactions</button>
+  </form> 
+</body>
+{% endblock %}
+

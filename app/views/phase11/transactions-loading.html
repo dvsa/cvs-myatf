@@ -1,0 +1,60 @@
+{% extends "layout3.html" %}
+
+{% block pageTitle %}
+Single date transaction results
+{% endblock %}
+
+<!–– Beta header ––>
+
+{% block beforeContent %}
+
+{% from "phase-banner/macro.njk" import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "beta"
+},
+html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+
+<!–– Breadcrumbs ––>
+
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="home.html">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="account-activity-prefunded-balance.html">Account activity</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="account-activity-search.html">Search historic transactions</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" >Historic transactions</a>
+    </li>
+  </ol>
+</div>
+{% endblock %}
+
+{% block content %}
+
+<body class="govuk-template__body ">
+<a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+<script src="/govuk-frontend/all.js"></script>
+<script>window.GOVUKFrontend.initAll()</script>
+
+  <span class="govuk-caption-m">P57832 Scania Lincoln</span>
+  <h1 class="govuk-heading-l govuk-!-margin-bottom-1">Page loading</h1>
+  
+  <script type="text/javascript">
+    var loadingSpinner = new GOVUK.Loader()
+      loadingSpinner.init({
+        container: 'govuk-box'
+        labelText: 'Loading...',
+        label: true,
+        color: '#000'
+      })
+  </script>
+</body>
+{% endblock %}

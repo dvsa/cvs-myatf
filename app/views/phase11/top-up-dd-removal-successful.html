@@ -1,7 +1,7 @@
-{% extends "layout-small-footer.html" %}
+{% extends "layout3.html" %}
 
 {% block pageTitle %}
-Top up card confirmation
+Top up account
 {% endblock %}
 
 <!–– Beta header ––>
@@ -15,36 +15,39 @@ text: "beta"
 },
 html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
 }) }}
+
+
 <!-- Breadcrumbs -->
 <div class="govuk-breadcrumbs">
   <ol class="govuk-breadcrumbs__list">
     <li class="govuk-breadcrumbs__list-item">
       <a href="home.html" class="govuk-breadcrumbs__link">Home</a>
     </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a href="account-activity-prefunded-balance.html" class="govuk-breadcrumbs__link">Account activity</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">Top up account</li>
   </ol>
 </div>
+
 {% endblock %}
 
 {% block content %}
 <!-- Headings start here -->
-<body> 
-  <h1 class="govuk-heading-l">Your direct debit has been removed</h1>
-  <p class="govuk-body">Direct debit payments will stop after one working day.</p>
-  <p class="govuk-body">If you need to top up after this time, use an alternative top up method.</p>
-  <form method="get" action="home.html">
-    <button type="submit" class="govuk-button">Go to home</button>
-  </form> 
-</body>
-
-
-
-<!-- Headings start here -->
 <div class="govuk-width-container">
-  <div class="govuk-warning-text atf-warning-background-color--green panel panel-border-wide panel-border-color--green govuk-!-margin-bottom-6">
+  <!-- <div class="govuk-warning-text atf-warning-background-color--green panel panel-border-wide panel-border-color--green govuk-!-margin-bottom-6">
     <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
     <strong class="govuk-warning-text__text">
       <span class="govuk-warning-text__assistive">Warning</span>Your direct debit has been removed.
     </strong>
+  </div> -->
+  <div class="govuk-error-summary govuk-summary--successful" role="alert" tabindex="-1">
+    <h2 class="govuk-error-summary__title" id="error-summary-title">Your direct debit has been removed</h2>
+    <div class="govuk-error-summary__body">
+      <ul class="govuk-list govuk-error-summary__list">
+        <p class="govuk-body govuk-!-margin-bottom-2">Payments will stop after one working day, ensure your pre-funded account has been topped up.</p>
+      </ul>
+    </div>
   </div>
   <!-- Local nav and header STARTS here -->
     <span class="govuk-caption-m">P57832 Scania Lincoln</span>
@@ -98,7 +101,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 	Padley Road<br>
 	Swansea,<br>
 	SA1 8AN</p>
-  <p class="govuk-body">These should be made payable to Driver and Vehicle Standards Agency (DVSA) and be crossed “Account Payee only”.</p>
+  <p class="govuk-body">Make sure you include your pre-funded account number, and make these payable to Driver and Vehicle Standards Agency (DVSA) and be crossed “Account Payee only”.</p>
 
 </div>
 {% endblock %}
