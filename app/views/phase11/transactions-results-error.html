@@ -1,7 +1,7 @@
 {% extends "layout3.html" %}
 
 {% block pageTitle %}
-No transaction results
+Results error
 {% endblock %}
 
 <!–– Beta header ––>
@@ -36,9 +36,9 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
   <script>window.GOVUKFrontend.initAll()</script>
 
   <h1 class="govuk-heading-l">Something went wrong</h1>
-  <p class="govuk-body">We have been unable to load your historic transactions. Go back and search again.</p>
+  <p class="govuk-body">We have been unable to load your historic transactions. Go back and try again.</p>
   <form method="get" action="account-activity-search.html">
-    <button type="submit" class="govuk-button">Search historic transactions</button>
+    <button type="submit" class="govuk-button">Search historic transactions again</button>
   </form> 
 </body>
 {% endblock %}
