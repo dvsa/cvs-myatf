@@ -20,10 +20,10 @@ $govuk-global-styles: true;
   border: 5px solid #248c4b;
 }
 
-// .govuk-text--successful {
-//   color: #248c4b !important;
-//   font-weight: 200;
-// }
+.govuk-text--successful a{
+  color: #005ea5 !important;
+  font-weight: 200;
+}
 
 .printer-links{
   background: url(https://assets.publishing.service.gov.uk/government-frontend/govuk_publishing_components/icon-print-b04bc2c6b31f73054f79768fd91f76df0b164b247c0905d8ca07b45cfb4f9a3b.png) no-repeat 10px 50%;
