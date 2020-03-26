@@ -1,0 +1,57 @@
+{% extends "layout-sign-in.html" %}
+
+{% block pageTitle %}
+Terms and Conditions not accepted
+{% endblock %}
+
+<!–– Beta header ––>
+
+{% block beforeContent %}
+
+{% from "phase-banner/macro.njk" import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "beta"
+},
+html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+  <!-- error message start -->
+   <div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="error-summary">
+   <h2 class="govuk-error-summary__title" id="error-summary-title">There is a problem</h2>
+     <div class="govuk-error-summary__body">
+       <ul class="govuk-list govuk-error-summary__list">
+         <li>
+           <a href="#tandc" style="font-weight: bold;">Accept the terms and conditions to use this service</a>
+         </li>
+       </ul>
+     </div>
+   </div>
+  <!-- error message end -->
+  
+  <h1 class="govuk-heading-l">Terms and Conditions</h1>
+  <p class="govuk-body">Read and accept the <a href="terms-conditions-details.html" target="_blank" class="govuk-link govuk-link--no-visited-state">terms and conditions</a> to use the 'Manage Your Authorised Testing Facility' portal.</p>
+  
+  <div class="govuk-form-group govuk-form-group--error">
+    <span class="govuk-error-message">
+      <span class="govuk-visually-hidden">Error:</span> Accept the terms and conditions to use this service
+    </span>
+    <fieldset class="govuk-fieldset">
+      <div class="govuk-checkboxes">
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="tandc" name="tandc" type="checkbox">
+          <label class="govuk-label govuk-checkboxes__label" for="tandc">I accept the terms and conditions</label>
+        </div>
+      </div>
+    </fieldset>
+  </div>
+
+  <form method="get" action="create-your-account.html">
+    <button type="submit" class="govuk-button">Continue</button>
+  </form>
+</div>
+{% endblock %}

@@ -1,7 +1,7 @@
 {% extends "layout3.html" %}
 
 {% block pageTitle %}
-Team members
+Invite a team member
 {% endblock %}
 
 <!–– Beta header ––>
@@ -26,7 +26,7 @@ html: 'This is a new service – your <a class="govuk-link" href="placeholder.ht
       <a href="account-details.html" class="govuk-breadcrumbs__link">Your settings</a>
     </li>
     <li class="govuk-breadcrumbs__list-item">
-      Team members
+      Manage team members
     </li>
   </ol>
 </div>
@@ -37,17 +37,27 @@ html: 'This is a new service – your <a class="govuk-link" href="placeholder.ht
 
 <!-- Headings start here -->
 <body>
+  <!-- error message start -->
+   <div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="error-summary">
+   <h2 class="govuk-error-summary__title" id="error-summary-title">There is a problem</h2>
+     <div class="govuk-error-summary__body">
+       <ul class="govuk-list govuk-error-summary__list">
+         <li>
+           <a href="#team-member-table">Team member limit reached</a>
+         </li>
+       </ul>
+     </div>
+   </div>
+  <!-- error message end -->
+  
   <span class="govuk-caption-m">P57832 Scania Lincoln</span>
-  <h1 class="govuk-heading-l">Team members</h1>  
+  <h1 class="govuk-heading-l">Manage team members</h1>  
   <p class="govuk-body">You can give up to six team members access to this account.</p>
   
-  <script>
-    function deleteRow(row) {
-    var i = row.parentNode.parentNode.rowIndex;
-    document.getElementById("team-member-table").deleteRow(i);
-    }
-  </script>
-<!–– Table 1 start ––>
+  <div class="govuk-inset-text">
+    You have reached your team member limit. To add another team member, remove one from the list.
+  </div>
+<!-- Table 1 start  -->
   <table class="govuk-table" id="team-member-table">
     <thead class="govuk-table__head">
       <tr class="govuk-table__row">
@@ -80,6 +90,33 @@ html: 'This is a new service – your <a class="govuk-link" href="placeholder.ht
       <tr class="govuk-table__row">
         <td class="govuk-table__cell" scope="row" style="text-align: left;">Paul Kelly</td>
         <td class="govuk-table__cell" scope="row" style="text-align: left;">paulkelly@atf.co.uk</td>
+        <td class="govuk-table__cell" scope="row">Yes</td>
+        <td class="govuk-table__cell" scope="row">
+          <a class="govuk-link govuk-link--no-visited-state" href="remove-secondary-delegate.html">Remove</a>
+        </td> 
+      </tr>
+      
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell" scope="row" style="text-align: left;">Simon Lawrence</td>
+        <td class="govuk-table__cell" scope="row" style="text-align: left;">simonlawrence@atf.co.uk</td>
+        <td class="govuk-table__cell" scope="row">Yes</td>
+        <td class="govuk-table__cell" scope="row">
+          <a class="govuk-link govuk-link--no-visited-state" href="remove-secondary-delegate.html">Remove</a>
+        </td> 
+      </tr>
+      
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell" scope="row" style="text-align: left;">Maria Robinson</td>
+        <td class="govuk-table__cell" scope="row" style="text-align: left;">mariarobinson@atf.co.uk</td>
+        <td class="govuk-table__cell" scope="row">Yes</td>
+        <td class="govuk-table__cell" scope="row">
+          <a class="govuk-link govuk-link--no-visited-state" href="remove-secondary-delegate.html">Remove</a>
+        </td> 
+      </tr>
+      
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell" scope="row" style="text-align: left;">John James</td>
+        <td class="govuk-table__cell" scope="row" style="text-align: left;">johnjames@atf.co.uk</td>
         <td class="govuk-table__cell" scope="row">Yes</td>
         <td class="govuk-table__cell" scope="row">
           <a class="govuk-link govuk-link--no-visited-state" href="remove-secondary-delegate.html">Remove</a>

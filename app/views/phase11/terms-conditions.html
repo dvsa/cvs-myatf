@@ -1,10 +1,50 @@
-{% extends "layout3.html" %}
+{% extends "layout-sign-in.html" %}
 
 {% block pageTitle %}
-Terms and Conditions
+Terms and conditions
 {% endblock %}
-
 <!–– Beta header ––>
+{% block header %}
+<div class="app-cookie-banner static" id="app-cookie-banner">
+  <div class="govuk-width-container govuk-body">
+    <span class="app-cookie-banner__message">GOV.UK uses cookies to make the site simpler. 
+      <a href="cookies.html" class="cookiesSpacer">Find out more about cookies</a>
+      <button onclick="closeCookieBanner()" class="app-cookie-banner__button govuk-!-font-size-16 cookiesSpacer">Accept cookies</button>
+      <!-- <button onclick="window.location.href = 'cookies.html';" type="submit" class="app-cookie-banner__button govuk-!-font-size-19">Cookies settings</button> -->
+    </span>
+  </div>
+</div>
+
+<script>
+function closeCookieBanner() {
+  var x = document.getElementById("app-cookie-banner");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+<header class="govuk-header " role="banner" data-module="header">
+<div class="govuk-header__container govuk-width-container">
+  <div class="govuk-header__logo">
+    <a href="#" class="govuk-header__link govuk-header__link--homepage">
+      <span class="govuk-header__logotype">
+        <svg role="presentation" focusable="false" class="govuk-header__logotype-crown" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 132 97" height="32" width="36">
+          <path fill="currentColor" fill-rule="evenodd" d="M25 30.2c3.5 1.5 7.7-.2 9.1-3.7 1.5-3.6-.2-7.8-3.9-9.2-3.6-1.4-7.6.3-9.1 3.9-1.4 3.5.3 7.5 3.9 9zM9 39.5c3.6 1.5 7.8-.2 9.2-3.7 1.5-3.6-.2-7.8-3.9-9.1-3.6-1.5-7.6.2-9.1 3.8-1.4 3.5.3 7.5 3.8 9zM4.4 57.2c3.5 1.5 7.7-.2 9.1-3.8 1.5-3.6-.2-7.7-3.9-9.1-3.5-1.5-7.6.3-9.1 3.8-1.4 3.5.3 7.6 3.9 9.1zm38.3-21.4c3.5 1.5 7.7-.2 9.1-3.8 1.5-3.6-.2-7.7-3.9-9.1-3.6-1.5-7.6.3-9.1 3.8-1.3 3.6.4 7.7 3.9 9.1zm64.4-5.6c-3.6 1.5-7.8-.2-9.1-3.7-1.5-3.6.2-7.8 3.8-9.2 3.6-1.4 7.7.3 9.2 3.9 1.3 3.5-.4 7.5-3.9 9zm15.9 9.3c-3.6 1.5-7.7-.2-9.1-3.7-1.5-3.6.2-7.8 3.7-9.1 3.6-1.5 7.7.2 9.2 3.8 1.5 3.5-.3 7.5-3.8 9zm4.7 17.7c-3.6 1.5-7.8-.2-9.2-3.8-1.5-3.6.2-7.7 3.9-9.1 3.6-1.5 7.7.3 9.2 3.8 1.3 3.5-.4 7.6-3.9 9.1zM89.3 35.8c-3.6 1.5-7.8-.2-9.2-3.8-1.4-3.6.2-7.7 3.9-9.1 3.6-1.5 7.7.3 9.2 3.8 1.4 3.6-.3 7.7-3.9 9.1zM69.7 17.7l8.9 4.7V9.3l-8.9 2.8c-.2-.3-.5-.6-.9-.9L72.4 0H59.6l3.5 11.2c-.3.3-.6.5-.9.9l-8.8-2.8v13.1l8.8-4.7c.3.3.6.7.9.9l-5 15.4v.1c-.2.8-.4 1.6-.4 2.4 0 4.1 3.1 7.5 7 8.1h.2c.3 0 .7.1 1 .1.4 0 .7 0 1-.1h.2c4-.6 7.1-4.1 7.1-8.1 0-.8-.1-1.7-.4-2.4V34l-5.1-15.4c.4-.2.7-.6 1-.9zM66 92.8c16.9 0 32.8 1.1 47.1 3.2 4-16.9 8.9-26.7 14-33.5l-9.6-3.4c1 4.9 1.1 7.2 0 10.2-1.5-1.4-3-4.3-4.2-8.7L108.6 76c2.8-2 5-3.2 7.5-3.3-4.4 9.4-10 11.9-13.6 11.2-4.3-.8-6.3-4.6-5.6-7.9 1-4.7 5.7-5.9 8-.5 4.3-8.7-3-11.4-7.6-8.8 7.1-7.2 7.9-13.5 2.1-21.1-8 6.1-8.1 12.3-4.5 20.8-4.7-5.4-12.1-2.5-9.5 6.2 3.4-5.2 7.9-2 7.2 3.1-.6 4.3-6.4 7.8-13.5 7.2-10.3-.9-10.9-8-11.2-13.8 2.5-.5 7.1 1.8 11 7.3L80.2 60c-4.1 4.4-8 5.3-12.3 5.4 1.4-4.4 8-11.6 8-11.6H55.5s6.4 7.2 7.9 11.6c-4.2-.1-8-1-12.3-5.4l1.4 16.4c3.9-5.5 8.5-7.7 10.9-7.3-.3 5.8-.9 12.8-11.1 13.8-7.2.6-12.9-2.9-13.5-7.2-.7-5 3.8-8.3 7.1-3.1 2.7-8.7-4.6-11.6-9.4-6.2 3.7-8.5 3.6-14.7-4.6-20.8-5.8 7.6-5 13.9 2.2 21.1-4.7-2.6-11.9.1-7.7 8.8 2.3-5.5 7.1-4.2 8.1.5.7 3.3-1.3 7.1-5.7 7.9-3.5.7-9-1.8-13.5-11.2 2.5.1 4.7 1.3 7.5 3.3l-4.7-15.4c-1.2 4.4-2.7 7.2-4.3 8.7-1.1-3-.9-5.3 0-10.2l-9.5 3.4c5 6.9 9.9 16.7 14 33.5 14.8-2.1 30.8-3.2 47.7-3.2z"></path>
+          <image src="/assets/images/govuk-logotype-crown.png" class="govuk-header__logotype-crown-fallback-image"></image>
+        </svg>
+        <span class="govuk-header__logotype-text"> GOV.UK</span>
+      </span>
+    </a>
+  </div>
+  <div class="govuk-header__content">
+    <a href="#" class="govuk-header__link govuk-header__link--service-name">Manage your Authorised Testing Facility</a>
+  </div>
+</div>  
+</header>
+{% endblock %}
 
 {% block beforeContent %}
 
@@ -16,83 +56,30 @@ text: "beta"
 html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
 }) }}
 
-
-<!–– Breadcrumbs ––>
-<div class="govuk-breadcrumbs">
-  <ol class="govuk-breadcrumbs__list">
-    <li class="govuk-breadcrumbs__list-item">
-      <a href="home.html" class="govuk-breadcrumbs__link">Home</a>
-    </li>
-    <li class="govuk-breadcrumbs__list-item">Terms and Conditions</li>
-  </ol>
-</div>
 {% endblock %}
 
 {% block content %}
 <div class="govuk-width-container">
   <h1 class="govuk-heading-l">Terms and Conditions</h1>
+  
+  <!-- <p class="govuk-body">To use this service agree to the terms and conditions.</p> -->
+  <!-- <p class="govuk-body">To use the 'Manage Your Authorised Testing Facility' portal, you will need to read and accept the <a href="terms-conditions-details.html" target="_blank" class="govuk-link govuk-link--no-visited-state">terms and conditions</a>.</p> -->
+  
+  <p class="govuk-body">Read and accept the <a href="terms-conditions-details.html" target="_blank" class="govuk-link govuk-link--no-visited-state">terms and conditions</a> to use the 'Manage Your Authorised Testing Facility' portal.</p>
+  
+  <div class="govuk-form-group">
+    <fieldset class="govuk-fieldset">
+      <div class="govuk-checkboxes">
+        <div class="govuk-checkboxes__item">
+          <input class="govuk-checkboxes__input" id="tandc" name="tandc" type="checkbox" value="carcasses">
+          <label class="govuk-label govuk-checkboxes__label" for="tandc">I accept the terms and conditions</label>
+        </div>
+      </div>
+    </fieldset>
+  </div>
 
-  <p>This page and any pages it links to explains  the Manage your Authorised Testing Facility (MYATF) portal terms of use.</p>
-  <p>You must agree to these to use the service.</p>
-    
-  <h2 class="govuk-heading-m">Who we are</h2>
-  <p>The MYATF portal is managed by Driver and Vehicle and Standards Agency (DVSA). DVSA will be referred to as ‘we’ from now on.</p>
-    
-  <h2 class="govuk-heading-m">Using the MYATF portal</h2>
-  <p>You agree to use the MYATF portal only for lawful purposes. You must also use it in a way that doesn’t infringe the rights of, or restrict or inhibit the use and enjoyment of, this site by anyone else. We update the MYATF portal all the time. We can change or remove content at any time without notice.</p>
-  <p>The MYATF portal has been introduced to give users up to date testing information at their sites, view account balances, retrieve invoice and statements issued for testing and to manage your own users access to view the records.</p>     
-  <p>You must sign up with an email address or a mobile phone number you own or have permission to use. (This needs to be expanded upon further cover the 2FA option we use. Sharing passwords etc) You are only entitled to sign up for access to an account that you have  a vested interest in. You will be able to add additional users to the site using the self service functions. Any additional users granted access to the site by you will be done so at your own risk.</p>
-  <p>If you give delegated access to other users within your organisation and they subsequently leave your employ, it is your responsibility to remove their access.</p>
-    
-  <h2 class="govuk-heading-m">Removing users from the MYATF portal</h2>
-  <p>You have to login to remove users from the MYATF portal if:</p>
-  <ul class="govuk-list govuk-list--bullet">
-    <li>they leave your organisation</li>
-    <li>change roles within your company and you no longer wish to give them access</li>
-  </ul>
-    
-  <h2 class="govuk-heading-m">Linking to MOT history and MOT reminder service</h2>
-  <p>We welcome and encourage other websites to link to MOT reminder service.</p>
-  <p>The MOT history and MOT reminder service display their own Terms and Conditions of use.</p>
-
-    
-  <h2 class="govuk-heading-m">Using the MyATF Portal content</h2>
-  <p>Most content on the MOT reminder service is subject to Crown copyright protection and is published under the Open Government Licence (OGL). Some content is exempt from the OGL - check the list of exemptions. Departmental logos and crests are also exempt from the OGL, except when they form an integral part of a document or dataset.</p>
-  <p>If any content isn’t subject to Crown copyright protection or published under the OGL, we’ll usually credit the author or copyright holder.</p>
-  <p>You can reproduce content published on MOT reminder service under the OGL as long as you follow the licence’s conditions.</p>
-  <p>Contact us if you want to reproduce a piece of content but aren’t sure if it’s covered by Crown copyright or the OGL. We make most of the content on MOT reminders available through feeds for other websites and applications to use. The websites and applications that use our feeds aren’t our products, and they might use versions of our content that have been edited and stored for later use (‘cached’).</p>
-  <p>We don’t give any guarantees, conditions or warranties about the accuracy or completeness of any content used by these products. We’re not liable for any loss or damage that may come from your use of these products.</p>
-  <p>The most up to date version of our content will always be on MOT reminder service.</p>
-    
-  <h2 class="govuk-heading-m">Disclaimer</h2>
-  <p>While we make every effort to keep the My ATF portal up to date, we don’t provide any guarantees, conditions or warranties that the information will be:</p>
-  <ul class="govuk-list govuk-list--bullet">
-    <li>current</li>
-    <li>secure</li>
-    <li>accurate</li>
-    <li>complete</li>
-    <li>free from bugs or viruses</li>
-  </ul>
-  <p>We don’t publish advice on the My ATF portal.  You should get professional or specialist advice before doing anything on the basis of the content.</p>
-  <p>We’re not liable for any loss or damage that may come from using the My ATF portal. This includes:</p>
-  <ul class="govuk-list govuk-list--bullet">
-    <li>any direct, indirect or consequential losses</li>
-    <li>any loss or damage caused by civil wrongs (‘tort’, including negligence), breach of contract or otherwise</li>
-  </ul>
-  <p>This applies if the loss or damage was foreseeable, arose in the normal course of things or you advised us that it might happen.</p>
-  <p>This includes (but isn’t limited to) the loss of your:</p>
-  <ul class="govuk-list govuk-list--bullet">
-    <li>income or revenue</li>
-    <li>salary, benefits or other payments</li>
-    <li>business</li>
-    <li>profits or contracts</li>
-    <li>opportunity</li>
-    <li>anticipated savings</li>
-    <li>data</li>
-    <li>goodwill or reputation</li>
-    <li>tangible property</li>
-    <li>intangible property, including loss, corruption or damage to data or any computer system</li>
-    <li>wasted management or office time</li>
-  </ul>
-
+  <form method="get" action="create-your-account.html">
+    <button type="submit" class="govuk-button">Continue</button>
+  </form>
+</div>
 {% endblock %}

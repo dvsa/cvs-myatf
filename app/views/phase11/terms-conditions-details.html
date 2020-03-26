@@ -1,0 +1,88 @@
+{% extends "layout-sign-in.html" %}
+
+{% block pageTitle %}
+Terms and Conditions
+{% endblock %}
+
+<!–– Beta header ––>
+
+{% block beforeContent %}
+
+{% from "phase-banner/macro.njk" import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "beta"
+},
+html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+  <h1 class="govuk-heading-l">Terms and Conditions</h1>
+
+  <p>This page and any pages it links to explains  the Manage your Authorised Testing Facility (MYATF) portal terms of use.</p>
+  <p>You must agree to these to use the service.</p>
+    
+  <h2 class="govuk-heading-m">Who we are</h2>
+  <p>The MYATF portal is managed by Driver and Vehicle and Standards Agency (DVSA). DVSA will be referred to as ‘we’ from now on.</p>
+    
+  <h2 class="govuk-heading-m">Using the MYATF portal</h2>
+  <p>You agree to use the MYATF portal only for lawful purposes. You must also use it in a way that doesn’t infringe the rights of, or restrict or inhibit the use and enjoyment of, this site by anyone else. We update the MYATF portal all the time. We can change or remove content at any time without notice.</p>
+  <p>The MYATF portal has been introduced to give users up to date testing information at their sites, view account balances, retrieve invoice and statements issued for testing and to manage your own users access to view the records.</p>     
+  <p>You must sign up with an email address or a mobile phone number you own or have permission to use. (This needs to be expanded upon further cover the 2FA option we use. Sharing passwords etc) You are only entitled to sign up for access to an account that you have  a vested interest in. You will be able to add additional users to the site using the self service functions. Any additional users granted access to the site by you will be done so at your own risk.</p>
+  <p>If you give delegated access to other users within your organisation and they subsequently leave your employ, it is your responsibility to remove their access.</p>
+    
+  <h2 class="govuk-heading-m">Removing users from the MYATF portal</h2>
+  <p>You have to login to remove users from the MYATF portal if:</p>
+  <ul class="govuk-list govuk-list--bullet">
+    <li>they leave your organisation</li>
+    <li>change roles within your company and you no longer wish to give them access</li>
+  </ul>
+    
+  <h2 class="govuk-heading-m">Linking to MOT history and MOT reminder service</h2>
+  <p>We welcome and encourage other websites to link to MOT reminder service.</p>
+  <p>The MOT history and MOT reminder service display their own Terms and Conditions of use.</p>
+
+    
+  <h2 class="govuk-heading-m">Using the MyATF Portal content</h2>
+  <p>Most content on the MOT reminder service is subject to Crown copyright protection and is published under the Open Government Licence (OGL). Some content is exempt from the OGL - check the list of exemptions. Departmental logos and crests are also exempt from the OGL, except when they form an integral part of a document or dataset.</p>
+  <p>If any content isn’t subject to Crown copyright protection or published under the OGL, we’ll usually credit the author or copyright holder.</p>
+  <p>You can reproduce content published on MOT reminder service under the OGL as long as you follow the licence’s conditions.</p>
+  <p>Contact us if you want to reproduce a piece of content but aren’t sure if it’s covered by Crown copyright or the OGL. We make most of the content on MOT reminders available through feeds for other websites and applications to use. The websites and applications that use our feeds aren’t our products, and they might use versions of our content that have been edited and stored for later use (‘cached’).</p>
+  <p>We don’t give any guarantees, conditions or warranties about the accuracy or completeness of any content used by these products. We’re not liable for any loss or damage that may come from your use of these products.</p>
+  <p>The most up to date version of our content will always be on MOT reminder service.</p>
+    
+  <h2 class="govuk-heading-m">Disclaimer</h2>
+  <p>While we make every effort to keep the My ATF portal up to date, we don’t provide any guarantees, conditions or warranties that the information will be:</p>
+  <ul class="govuk-list govuk-list--bullet">
+    <li>current</li>
+    <li>secure</li>
+    <li>accurate</li>
+    <li>complete</li>
+    <li>free from bugs or viruses</li>
+  </ul>
+  <p>We don’t publish advice on the My ATF portal.  You should get professional or specialist advice before doing anything on the basis of the content.</p>
+  <p>We’re not liable for any loss or damage that may come from using the My ATF portal. This includes:</p>
+  <ul class="govuk-list govuk-list--bullet">
+    <li>any direct, indirect or consequential losses</li>
+    <li>any loss or damage caused by civil wrongs (‘tort’, including negligence), breach of contract or otherwise</li>
+  </ul>
+  <p>This applies if the loss or damage was foreseeable, arose in the normal course of things or you advised us that it might happen.</p>
+  <p>This includes (but isn’t limited to) the loss of your:</p>
+  <ul class="govuk-list govuk-list--bullet">
+    <li>income or revenue</li>
+    <li>salary, benefits or other payments</li>
+    <li>business</li>
+    <li>profits or contracts</li>
+    <li>opportunity</li>
+    <li>anticipated savings</li>
+    <li>data</li>
+    <li>goodwill or reputation</li>
+    <li>tangible property</li>
+    <li>intangible property, including loss, corruption or damage to data or any computer system</li>
+    <li>wasted management or office time</li>
+  </ul>
+</div>
+{% endblock %}
