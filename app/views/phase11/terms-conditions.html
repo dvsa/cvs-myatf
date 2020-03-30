@@ -6,12 +6,15 @@ Terms and conditions
 <!–– Beta header ––>
 {% block header %}
 <div class="app-cookie-banner static" id="app-cookie-banner">
-  <div class="govuk-width-container govuk-body">
-    <span class="app-cookie-banner__message">GOV.UK uses cookies to make the site simpler. 
-      <a href="cookies.html" class="cookiesSpacer">Find out more about cookies</a>
-      <button onclick="closeCookieBanner()" class="app-cookie-banner__button govuk-!-font-size-16 cookiesSpacer">Accept cookies</button>
-      <!-- <button onclick="window.location.href = 'cookies.html';" type="submit" class="app-cookie-banner__button govuk-!-font-size-19">Cookies settings</button> -->
-    </span>
+  <div class="govuk-width-container">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <span class="govuk-heading-m cookies-title">Tell us whether you accept cookies</span>
+        <p>We use <a href="cookies.html">cookies to collect information</a> about how you use the 'Manage Your Authorised Testing Facility' portal. 
+        We use this information to make the website work as well as possible and improve government services.</p>
+        <button onclick="closeCookieBanner()" type="submit"  class="govuk-button cookies-button" data-module="govuk-button">Accept cookies</button>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -64,8 +67,9 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
   
   <!-- <p class="govuk-body">To use this service agree to the terms and conditions.</p> -->
   <!-- <p class="govuk-body">To use the 'Manage Your Authorised Testing Facility' portal, you will need to read and accept the <a href="terms-conditions-details.html" target="_blank" class="govuk-link govuk-link--no-visited-state">terms and conditions</a>.</p> -->
+  <p class="govuk-body">To use the 'Manage Your Authorised Testing Facility' portal, read and accept the <a href="terms-conditions-details.html" target="_blank" class="govuk-link govuk-link--no-visited-state">terms and conditions</a>.</p>
   
-  <p class="govuk-body">Read and accept the <a href="terms-conditions-details.html" target="_blank" class="govuk-link govuk-link--no-visited-state">terms and conditions</a> to use the 'Manage Your Authorised Testing Facility' portal.</p>
+  <!-- <p class="govuk-body">Read and accept the <a href="terms-conditions-details.html" target="_blank" class="govuk-link govuk-link--no-visited-state">terms and conditions</a> to use the 'Manage Your Authorised Testing Facility' portal.</p> -->
   
   <div class="govuk-form-group">
     <fieldset class="govuk-fieldset">
