@@ -58,9 +58,9 @@
       "nunjucks"
     ]
   },
-"husky": {
-  "hooks": {
-    "pre-commit": "npm run security-checks"
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run security-checks"
+    }
   }
-}
 }

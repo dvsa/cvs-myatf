@@ -16,6 +16,11 @@ $govuk-global-styles: true;
 
 // DY-Styles
 
+.borderless-table{
+  border: none !important;
+  padding: 0px;
+}
+
 .govuk-summary--successful{
   border: 5px solid #248c4b;
 }
