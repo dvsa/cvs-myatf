@@ -34,7 +34,6 @@ html: 'This is a new service – your <a class="govuk-link" href="placeholder.ht
   </ol>
 </div>
 
-<a href="register-secondary-delegate.html" class="govuk-back-link">Back</a>
 {% endblock %}
 
 {% block content %}
@@ -57,8 +56,11 @@ html: 'This is a new service – your <a class="govuk-link" href="placeholder.ht
   <h1 class="govuk-heading-l">Invite a team member</h1>  
     
   <div class="govuk-form-group">
-    <label class="govuk-label" for="mobile">Full name</label>
-    <input class="govuk-input textwidth" id="name" name="name" type="text" aria-describedby="name">
+    <label class="govuk-label" for="mobile">First name</label>
+    <input class="govuk-input textwidth govuk-!-margin-bottom-6" id="fname" name="fname" type="text" aria-describedby="fname">
+    
+    <label class="govuk-label" for="mobile">Last name</label>
+    <input class="govuk-input textwidth" id="lname" name="lname" type="text" aria-describedby="lname">
   </div>  
     
   <div class="govuk-form-group govuk-form-group--error">  

@@ -1,7 +1,7 @@
 {% extends "layout3.html" %}
 
 {% block pageTitle %}
-Invite a team member
+Invite a team member - Email error
 {% endblock %}
 
 <!–– Beta header ––>
@@ -40,16 +40,34 @@ html: 'This is a new service – your <a class="govuk-link" href="placeholder.ht
 
 <!-- Headings start here -->
 <body>
+  <!–– error message start ––>
+    <div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="error-summary">
+      <h2 class="govuk-error-summary__title" id="error-summary-title">There is a problem</h2>
+      <div class="govuk-error-summary__body">
+        <ul class="govuk-list govuk-error-summary__list">
+          <li>
+            <a href="#fname" style="font-weight: bold;">Enter your first name</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  <!–– error message end ––> 
   <span class="govuk-caption-m">P57832 Scania Lincoln</span>
   <h1 class="govuk-heading-l">Invite a team member</h1>  
     
-  <div class="govuk-form-group">
+  
+  <div class="govuk-form-group govuk-form-group--error">  
+    <span id="email-error" class="govuk-error-message">
+      <span class="govuk-visually-hidden">Error:</span> Enter your first name
+    </span>
     <label class="govuk-label" for="mobile">First name</label>
-    <input class="govuk-input textwidth govuk-!-margin-bottom-6" id="fname" name="fname" type="text" aria-describedby="fname">
+    <input class="govuk-input govuk-input--error textwidth" id="fname" name="fname" type="text" aria-describedby="fname">
+  </div>  
     
+  <div class="govuk-form-group">
     <label class="govuk-label" for="mobile">Last name</label>
     <input class="govuk-input textwidth govuk-!-margin-bottom-6" id="lname" name="lname" type="text" aria-describedby="lname">
-    
+  
     <label class="govuk-label" for="mobile">Email</label>
     <input class="govuk-input textwidth" id="email" name="email" type="text" aria-describedby="email">
   </div>
