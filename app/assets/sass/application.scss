@@ -16,10 +16,19 @@ $govuk-global-styles: true;
 
 // DY-Styles
 
+.govuk-button--start{
+  color: white !important;
+}
+
 .borderless-table{
   border: none !important;
   padding: 0px;
 }
+
+.button-spacing{
+  margin-top: -3px !important;
+}
+
 
 .govuk-summary--successful{
   border: 5px solid #248c4b;
