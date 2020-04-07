@@ -1,0 +1,75 @@
+{% extends "layout3.html" %}
+
+{% block pageTitle %}
+Team members
+{% endblock %}
+
+<!–– Beta header ––>
+
+{% block beforeContent %}
+
+{% from "phase-banner/macro.njk" import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "beta"
+},
+html: 'This is a new service – your <a class="govuk-link" href="placeholder.html">feedback</a> will help us to improve it.'
+}) }}
+
+<!–– Breadcrumbs ––>
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a href="home.html" class="govuk-breadcrumbs__link">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a href="account-details.html" class="govuk-breadcrumbs__link">Your settings</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      Manage team members
+    </li>
+  </ol>
+</div>
+
+{% endblock %}
+
+{% block content %}
+
+<!-- Headings start here -->
+<body>
+  <span class="govuk-caption-m">P57832 Scania Lincoln</span>
+  <h1 class="govuk-heading-l">Manage team members</h1>  
+  <p class="govuk-body">You can give up to six team members access to this account.</p>
+  
+  <script>
+    function deleteRow(row) {
+    var i = row.parentNode.parentNode.rowIndex;
+    document.getElementById("team-member-table").deleteRow(i);
+    }
+  </script>
+<!-- Table 1 start  -->
+  <table class="govuk-table" id="team-member-table">
+    <thead class="govuk-table__head">
+      <tr class="govuk-table__row">
+        <th class="govuk-table__header" scope="col" style="text-align: left;">Name</th>
+        <th class="govuk-table__header" scope="col" style="text-align: left;">Email</th>
+        <th class="govuk-table__header" scope="col">Active account</th>
+        <th class="govuk-table__header" scope="col">Manage access</th>
+      </tr>
+    </thead>
+      
+    <tbody class="govuk-table__body">
+      <tr class="govuk-table__row">
+        <td class="govuk-table__cell" scope="row" style="text-align: left;">Dean Thomas</td>
+        <td class="govuk-table__cell" scope="row" style="text-align: left;">deanthomas@atf.co.uk</td>
+        <td class="govuk-table__cell" scope="row">Yes</td>
+        <td class="govuk-table__cell" scope="row"></td> 
+      </tr>
+    </tbody>
+  </table>
+<!-- Table 1 end  -->
+  <form method="get" action="register-add-secondary-delegate.html">
+    <button type="submit" class="govuk-button">Invite team member</button>
+  </form>
+</body>
+{% endblock %}
