@@ -1,0 +1,49 @@
+{% extends "layout-sign-in.html" %}
+
+{% block pageTitle %}
+Create your account
+{% endblock %}
+
+<!–– Beta header ––>
+
+{% block beforeContent %}
+
+{% from "phase-banner/macro.njk" import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "beta"
+},
+html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+
+<!–– Breadcrumbs ––>
+<a href="create-your-account-password.html" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+<script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+<a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+<script src="/govuk-frontend/all.js"></script>
+<script>window.GOVUKFrontend.initAll()</script>
+
+<body class="govuk-template__body ">
+  <span class="govuk-caption-l">Create your account</span>
+  <h1 class="govuk-heading-l">Enter your phone numbers</h1>  
+
+  <p class="govuk-body govuk-!-font-weight-bold">You will get a code sent to one of these numbers every time you sign in.</p>
+  
+  <div class="govuk-form-group">
+    <label class="govuk-label" for="mobile">Mobile number</label>
+    <input class="govuk-input govuk-!-margin-bottom-6 textwidth" id="mobile" name="mobile" type="text" aria-describedby="mobile">
+    
+    <label class="govuk-label" for="mobile">Landline number (optional)</label>
+    <input class="govuk-input textwidth" id="mobile" name="mobile" type="text" aria-describedby="mobile">
+  </div> 
+  
+  <form method="get" action="multi-factor-authentication.html">
+    <button type="submit" class="govuk-button">Continue</button>
+  </form>
+</body>
+
+{% endblock %}

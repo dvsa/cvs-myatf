@@ -1,0 +1,29 @@
+{% extends "layout-small-footer.html" %}
+
+{% block pageTitle %}
+Account not found - 404
+{% endblock %}
+
+<!–– Beta header ––>
+
+{% block beforeContent %}
+
+{% from "phase-banner/macro.njk" import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "beta"
+},
+html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+{% endblock %}
+
+{% block content %}
+<!-- Headings start here -->
+<body> 
+  <h1 class="govuk-heading-l">Account not found</h1>
+  <p class="govuk-body">Your profile cannot be found. If you think there has been an error contact the DVSA on <a class="govuk-link--no-visited-state" href="placeholder.html">dvsasupport@dvsa.gov.uk</a>.</p>
+  <form method="get" action="top-up-dd-review.html">
+    <button type="submit" class="govuk-button">Try and sign in again</button>
+  </form> 
+</body>
+{% endblock %}
