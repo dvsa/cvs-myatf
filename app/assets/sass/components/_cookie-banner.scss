@@ -18,13 +18,13 @@
   margin-top: 5% !important;
 }
 
-// .app-cookie-banner, .app-cookie-banner__button{
-//   color: #048633;
-// }
+.app-cookie-banner, .app-cookie-banner__button{
+  color: #048633;
+}
 
-// .cookiesSpacer{
-//   margin-right: 2%;
-// }
+.cookiesSpacer{
+  margin-right: 2%;
+}
 
 .app-cookie-banner__message {
   margin: 0;
@@ -35,17 +35,17 @@
   width: 40% !important;
 }
 
-// .app-cookie-banner__button{
-//   padding-top: 0.5%;
-//   padding-bottom: 0.5%;
-//   width: auto;
-//   line-height: 1;
-//   display: inline-block;
-//   color: #048633;
-//   border: 2px solid #048633;
-//   background-color: white;
-//   text-align: center;
-// }
+.app-cookie-banner__button{
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  width: auto;
+  line-height: 1;
+  display: inline-block;
+  color: #048633;
+  border: 2px solid #048633;
+  background-color: white !important;
+  text-align: center;
+}
 
 @include govuk-media-query($media-type: print) {
   .app-cookie-banner {
