@@ -47,6 +47,11 @@
   text-align: center;
 }
 
+.govuk-button--start{
+  background-image: none !important;
+  padding-right: 1% !important;
+}
+
 @include govuk-media-query($media-type: print) {
   .app-cookie-banner {
     display: none !important;
