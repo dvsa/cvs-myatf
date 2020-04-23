@@ -1,0 +1,30 @@
+{% extends "layout-sign-in.html" %}
+
+{% block pageTitle %}
+Accessibility
+{% endblock %}
+
+<!-- Beta header -->
+
+{% block beforeContent %}
+
+{% from "phase-banner/macro.njk" import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "beta"
+},
+html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+  <h1 class="govuk-heading-l">Accessibility</h1>
+
+  <p>Example text.</p>
+    
+  <h2 class="govuk-heading-m">Example header</h2>
+  <p>Example text.</p>
+  
+{% endblock %}

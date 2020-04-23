@@ -1,0 +1,139 @@
+{% extends "layout3.html" %}
+
+{% block pageTitle %}
+Cookies
+{% endblock %}
+
+<!-- Beta header -->
+
+{% block beforeContent %}
+
+{% from "phase-banner/macro.njk" import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "beta"
+},
+html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+
+<!-- Breadcrumbs -->
+{% endblock %}
+
+
+{% block content %}
+
+<!-- Headings start here -->
+
+<div class="govuk-width-container">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <h1 class="govuk-heading-l">Cookies on Manage Your Authorised Testing Facility</h1>
+      
+      <p class="govuk-body">Cookies are files saved on your phone, tablet or computer when you visit a website.</p>
+      
+      <h2 class="govuk-heading-m">Cookie preferences</h2> 
+      <p class="govuk-body">We use cookies to store information about how you use the Manage Your Authorised Testing Facility website, such as the pages you visit.</p>
+          
+      <div class="govuk-form-group">
+        <fieldset class="govuk-fieldset" aria-describedby="sign-in-hint">
+          <h3 class="govuk-heading-s">Cookies that measure website use</h3>
+          <p class="govuk-body">We use Google Analytics to measure how you use the website so we can improve it based on user needs. We do not allow Google Analytics to use or share the data about how you use this site.</p>
+          <p class="govuk-body">Google Analytics sets cookies that store anonymised information about:</p>
+          <ul class=" govuk-list govuk-list--bullet">
+            <li>how you got to the site</li>
+            <li>the pages you visit on Manage Your Authorised Testing Facility, and how long you spend on each page</li>
+            <li>what you click on while you're visiting the site</li>
+          </ul>
+          
+          <div class="govuk-radios">
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england">
+              <label class="govuk-label govuk-radios__label" for="where-do-you-live">
+                Use cookies that measure my website use
+              </label>
+            </div>
+            <div class="govuk-radios__item">
+              <input class="govuk-radios__input" id="where-do-you-live-2" name="where-do-you-live" type="radio" value="scotland">
+              <label class="govuk-label govuk-radios__label" for="where-do-you-live-2">
+                Do not use cookies that measure my website use
+              </label>
+            </div>
+          </div>
+        </fieldset>
+      </div>
+      
+      <form method="get" action="home.html">
+        <button type="submit" class="govuk-button">Save changes</button>
+      </form>
+      
+      <h2 class="govuk-heading-m govuk-!-margin-top-4">Necessary cookies</h2>
+      
+      <p class="govuk-body">These essential cookies do things like remember your progress through a form (for example a licence application)</p>
+
+      <p class="govuk-body">They always need to be on.</p>
+      
+      <h3 class="govuk-heading-s">Securing this service</h3>
+      <p class="govuk-body">We use analytics to understand when you have logged into the 'Manage Your Authorised Testing Facility' service and when you are required to be logged out in accordance with your session time.</p>
+      <table class="govuk-table">
+        <thead class="govuk-table__head govuk-!-font-size-16">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header govuk-!-width-one-third">Name</th>
+            <th scope="col" class="govuk-table__header govuk-!-width-one-third">Purpose</th>  
+            <th scope="col" class="govuk-table__header govuk-!-width-one-third">Expiration</th>               
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body govuk-body govuk-!-font-size-16">
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">.AspNet.ApplicationCookie</td>
+            <td class="govuk-table__cell">Contains an encrypted authentication ticket</td>
+            <td class="govuk-table__cell">When you close your browser</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <h3 class="govuk-heading-s">Improving page load times</h3>
+      <p class="govuk-body">To make your experience on our website better we use cookies to help ease the load on our servers.</p>
+      <table class="govuk-table">
+        <thead class="govuk-table__head govuk-!-font-size-16">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header govuk-!-width-one-third">Name</th>
+            <th scope="col" class="govuk-table__header govuk-!-width-one-third">Purpose</th>  
+            <th scope="col" class="govuk-table__header govuk-!-width-one-third">Expiration</th>               
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body govuk-body govuk-!-font-size-16">
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">ARRAffinity</td>
+            <td class="govuk-table__cell">Azure Web App Affinity, used to ensure an affinity of requests to an Azure Web App Resource</td>
+            <td class="govuk-table__cell">When you close your browser</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <h3 class="govuk-heading-s">Improving consistency</h3>
+      <p class="govuk-body">To improve page load times and consistency accross the portal, we store your defualt language preferences for this website.</p>
+      <table class="govuk-table">
+        <thead class="govuk-table__head govuk-!-font-size-16">
+          <tr class="govuk-table__row">
+            <th scope="col" class="govuk-table__header govuk-!-width-one-third">Name</th>
+            <th scope="col" class="govuk-table__header govuk-!-width-one-third">Purpose</th>  
+            <th scope="col" class="govuk-table__header govuk-!-width-one-third">Expiration</th>               
+          </tr>
+        </thead>
+        <tbody class="govuk-table__body govuk-body govuk-!-font-size-16">
+          <tr class="govuk-table__row">
+            <td class="govuk-table__cell">ContextLanguageCode</td>
+            <td class="govuk-table__cell">Used to store the configured language code for the user</td>
+            <td class="govuk-table__cell">When you close your browser</td>
+          </tr>
+        </tbody>
+      </table>    
+      
+      <h2 class="govuk-heading-m govuk-!-margin-top-6">Government services</h2>
+      <p class="govuk-hint govuk-body">Most services we link to are run by different government departments, for example DWP’s Universal Credit online, DVLA’s vehicle tax service, or HMRC’s webchat. These services may set additional cookies and, if so, will have their own cookie policy and banner linking to it.</p>
+      
+    </div>
+  </div>
+</div>
+{% endblock %}

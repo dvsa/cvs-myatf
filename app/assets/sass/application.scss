@@ -16,6 +16,13 @@ $govuk-global-styles: true;
 
 // DY-Styles
 
+
+//links 
+.govuk-link--space{
+  margin-right: 5%;
+}
+
+//buttons
 .govuk-button--start{
   color: white !important;
 }
