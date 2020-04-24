@@ -34,7 +34,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
     <div class="govuk-error-summary__body">
       <ul class="govuk-list govuk-error-summary__list">
         <li>
-          <a href="#securitycode" style="font-weight: bold;">The 6-digit code entered does not match our records. Please try again.</a>
+          <a href="#securitycode" style="font-weight: bold;">Enter the correct 6-digit code or get another code sent to you</a>
         </li>
       </ul>
     </div>
@@ -43,11 +43,12 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
   <h1 class="govuk-heading-l">Check your phone</h1> 
   
-  <p class="govuk-body">We've sent a 6-digit security code to your phone.</p>
+  <p class="govuk-body">Enter the 6-digit security code sent to your phone.</p>
   
   <div class="govuk-form-group govuk-form-group--error">  
     <label class="govuk-label" for="securitycode">Security code</label>
-    <span class="govuk-error-message">The 6-digit code entered does not match our records. Please try again.</span>
+    <!-- <span class="govuk-error-message">The 6-digit code entered does not match our records. Please try again or resend code.</span> -->
+    <span class="govuk-error-message">Enter the correct 6-digit code or get another code sent to you</span>
     <input class="govuk-input govuk-input--error govuk-input--width-5" id="securitycode" name="width-5" type="text">
   </div> 
 
@@ -55,8 +56,12 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
     <button type="submit" class="govuk-button">Submit</button>
   </form>
   
+  <p class="govuk-body govuk-!-margin-bottom-8">
+    <a class="govuk-link govuk-link--no-visited-state" href="../placeholder.html">Resend code</a>
+  </p>
+  
   <p class="govuk-body">
-    <a class="govuk-link" href="multi-factor-authentication.html">Resend code</a>
+    <a class="govuk-link govuk-link--no-visited-state" href="../create-account/password.html">Cancel</a>
   </p>
 </body>
 {% endblock %}
