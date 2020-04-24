@@ -61,8 +61,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
 
 <!-- Breadcrumbs -->
-
-
+<a href="#" class="govuk-back-link">Back</a>
 {% endblock %}
 
 {% block content %}
@@ -85,14 +84,19 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
   <form method="get" action="multi-factor-authentication.html">
     <button type="submit" class="govuk-button">Continue</button>
   </form>
+  <p>
+    <a class="govuk-link govuk-link--no-visited-state" href="../create-account/password.html">Create an account</a>
+  </p>
 
   <h2 class="govuk-heading-m">Problems signing in</h2>
   <ul class="govuk-list">
     <li>
-      <a class="govuk-link" href="reset-password-email-link.html">I have forgotten my login password</a>
     </li>
     <li>
-      <a class="govuk-link" href="../create-account/password.html">Create an account</a>
+      <a class="govuk-link govuk-link--no-visited-state" href="reset-password-email-link.html">I have forgotten my login password</a>
+    </li>
+    <li>
+      <a class="govuk-link govuk-link--no-visited-state" href="../mfa/option.html">I don't have access to my multi-factor authentication</a>
     </li>
   </ul>
 </body>

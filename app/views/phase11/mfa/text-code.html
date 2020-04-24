@@ -18,7 +18,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
 
 <!-- Breadcrumbs -->
-<a href="multi-factor-authentication.html" class="govuk-back-link">Back</a>
+<a href="set-up-mobile.html" class="govuk-back-link">Back</a>
 {% endblock %}
 
 {% block content %}
@@ -28,21 +28,26 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 <script>window.GOVUKFrontend.initAll()</script>
 
 <body class="govuk-template__body ">
+  <span class="govuk-caption-l">Multi-factor authentication</span>
   <h1 class="govuk-heading-l">Check your phone</h1> 
   
-  <p class="govuk-body">We've sent a 6-digit security code to your phone.</p>
+  <p class="govuk-body">We have sent a 6-digit security code to your phone.</p>
   
   <div class="govuk-form-group">  
     <label class="govuk-label" for="securitycode">Security code</label>
     <input class="govuk-input govuk-input--width-5" id="securitycode" name="width-5" type="text">
   </div> 
 
-  <form method="get" action="home.html">
+  <form method="get" action="../create-account/set-up-confirmation.html">
     <button type="submit" class="govuk-button">Submit</button>
   </form>
   
+  <p class="govuk-body govuk-!-margin-bottom-8">
+    <a class="govuk-link govuk-link--no-visited-state" href="../placeholder.html">Resend code</a>
+  </p>
+  
   <p class="govuk-body">
-    <a class="govuk-link" href="multi-factor-authentication.html">Resend code</a>
+    <a class="govuk-link govuk-link--no-visited-state" href="../create-account/password.html">Cancel</a>
   </p>
 </body>
 {% endblock %}

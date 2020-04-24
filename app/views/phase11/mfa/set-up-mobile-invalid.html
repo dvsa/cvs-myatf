@@ -1,0 +1,68 @@
+{% extends "layout-sign-in.html" %}
+
+{% block pageTitle %}
+Identity Verification
+{% endblock %}
+
+<!-- Beta header -->
+
+{% block beforeContent %}
+
+{% from "phase-banner/macro.njk" import govukPhaseBanner %}
+{{ govukPhaseBanner({
+tag: {
+text: "beta"
+},
+html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+}) }}
+
+
+<!-- Breadcrumbs -->
+<a href="option.html" class="govuk-back-link">Back</a>
+{% endblock %}
+
+{% block content %}
+<script>document.body.className = ((document.body.className) ? document.body.className + ' js-enabled' : 'js-enabled');</script>
+<a href="#main-content" class="govuk-skip-link">Skip to main content</a>
+<script src="/govuk-frontend/all.js"></script>
+<script>window.GOVUKFrontend.initAll()</script>
+
+<body class="govuk-template__body ">
+  <div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="error-summary">
+    <h2 class="govuk-error-summary__title" id="error-summary-title">There is a problem</h2>
+    <div class="govuk-error-summary__body">
+      <ul class="govuk-list govuk-error-summary__list">
+        <li>
+          <a href="#securitycode" style="font-weight: bold;">Enter a UK mobile number, like 07700 900 982 or +44 0808 157 0192</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <span class="govuk-caption-l">Multi-factor authentication</span>
+  <h1 class="govuk-heading-l">Enter your mobile number</h1>  
+
+    <p class="govuk-body">You will be asked to enter a code every time you sign in.</p>
+  
+  <div class="govuk-form-group govuk-form-group--error">
+    <label class="govuk-label" for="mobile">Mobile number</label>
+    <p class="govuk-caption-m govuk-!-margin-bottom-1">UK mobile number</p>
+    <span id="telephone-number-error" class="govuk-error-message">
+      <span class="govuk-visually-hidden">Error:</span> Enter a UK mobile number, like 07700 900 982 or +44 0808 157 0192
+    </span>
+    <input class="govuk-input textwidth" id="mobile" name="mobile" type="text" aria-describedby="mobile">
+  </div>  
+  <div class="govuk-form-group">  
+    <label class="govuk-label" for="mobile">Confirm mobile number</label>
+    <input class="govuk-input textwidth" id="mobile" name="mobile" type="text" aria-describedby="mobile">
+  </div>  
+
+  <form method="get" action="code.html">
+    <button type="submit" class="govuk-button">Submit</button>
+  </form>
+  
+  <p class="govuk-body">
+    <a class="govuk-link govuk-link--no-visited-state" href="../create-account/password.html">Cancel</a>
+  </p>
+</body>
+{% endblock %}
