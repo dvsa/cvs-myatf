@@ -1,7 +1,7 @@
 {% extends "layout-sign-in.html" %}
 
 {% block pageTitle %}
-Identity Verification
+Blank - MFA code text message
 {% endblock %}
 
 <!-- Beta header -->
@@ -28,19 +28,19 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 <script>window.GOVUKFrontend.initAll()</script>
 
 <body class="govuk-template__body ">
-<!–– error message start ––>
+<!-- error message start -->
   <div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="error-summary">
     <h2 class="govuk-error-summary__title" id="error-summary-title">There is a problem</h2>
     <div class="govuk-error-summary__body">
       <ul class="govuk-list govuk-error-summary__list">
         <li>
-          <a href="#securitycode" style="font-weight: bold;">Enter a security code</a>
+          <a href="#securitycode" style="font-weight: bold;">Enter an authentication code</a>
         </li>
       </ul>
     </div>
   </div>
-<!–– error message end ––>  
-
+<!-- error message end  -->
+<span class="govuk-caption-l">Multi-factor authentication</span>
   <h1 class="govuk-heading-l">Check your phone</h1> 
   
   <!-- <p class="govuk-body">We've sent a 6-digit security code to your phone.</p> -->
@@ -48,8 +48,8 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
   
   <div class="govuk-form-group govuk-form-group--error">  
-    <label class="govuk-label" for="securitycode">Enter the 6-digit security code sent to your phone</label>
-    <span class="govuk-error-message">Enter a security code</span>
+    <label class="govuk-label" for="securitycode">Enter the 6-digit code sent to your phone</label>
+    <span class="govuk-error-message">Enter an authentication code</span>
     <input class="govuk-input govuk-input--error govuk-input--width-5" id="securitycode" name="width-5" type="text">
   </div> 
 
@@ -58,7 +58,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
   </form>
   
   <p class="govuk-body govuk-!-margin-bottom-8">
-    <a class="govuk-link govuk-link--no-visited-state" href="../placeholder.html">Resend code</a>
+    <a class="govuk-link govuk-link--no-visited-state" href="../placeholder.html">Resend authentication code</a>
   </p>
   
   <p class="govuk-body">

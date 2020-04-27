@@ -1,7 +1,7 @@
 {% extends "layout-sign-in.html" %}
 
 {% block pageTitle %}
-Identity Verification
+Set up auth app
 {% endblock %}
 
 <!-- Beta header -->
@@ -28,19 +28,12 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 <script>window.GOVUKFrontend.initAll()</script>
 
 <body class="govuk-template__body ">
-  <span class="govuk-caption-l">Create your account</span>
+  <span class="govuk-caption-l">Multi-factor authentication</span>
   <h1 class="govuk-heading-l">Set up app</h1>  
 
-    <p class="govuk-body">You will be asked to enter a code every time you sign in.</p>
+    <p class="govuk-body">You will be asked to enter an authentication code every time you sign in.</p>
   
-  <div class="govuk-form-group">
-    <label class="govuk-label" for="mobile">Mobile number</label>
-    <p class="govuk-caption-m govuk-!-margin-bottom-1">UK mobile number</p>
-    <input class="govuk-input govuk-!-margin-bottom-6 textwidth" id="mobile" name="mobile" type="text" aria-describedby="mobile">
-    
-    <label class="govuk-label" for="mobile">Confirm mobile number</label>
-    <input class="govuk-input textwidth" id="mobile" name="mobile" type="text" aria-describedby="mobile">
-  </div>  
+  
 
   <form method="get" action="code.html">
     <button type="submit" class="govuk-button">Submit</button>

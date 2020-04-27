@@ -1,7 +1,7 @@
 {% extends "layout-sign-in.html" %}
 
 {% block pageTitle %}
-Identity Verification
+Invalid - MFA code text message
 {% endblock %}
 
 <!-- Beta header -->
@@ -34,22 +34,21 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
     <div class="govuk-error-summary__body">
       <ul class="govuk-list govuk-error-summary__list">
         <li>
-          <!-- <a href="#securitycode" style="font-weight: bold;">Enter the correct 6-digit code or get another code sent to you</a> -->
-          <!-- <a href="#securitycode" style="font-weight: bold;">Enter the correct 6-digit code or resend code</a> -->
-          <a href="#securitycode" style="font-weight: bold;">Enter the correct 6-digit code or resend and try again</a>
+          <!-- <a href="#securitycode" style="font-weight: bold;">Enter the correct authetication code or get another code sent to you</a> -->
+          <a href="#securitycode" style="font-weight: bold;">Enter the correct authentication code</a>
+          <!-- <a href="#securitycode" style="font-weight: bold;">Enter the correct 6-digit verification code or resend and try again</a> -->
       </ul>
     </div>
   </div>
 <!-- error message end -->
-
+<span class="govuk-caption-l">Multi-factor authentication</span>
   <h1 class="govuk-heading-l">Check your phone</h1> 
   
-  <p class="govuk-body">Enter the 6-digit security code sent to your phone.</p>
+  <p class="govuk-body">Enter the 6-digit code sent to your phone.</p>
   
   <div class="govuk-form-group govuk-form-group--error">  
-    <label class="govuk-label" for="securitycode">Security code</label>
-    <!-- <span class="govuk-error-message">The 6-digit code entered does not match our records. Please try again or resend code.</span> -->
-    <span class="govuk-error-message">Enter the correct 6-digit code or resend and try again</span>
+    <label class="govuk-label" for="securitycode">Authentication code</label>
+    <span class="govuk-error-message">Enter the correct authentication code</span>
     <input class="govuk-input govuk-input--error govuk-input--width-5" id="securitycode" name="width-5" type="text">
   </div> 
 
@@ -58,7 +57,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
   </form>
   
   <p class="govuk-body govuk-!-margin-bottom-8">
-    <a class="govuk-link govuk-link--no-visited-state" href="../placeholder.html">Resend code</a>
+    <a class="govuk-link govuk-link--no-visited-state" href="../placeholder.html">Resend authentication code</a>
   </p>
   
   <p class="govuk-body">
