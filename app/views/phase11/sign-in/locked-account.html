@@ -1,9 +1,8 @@
 {% extends "layout-sign-in.html" %}
 
 {% block pageTitle %}
-Create your account
+Sign in
 {% endblock %}
-
 <!-- Beta header -->
 {% block header %}
 <div class="app-cookie-banner static" id="app-cookie-banner">
@@ -11,10 +10,9 @@ Create your account
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
         <span class="govuk-heading-m cookies-title">Tell us whether you accept cookies</span>
-        <p>We use <a href="../privacy/cookies.html" target="_blank">cookies to collect information</a> about how you use the 'Manage Your Authorised Testing Facility' portal. 
+        <p>We use <a href="cookies.html">cookies to collect information</a> about how you use the 'Manage Your Authorised Testing Facility' portal. 
         We use this information to make the website work as well as possible and improve government services.</p>
         <button onclick="closeCookieBanner()" type="submit"  class="govuk-button cookies-button" data-module="govuk-button">Accept cookies</button>
-        <button onclick="window.location.href='../privacy/cookies.html'" type="button" class="govuk-button cookies-button cookies-button--margin" data-module="govuk-button">Set cookie preferences</button>
       </div>
     </div>
   </div>
@@ -45,7 +43,7 @@ function closeCookieBanner() {
     </a>
   </div>
   <div class="govuk-header__content">
-    <a href="../index.html" class="govuk-header__link govuk-header__link--service-name">Manage your Authorised Testing Facility</a>
+    <a href="#" class="govuk-header__link govuk-header__link--service-name">Manage your Authorised Testing Facility</a>
   </div>
 </div>  
 </header> 
@@ -61,8 +59,9 @@ text: "beta"
 html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
 }) }}
 
-<!-- Breadcrumbs -->
 
+<!-- Breadcrumbs -->
+<!-- <a href="#" class="govuk-back-link">Back</a> -->
 {% endblock %}
 
 {% block content %}
@@ -72,31 +71,35 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 <script>window.GOVUKFrontend.initAll()</script>
 
 <body class="govuk-template__body ">
-  <span class="govuk-caption-l">Create your account</span>
-  <h1 class="govuk-heading-l">Create a password</h1>
-
-  <div class="govuk-form-group">
-    <label class="govuk-label" for="password">Password</label>
-    <label class="govuk-caption-m">Password must be 10 characters or more.</label>
-    <input class="govuk-input textwidth govuk-!-margin-bottom-6" id="password" name="password" type="password" aria-describedby="mobile">
-      
-    <label class="govuk-label" for="mobile">Confirm password</label>
-    <input class="govuk-input textwidth" id="width-20" name="width-10" type="password">
-  </div> 
+  <h1 class="govuk-heading-l">Sign in</h1> 
   
   <div class="govuk-form-group">
-    <fieldset class="govuk-fieldset">
-      <div class="govuk-checkboxes">
-        <div class="govuk-checkboxes__item">
-          <input class="govuk-checkboxes__input" id="tandc" name="tandc" type="checkbox" value="carcasses">
-          <label class="govuk-label govuk-checkboxes__label" for="tandc">I accept the <a class="govuk-link govuk-link--no-visited-state" href="../privacy/terms-conditions.html" target="_blank">terms and conditions</a></label>
-        </div>
-      </div>
-    </fieldset>
-  </div>
+    <label class="govuk-label" for="email">Email address</label>
+    <input class="govuk-input textwidth govuk-!-margin-bottom-6" id="email" name="email" type="text" aria-describedby="email-error">
+    
+    <label class="govuk-label" for="password">Password</label>
+    <input class="govuk-input textwidth" id="password" name="password" type="password" aria-describedby="password-error">
+  </div> 
 
-  <form method="get" action="../mfa/set-up-mobile.html">
+  <form method="get" action="../mfa/text-code.html">
     <button type="submit" class="govuk-button">Continue</button>
   </form>
+  <p>
+    <a class="govuk-link govuk-link--no-visited-state" href="../create-account/password.html">Create an account</a>
+  </p>
+
+  <h2 class="govuk-heading-m">Problems signing in</h2>
+  <ul class="govuk-list">
+    <li>
+    </li>
+    <li>
+      <a class="govuk-link govuk-link--no-visited-state" href="reset-password-email-link.html">I have forgotten my login password</a>
+    </li>
+    <li>
+      <a class="govuk-link govuk-link--no-visited-state" href="../mfa/option.html">I don't have access to my multi-factor authentication</a>
+    </li>
+  </ul>
 </body>
-{% endblock %}
+
+  </html>
+  {% endblock %}
