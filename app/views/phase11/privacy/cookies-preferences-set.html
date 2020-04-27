@@ -24,10 +24,16 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 {% block content %}
 
 <!-- Headings start here -->
-
 <div class="govuk-width-container">
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
+      <div class="govuk-error-summary panel-border-color--blue" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="govuk-error-summary">
+        <h2 class="govuk-error-summary__title" id="error-summary-title">
+          Your cookies settings were saved
+        </h2>
+        <p>Other Government services may set additional cookies and, if so, will have their own cookie policy and banner</p>
+      </div>
+      
       <h1 class="govuk-heading-l">Cookies on Manage Your Authorised Testing Facility</h1>
       
       <p class="govuk-body">Cookies are files saved on your phone, tablet or computer when you visit a website.</p>
@@ -48,7 +54,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
           
           <div class="govuk-radios">
             <div class="govuk-radios__item">
-              <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england" checked>
+              <input class="govuk-radios__input" id="where-do-you-live" name="where-do-you-live" type="radio" value="england" selected>
               <label class="govuk-label govuk-radios__label" for="where-do-you-live">
                 Use cookies that measure my website use
               </label>
@@ -63,7 +69,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
         </fieldset>
       </div>
       
-      <form method="get" action="cookies-preferences-set.html">
+      <form method="get" action="home.html">
         <button type="submit" class="govuk-button">Save changes</button>
       </form>
       
@@ -131,7 +137,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
       </table>    
       
       <h2 class="govuk-heading-m govuk-!-margin-top-6">Government services</h2>
-      <p class="govuk-body">Most services we link to are run by different government departments, for example DWP’s Universal Credit online, DVLA’s vehicle tax service, or HMRC’s webchat. These services may set additional cookies and, if so, will have their own cookie policy and banner linking to it.</p>
+      <p class="govuk-hint govuk-body">Most services we link to are run by different government departments, for example DWP’s Universal Credit online, DVLA’s vehicle tax service, or HMRC’s webchat. These services may set additional cookies and, if so, will have their own cookie policy and banner linking to it.</p>
       
     </div>
   </div>

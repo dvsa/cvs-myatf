@@ -18,7 +18,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
 
 <!-- Breadcrumbs -->
-<a href="option.html" class="govuk-back-link">Back</a>
+<a href="../create-account/password.html" class="govuk-back-link">Back</a>
 {% endblock %}
 
 {% block content %}
@@ -33,23 +33,22 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
     <div class="govuk-error-summary__body">
       <ul class="govuk-list govuk-error-summary__list">
         <li>
-          <a href="#securitycode" style="font-weight: bold;">Enter a UK mobile number, like 07700 900 982 or +44 0808 157 0192</a>
+          <a href="#securitycode" style="font-weight: bold;">Enter a UK mobile number</a>
         </li>
       </ul>
     </div>
   </div>
   
-  <span class="govuk-caption-l">Multi-factor authentication</span>
-  <!-- <span class="govuk-caption-l">Identity verification</span> -->
+  <span class="govuk-caption-l">Create your account</span>
   <h1 class="govuk-heading-l">Enter your mobile number</h1>  
 
-    <p class="govuk-body">You will be asked to enter an authentication code every time you sign in.</p>
+  <p class="govuk-body">You will be sent an authentication code when signing in.</p>
   
   <div class="govuk-form-group govuk-form-group--error">
     <label class="govuk-label" for="mobile">Mobile number</label>
-    <p class="govuk-caption-m govuk-!-margin-bottom-1">UK mobile number</p>
+    <p class="govuk-caption-m govuk-!-margin-bottom-1">UK mobile number, like 07700 900000</p>
     <span id="telephone-number-error" class="govuk-error-message">
-      <span class="govuk-visually-hidden">Error:</span> Enter a UK mobile number, like 07700 900 982 or +44 0808 157 0192
+      <span class="govuk-visually-hidden">Error:</span> Enter a UK mobile number
     </span>
     <input class="govuk-input textwidth" id="mobile" name="mobile" type="text" aria-describedby="mobile">
   </div>  

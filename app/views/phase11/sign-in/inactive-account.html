@@ -77,7 +77,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
     <div class="govuk-error-summary__body">
       <ul class="govuk-list govuk-error-summary__list">
         <li>
-          <a href="#email" style="font-weight: bold;">Account locked after too many failed login attempts. Try again in 10 minutes</a>
+          <a href="#password" style="font-weight: bold;">Enter a password</a>
         </li>
       </ul>
     </div>
@@ -85,13 +85,14 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
     
   <h1 class="govuk-heading-l">Sign in</h1> 
   
-  <div class="govuk-form-group govuk-form-group--error">
+  <div class="govuk-form-group">
     <label class="govuk-label" for="email">Email address</label>
-    <span class="govuk-error-message">Account locked after too many failed login attempts. Try again in 10 minutes</span>
-    <input class="govuk-input govuk-input--error textwidth govuk-!-margin-bottom-6" id="email" name="email" type="text" aria-describedby="email-error">
+    <input class="govuk-input textwidth" id="email" name="email" type="text" aria-describedby="email-error">
+  </div>   
     
+  <div class="govuk-form-group">  
     <label class="govuk-label" for="password">Password</label>
-    <input class="govuk-input govuk-input--error textwidth" id="password" name="password" type="password" aria-describedby="password-error">
+    <input class="govuk-input textwidth" id="password" name="password" type="password" aria-describedby="password-error">
   </div> 
 
   <form method="get" action="../mfa/text-code.html">
