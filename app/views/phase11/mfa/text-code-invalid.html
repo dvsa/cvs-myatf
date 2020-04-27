@@ -18,7 +18,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
 
 <!-- Breadcrumbs -->
-<a href="multi-factor-authentication.html" class="govuk-back-link">Back</a>
+<a href="set-up-mobile.html" class="govuk-back-link">Back</a>
 {% endblock %}
 
 {% block content %}
@@ -34,8 +34,9 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
     <div class="govuk-error-summary__body">
       <ul class="govuk-list govuk-error-summary__list">
         <li>
-          <a href="#securitycode" style="font-weight: bold;">Enter the correct 6-digit code or get another code sent to you</a>
-        </li>
+          <!-- <a href="#securitycode" style="font-weight: bold;">Enter the correct 6-digit code or get another code sent to you</a> -->
+          <!-- <a href="#securitycode" style="font-weight: bold;">Enter the correct 6-digit code or resend code</a> -->
+          <a href="#securitycode" style="font-weight: bold;">Enter the correct 6-digit code or resend and try again</a>
       </ul>
     </div>
   </div>
@@ -48,7 +49,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
   <div class="govuk-form-group govuk-form-group--error">  
     <label class="govuk-label" for="securitycode">Security code</label>
     <!-- <span class="govuk-error-message">The 6-digit code entered does not match our records. Please try again or resend code.</span> -->
-    <span class="govuk-error-message">Enter the correct 6-digit code or get another code sent to you</span>
+    <span class="govuk-error-message">Enter the correct 6-digit code or resend and try again</span>
     <input class="govuk-input govuk-input--error govuk-input--width-5" id="securitycode" name="width-5" type="text">
   </div> 
 
