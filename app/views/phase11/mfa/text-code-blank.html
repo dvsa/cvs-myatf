@@ -43,22 +43,20 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 <span class="govuk-caption-l">Create your account</span>
   <h1 class="govuk-heading-l">Check your phone</h1> 
   
+  <p class="govuk-body">A code has been sent to 07700 900789.</p>
+
   <div class="govuk-form-group govuk-form-group--error">  
-    <label class="govuk-label" for="securitycode">Enter the 6-digit code sent to your phone</label>
+    <label class="govuk-label" for="securitycode">Enter the 6-digit code</label>
     <span class="govuk-error-message">Enter an authentication code</span>
     <input class="govuk-input govuk-input--error govuk-input--width-5" id="securitycode" name="width-5" type="text">
   </div> 
 
-  <form method="get" action="home.html">
-    <button type="submit" class="govuk-button">Submit</button>
+  <form method="get" action="../home.html">
+    <button type="submit" class="govuk-button">Continue</button>
   </form>
   
   <p class="govuk-body govuk-!-margin-bottom-8">
-    <a class="govuk-link govuk-link--no-visited-state" href="../placeholder.html">Resend authentication code</a>
-  </p>
-  
-  <p class="govuk-body">
-    <a class="govuk-link govuk-link--no-visited-state" href="../create-account/password.html">Cancel</a>
+    <a class="govuk-link govuk-link--no-visited-state" href="../text-code-resent.html">Resend authentication code</a>
   </p>
 </body>
 {% endblock %}

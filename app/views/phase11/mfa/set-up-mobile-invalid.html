@@ -33,7 +33,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
     <div class="govuk-error-summary__body">
       <ul class="govuk-list govuk-error-summary__list">
         <li>
-          <a href="#securitycode" style="font-weight: bold;">Enter a UK mobile number</a>
+          <a href="#securitycode" style="font-weight: bold;">Enter a UK mobile number, like 07700 900789 or +44 7700 900789</a>
         </li>
       </ul>
     </div>
@@ -45,24 +45,19 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
   <p class="govuk-body">You will be sent an authentication code when signing in.</p>
   
   <div class="govuk-form-group govuk-form-group--error">
-    <label class="govuk-label" for="mobile">Mobile number</label>
-    <p class="govuk-caption-m govuk-!-margin-bottom-1">UK mobile number, like 07700 900000</p>
+    <label class="govuk-label" for="mobile">UK mobile number</label>
     <span id="telephone-number-error" class="govuk-error-message">
-      <span class="govuk-visually-hidden">Error:</span> Enter a UK mobile number
+      <span class="govuk-visually-hidden">Error:</span> Enter a UK mobile number, like 07700 900789 or +44 7700 900789
     </span>
     <input class="govuk-input textwidth" id="mobile" name="mobile" type="text" aria-describedby="mobile">
   </div>  
   <div class="govuk-form-group">  
-    <label class="govuk-label" for="mobile">Confirm mobile number</label>
+    <label class="govuk-label" for="mobile">Confirm UK mobile number</label>
     <input class="govuk-input textwidth" id="mobile" name="mobile" type="text" aria-describedby="mobile">
   </div>  
 
   <form method="get" action="code.html">
     <button type="submit" class="govuk-button">Continue</button>
   </form>
-  
-  <p class="govuk-body">
-    <a class="govuk-link govuk-link--no-visited-state" href="../create-account/password.html">Cancel</a>
-  </p>
 </body>
 {% endblock %}

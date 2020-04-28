@@ -34,20 +34,15 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
   <p class="govuk-body">You will be sent an authentication code when signing in.</p>
   
   <div class="govuk-form-group">
-    <label class="govuk-label" for="mobile">Mobile number</label>
-    <p class="govuk-caption-m govuk-!-margin-bottom-1">UK mobile number</p>
+    <label class="govuk-label" for="mobile">UK mobile number</label>
     <input class="govuk-input govuk-!-margin-bottom-6 textwidth" id="mobile" name="mobile" type="text" aria-describedby="mobile">
     
-    <label class="govuk-label" for="mobile">Confirm mobile number</label>
+    <label class="govuk-label" for="mobile">Confirm UK mobile number</label>
     <input class="govuk-input textwidth" id="mobile" name="mobile" type="text" aria-describedby="mobile">
   </div>  
 
   <form method="get" action="text-code.html">
     <button type="submit" class="govuk-button">Continue</button>
   </form>
-  
-  <p class="govuk-body">
-    <a class="govuk-link govuk-link--no-visited-state" href="../create-account/password.html">Cancel</a>
-  </p>
 </body>
 {% endblock %}
