@@ -18,7 +18,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
 
 <!-- Breadcrumbs -->
-<a href="login.html" class="govuk-back-link">Back</a>
+<a href="mfa-code.html" class="govuk-back-link">Back</a>
 {% endblock %}
 
 {% block content %}
@@ -28,9 +28,13 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 <script>window.GOVUKFrontend.initAll()</script>
 
 <body class="govuk-template__body ">
-  <h1 class="govuk-heading-l">Check your phone</h1> 
+  <h1 class="govuk-heading-l">One time access code</h1> 
   
-  <p>Enter the 6-digit code sent to 07*****0789. It may take a few minutes to arrive.</p>
+  <p class="govuk-body">Contact the DVSA at enquiries@dvsa.gov.uk to get a 6-digit one time access code.</p>
+  
+  <!-- <p>You can change your registered mobile number, you can change it when logged into the portal.</p> -->
+  <!-- <p>You can change your registered mobile number when logged into the portal.</p> -->
+  <div class="govuk-inset-text">Your registered mobile number can be changed within the portal.</div>
   
   <div class="govuk-form-group">  
     <label class="govuk-label" for="securitycode">Access code</label>
@@ -41,11 +45,8 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
     <button type="submit" class="govuk-button">Continue</button>
   </form>
   
-  <p class="govuk-body govuk-!-margin-bottom-2">
-    <a class="govuk-link govuk-link--no-visited-state" href="mfa-code-resent.html">Resend code</a>
-  </p>
   <p class="govuk-body">
-    <a class="govuk-link govuk-link--no-visited-state" href="mfa-code-no-access.html">I don’t have access to this phone</a>
+    <a class="govuk-link govuk-link--no-visited-state" href="mfa-code-resent.html">Resend code</a>
   </p>
 </body>
 {% endblock %}

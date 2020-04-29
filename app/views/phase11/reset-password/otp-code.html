@@ -1,7 +1,7 @@
 {% extends "layout-sign-in.html" %}
 
 {% block pageTitle %}
-No OTP code
+OTP code
 {% endblock %}
 
 <!-- Beta header -->
@@ -28,30 +28,17 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 <script>window.GOVUKFrontend.initAll()</script>
 
 <body class="govuk-template__body ">
-  <!-- error message start -->
-    <div class="govuk-error-summary" aria-labelledby="error-summary-title" role="alert" tabindex="-1" data-module="error-summary">
-      <h2 class="govuk-error-summary__title" id="error-summary-title">There is a problem</h2>
-      <div class="govuk-error-summary__body">
-        <ul class="govuk-list govuk-error-summary__list">
-          <li>
-            <a href="#securitycode" style="font-weight: bold;">Enter an access code</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  <!-- error message end  -->
-  <span class="govuk-caption-l">Change your password</span>
+  <span class="govuk-caption-l">Reset password</span>
   <h1 class="govuk-heading-l">Check your phone</h1> 
   
   <p>A 6-digit one time access code has been sent to e******@h****.co.uk. It may take a few minutes to arrive.</p>
   
-  <div class="govuk-form-group govuk-form-group--error">  
+  <div class="govuk-form-group">  
     <label class="govuk-label" for="securitycode">Access code</label>
-    <span class="govuk-error-message">Enter an access code</span>
-    <input class="govuk-input govuk-input--error  govuk-input--width-5" id="securitycode" name="width-5" type="text">
+    <input class="govuk-input govuk-input--width-5" id="securitycode" name="width-5" type="text">
   </div> 
 
-  <form method="get" action="create-password.html">
+  <form method="get" action="new-password.html">
     <button type="submit" class="govuk-button">Continue</button>
   </form>
   

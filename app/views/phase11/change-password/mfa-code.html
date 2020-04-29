@@ -1,7 +1,7 @@
 {% extends "layout-sign-in.html" %}
 
 {% block pageTitle %}
-OTP code
+MFA code text message
 {% endblock %}
 
 <!-- Beta header -->
@@ -18,7 +18,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
 
 <!-- Breadcrumbs -->
-<a href="enter-email.html" class="govuk-back-link">Back</a>
+<a href="new-password.html" class="govuk-back-link">Back</a>
 {% endblock %}
 
 {% block content %}
@@ -30,20 +30,20 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 <body class="govuk-template__body ">
   <span class="govuk-caption-l">Change your password</span>
   <h1 class="govuk-heading-l">Check your phone</h1> 
-  
-  <p>A 6-digit one time access code has been sent to e******@h****.co.uk. It may take a few minutes to arrive.</p>
+  <!-- 07*****0789 -->
+  <p class="govuk-body">A 6-digit code has been sent to 07700 900789. It may take a few minutes to arrive.</p>
   
   <div class="govuk-form-group">  
     <label class="govuk-label" for="securitycode">Access code</label>
     <input class="govuk-input govuk-input--width-5" id="securitycode" name="width-5" type="text">
   </div> 
 
-  <form method="get" action="create-password.html">
+  <form method="get" action="../account-details.html">
     <button type="submit" class="govuk-button">Continue</button>
   </form>
   
   <p class="govuk-body govuk-!-margin-bottom-8">
-    <a class="govuk-link govuk-link--no-visited-state" href="enter-email.html">Resend code</a>
+    <a class="govuk-link govuk-link--no-visited-state" href="mfa-code-resent.html">Resend code</a>
   </p>
 </body>
 {% endblock %}

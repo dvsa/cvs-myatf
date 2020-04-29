@@ -18,7 +18,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
 
 <!-- Breadcrumbs -->
-<a href="login.html" class="govuk-back-link">Back</a>
+<a href="new-password.html" class="govuk-back-link">Back</a>
 {% endblock %}
 
 {% block content %}
@@ -28,24 +28,22 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 <script>window.GOVUKFrontend.initAll()</script>
 
 <body class="govuk-template__body ">
+  <span class="govuk-caption-l">Change your password</span>
   <h1 class="govuk-heading-l">Check your phone</h1> 
   
-  <p>Enter the 6-digit code sent to 07*****0789. It may take a few minutes to arrive.</p>
+  <p class="govuk-body">A 6-digit code has been resent to 07700 900789. It may take a few minutes to arrive.</p>
   
   <div class="govuk-form-group">  
     <label class="govuk-label" for="securitycode">Access code</label>
     <input class="govuk-input govuk-input--width-5" id="securitycode" name="width-5" type="text">
   </div> 
 
-  <form method="get" action="../home.html">
+  <form method="get" action="../account-details.html">
     <button type="submit" class="govuk-button">Continue</button>
   </form>
   
-  <p class="govuk-body govuk-!-margin-bottom-2">
+  <p class="govuk-body govuk-!-margin-bottom-8">
     <a class="govuk-link govuk-link--no-visited-state" href="mfa-code-resent.html">Resend code</a>
-  </p>
-  <p class="govuk-body">
-    <a class="govuk-link govuk-link--no-visited-state" href="mfa-code-no-access.html">I don’t have access to this phone</a>
   </p>
 </body>
 {% endblock %}

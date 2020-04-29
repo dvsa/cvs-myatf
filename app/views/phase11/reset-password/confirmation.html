@@ -26,10 +26,19 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 <script>window.GOVUKFrontend.initAll()</script>
 
 <body class="govuk-template__body">
-  <h1 class="govuk-heading-l">Your password has been changed</h1>
-  
-  <form method="get" action="../home.html">
-    <button type="submit" class="govuk-button">Home</button>
-  </form>
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+      <div class="govuk-panel confirmation govuk-!-margin-bottom-6">
+        <h1 class="govuk-panel__title confirmation">Your password has been changed</h1>
+      </div>
+      <!-- <h1 class="govuk-heading-l">Your password has been changed</h1> -->
+      
+      <p class="govuk-body">Sign in with your new password to access the Manage Your Authorised Testing Facility portal.</p>
+      
+      <form method="get" action="../sign-in/login.html">
+        <button type="submit" class="govuk-button">Sign in</button>
+      </form>
+    </div>
+  </div>
 </body>
 {% endblock %}
