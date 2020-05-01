@@ -33,25 +33,26 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
     <div class="govuk-error-summary__body">
       <ul class="govuk-list govuk-error-summary__list">
         <li>
-          <a href="#securitycode" style="font-weight: bold;">Mobile numbers do not match</a>
+          <a href="#securitycode" style="font-weight: bold;">Confirm your UK mobile number</a>
         </li>
       </ul>
     </div>
   </div>
   
   <span class="govuk-caption-l">Create your account</span>
-  <h1 class="govuk-heading-l">Enter your mobile number</h1>  
+  <h1 class="govuk-heading-l">Confirm your mobile number</h1>  
 
   <p class="govuk-body">You will be sent an access code when signing in.</p>
   
-  <div class="govuk-form-group govuk-form-group--error">
+  <div class="govuk-form-group">
     <label class="govuk-label" for="mobile">UK mobile number</label>
-    <span id="telephone-number-error" class="govuk-error-message">
-      <span class="govuk-visually-hidden">Error:</span> Mobile numbers do not match
-    </span>
-    <input class="govuk-input govuk-input--error govuk-!-margin-bottom-6 textwidth" id="mobile" name="mobile" type="text" aria-describedby="mobile">
-
+    <input class="govuk-input textwidth" id="mobile" name="mobile" type="text" aria-describedby="mobile">
+  </div>  
+  <div class="govuk-form-group govuk-form-group--error">
     <label class="govuk-label" for="mobile">Confirm UK mobile number</label>
+    <span id="telephone-number-error" class="govuk-error-message">
+      <span class="govuk-visually-hidden">Error:</span> Confirm your UK mobile number
+    </span>
     <input class="govuk-input govuk-input--error textwidth" id="mobile" name="mobile" type="text" aria-describedby="mobile">
   </div>  
 
