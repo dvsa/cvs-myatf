@@ -17,13 +17,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
 
 <!-- Breadcrumbs -->
-<div class="govuk-breadcrumbs">
-  <ol class="govuk-breadcrumbs__list">
-    <li class="govuk-breadcrumbs__list-item">
-      <a href="home.html" class="govuk-breadcrumbs__link">Home</a>
-    </li>
-  </ol>
-</div>
+<a href="new-number.html" class="govuk-back-link">Back</a>
 {% endblock %}
 
 {% block content %}
@@ -33,16 +27,14 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 <script>window.GOVUKFrontend.initAll()</script>
 
 <body class="govuk-template__body">
-  <div class="govuk-grid-row">
-    <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-l">Your password has been changed</h1>
-      
-      <p class="govuk-body">Sign in with your new password when accessing the the Manage Your Authorised Testing Facility portal.</p>
-      
-      <form method="get" action="../home.html">
-        <button type="submit" class="govuk-button">Home</button>
-      </form>
-    </div>
-  </div>  
+  <span class="govuk-caption-l">Change your mobile number</span>
+  <h1 class="govuk-heading-l">Confirm your new mobile number</h1>
+
+  <p class="govuk-body">You are about to change to your mobile number.</p> 
+  <p class="govuk-body govuk-!-margin-bottom-6">A code will be sent to this number to confirm your identity when singing in.</p>
+  
+  <form method="get" action="mfa-code.html">
+    <button type="submit" class="govuk-button">Continue</button>
+  </form>
 </body>
 {% endblock %}

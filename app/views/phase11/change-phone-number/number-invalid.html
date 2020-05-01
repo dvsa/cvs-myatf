@@ -2,7 +2,7 @@
 {% extends "layout-sign-in.html" %}
 
 {% block pageTitle %}
-New password
+incorrect phone number
 {% endblock %}
 
 <!-- Beta header -->
@@ -33,31 +33,28 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
     <div class="govuk-error-summary__body">
       <ul class="govuk-list govuk-error-summary__list">
         <li>
-          <a href="#password" style="font-weight: bold;">Incorrect existing password</a>
+          <a href="#securitycode" style="font-weight: bold;">Enter a UK mobile number, like 07700 900789 or +44 7700 900789</a>
         </li>
       </ul>
     </div>
   </div>
   
-  <span class="govuk-caption-l">Change your password</span>
-  <h1 class="govuk-heading-l">Create a new password</h1>
+  <span class="govuk-caption-l">Change your mobile number</span>
+  <h1 class="govuk-heading-l">Create a new mobile number</h1>
 
-  <div class="govuk-form-group  govuk-form-group--error">
-    <label class="govuk-label" for="password">Current password</label>
-    <span class="govuk-error-message">Incorrect existing password</span>
-    <input class="govuk-input govuk-input--error textwidth govuk-!-margin-bottom-4" id="password" name="password" type="password" aria-describedby="mobile">
+  <div class="govuk-form-group govuk-form-group--error">
+    <label class="govuk-label" for="mobile">UK mobile number</label>
+    <span id="telephone-number-error" class="govuk-error-message">
+      <span class="govuk-visually-hidden">Error:</span> Enter a UK mobile number, like 07700 900789 or +44 7700 900789
+    </span>
+    <input class="govuk-input textwidth govuk-!-margin-bottom-6" id="mobile" name="mobile" type="text" aria-describedby="mobile">
+  </div>  
+  <div class="govuk-form-group">  
+    <label class="govuk-label" for="mobile">Confirm UK mobile number</label>
+    <input class="govuk-input textwidth" id="mobile" name="mobile" type="text" aria-describedby="mobile">
   </div> 
 
-  <div class="govuk-form-group">
-    <label class="govuk-label" for="password">New password</label>
-    <label class="govuk-caption-m">Password must be 10 characters or more, and not easily guessed</label>
-    <input class="govuk-input textwidth govuk-!-margin-bottom-6" id="password" name="password" type="password" aria-describedby="mobile">
-      
-    <label class="govuk-label" for="mobile">Confirm new password</label>
-    <input class="govuk-input textwidth" id="width-20" name="width-10" type="password">
-  </div> 
-
-  <form method="get" action="confirmation.html">
+  <form method="get" action="confirm-change.html">
     <button type="submit" class="govuk-button">Continue</button>
   </form>
 </body>
