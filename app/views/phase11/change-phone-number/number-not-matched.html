@@ -18,7 +18,19 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 }) }}
 
 <!-- Breadcrumbs -->
-<a href="../account-details.html" class="govuk-back-link">Back</a>
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a href="../home.html" class="govuk-breadcrumbs__link">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a href="../account-details.html" class="govuk-breadcrumbs__link">Your settings</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      Create a new mobile number
+    </li>
+  </ol>
+</div>
 {% endblock %}
 
 {% block content %}
@@ -42,19 +54,20 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
   <span class="govuk-caption-l">Change your mobile number</span>
   <h1 class="govuk-heading-l">Create a new mobile number</h1>
 
+  <p class="govuk-body">You will be sent an access code to confirm your new number: 07700 900789.</p>
+
   <div class="govuk-form-group govuk-form-group--error">
     <label class="govuk-label" for="mobile">UK mobile number</label>
     <span id="telephone-number-error" class="govuk-error-message">
       <span class="govuk-visually-hidden">Error:</span> Mobile numbers do not match
     </span>
-    <input class="govuk-input textwidth govuk-!-margin-bottom-6" id="mobile" name="mobile" type="text" aria-describedby="mobile">
-  </div>  
-  <div class="govuk-form-group">  
+    <input class="govuk-input govuk-input--error govuk-!-margin-bottom-6 textwidth" id="mobile" name="mobile" type="text" aria-describedby="mobile">
+
     <label class="govuk-label" for="mobile">Confirm UK mobile number</label>
-    <input class="govuk-input textwidth" id="mobile" name="mobile" type="text" aria-describedby="mobile">
+    <input class="govuk-input govuk-input--error textwidth" id="mobile" name="mobile" type="text" aria-describedby="mobile">
   </div> 
 
-  <form method="get" action="confirm-change.html">
+  <form method="get" action="mfa-code.html">
     <button type="submit" class="govuk-button">Continue</button>
   </form>
 </body>

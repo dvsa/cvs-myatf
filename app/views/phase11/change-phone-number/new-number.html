@@ -18,7 +18,19 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 }) }}
 
 <!-- Breadcrumbs -->
-<a href="../account-details.html" class="govuk-back-link">Back</a>
+<div class="govuk-breadcrumbs">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a href="../home.html" class="govuk-breadcrumbs__link">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a href="../account-details.html" class="govuk-breadcrumbs__link">Your settings</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      Create a new mobile number
+    </li>
+  </ol>
+</div>
 {% endblock %}
 
 {% block content %}
@@ -31,7 +43,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
   <span class="govuk-caption-l">Change your mobile number</span>
   <h1 class="govuk-heading-l">Enter a new mobile number</h1>
 
-  <p class="govuk-body">You will be sent an access code when signing in.</p>
+  <p class="govuk-body">You will be sent an access code to confirm your new number: 07700 900789.</p>
   
   <div class="govuk-form-group">
     <label class="govuk-label" for="mobile-number">New UK mobile number</label>
@@ -41,7 +53,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
     <input class="govuk-input textwidth" id="width-20" name="width-10" type="mobile-number">
   </div> 
 
-  <form method="get" action="confirm-change.html">
+  <form method="get" action="mfa-code.html">
     <button type="submit" class="govuk-button">Continue</button>
   </form>
 </body>

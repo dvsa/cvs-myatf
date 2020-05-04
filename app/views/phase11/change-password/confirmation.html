@@ -20,7 +20,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 <div class="govuk-breadcrumbs">
   <ol class="govuk-breadcrumbs__list">
     <li class="govuk-breadcrumbs__list-item">
-      <a href="home.html" class="govuk-breadcrumbs__link">Home</a>
+      <a href="../account-details.html" class="govuk-breadcrumbs__link">Your settings</a>
     </li>
   </ol>
 </div>
@@ -35,14 +35,16 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 <body class="govuk-template__body">
   <div class="govuk-grid-row">
     <div class="govuk-grid-column-two-thirds">
-      <h1 class="govuk-heading-l">Your password has been changed</h1>
+      <div class="govuk-panel confirmation govuk-!-margin-bottom-6">
+        <h1 class="govuk-panel__title confirmation">Your password has been changed</h1>
+      </div>
       
-      <p class="govuk-body">Sign in with your new password when accessing the the Manage Your Authorised Testing Facility portal.</p>
+      <p class="govuk-body">Sign in with this password when you next visit the Manage Your Authorised Testing Facility portal.</p>
       
-      <form method="get" action="../home.html">
-        <button type="submit" class="govuk-button">Home</button>
+      <form method="get" action="../account-details.html">
+        <button type="submit" class="govuk-button">Your settings</button>
       </form>
     </div>
-  </div>  
+  </div>
 </body>
 {% endblock %}
