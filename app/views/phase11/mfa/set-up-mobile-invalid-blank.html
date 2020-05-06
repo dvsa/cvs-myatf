@@ -33,7 +33,10 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
     <div class="govuk-error-summary__body">
       <ul class="govuk-list govuk-error-summary__list">
         <li>
-          <a href="#mobile" style="font-weight: bold;">Enter a UK mobile number</a>
+          <a href="#mobile" style="font-weight: bold;">Enter a UK mobile number, like 07700 900789 or +44 7700 900789</a>
+        </li>
+        <li>
+          <a href="#mobile1" style="font-weight: bold;">Enter a UK mobile number</a>
         </li>
       </ul>
     </div>
@@ -47,12 +50,13 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
   <div class="govuk-form-group govuk-form-group--error">
     <label class="govuk-label" for="mobile">UK mobile number</label>
     <span id="telephone-number-error" class="govuk-error-message">
-      <span class="govuk-visually-hidden">Error:</span> Enter a UK mobile number
+      <span class="govuk-visually-hidden">Error:</span> Enter a UK mobile number, like 07700 900789 or +44 7700 900789
     </span>
-    <input class="govuk-input govuk-input--error govuk-!-margin-bottom-6 textwidth" id="mobile" name="mobile" type="text" aria-describedby="mobile">
-
+    <input class="govuk-input govuk-input--error textwidth" id="mobile" name="mobile" type="text" aria-describedby="mobile">
+  </div>  
+  <div class="govuk-form-group">  
     <label class="govuk-label" for="mobile">Confirm UK mobile number</label>
-    <input class="govuk-input govuk-input--error textwidth" id="mobile1" name="mobile1" type="text" aria-describedby="mobile">
+    <input class="govuk-input textwidth" id="mobile1" name="mobile1" type="text" aria-describedby="mobile1">
   </div>  
 
   <form method="get" action="code.html">
