@@ -85,14 +85,13 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
     
   <h1 class="govuk-heading-l">Sign in</h1> 
   
-  <div class="govuk-form-group">
+  <div class="govuk-form-group govuk-form-group--error">
     <label class="govuk-label" for="email">Email address</label>
-    <input class="govuk-input textwidth" id="email" name="email" type="text" aria-describedby="email-error">
-  </div>   
+    <span class="govuk-error-message">Account not active. To reactivate contact your team administrator or the DVSA on enquiries@dvsa.gov.uk</span>
+    <input class="govuk-input govuk-input--error textwidth govuk-!-margin-bottom-6" id="email" name="email" type="text" aria-describedby="email-error">
     
-  <div class="govuk-form-group">  
     <label class="govuk-label" for="password">Password</label>
-    <input class="govuk-input textwidth" id="password" name="password" type="password" aria-describedby="password-error">
+    <input class="govuk-input govuk-input--error textwidth" id="password" name="password" type="password" aria-describedby="password-error">
   </div> 
 
   <form method="get" action="mfa-code.html">
