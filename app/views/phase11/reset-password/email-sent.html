@@ -1,7 +1,7 @@
 {% extends "layout-sign-in.html" %}
 
 {% block pageTitle %}
-Reset your password - Email
+Email sent
 {% endblock %}
 
 <!–– Beta header ––>
@@ -18,7 +18,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
 
 <!-- Breadcrumbs -->
-<a href="../sign-in/login.html" class="govuk-back-link">Back</a>
+<a href="enter-email.html" class="govuk-back-link">Back</a>
 {% endblock %}
 
 {% block content %}
@@ -29,17 +29,9 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
 
 <body class="govuk-template__body">
   <span class="govuk-caption-l">Reset your password</span>
-  <h1 class="govuk-heading-l">Enter your email address</h1>
+  <h1 class="govuk-heading-l">Your email has been sent</h1>
   
-  <p class="govuk-body">You will be sent a link to reset your password.</p>
-  
-  <div class="govuk-form-group">
-    <label class="govuk-label" for="email">Email address</label>
-    <input class="govuk-input textwidth" id="email" name="email" type="text">
-  </div> 
+  <p class="govuk-body">If your account is registered you will be sent an email to reset your password.</p>
 
-  <form method="get" action="email-sent.html">
-    <button type="submit" class="govuk-button">Send email</button>
-  </form>
 </body>
 {% endblock %}
