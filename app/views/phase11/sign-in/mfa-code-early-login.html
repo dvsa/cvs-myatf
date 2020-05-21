@@ -33,7 +33,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
     <div class="govuk-error-summary__body">
       <ul class="govuk-list govuk-error-summary__list">
         <li>
-          <a href="#email" style="font-weight: bold;">Account locked after too many failed access attempts. Try again in 10 minutes</a>
+          <span class="govuk-error-message">Account locked after too many failed sign in attempts. Try again at 9.45am</span>
         </li>
       </ul>
     </div>
@@ -45,8 +45,7 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
   
   <div class="govuk-form-group govuk-form-group--error">  
     <label class="govuk-label" for="securitycode">Access code</label>
-    <!-- <span id="passport-issued-hint" class="govuk-hint">Your account will be locked if you enter the wrong access code 10 times</span> -->
-    <span class="govuk-error-message">Account locked after too many failed access attempts. Try again in 10 minutes</span>
+    <span class="govuk-error-message">Account locked after too many failed sign in attempts. Try again at 9.45am</span>
 
     <input class="govuk-input govuk-input--error govuk-input--width-5" id="securitycode" name="width-5" type="text">
   </div> 
