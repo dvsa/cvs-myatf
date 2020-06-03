@@ -1,7 +1,7 @@
 {% extends "layout3.html" %}
 
 {% block pageTitle %}
-Top up account
+Resend invite
 {% endblock %}
 
 <!–– Beta header ––>
@@ -13,9 +13,8 @@ Top up account
 tag: {
 text: "beta"
 },
-html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a> will help us to improve it.'
+html: 'This is a new service – your <a class="govuk-link" href="placeholder.html">feedback</a> will help us to improve it.'
 }) }}
-
 
 <!–– Breadcrumbs ––>
 <div class="govuk-breadcrumbs">
@@ -23,47 +22,22 @@ html: 'This is a new service – your <a class="govuk-link" href="#">feedback</a
     <li class="govuk-breadcrumbs__list-item">
       <a href="home.html" class="govuk-breadcrumbs__link">Home</a>
     </li>
-    <li class="govuk-breadcrumbs__list-item">
-      <a href="account-activity-prefunded-balance.html" class="govuk-breadcrumbs__link">Account activity</a>
-    </li>
-    <li class="govuk-breadcrumbs__list-item">Top up account</li>
   </ol>
 </div>
 {% endblock %}
 
 {% block content %}
+
 <!-- Headings start here -->
-
-<div class="govuk-width-container">
-<!-- Local nave and header STARTS here -->
-<div class="govuk-warning-text atf-warning-background-color--green panel panel-border-wide panel-border-color--green">
-  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-  <strong class="govuk-warning-text__text">
-    <span class="govuk-warning-text__assistive">Warning</span>Top up successful. Your order number is <a href="placeholder.html" class="govuk-link govuk-link--no-visited-state">ORD-AB123-45CD6</a>.
-  </strong>
-</div>
-
+<body>
   <span class="govuk-caption-m">P57832 Scania Lincoln</span>
-  <h1 class="govuk-heading-l">Top up account</h1>
+  <h1 class="govuk-heading-l">Invite successfully resent</h1>  
+    
+  <p class="govuk-body">We have resent your team member an email with a link to complete registration.</p>
 
-  <p class="govuk-!-margin-bottom-8">You can top up your account by using a credit/debit card, or set up a regular direct debit. <br>Payment via BACS is no longer supported.</p>
-  <!-- <div class="govuk-grid-row"> -->
-    <!-- <div class="govuk-grid-column-one-half"> -->
-      <h1 class="govuk-fieldset__legend--m" >Credit/debit card</h1>
-      <p class="govuk-!-padding-right-9">Use a credit/debit card to top up your PFA regularly or as a one off payment.</p>
-      <form method="get" action="top-up-card.html">
-        <button type="submit" class="govuk-button">Top up by card</button>
-      </form>  
-    <!-- </div> -->
-
-    <!-- <div class="govuk-grid-column-one-half"> -->
-      <h1 class="govuk-fieldset__legend--m">Direct debit</h1>
-      <p class="govuk-!-padding-right-9">Set up direct debit to make regular payments to your PFA.</p>
-      <form method="get" action="top-up-dd.html">
-        <button type="submit" class="govuk-button">Set up a direct debit</button>
-      </form> 
-    <!-- </div> -->
-  <!-- </div> -->
-
-</div>
+  <form method="get" action="register-secondary-delegate.html">
+    <button type="submit" class="govuk-button">View team members</button>
+  </form>
+  
+</body>
 {% endblock %}
